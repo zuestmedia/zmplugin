@@ -1,0 +1,45 @@
+/*	Customizer Preview CSS                                                    */
+/* -------------------------------------------------------------------------- */
+/*  1. OVERLAY NAV                                                            */
+/* -------------------------------------------------------------------------- */
+
+.zmdata-custonav.now-deepest:hover{
+  position: relative;
+  transition: .5s ease-out;
+  box-shadow: 0 0 10px rgb(217 217 217 / 80%);
+  -webkit-box-shadow: 0 0 10px rgb(179 179 179 / 80%);
+}
+
+.now-active-div{
+  z-index:99999999;
+}
+
+/* -------------------------------------------------------------------------- */
+/*  2. Customizer Prev Menu Modul                                             */
+/* -------------------------------------------------------------------------- */
+.hidden-zm-prev-menu-modul{
+  display:none!important;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*  2. Button Menu                                                            */
+/* -------------------------------------------------------------------------- */
+.zm-customizer-button-nav > li{
+  margin-left: 5px;
+}
+.zm-customizer-button-nav{
+  margin:5px 5px 0 0 !important;
+}
+.zm-customizer-button{
+  background:rgba(32,33,36,0.6) !important;
+  color:white !important;
+}
+.zm-customizer-button:hover{
+  background:rgba(32,33,36,0.8) !important;
+}
+
+/*necessary in customizer to show properly nav buttons menu in offcanvas*/
+.uk-offcanvas{
+  position:fixed !important;
+}

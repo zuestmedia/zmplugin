@@ -1,0 +1,582 @@
+/*	1. Customizer Controls CSS
+/* -------------------------------------------------------------------------- */
+#accordion-panel-globals{
+  margin-top:5px;
+}
+#accordion-panel-globals::before {
+  content: "ZMTheme Settings";
+  font-weight: 600;
+  display: block;
+  padding: 15px;
+  padding-left: 19px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.control-panel > .accordion-section-title,
+.control-section > .accordion-section-title {
+    background: none !important;
+    border-left: 4px solid #f0f0f1;
+}
+
+.customize-control input[type=color],
+.customize-control input[type=date],
+.customize-control input[type=datetime-local],
+.customize-control input[type=datetime],
+.customize-control input[type=email],
+.customize-control input[type=month],
+.customize-control input[type=number],
+.customize-control input[type=password],
+.customize-control input[type=search],
+.customize-control input[type=tel],
+.customize-control input[type=text],
+.customize-control input[type=time],
+.customize-control input[type=url],
+.customize-control input[type=week],
+.customize-control select,
+.customize-control textarea {
+    border: 1px solid #e3e3e3;
+    background-color: transparent;
+}
+
+/**
+* Template Editor Overlay
+*/
+.zm-modal {
+    padding-left:300px;
+    background-color:#0f7ae5eb;
+}
+@media screen and (max-width: 600px) {
+   .zm-modal {
+      padding-left:0;
+  }
+}
+@media screen and (min-width: 1667px) {
+  .zm-modal {
+      padding-left:18%;
+  }
+}
+.zm-modal-close{
+  top:25px;
+  right:25px;
+}
+
+/** toggleheader
+  * if display none is used, hide and show of sections is not possible!
+  * active callback not working anymore. see also customizer.js
+  */
+  .zm-toggled {
+    /*display:none !important; breaks everything!*/
+    visibility: hidden;
+    overflow: hidden;
+    height: 0px !important;
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+
+.customize-control-hidden {
+margin: 0 !important;
+padding: 0 !important;
+}
+.zm-toggleheader {
+margin: -12px;
+padding: 12px;
+cursor:pointer;
+font-weight: 600;
+font-size: 14px;
+border-left:4px solid #f0f0f1;
+border-bottom: 1px solid #dcdcde;
+}
+
+li[id*="_viewstatus"].customize-control,
+li[id*="_viewconditions"].customize-control,
+li[id*="_args_"].customize-control {
+padding: 0 4% 4% 4%;
+background-color: #f8f8f8 !important;
+margin: 0 -12px;
+}
+li[id*="_viewconditions"].customize-control {
+  margin-top:-11px;
+}
+
+li[class*="-zm-toggleheader"] {
+  margin: 0 -12px;
+  padding: 12px;
+  /*border-bottom: 1px solid #dcdcde;
+  background-color: #e9e9e9!important;*/
+}
+
+li[class*="-zm-toggleheader"] + li[id*="_args_"].customize-control,
+li[class*="-zm-toggleheader"] + li[id*="_viewstatus"].customize-control {
+  padding-top:4%;
+}
+
+.zmtoggleopen > .zm-toggleheader > span {
+  transform: rotate(-180deg);
+  transition: 0.4s;
+}
+.zmtoggleopen > .zm-toggleheader{
+	border-left:4px solid #2271b1;
+	color: #2271b1;
+}
+.zm-toggleheader:hover{
+	border-left:4px solid #2271b1;
+  color: #2271b1;
+}
+
+
+  /*	a) Form Select Field
+  /* -------------------------------------------------------------------------- */
+
+  select {
+      box-sizing: border-box;
+      margin: 0;
+      border-radius: 0;
+      font: inherit
+  }
+  select {
+      text-transform: none
+  }
+  select optgroup {
+      font: inherit;
+      font-weight: 700
+  }
+  select {
+      max-width: 100%;
+      width: 100%;
+      border: 0 none;
+      padding: 0 10px;
+      background: #f8f8f8;
+      color: #666
+  }
+  select:not([multiple]):not([size]) {
+      /*height: 40px;*/
+      vertical-align: middle;
+      display: inline-block
+  }
+  select:not(select) {
+      line-height: 40px
+  }
+  select[multiple],select[size] {
+      padding-top: 4px;
+      padding-bottom: 4px;
+      vertical-align: top
+  }
+  select:focus {
+      outline: 0;
+      background-color: #f8f8f8;
+      color: #666
+  }
+  select:disabled {
+      background-color: #f8f8f8;
+      color: #999
+  }
+  select:not([multiple]):not([size]) {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      padding-right: 20px;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+      background-repeat: no-repeat;
+      background-position: 100% 50%
+  }
+  select:not([multiple]):not([size])::-ms-expand {
+      display: none
+  }
+  select:not([multiple]):not([size]) option {
+      color: #444
+  }
+  select:not([multiple]):not([size]):disabled {
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23999%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23999%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A")
+  }
+  .customize-control select {
+    background-color: inherit;
+  }
+
+/**togglezm-switch*/
+.zm-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.zm-switch.small{
+  width: 40px;
+  height: 17px;
+}
+
+.zm-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.zm-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.zm-slider.inverted {
+  background-color: #007cba !important;
+}
+
+.zm-slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.zm-slider.small:before {
+  height: 13px !important;
+  width: 13px !important;
+  bottom: 2px !important;
+  left: 4px !important;
+}
+
+.zm-slider.small.inverted:before {
+  left: 24px !important;
+}
+
+.zm-slider.inverted:before {
+  left: 30px;
+}
+
+input:checked + .zm-slider {
+  background-color: #007cba;
+}
+
+input:checked + .zm-slider.inverted {
+  background-color: #ccc !important;
+}
+
+input:focus + .zm-slider {
+  box-shadow: 0 0 1px #007cba;
+}
+
+input:checked + .zm-slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+input:checked + .zm-slider.small:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+input:checked + .zm-slider.inverted:before {
+  -webkit-transform: translateX(-26px);
+  -ms-transform: translateX(-26px);
+  transform: translateX(-26px);
+}
+
+input:checked + .zm-slider.small.inverted:before {
+  -webkit-transform: translateX(-21px);
+  -ms-transform: translateX(-21px);
+  transform: translateX(-21px);
+}
+
+/* Rounded zm-sliders */
+.zm-slider.round {
+  border-radius: 34px;
+}
+
+.zm-slider.round:before {
+  border-radius: 50%;
+}
+
+/** toggle switch _viewconditions*/
+li[id*="_viewconditions_"] {
+  width: 96%;
+  /*background: #fff;*/
+  padding: 2%;
+  margin-top: -11px;
+  margin-bottom: 11px;
+  background-color: #f8f8f8 !important;
+  /*color: #333;*/
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+li[id*="_viewconditions_"] label {
+  font-weight:normal;
+}
+
+/** multiselect*/
+.zm-textarea-multiselect{
+  background-color: rgb(255, 255, 255) !important;
+  border-radius: 3px;
+  background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A) !important;
+  background-repeat: no-repeat !important;
+  background-position: 100% 50% !important;
+  background-size: 16px 16px !important;
+  padding: 6px 20px 6px 8px;
+  line-height: 2;
+  font-size: 14px;
+  height:40px;
+  min-height:40px;
+}
+.zm-textarea-multiselect:hover, .zm-textarea-multiselect:focus{
+  background-color: #f8f8f8 !important;
+  color:#016087;
+}
+.msf_multiselect li {
+  padding: 4px 4px 4px 10px;
+  margin-bottom: 0;
+}
+.msf_multiselect li:hover {
+  background-color:#39f;
+  color:white;
+}
+
+/**radio buttons*/
+.zm-radio-buttons{
+  box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+  border-radius: 3px;
+  font-size: 14px !important;
+}
+.zm-radio-buttons div {
+    border-bottom:1px solid #ddd;
+}
+.zm-radio-buttons > :not(.uk-first-column) {
+  border-left: 1px solid #ddd;
+}
+.zm-radio-buttons:hover{
+  border-color: #39f;
+}
+.zm-radio-buttons-control label{
+  font-size:14px;
+}
+.zm-radio-buttons-control input:checked + label{
+  opacity:0.8;
+  /*background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20viewBox%3D%220%200%2020%2020%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20data-svg%3D%22check%22%3E%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%221.1%22%20points%3D%224%2C10%208%2C15%2017%2C4%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E) !important;
+  background-repeat: no-repeat !important;
+  background-position: 100% 50% !important;
+  background-size: 25px 25px !important;*/
+}
+.zm-radio-buttons.active .zm-radio-buttons-control input:checked + label{
+  background-color:#39f;
+  color:#fff;
+}
+.zm-radio-buttons-control input:hover + label{
+  opacity:0.5;
+}
+
+
+/*.zm-radio-buttons-control input:checked + label .zm-radio-buttons-check{
+  display:inline-block !important;
+  vertical-align: middle;
+}*/
+label .zm-radio-buttons-active,
+label .zm-radio-buttons-inactive {
+  vertical-align: middle;
+  margin-left:-6px;
+}
+.zm-radio-buttons-control input:checked + label .zm-radio-buttons-active{
+  display:inline-block !important;
+  margin-left:-11px;
+}
+.zm-radio-buttons-control input:checked + label .zm-radio-buttons-inactive{
+  display:none !important;
+}
+
+/**
+  * zm-radionew
+  */
+  .zm-newradio-button input:checked + label .zmactive {
+    background-color: #1e87f0;
+  }
+  .zm-newradio-button input:checked + label .zmactive:hover {
+    background-color: #0f7ae5;
+  }
+  .zm-newradio-button input:checked + label .zm-newradio-active{
+    display:inline-block !important;
+  }
+  .zm-newradio-button input:checked + label .zm-newradio-inactive{
+    display:none !important;
+  }
+  .zmgridsmall{
+    margin-left: -3px
+  }
+  .zmgridsmall > * {
+    padding-left: 3px
+  }
+
+/**
+  * modifications zm-radiowidth && radioheight && radiocontainerwidth
+  */
+  .zm-newradio-button.radioheight .uk-button{
+    padding: 0 5px;
+    margin-left: 5px;
+  }
+  .zm-newradio-button.radiowidth .uk-button{
+    margin-top:5px;
+  }
+  .zm-newradio-button.radioheight input:checked + label .zmactive,
+  .zm-newradio-button.radiowidth input:checked + label .zmactive {
+    color:#fff;
+  }
+
+  /**range control*/
+  .customize-control-zm-range-marginremove{
+    margin-bottom:0;
+    padding-bottom: 0 !important;
+  }
+
+  /**
+   * Alpha Color Picker CSS
+   */
+   /**range control*/
+  .customize-control-zm-alphacolor-marginremove{
+   margin-bottom:0;
+    padding-bottom: 0 !important;
+  }
+
+.customize-control-alpha-color .wp-picker-container .iris-picker {
+	border-bottom:none;
+}
+
+.customize-control-alpha-color .wp-picker-container {
+	max-width: 257px;
+}
+
+.customize-control-alpha-color .wp-picker-open + .wp-picker-input-wrap {
+	width: 100%;
+}
+
+.customize-control-alpha-color .wp-picker-input-wrap input[type="text"].wp-color-picker.alpha-color-control {
+	float: left;
+	width: 195px;
+}
+
+.customize-control-alpha-color .wp-picker-input-wrap .button {
+	margin-left: 0;
+	float: right;
+}
+
+.wp-picker-container .wp-picker-open ~ .wp-picker-holder .alpha-color-picker-container {
+	display: block;
+}
+
+.alpha-color-picker-container {
+	border: 1px solid #dfdfdf;
+	border-top: none;
+	display: none;
+	background: #FFF;
+	padding: 0 11px 10px;
+	position: relative;
+  max-width: 233px;
+}
+
+.alpha-color-picker-container .ui-widget-content,
+.alpha-color-picker-container .ui-widget-header,
+.alpha-color-picker-wrap .ui-state-focus {
+	background: transparent;
+	border: none;
+}
+
+.alpha-color-picker-wrap a.iris-square-value:focus {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.alpha-color-picker-container .ui-slider {
+	position: relative;
+	z-index: 1;
+	height: 24px;
+	text-align: center;
+	margin: 0 auto;
+	width: 88%;
+	width: calc( 100% - 28px );
+}
+
+.alpha-color-picker-container .ui-slider-handle,
+.alpha-color-picker-container .ui-widget-content .ui-state-default {
+	color: #777;
+	background-color: #FFF;
+	text-shadow: 0 1px 0 #FFF;
+	text-decoration: none;
+	position: absolute;
+	z-index: 2;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	border: 1px solid #aaa;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin-top: -2px;
+	top: 0;
+	height: 26px;
+	width: 26px;
+	cursor: ew-resize;
+	font-size: 0;
+	padding: 0;
+	line-height: 27px;
+	margin-left: -14px;
+}
+
+.alpha-color-picker-container .ui-slider-handle.show-opacity {
+	font-size: 12px;
+}
+
+.alpha-color-picker-container .click-zone {
+	width: 14px;
+	height: 24px;
+	display: block;
+	position: absolute;
+	left: 10px;
+}
+
+.alpha-color-picker-container .max-click-zone {
+	right: 10px;
+	left: auto;
+}
+
+.alpha-color-picker-container .transparency {
+	height: 24px;
+	width: 100%;
+	background-color: #FFF;
+	background-image: url(../img/alphacolor-transparency-grid.png);
+	box-shadow: 0 0 5px rgba(0,0,0,0.4) inset;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 0;
+	margin-top: -24px;
+}
+
+@media only screen and (max-width: 782px) {
+	.customize-control-alpha-color .wp-picker-input-wrap input[type="text"].wp-color-picker.alpha-color-control {
+		width: 184px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.customize-control-alpha-color .wp-picker-input-wrap input[type="text"].wp-color-picker.alpha-color-control {
+		width: 172px;
+		height: 33px;
+	}
+}
+
+/*multicheckbox*/
+.zm-multicheckbox-label{
+  margin-top: 3px;
+}
+.zm-multicheckbox-virtual-input{
+  margin: 0 1px !important;
+}
+.zm-multicheckbox-buttons > label{
+  font-size:12px;
+}
