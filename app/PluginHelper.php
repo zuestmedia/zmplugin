@@ -19,6 +19,36 @@ class PluginHelper {
 
   }
 
+  static function getFileData($path){
+
+    //setting headers manually to also get ZMDLID
+    $headers_array = array(
+        'PluginName'  => 'Plugin Name',
+        'PluginURI'   => 'Plugin URI',
+        'ThemeName'   => 'Theme Name',
+        'ThemeURI'    => 'Theme URI',
+        'Version'     => 'Version',
+        'Description' => 'Description',
+        'Contributors' => 'Contributors',
+        'Author'      => 'Author',
+        'AuthorURI'   => 'Author URI',
+        /*'TextDomain'  => 'Text Domain',
+        'DomainPath'  => 'Domain Path',
+        'Network'     => 'Network',*/
+        'RequiresWP'  => 'Requires at least',
+        'Tested'      => 'Tested up to',
+        'RequiresPHP' => 'Requires PHP',
+        'ZMDLID'      => 'ZMDLID',//download id - unique for each plugin / theme
+        'ZMUPDAPI'    => 'ZMUPDAPI',//update api - 0. nothing set or off 1. zm, 2. wp (off can be choosen in settings...)
+        /*'UpdateURI'   => 'Update URI',*/
+    );
+
+    $plugin_data = get_file_data($path, $headers_array);
+
+    return $plugin_data;
+
+  }
+
   //get installed plugin version nr
   static function getInstalledPluginMetaDatabykey($pluginfolderslug,$key) {
 
@@ -26,7 +56,25 @@ class PluginHelper {
 
     if ( PluginHelper::getInstalledPluginStatus($pluginfolderslug) ) {
 
-      $plugin_data = get_plugin_data(WP_PLUGIN_DIR.'/'.$pluginfolderslug, false);
+      $plugin_data = PluginHelper::getFileData(WP_PLUGIN_DIR.'/'.$pluginfolderslug);
+
+      //$plugin_data = get_plugin_data(WP_PLUGIN_DIR.'/'.$pluginfolderslug, false);
+
+      $result = $plugin_data[$key];
+
+    }
+
+    return $result;
+
+  }
+
+  static function getThemeMetaDataByPathAndKey($path, $key){
+
+    $result = 0;
+
+    $plugin_data = PluginHelper::getFileData($path.'/style.css');
+
+    if ( is_array($plugin_data) && array_key_exists($key, $plugin_data) ) {
 
       $result = $plugin_data[$key];
 
@@ -358,7 +406,11 @@ class PluginHelper {
 
     }
 
-    PluginHelper::registerExtension($plugin_basename);
+    if($plugin_basename !== false){
+
+      PluginHelper::registerExtension($plugin_basename);
+
+    }
 
     //returns true if ext can be loaded, false if not
     return PluginHelper::doExtensionsCheck();
@@ -379,7 +431,11 @@ class PluginHelper {
 
     }
 
-    PluginHelper::registerExtension($plugin_basename);
+    if($plugin_basename !== false){
+
+      PluginHelper::registerExtension($plugin_basename);
+
+    }
 
     //returns true if ext can be loaded, false if not
     return PluginHelper::doExtensionsCheck();

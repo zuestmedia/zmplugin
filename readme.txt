@@ -1,9 +1,9 @@
 === ZMPlugin ===
 Contributors: zuestmedia
+Stable tag: 0.9.1
 Tags: editor, template-builder, customizer, zmtheme
 Requires at least: 4.7
 Tested up to: 6.0
-Stable tag: 0.9.0
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -30,6 +30,9 @@ Yes. The website management and config settings are working on all themes. The e
 2. This is the second screen shot
 
 == Changelog ==
+
+= 0.9.1 =
+* Connected with ZM Update API
 
 = 0.9.0 =
 * Initial release of ZMPlugin

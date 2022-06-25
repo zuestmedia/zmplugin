@@ -2,10 +2,12 @@
   /*
   Plugin Name: ZMPlugin
   Plugin URI: https://zmplugin.com/
-  Description: Customizer and Core functionality for all Themes and Plugins based on ZMFramework.
+  Description: ZMPlugin offers various website management and configuration settings and extends the customizer functionality for themes based on ZMTheme-Framework.
   Author: Michael Züst
   Author URI: https://zuestmedia.ch/
-  Version: 0.9.0
+  Version: 0.9.1
+  ZMDLID: 2myl7t6emmbu4819uojautl0m0fo2fdktoaw
+  ZMUPDAPI: zm
   */
 
 /**

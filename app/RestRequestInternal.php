@@ -32,7 +32,7 @@ class RestRequestInternal {
       $server = rest_get_server();
       $data = $server->response_to_data( $response, false );
 
-      var_dump($data);
+      //var_dump($data);
 
       //$json = wp_json_encode( $data );
 

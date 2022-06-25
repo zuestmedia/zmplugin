@@ -35,7 +35,9 @@ class RestRouteDesignData extends \ZMP\Plugin\RestRoute {
       global $zmplugin;
       $auth = new \ZMP\Pro\App( $zmplugin['zmpro']->getOptGroup() );
       $license_key = $auth->getSavedLicenseKey();
+      $domain = $auth->getDomain();
       $args['body']['license_key'] = $license_key;
+      $args['body']['domain'] = $domain;
     }
 
     //return $license_key;
