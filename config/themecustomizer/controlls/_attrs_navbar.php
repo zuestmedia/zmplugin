@@ -11,9 +11,10 @@ class _attrs_navbar extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls\BuildSi
     $this->label = __( 'Navbar', 'zmplugin' );
     $this->validation = 'json';
     $this->choices = array(
-      '{"uk-navbar":""}' =>  __( 'Default', 'zmplugin' ),
-      '{"uk-navbar":"dropbar:true;"}' =>  __( 'Drop', 'zmplugin'),
-      '{"uk-navbar":"dropbar:true;dropbar-mode:push;"}' =>  __( 'Drop (Mode Push)', 'zmplugin'),
+      '{"uk-navbar":""}' =>  __( 'Default (Dropdown)', 'zmplugin' ),
+      '{"uk-navbar":"dropbar:true;"}' =>  __( 'Dropbar', 'zmplugin'),
+      '{"uk-navbar":"mode:click;"}' =>  __( 'Dropdown by click', 'zmplugin'),
+      //'{"uk-navbar":"dropbar:true;dropbar-mode:push;"}' =>  __( 'Drop (Mode Push)', 'zmplugin'),
     );
 
   }

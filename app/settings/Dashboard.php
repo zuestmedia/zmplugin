@@ -21,7 +21,7 @@ class Dashboard {
       $this->form->setSettingsFields(1); //necessary hidden security and settings fields for options.php handler
 
       $this->form->addField('html',
-        $template->htmlSettingsFormAccordionStart(__('Installed','zmplugin'))
+        $template->htmlSettingsFormAccordionStart(__('Overview','zmplugin'))
       );
 
 
@@ -43,6 +43,12 @@ class Dashboard {
         $this->form->addField('html','</div>');
 
       $this->form->addField('html',
+        $template->htmlSettingsFormAccordionBetween(__('About ZMPlugin','zmplugin'),false)
+      );
+
+        $this->form->addField('html','<p>'. __('ZMPlugin offers various website management and configuration settings and extends the customizer functionality for themes based on ZMTheme-Framework.', 'zmplugin'). '</p>' );
+/*
+      $this->form->addField('html',
         $template->htmlSettingsFormAccordionBetween(__('Available','zmplugin'),false)
       );
 
@@ -62,7 +68,7 @@ class Dashboard {
         $this->form->addField('html','<p>Get list of beta add-ons from zmplugin.com via rest api. those add-ons are not yet released on wordpress.org and having instead a connection to own update-server-api.</p>');
 
       //$this->form->addField( 'html','<button class="zm-theme-save-button uk-button uk-button-primary uk-margin-top" type="submit"><span uk-icon="cog"></span> '.__('Save Changes').'</button>');
-
+*/
       $this->form->addField('html',
         $template->htmlSettingsFormAccordionEnd(false)
       );

@@ -150,7 +150,7 @@ class SettingsTemplate {
       $html = NULL;
 
       //start sidebar gridchild
-      $html .= '<div class="uk-width-1-5@l">';
+      $html .= '<div class="uk-width-1-5@l zmhiddenincustomizer">';
 
         //start sticky
         $html .= '<div uk-sticky="offset:50" class="uk-card uk-card-muted">';

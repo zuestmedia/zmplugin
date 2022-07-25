@@ -20,6 +20,10 @@ class com_navbar {
       $this->navbar_height->input_attrs['heading'] = __( 'Navbar Dimensions', 'zmplugin' );
     $this->navbar_padding = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_cssvar_padding(10,3);
 
+    $this->navbar_dropdown_background = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_cssvar_alphacolor_marginremove_hex(10,3);
+      $this->navbar_dropdown_background->label = __( 'Dropdown Colors', 'zmplugin' );
+      $this->navbar_dropdown_background->description = __( 'Background', 'zmplugin' );
+
   }
 
 }

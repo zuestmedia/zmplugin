@@ -67,7 +67,6 @@ class ThemeCustomizerInit {
               'heartbeat'
             )
           ),
-          array( 'js_slug' => 'zm-customize-control-multiselect-js' , 'js_url' => '/app/themecustomizer/js/customizer-control-multiselect.js', 'js_deps' => array('zm-customize-controls-js') ),
           array( 'js_slug' => 'zm-customize-control-alphacolor-js' , 'js_url' => '/app/themecustomizer/js/customizer-control-alphacolor.js', 'js_deps' => array('zm-customize-controls-js', 'wp-color-picker') ),
         )
       );

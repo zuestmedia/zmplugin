@@ -6,6 +6,8 @@ class _json extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_textarea {
 
   protected function default() {
 
+    parent::default();
+
     //Values
     $this->validation = 'json';
     $this->description = __( 'This input accepts only json.', 'zmplugin' );

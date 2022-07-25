@@ -8,8 +8,7 @@ class config {
 
     $this->pluginname = __( 'ZMPlugin', 'zmplugin' );
 
-    $this->version = '0.9.1';
-    $this->version_notice = __( 'Warning: Versions of ZMPlugin are not consistent!', 'zmplugin' );
+    $this->version = '0.9.2';
 
   }
 

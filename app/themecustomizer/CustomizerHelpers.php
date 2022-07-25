@@ -10,7 +10,7 @@ class CustomizerHelpers {
     $result = NULL;
 
     $text = NULL;
-    $link = ' data-control=\'{ "name":"'.$id.'", "type":"section" }\'';
+    $link = ' data-control=\'{ "name":"'.esc_attr( $id ).'", "type":"section" }\'';
     $icon = '<span class="uk-icon" uk-icon="plus"></span> ';
 
     $text2 = 'Settings';
@@ -24,7 +24,7 @@ class CustomizerHelpers {
     if( strpos($classname, 'Sidebar') !== false ){
       if($type == 'empty'){
         $text = 'Add a Widget';
-        $link = ' data-control=\'{ "name":"sidebar-widgets-'.$id.'", "type":"section" }\'';
+        $link = ' data-control=\'{ "name":"sidebar-widgets-'.esc_attr( $id ).'", "type":"section" }\'';
         if(strpos($id, '_defsidebar') !== false){
           //$link2 = str_replace('_defsidebar', '', $link2);
           $newid = str_replace('_defsidebar', '', $id);
@@ -109,7 +109,7 @@ class CustomizerHelpers {
       }
 
       $result .= '<div'.$classes.'>';
-        $result .= '<p>inactive module: '.$id.'</p>';
+        $result .= '<p>inactive module: '.esc_attr( $id ).'</p>';
       $result .= '</div>';
 
     }
@@ -120,8 +120,8 @@ class CustomizerHelpers {
 
   static function getHiddenSectionTemplate($id){
 
-    $result = '<div class="uk-hidden com_id_'.$id.' zm-customizer-component">';
-      $result .= '<p>hidden section: '.$id.'</p>';
+    $result = '<div class="uk-hidden com_id_'.esc_attr( $id ).' zm-customizer-component">';
+      $result .= '<p>hidden section: '.esc_attr( $id ).'</p>';
     $result .= '</div>';
 
     return $result;

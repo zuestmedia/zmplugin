@@ -205,7 +205,7 @@ class controlls extends \ZMP\Plugin\ExtendControlls {
     $this->section_class_visibility =                new _class_visibility(2,3,'settings','default');//in settings!
 
     $this->section_class_color_background =          new _class_color_background(20,3,'module','default','section_element');
-    $this->section_class_color_helpers =             new _class_color_helpers(21,4,'module','default','section_element');
+    $this->section_class_color_helpers =             new _class_color_helpers(21,3,'module','default','section_element');
 
     $this->section_class_skewy =                     new _class_skewy(22,4,'module','default','section_element');
 
@@ -274,7 +274,7 @@ class controlls extends \ZMP\Plugin\ExtendControlls {
 
     //ContainerSortableMain & ContainerSortableErrorPage
     $this->moduleouter_class_color_background =      new _class_color_background(20,3,'module','default','moduleouter_element');
-    $this->moduleouter_class_color_helpers =         new _class_color_helpers(21,4,'module','default','moduleouter_element');
+    $this->moduleouter_class_color_helpers =         new _class_color_helpers(21,3,'module','default','moduleouter_element');
      $this->moduleouter_background_image =           new _background_image(22,3,'module','default','moduleouter_element');
       $this->moduleouter_background_image_size =     new _background_image_size(23,3,'module','default','moduleouter_background_image');
       $this->moduleouter_class_background_img =      new _class_background_img(24,3,'module','default','moduleouter_background_image');

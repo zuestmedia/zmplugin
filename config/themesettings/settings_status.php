@@ -9,7 +9,7 @@ class settings_status {
     //Theme Mode
     $this->type = 'select';
     $this->label = __( 'Operating Mode', 'zmplugin' );
-    $this->description = __( 'In Default Configuration theme mode, all ZMTheme Settings saved with customizer will be omitted (not deleted).', 'zmplugin' );
+    $this->description = __( 'In default configuration mode, all ZMTheme settings saved with the Customizer and the Template Editor are ignored (not deleted).', 'zmplugin' );
     $this->validation = 'onetwo';
     /*$this->choices = array(
         array('option'=> __( 'Minimalist (Default configuration)', 'zmplugin' ),'value'=>'1'),

@@ -1,0 +1,4206 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: zmplugin-0.9.3\n"
+"POT-Creation-Date: 2022-07-25 21:18+0200\n"
+"PO-Revision-Date: 2022-07-25 21:18+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: .git\n"
+
+#: app/FormSettings.php:30
+msgid "There have been errors! Please check your input again."
+msgstr ""
+"Es sind Fehler aufgetreten! Bitte überprüfen Sie Ihre Eingaben noch einmal."
+
+#: app/PluginHelper.php:131
+msgid "Plugin Name:"
+msgstr ""
+
+#: app/PluginHelper.php:132
+msgid "Installed Version:"
+msgstr ""
+
+#: app/PluginHelper.php:133
+msgid "Required Version:"
+msgstr ""
+
+#: app/PluginHelper.php:134
+msgid "Plugin Activated?"
+msgstr ""
+
+#: app/PluginHelper.php:135
+msgid "Result:"
+msgstr ""
+
+#: app/PluginHelper.php:259 config/appsettings.php:10
+msgid "Inactive"
+msgstr ""
+
+#: app/PluginHelper.php:283
+msgid "Plugin Website"
+msgstr ""
+
+#: app/SettingsTemplate.php:105 app/themesettings/DesignExplorer.php:40
+#: config/settings.php:15 config/themesettings/defaults.php:20
+msgid "Pro"
+msgstr ""
+
+#: app/SettingsTemplate.php:259 config/themesettings/defaults.php:26
+msgid "Save Changes"
+msgstr ""
+
+#: app/settings/AppSettings.php:362
+msgid ""
+"By clicking Accept, you accept the storing of cookies on your device to "
+"enhance site navigation, analyze site usage, and assist in our marketing "
+"efforts."
+msgstr ""
+
+#: app/settings/AppSettings.php:588
+msgid "Cookie Notice"
+msgstr ""
+
+#: app/settings/AppSettings.php:594
+msgid "Accept"
+msgstr ""
+
+#: app/settings/AppSettings.php:600
+msgid "Decline"
+msgstr ""
+
+#: app/settings/Dashboard.php:24
+msgid "Overview"
+msgstr ""
+
+#: app/settings/Dashboard.php:30
+msgid "Installed Add-ons"
+msgstr ""
+
+#: app/settings/Dashboard.php:32
+msgid "Manage"
+msgstr ""
+
+#: app/settings/Dashboard.php:33
+msgid "Add new"
+msgstr ""
+
+#: app/settings/Dashboard.php:42
+#, php-format
+msgid "You have used %1$s of %2$s available Slots for Add-ons."
+msgstr "Sie haben %1$s von %2$s verfügbaren Slots für Add-ons verwendet."
+
+#: app/settings/Dashboard.php:46 config/settings.php:13
+msgid "About ZMPlugin"
+msgstr ""
+
+#: app/settings/Dashboard.php:49
+msgid ""
+"ZMPlugin offers various website management and configuration settings and "
+"extends the customizer functionality for themes based on ZMTheme-Framework."
+msgstr ""
+
+#: app/settings/Settings.php:32
+msgid "Private Mode"
+msgstr ""
+
+#: app/settings/Settings.php:39
+msgid "Redirect Visitors"
+msgstr ""
+
+#: app/settings/Settings.php:40
+#, fuzzy
+#| msgid ""
+#| "When you activate the private mode, all non-logged-in site visitors will "
+#| "be redirected to login-page or to a custom redirect url."
+msgid ""
+"When you activate this option, all non-logged-in site visitors will be "
+"redirected to login-page or to a custom redirect url."
+msgstr ""
+"Wenn Sie den privaten Modus aktivieren, werden alle nicht angemeldeten "
+"Besucher der Website zur Login-Seite oder zu einer benutzerdefinierten "
+"Umleitungsurl umgeleitet."
+
+#: app/settings/Settings.php:57
+msgid "Custom Redirect URL"
+msgstr ""
+
+#: app/settings/Settings.php:58
+msgid ""
+"By default visitors will be redirected to wp-login page. Place a custom URL "
+"where you want your visitors to land if not on login page. Don't forget to "
+"exclude this page."
+msgstr ""
+"Standardmäßig werden die Besucher auf die wp-Login-Seite umgeleitet. "
+"Platzieren Sie eine benutzerdefinierte URL, wo Ihre Besucher landen sollen, "
+"wenn sie nicht auf der Login-Seite sind. Vergessen Sie nicht, diese Seite "
+"auszuschließen."
+
+#: app/settings/Settings.php:74
+msgid "Excluded Pages"
+msgstr ""
+
+#: app/settings/Settings.php:75
+msgid ""
+"Add a commaseparated list of pages, that will be excluded from private mode. "
+"Use page-id's or page-slug's."
+msgstr ""
+"Fügen Sie eine kommagetrennte Liste von Seiten hinzu, die vom privaten Modus "
+"ausgeschlossen werden sollen. Verwenden Sie page-id's oder page-slug's."
+
+#: app/settings/Settings.php:90
+msgid "Tracking & Analytics"
+msgstr ""
+
+#: app/settings/Settings.php:93
+msgid "Matomo"
+msgstr ""
+
+#: app/settings/Settings.php:94
+msgid "Only works with self-hosted Matomo version."
+msgstr ""
+
+#: app/settings/Settings.php:100
+msgid "Server URL"
+msgstr ""
+
+#: app/settings/Settings.php:116
+msgid "Site-ID"
+msgstr ""
+
+#: app/settings/Settings.php:130
+msgid "No Cookie Tracking?"
+msgstr ""
+
+#: app/settings/Settings.php:132
+msgid ""
+"To load Matomo Analytics GDPR compliant without cookie consent, activate "
+"\"No Cookie Tracking\" on your Server and activate this option. So Matomo "
+"Analytics Script will be loaded without cookie consent question."
+msgstr ""
+
+#: app/settings/Settings.php:142
+msgid "Google Analytics 4"
+msgstr ""
+
+#: app/settings/Settings.php:148
+msgid "Measurement-ID"
+msgstr ""
+
+#: app/settings/Settings.php:159
+msgid "Google Tag Manager"
+msgstr ""
+
+#: app/settings/Settings.php:165
+msgid "Container-ID"
+msgstr ""
+
+#: app/settings/Settings.php:178
+msgid "Cookie Consent Banner"
+msgstr ""
+
+#: app/settings/Settings.php:182
+msgid ""
+"Load \"Tracking & Analytics\" Scripts only after Cookie Consent Banner has "
+"been accepted."
+msgstr ""
+
+#: app/settings/Settings.php:187
+msgid "Status"
+msgstr ""
+
+#: app/settings/Settings.php:201
+msgid "Text"
+msgstr ""
+
+#: app/settings/Settings.php:215
+msgid "Privacy URL"
+msgstr ""
+
+#: app/settings/Settings.php:229
+msgid "WP Dashboard"
+msgstr ""
+
+#: app/settings/Settings.php:236
+msgid "Dashboard Logo"
+msgstr ""
+
+#: app/settings/Settings.php:250
+msgid "Help Tabs"
+msgstr ""
+
+#: app/settings/Settings.php:265
+msgid "Footer Text"
+msgstr ""
+
+#: app/settings/Settings.php:278
+msgid "WP Login"
+msgstr ""
+
+#: app/settings/Settings.php:286
+msgid "Login Logo Title"
+msgstr ""
+
+#: app/settings/Settings.php:287
+msgid "Add a title instead of an image."
+msgstr ""
+
+#: app/settings/Settings.php:302
+msgid "Login Logo Image-URL"
+msgstr ""
+
+#: app/settings/Settings.php:318
+msgid "Login Logo Target-URL"
+msgstr ""
+
+#: app/settings/Settings.php:333
+msgid "Redirect after Login to Home"
+msgstr ""
+
+#: app/settings/SettingsInit.php:18 app/settings/SettingsInit.php:27
+msgid "Dashboard"
+msgstr ""
+
+#: app/settings/SettingsInit.php:52 app/settings/SettingsInit.php:56
+#: config/themecustomizer/section_headers.php:13
+msgid "Settings"
+msgstr ""
+
+#: app/themesettings/DesignExplorer.php:38
+msgid "Free"
+msgstr ""
+
+#: app/themesettings/DesignExplorer.php:73
+msgid "All"
+msgstr ""
+
+#: app/themesettings/DesignExplorer.php:178
+#: app/themesettings/DesignExplorer.php:208
+msgid "No image"
+msgstr ""
+
+#: app/themesettings/DesignExplorer.php:182
+msgid "Details"
+msgstr ""
+
+#: app/themesettings/DesignExplorer.php:214
+msgid "Last update"
+msgstr ""
+
+#: app/themesettings/DesignExplorer.php:216
+#: config/themesettings/defaults.php:27
+msgid "Version"
+msgstr ""
+
+#: app/themesettings/DesignExplorer.php:219
+#: config/themecustomizer/controlls/com_authorlink.php:10
+msgid "Author"
+msgstr ""
+
+#: app/themesettings/DesignExplorer.php:227
+msgid "Preview"
+msgstr ""
+
+#: app/themesettings/DesignExplorer.php:232
+msgid "Install"
+msgstr ""
+
+#: app/themesettings/DesignExplorer.php:235
+msgid "Installing"
+msgstr ""
+
+#: app/themesettings/DesignExplorer.php:238
+msgid "Installed"
+msgstr ""
+
+#: app/themesettings/DesignExplorer.php:241
+msgid "Failed"
+msgstr ""
+
+#: app/themesettings/DesignExplorer.php:246
+msgid "Full (Settings & Widgets)"
+msgstr ""
+
+#: app/themesettings/DesignExplorer.php:247
+msgid "Only settings"
+msgstr ""
+
+#: app/themesettings/DesignExplorer.php:251
+msgid "Note"
+msgstr ""
+
+#: app/themesettings/DesignExplorer.php:251
+msgid ""
+"A full install will overwrite and/or delete all existing widget blocks. If "
+"you don't want to lose your widget blocks, chose only settings install."
+msgstr ""
+"Bei einer vollständigen Installation werden alle vorhandenen Widgetblöcke "
+"überschrieben und/oder gelöscht. Wenn Sie Ihre Widget-Blöcke nicht verlieren "
+"möchten, wählen Sie nur die Installation der Einstellungen."
+
+#: app/themesettings/DesignExplorer.php:251
+msgid "Get help here"
+msgstr ""
+
+#: app/themesettings/ThemeSettings.php:35
+msgid "Cache cleaned."
+msgstr ""
+
+#: app/themesettings/ThemeSettings.php:43
+#: app/themesettings/ThemeSettings.php:50
+msgid "Design Explorer"
+msgstr ""
+
+#: app/themesettings/ThemeSettings.php:52
+msgid "Design Explorer Cache"
+msgstr ""
+
+#: app/themesettings/ThemeSettings.php:52
+msgid "Clean"
+msgstr ""
+
+#: app/themesettings/ThemeSettings.php:52
+#: app/themesettings/ThemeSettings.php:87
+msgid "Are you sure?"
+msgstr ""
+
+#: app/themesettings/ThemeSettings.php:57
+msgid ""
+"Discover all one-click installable designs for your ZMTheme here. The "
+"designs can be installed with or without blocks/widgets."
+msgstr ""
+
+#: app/themesettings/ThemeSettings.php:78
+msgid "ZMTheme was reset to defaults."
+msgstr ""
+
+#: app/themesettings/ThemeSettings.php:87
+msgid "Theme Config"
+msgstr ""
+
+#: app/themesettings/ThemeSettings.php:87
+msgid "Reset to default"
+msgstr ""
+
+#: app/themesettings/ThemeSettings.php:97
+#: app/themesettings/ThemeSettingsInit.php:55
+#: config/themecustomizer/controlls/sortable.php:13
+msgid "Template Editor"
+msgstr ""
+
+#: app/themesettings/ThemeSettings.php:114
+msgid "General Settings"
+msgstr ""
+
+#: app/themesettings/ThemeSettingsInit.php:57
+msgid ""
+"The \"Template-Editor\" lets you edit and extend all templates of this "
+"ZMTheme."
+msgstr ""
+
+#: config/appsettings.php:11
+msgid "Active"
+msgstr ""
+
+#: config/appsettings.php:15
+msgid "Show"
+msgstr ""
+
+#: config/appsettings.php:16
+msgid "Hide"
+msgstr ""
+
+#: config/appsettings.php:20
+msgid "No"
+msgstr ""
+
+#: config/appsettings.php:21
+msgid "Yes"
+msgstr ""
+
+#: config/config.php:9
+msgid "ZMPlugin"
+msgstr ""
+
+#: config/settings.php:9
+msgid "Need Help?"
+msgstr ""
+
+#: config/settings.php:14 config/themesettings/defaults.php:19
+msgid "Documentation"
+msgstr ""
+
+#: config/settings.php:18 config/themesettings/defaults.php:14
+#, php-format
+msgid "<b>Version:</b> %s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs.php:11
+msgid "Add custom attributes in simple JSON Format."
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs.php:18
+msgid "Grid Child Attributes:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs.php:22
+msgid "Section Attributes:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs.php:26
+msgid "Container Attributes:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs.php:30
+msgid "Grid Attributes:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs.php:34
+msgid "List Attributes:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs.php:39
+msgid "Module Outer Attributes:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs.php:43
+msgid "Module Attributes:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs.php:47
+msgid "Module Inner Attributes:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_grid.php:11
+msgid "Grid Attributes Grid"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_height.php:11
+msgid "Viewport Height"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_height.php:16
+#: config/themecustomizer/controlls/_attrs_scrollspy_animation.php:14
+#: config/themecustomizer/controlls/_attrs_sticky.php:14
+msgid "Off"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_height.php:17
+#: config/themecustomizer/controlls/_class_card_color_background.php:12
+#: config/themecustomizer/controlls/_class_color_background.php:15
+#: config/themecustomizer/controlls/_class_image_background_color.php:12
+#: config/themecustomizer/controlls/_class_skewy.php:15
+#: config/themecustomizer/controlls/_cssvar_font_family.php:16
+#: config/themecustomizer/controlls/_cssvar_fontstyle.php:16
+#: config/themecustomizer/controlls/_cssvar_text_transform.php:16
+#: config/themecustomizer/controlls/com_colors.php:65
+#: config/themecustomizer/controlls/com_colors.php:75
+#: config/themecustomizer/controlls/com_colors.php:86
+#: config/themecustomizer/controlls/com_colors.php:93
+msgid "Default"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_height.php:18
+msgid "Offset Top"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_height.php:19
+msgid "Offset Bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_height.php:20
+msgid "Expand"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_navbar.php:11
+msgid "Navbar"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_navbar.php:14
+msgid "Default (Dropdown)"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_navbar.php:15
+msgid "Dropbar"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_navbar.php:16
+msgid "Dropdown by click"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_scrollspy_animation.php:11
+msgid "Grid Animation"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_scrollspy_animation.php:15
+msgid "Fade"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_scrollspy_animation.php:16
+msgid "Scale Up"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_scrollspy_animation.php:17
+msgid "Scale Down"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_scrollspy_animation.php:18
+msgid "Slide Top"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_scrollspy_animation.php:19
+msgid "Slide Bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_scrollspy_animation.php:20
+msgid "Slide Left"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_scrollspy_animation.php:21
+msgid "Slide Right"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_scrollspy_animation.php:22
+msgid "Parallax Example"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_sticky.php:11
+msgid "Sticky"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_sticky.php:15
+msgid "Sticky at top"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_sticky.php:16
+msgid "Sticky until parent container ends"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_sticky.php:17
+msgid "Sticky slide top"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_sticky.php:18
+msgid "Sticky show on scroll up"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_sticky.php:19
+msgid "Sticky slide top w box-shadow"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_sticky.php:20
+msgid "Sticky changecolor default"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_sticky.php:21
+msgid "Sticky changecolor primary"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_sticky.php:22
+msgid "Sticky changecolor secondary"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_sticky.php:23
+msgid "Sticky changecolor muted"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_sticky.php:24
+msgid "Stickychangecolor transparent"
+msgstr ""
+
+#: config/themecustomizer/controlls/_background_image.php:23
+msgid "Background Image"
+msgstr ""
+
+#: config/themecustomizer/controlls/_background_image.php:24
+msgid "Add a custom Image."
+msgstr ""
+
+#: config/themecustomizer/controlls/_background_image_size.php:12
+msgid "Background Image Size:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class.php:11
+msgid "Add a class."
+msgstr ""
+
+#: config/themecustomizer/controlls/_class.php:19
+msgid "Core Class"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class.php:24
+msgid "Grid Child Class:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class.php:28
+msgid "Section Class:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class.php:32
+msgid "Container Class:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class.php:36
+msgid "Grid Class:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class.php:41
+msgid "Module Outer Class:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class.php:45
+msgid "Module Class:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class.php:49
+msgid "Module Inner Class:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class.php:54
+msgid "Block Class:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class.php:59
+msgid "Block Inner Class:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class.php:65
+msgid "Header Class:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class.php:69
+msgid "Meta Class:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class.php:73
+msgid "Meta Nav Class:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_background_img.php:11
+msgid "Background Image Style"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_background_img.php:12
+msgid "Define Background Image Style Settings."
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_background_mods.php:11
+msgid "Background Mods"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_background_mods.php:12
+msgid "Choose Background Style Modifications Settings."
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_background_mods.php:15
+msgid "No Repeat"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_background_mods.php:16
+msgid "Position Fixed"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_background_mods.php:17
+msgid "Image@s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_background_mods.php:18
+msgid "Image@m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_background_mods.php:19
+msgid "Image@l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_background_mods.php:20
+msgid "Image@xl"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_background_mods.php:21
+msgid "Blend Multiply"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_background_mods.php:22
+msgid "Blend Screen"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_background_mods.php:23
+msgid "Blend Overlay"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_background_mods.php:24
+msgid "Blend Darken"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_background_mods.php:25
+msgid "Blend Lighten"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_background_mods.php:26
+msgid "Blend Color Dodge"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_background_mods.php:27
+msgid "Blend Color Burn"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_background_mods.php:28
+msgid "Blend Hard Light"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_background_mods.php:29
+msgid "Blend Soft Light"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_background_mods.php:30
+msgid "Blend Difference"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_background_mods.php:31
+msgid "Blend Exclusion"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_background_mods.php:32
+msgid "Blend Hue"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_background_mods.php:33
+msgid "Blend Saturation"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_background_mods.php:34
+msgid "Blend Color"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_background_mods.php:35
+msgid "Blend Luminosity"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_background_pos.php:11
+msgid "Image Position"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_background_pos.php:12
+msgid "Choose Background Image Position."
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_body.php:11
+msgid "Body"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_body.php:12
+msgid "Choose out of different body paddings."
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_body.php:33
+msgid "Block Body"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_color_background.php:13
+#: config/themecustomizer/controlls/_class_color_background.php:16
+#: config/themecustomizer/controlls/_class_image_background_color.php:14
+#: config/themecustomizer/controlls/_class_skewy.php:16
+#: config/themecustomizer/controlls/com_colors.php:67
+msgid "Primary"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_color_background.php:14
+#: config/themecustomizer/controlls/_class_color_background.php:17
+#: config/themecustomizer/controlls/_class_image_background_color.php:15
+#: config/themecustomizer/controlls/_class_skewy.php:17
+#: config/themecustomizer/controlls/com_colors.php:70
+msgid "Secondary"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_color_background.php:15
+#: config/themecustomizer/controlls/_class_color_background.php:19
+msgid "Transparent"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_color_background.php:24
+msgid "Block Background Color"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:11
+msgid "Body Helpers"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:15
+#: config/themecustomizer/controlls/image_class.php:16
+msgid "Border: Rounded"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:16
+#: config/themecustomizer/controlls/image_class.php:17
+msgid "Border: Circle"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:17
+#: config/themecustomizer/controlls/image_class.php:18
+msgid "Border: Pill"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:19
+msgid "Overflow: Hidden"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:20
+msgid "Overflow: Auto"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:22
+#: config/themecustomizer/controlls/_class_text_helpers.php:54
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:55
+#: config/themecustomizer/controlls/_class_title.php:53
+msgid "Text Align: Justify"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:23
+#: config/themecustomizer/controlls/_class_text_helpers.php:55
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:56
+#: config/themecustomizer/controlls/_class_title.php:54
+msgid "Text Align: Left"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:24
+#: config/themecustomizer/controlls/_class_text_helpers.php:56
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:57
+#: config/themecustomizer/controlls/_class_title.php:55
+msgid "Text Align: Center"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:25
+#: config/themecustomizer/controlls/_class_text_helpers.php:57
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:58
+#: config/themecustomizer/controlls/_class_title.php:56
+msgid "Text Align: Right"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:28
+msgid "Box Shadow: Small"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:29
+msgid "Box Shadow: Medium"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:30
+msgid "Box Shadow: Large"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:31
+msgid "Box Shadow: XLarge"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:32
+msgid "Box Shadow: Bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:34
+msgid "Box Shadow Hover: Small"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:35
+msgid "Box Shadow Hover: Medium"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:36
+msgid "Box Shadow Hover: Large"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:37
+msgid "Box Shadow Hover: XLarge"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:42
+#: config/themecustomizer/controlls/_class_text_helpers.php:32
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:34
+msgid "Float: Left"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:43
+#: config/themecustomizer/controlls/_class_text_helpers.php:33
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:35
+msgid "Float: Right"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:44
+#: config/themecustomizer/controlls/_class_text_helpers.php:34
+msgid "Float: Clear Floats"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:47
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:30
+msgid "Display: Block"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:48
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:31
+msgid "Display: Inline"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:49
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:32
+msgid "Display: Inline-Block"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:51
+msgid "Positioning Parent: Inline-Block & Max-Width 100%"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:52
+msgid "Positioning Parent: + Clips Overflow"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:54
+msgid "Overlay"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:55
+msgid "Overlay: Default"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:56
+msgid "Overlay: Primary"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:58
+msgid "Position: Top"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:59
+msgid "Position: Left"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:60
+msgid "Position: Right"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:61
+msgid "Position: Bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:63
+msgid "Position: Cover"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:64
+msgid "Position: Center-Left-Out"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:65
+msgid "Position: Center-Right-Out"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:67
+msgid "Position: Top-Left"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:68
+msgid "Position: Top-Center"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:69
+msgid "Position: Top-Right"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:70
+msgid "Position: Center-Left"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:71
+msgid "Position: Center"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:72
+msgid "Position: Center-Right"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:73
+msgid "Position: Bottom-Left"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:74
+msgid "Position: Bottom-Center"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:75
+msgid "Position: Bottom-Right"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:77
+msgid "Position Mod: Small"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:78
+msgid "Position Mod: Medium"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:79
+msgid "Position Mod: Large"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:81
+msgid "Position Utility: Relative"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:82
+msgid "Position Utility: Absolute"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:83
+msgid "Position Utility: Fixed"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:84
+msgid "Position Utility: Z-Index"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:87
+msgid "Transition Trigger: Apply to Parent"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:89
+msgid "Transition: Fade"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:91
+msgid "Transition: Scale Up"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:92
+msgid "Transition: Scale Down"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:94
+msgid "Transition: Slide Top"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:95
+msgid "Transition: Slide Bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:96
+msgid "Transition: Slide Left"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:97
+msgid "Transition: Slide Right"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:99
+msgid "Transition: Slide Top Small"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:100
+msgid "Transition: Slide Bottom Small"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:101
+msgid "Transition: Slide Left Small"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:102
+msgid "Transition: Slide Right Small"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:104
+msgid "Transition: Slide Top Medium"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:105
+msgid "Transition: Slide Bottom Medium"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:106
+msgid "Transition: Slide Left Medium"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:107
+msgid "Transition: Slide Right Medium"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:110
+msgid "Animation Trigger: Apply to Parent"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:112
+msgid "Animation: Fade"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:114
+msgid "Animation: Scale Up"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:115
+msgid "Animation: Scale Down"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:117
+msgid "Animation: Slide Top"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:118
+msgid "Animation: Slide Bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:119
+msgid "Animation: Slide Left"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:120
+msgid "Animation: Slide Right"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:122
+msgid "Animation: Slide Top Small"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:123
+msgid "Animation: Slide Bottom Small"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:124
+msgid "Animation: Slide Left Small"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:125
+msgid "Animation: Slide Right Small"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:127
+msgid "Animation: Slide Top Medium"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:128
+msgid "Animation: Slide Bottom Medium"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:129
+msgid "Animation: Slide Left Medium"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:130
+msgid "Animation: Slide Right Medium"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:132
+#: config/themecustomizer/controlls/image_class.php:36
+msgid "Animation: Kenburns"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:133
+msgid "Animation: Shake"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:134
+msgid "Animation: Stroke (only with SVG)"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:136
+msgid "Animation Mod: Reverse"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:137
+msgid "Animation Mod: Fast"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:140
+msgid "Origin: Top-Left"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:141
+msgid "Origin: Top-Center"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:142
+msgid "Origin: Top-Right"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:143
+msgid "Origin: Center-Left"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:144
+msgid "Origin: Center-Right"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:145
+msgid "Origin: Bottom-Left"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:146
+msgid "Origin: Bottom-Center"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:147
+msgid "Origin: Bottom-Right"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:158
+msgid "Block Body Modifiers"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:10
+msgid "Grid:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:11
+msgid "Choose default width of child grid elements."
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:14
+msgid "Grid: Expand"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:15
+msgid "Grid: Expand / Stack @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:16
+msgid "Grid: Expand / Stack @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:17
+msgid "Grid: Expand / Stack @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:18
+msgid "Grid: Auto"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:19
+msgid "Grid: Auto / Stack @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:20
+msgid "Grid: Auto / Stack @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:21
+msgid "Grid: Auto / Stack @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:22
+msgid "Grid: 1-1"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:23
+msgid "Grid: 1-1 / Stack @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:24
+msgid "Grid: 1-1 / Stack @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:25
+msgid "Grid: 1-1 / Stack @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:26
+msgid "Grid: 1-2"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:27
+msgid "Grid: 1-2 / Stack @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:28
+msgid "Grid: 1-2 / Stack @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:29
+msgid "Grid: 1-2 / Stack @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:30
+msgid "Grid: 1-3"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:31
+msgid "Grid: 1-3 / Stack @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:32
+msgid "Grid: 1-3 / Stack @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:33
+msgid "Grid: 1-3 / Stack @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:34
+msgid "Grid: 1-4"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:35
+msgid "Grid: 1-4 / Stack @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:36
+msgid "Grid: 1-4 / Stack @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:37
+msgid "Grid: 1-4 / Stack @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:38
+msgid "Grid: 1-5"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:39
+msgid "Grid: 1-5 / Stack @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:40
+msgid "Grid: 1-5 / Stack @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:41
+msgid "Grid: 1-5 / Stack @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:42
+msgid "Grid: 1-6"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:43
+msgid "Grid: 1-6 / Stack @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:44
+msgid "Grid: 1-6 / Stack @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_child_width.php:45
+msgid "Grid: 1-6 / Stack @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_color_background.php:11
+msgid "Background Color"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_color_background.php:12
+msgid "Choose a background color."
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_color_background.php:18
+#: config/themecustomizer/controlls/_class_image_background_color.php:13
+#: config/themecustomizer/controlls/com_colors.php:79
+msgid "Muted"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_color_helpers.php:11
+msgid "Color Options"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_color_helpers.php:14
+msgid "Background Gradient"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_color_helpers.php:15
+msgid "Preserve Color"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_color_helpers.php:16
+msgid "Light on Dark Color"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_container.php:11
+msgid "Container Width"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_container.php:12
+msgid "Choose horizontal container width."
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_flex_horizontal.php:13
+msgid "Horizontal Align"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_flex_horizontal.php:16
+#: config/themecustomizer/controlls/_class_flex_vertical.php:16
+#: config/themecustomizer/controlls/_class_image_background_color.php:16
+#: config/themecustomizer/controlls/_class_text_align.php:16
+#: config/themecustomizer/controlls/list_item.php:21
+msgid "None"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_flex_horizontal.php:17
+#: config/themecustomizer/controlls/_class_flex_order.php:15
+#: config/themecustomizer/controlls/_class_text_align.php:17
+msgid "Left"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_flex_horizontal.php:18
+#: config/themecustomizer/controlls/_class_navbar_item_pos.php:18
+#: config/themecustomizer/controlls/_class_text_align.php:18
+msgid "Center"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_flex_horizontal.php:19
+#: config/themecustomizer/controlls/_class_flex_order.php:16
+#: config/themecustomizer/controlls/_class_text_align.php:19
+msgid "Right"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_flex_horizontal.php:28
+msgid "Navbar Horizontal Align"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_flex_order.php:11
+msgid "Responsive Order:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_flex_order.php:12
+msgid "Choose the position of element by screensize."
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_flex_order.php:17
+msgid "Left @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_flex_order.php:18
+msgid "Right @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_flex_order.php:19
+msgid "Left @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_flex_order.php:20
+msgid "Right @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_flex_order.php:21
+msgid "Left @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_flex_order.php:22
+msgid "Right @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_flex_order.php:23
+msgid "Left @xl"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_flex_order.php:24
+msgid "Right @xl"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_flex_vertical.php:13
+msgid "Vertical Align"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_flex_vertical.php:17
+msgid "Top"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_flex_vertical.php:18
+msgid "Middle"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_flex_vertical.php:19
+msgid "Bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_grid_mods.php:10
+msgid "Grid Modifier:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_grid_mods.php:11
+msgid "Modify the style of this grid."
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_grid_mods.php:14
+msgid "Gap: Small"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_grid_mods.php:15
+msgid "Gap: Medium"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_grid_mods.php:16
+msgid "Gap: Large"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_grid_mods.php:17
+msgid "Gap: Collapse"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_grid_mods.php:18
+msgid "Divider"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_grid_mods.php:19
+msgid "Match Height"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_grid_mods.php:20
+#: config/themecustomizer/controlls/_class_image_container_size.php:29
+msgid "Vertical Align: Top"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_grid_mods.php:21
+#: config/themecustomizer/controlls/_class_image_container_size.php:30
+msgid "Vertical Align: Middle"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_grid_mods.php:22
+#: config/themecustomizer/controlls/_class_image_container_size.php:31
+msgid "Vertical Align: Bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_grid_mods.php:23
+msgid "Vertical Align: Stretch"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_grid_mods.php:24
+msgid "Horizontal Align: Left"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_grid_mods.php:25
+msgid "Horizontal Align: Center"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_grid_mods.php:26
+msgid "Horizontal Align: Right"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_grid_mods.php:27
+msgid "Horizontal Align: Between"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_grid_mods.php:28
+msgid "Horizontal Align: Around"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_image_container_size.php:10
+msgid "Image Container Size"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_image_container_size.php:11
+msgid "Choose one or several size options for the featured image."
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_image_container_size.php:15
+msgid "Width: Wide"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_image_container_size.php:16
+msgid "Width: Full"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_image_container_size.php:21
+msgid "Height: Small (150px)"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_image_container_size.php:22
+msgid "Height: Medium (300px)"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_image_container_size.php:23
+msgid "Height: Small (450px)"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_image_container_size.php:25
+msgid "Max. Height: Small (150px)"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_image_container_size.php:26
+msgid "Max. Height: Medium (300px)"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_image_container_size.php:27
+msgid "Max. Height: Small (450px)"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_vertical.php:11
+msgid "Vertical Margin"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_vertical.php:14
+msgid "Margin"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_vertical.php:15
+msgid "Margin Top"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_vertical.php:16
+msgid "Margin Bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_vertical.php:17
+msgid "Small Margin"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_vertical.php:18
+msgid "Small Margin Top"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_vertical.php:19
+msgid "Small Margin Bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_vertical.php:20
+msgid "Medium Margin"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_vertical.php:21
+msgid "Medium Margin Top"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_vertical.php:22
+msgid "Medium Margin Bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_vertical.php:23
+msgid "Large Margin"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_vertical.php:24
+msgid "Large Margin Top"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_vertical.php:25
+msgid "Large Margin Bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_vertical.php:26
+msgid "X-Large Margin"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_vertical.php:27
+msgid "X-Large Margin Top"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_vertical.php:28
+msgid "X-Large Margin Bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_vertical.php:29
+msgid "Margin Remove"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_vertical.php:30
+msgid "Margin Remove Bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_vertical.php:31
+msgid "Margin Remove Top"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_vertical.php:32
+msgid "Margin Remove Adjacent"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_vertical.php:33
+msgid "Margin Remove First Child Top"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_vertical.php:34
+msgid "Margin Remove First Child bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_navbar_item_pos.php:13
+msgid "Navbar Position"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_navbar_item_pos.php:16
+msgid "Auto"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_navbar_item_pos.php:17
+msgid "Push Left"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_navbar_item_pos.php:19
+msgid "Push Right"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_section.php:11
+msgid "Padding Vertical"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_section.php:12
+msgid "Choose a vertical padding."
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_skewy.php:11
+msgid "Section Skew-Y"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_skewy.php:14
+msgid "No Skew-Y"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_align.php:13
+msgid "Text Align"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_align.php:20
+msgid "Justify"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:11
+msgid "Text helpers"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:15
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:15
+msgid "Type: Lead"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:16
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:16
+msgid "Type: Meta"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:18
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:18
+msgid "Font Size: Small"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:19
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:19
+msgid "Font Size: Default"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:20
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:20
+msgid "Font Size: Large"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:22
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:22
+#: config/themecustomizer/controlls/_class_title.php:24
+#: config/themecustomizer/controlls/link_class.php:23
+msgid "Font Weight: Lighter"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:23
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:23
+#: config/themecustomizer/controlls/_class_title.php:25
+#: config/themecustomizer/controlls/link_class.php:24
+msgid "Font Weight: Light"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:24
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:24
+#: config/themecustomizer/controlls/_class_title.php:26
+#: config/themecustomizer/controlls/link_class.php:25
+msgid "Font Weight: Normal"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:25
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:25
+#: config/themecustomizer/controlls/_class_title.php:27
+#: config/themecustomizer/controlls/link_class.php:26
+msgid "Font Weight: Bold"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:26
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:26
+#: config/themecustomizer/controlls/_class_title.php:28
+#: config/themecustomizer/controlls/link_class.php:27
+msgid "Font Weight: Bolder"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:28
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:28
+#: config/themecustomizer/controlls/_class_title.php:30
+#: config/themecustomizer/controlls/link_class.php:29
+msgid "Font Style: Italic"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:30
+msgid "Style: Drop cap"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:36
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:37
+#: config/themecustomizer/controlls/_class_title.php:35
+#: config/themecustomizer/controlls/link_class.php:31
+msgid "Text Transform: Capitalize"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:37
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:38
+#: config/themecustomizer/controlls/_class_title.php:36
+#: config/themecustomizer/controlls/link_class.php:32
+msgid "Text Transform: Uppercase"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:38
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:39
+#: config/themecustomizer/controlls/_class_title.php:37
+#: config/themecustomizer/controlls/link_class.php:33
+msgid "Text Transform: Lowercase"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:40
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:41
+#: config/themecustomizer/controlls/_class_title.php:39
+msgid "Text Decoration: None"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:42
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:43
+#: config/themecustomizer/controlls/_class_title.php:41
+msgid "Text Wrapping: Truncate"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:43
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:44
+#: config/themecustomizer/controlls/_class_title.php:42
+msgid "Text Wrapping: Break"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:44
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:45
+#: config/themecustomizer/controlls/_class_title.php:43
+msgid "Text Wrapping: No Wrap"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:46
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:47
+#: config/themecustomizer/controlls/_class_title.php:45
+msgid "Color: Muted"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:47
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:48
+#: config/themecustomizer/controlls/_class_title.php:46
+msgid "Color: Emphasis"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:48
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:49
+#: config/themecustomizer/controlls/_class_title.php:47
+msgid "Color: Primary"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:49
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:50
+#: config/themecustomizer/controlls/_class_title.php:48
+msgid "Color: Secondary"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:50
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:51
+#: config/themecustomizer/controlls/_class_title.php:49
+msgid "Color: Success"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:51
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:52
+#: config/themecustomizer/controlls/_class_title.php:50
+msgid "Color: Warning"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:52
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:53
+#: config/themecustomizer/controlls/_class_title.php:51
+msgid "Color: Danger"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:59
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:60
+#: config/themecustomizer/controlls/_class_title.php:58
+msgid "Text Align: Left @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:60
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:61
+#: config/themecustomizer/controlls/_class_title.php:59
+msgid "Text Align: Center @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:61
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:62
+#: config/themecustomizer/controlls/_class_title.php:60
+msgid "Text Align: Right @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:63
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:64
+#: config/themecustomizer/controlls/_class_title.php:62
+msgid "Text Align: Left @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:64
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:65
+#: config/themecustomizer/controlls/_class_title.php:63
+msgid "Text Align: Center @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:65
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:66
+#: config/themecustomizer/controlls/_class_title.php:64
+msgid "Text Align: Right @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:67
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:68
+#: config/themecustomizer/controlls/_class_title.php:66
+msgid "Text Align: Left @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:68
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:69
+#: config/themecustomizer/controlls/_class_title.php:67
+msgid "Text Align: Center @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:69
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:70
+#: config/themecustomizer/controlls/_class_title.php:68
+msgid "Text Align: Right @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:71
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:72
+#: config/themecustomizer/controlls/_class_title.php:70
+msgid "Text Align: Left @xl"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:72
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:73
+#: config/themecustomizer/controlls/_class_title.php:71
+msgid "Text Align: Center @xl"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:73
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:74
+#: config/themecustomizer/controlls/_class_title.php:72
+msgid "Text Align: Right @xl"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:75
+msgid "Columns: 2"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:76
+msgid "Columns: 3"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:77
+msgid "Columns: 4"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:78
+msgid "Columns: 5"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:79
+msgid "Columns: 6"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:81
+msgid "Columns: 2 @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:82
+msgid "Columns: 3 @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:83
+msgid "Columns: 4 @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:84
+msgid "Columns: 5 @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:85
+msgid "Columns: 6 @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:87
+msgid "Columns: 2 @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:88
+msgid "Columns: 3 @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:89
+msgid "Columns: 4 @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:90
+msgid "Columns: 5 @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:91
+msgid "Columns: 6 @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:93
+msgid "Columns: 2 @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:94
+msgid "Columns: 3 @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:95
+msgid "Columns: 4 @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:96
+msgid "Columns: 5 @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:97
+msgid "Columns: 6 @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:99
+msgid "Columns: 2 @xl"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:100
+msgid "Columns: 3 @xl"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:101
+msgid "Columns: 4 @xl"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:102
+msgid "Columns: 5 @xl"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:103
+msgid "Columns: 6 @xl"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers.php:105
+msgid "Column-Divider"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:11
+msgid "Helper Classes"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:10
+msgid "Title Style"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:11
+msgid "Choose one or several styling options for titles."
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:15
+msgid "Type: Article Title"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:16
+msgid "Type: Card Title"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:18
+msgid "Font Size: Small Heading"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:19
+msgid "Font Size: Medium Heading"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:20
+msgid "Font Size: Large Heading"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:21
+msgid "Font Size: X-Large Heading"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:22
+msgid "Font Size: 2X-Large Heading"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:32
+msgid "Style: Divider"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:33
+msgid "Style: Bullet"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:74
+msgid "Margin: Top & Bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:75
+msgid "Margin: Top"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:76
+msgid "Margin: Bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:77
+msgid "Margin: Small Top & Bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:78
+msgid "Margin: Small Top"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:79
+msgid "Margin: Small Bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:80
+msgid "Margin: Medium Top & Bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:81
+msgid "Margin: Medium Top"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:82
+msgid "Margin: Medium Bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:83
+msgid "Margin: Large Top & Bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:84
+msgid "Margin: Large Top"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:85
+msgid "Margin: Large Bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:86
+msgid "Margin: X-Large Top & Bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:87
+msgid "Margin: X-Large Top"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:88
+msgid "Margin: X-Large Bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:89
+msgid "Margin: Remove"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:90
+msgid "Margin: Remove Bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:91
+msgid "Margin: Remove Top"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_title.php:99
+msgid "Menu Title Style:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_visibility.php:11
+msgid "Responsive Visibility"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_visibility.php:12
+msgid "Show or hide this Element on different devices."
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_visibility.php:15
+msgid "Hide on Mobile"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_visibility.php:16
+msgid "Hide on Tablet"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_visibility.php:17
+msgid "Hide on Desktop"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:11
+msgid "Width:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:12
+msgid "Choose the width of this element."
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:15
+msgid "Width: Expand"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:16
+msgid "Width: Expand / Stack @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:17
+msgid "Width: Expand / Stack @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:18
+msgid "Width: Expand / Stack @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:19
+msgid "Width: Auto"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:20
+msgid "Width: Auto / Stack @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:21
+msgid "Width: Auto / Stack @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:22
+msgid "Width: Auto / Stack @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:23
+msgid "Width: 1-1"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:24
+msgid "Width: 1-1 / Stack @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:25
+msgid "Width: 1-1 / Stack @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:26
+msgid "Width: 1-1 / Stack @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:27
+msgid "Width: 1-2"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:28
+msgid "Width: 1-2 / Stack @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:29
+msgid "Width: 1-2 / Stack @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:30
+msgid "Width: 1-2 / Stack @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:31
+msgid "Width: 1-3"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:32
+msgid "Width: 1-3 / Stack @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:33
+msgid "Width: 1-3 / Stack @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:34
+msgid "Width: 1-3 / Stack @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:35
+msgid "Width: 2-3"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:36
+msgid "Width: 2-3 / Stack @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:37
+msgid "Width: 2-3 / Stack @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:38
+msgid "Width: 2-3 / Stack @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:39
+msgid "Width: 1-4"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:40
+msgid "Width: 1-4 / Stack @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:41
+msgid "Width: 1-4 / Stack @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:42
+msgid "Width: 1-4 / Stack @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:43
+msgid "Width: 3-4"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:44
+msgid "Width: 3-4 / Stack @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:45
+msgid "Width: 3-4 / Stack @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:46
+msgid "Width: 3-4 / Stack @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:47
+msgid "Width: 1-5"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:48
+msgid "Width: 1-5 / Stack @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:49
+msgid "Width: 1-5 / Stack @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:50
+msgid "Width: 1-5 / Stack @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:51
+msgid "Width: 2-5"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:52
+msgid "Width: 2-5 / Stack @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:53
+msgid "Width: 2-5 / Stack @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:54
+msgid "Width: 2-5 / Stack @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:55
+msgid "Width: 3-5"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:56
+msgid "Width: 3-5 / Stack @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:57
+msgid "Width: 3-5 / Stack @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:58
+msgid "Width: 3-5 / Stack @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:59
+msgid "Width: 4-5"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:60
+msgid "Width: 4-5 / Stack @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:61
+msgid "Width: 4-5 / Stack @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:62
+msgid "Width: 4-5 / Stack @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:63
+msgid "Width: 1-6"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:64
+msgid "Width: 1-6 / Stack @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:65
+msgid "Width: 1-6 / Stack @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:66
+msgid "Width: 1-6 / Stack @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:67
+msgid "Width: 5-6"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:68
+msgid "Width: 5-6 / Stack @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:69
+msgid "Width: 5-6 / Stack @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_width.php:70
+msgid "Width: 5-6 / Stack @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_background_skewy.php:11
+msgid "Skew-Y"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_font_family.php:11
+msgid "Font Family"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_font_family.php:17
+msgid "DejaVu Sans Mono"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_font_family.php:18
+msgid "Arial"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_font_family.php:19
+msgid "Arial Black"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_font_family.php:20
+msgid "Helvetica"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_font_family.php:21
+msgid "Impact"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_font_family.php:22
+msgid "Lucida Sans Unicode"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_font_family.php:23
+msgid "Tahoma"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_font_family.php:24
+msgid "Trebuchet MS"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_font_family.php:25
+msgid "Verdana"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_font_family.php:26
+msgid "American Typewriter"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_font_family.php:27
+msgid "Didot"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_font_family.php:28
+msgid "Garamond"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_font_family.php:29
+msgid "Georgia"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_font_family.php:30
+msgid "Times New Roman"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_font_family.php:31
+msgid "Bradley Hand"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_font_family.php:32
+msgid "Brush Script MT"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_font_family.php:33
+msgid "Comic Sans MS"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_font_family.php:34
+msgid "Courier Mono"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_font_family.php:35
+msgid "Courier New Mono"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_font_family.php:36
+msgid "Lucida Console Mono"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_font_family.php:37
+msgid "Monaco Mono"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_font_family.php:38
+msgid "Luminari"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_font_weight.php:11
+msgid "Font weight"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_fontsize_px.php:11
+#: config/themecustomizer/controlls/_cssvar_fontsize_rem.php:11
+msgid "Font size"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_fontstyle.php:11
+msgid "Font style"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_fontstyle.php:17
+msgid "Italic"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_gradient_colstop.php:11
+#: config/themecustomizer/controlls/_cssvar_gradient_colstop_marginremove.php:11
+msgid "Linear Color Stop"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_gradient_deg.php:11
+#: config/themecustomizer/controlls/com_colors.php:24
+#: config/themecustomizer/controlls/com_colors.php:35
+#: config/themecustomizer/controlls/com_colors.php:46
+#: config/themecustomizer/controlls/com_colors.php:57
+msgid "Angle"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_height.php:11
+msgid "Height"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_letter_spacing.php:11
+msgid "Letter spacing"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_lineheight.php:11
+msgid "Line height"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_padding.php:11
+msgid "Padding"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_text_transform.php:11
+msgid "Text Transform"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_text_transform.php:17
+msgid "Lowercase"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_text_transform.php:18
+msgid "Uppercase"
+msgstr ""
+
+#: config/themecustomizer/controlls/_cssvar_text_transform.php:19
+msgid "Capitalize"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:11
+msgid "Choose Tag."
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:14
+#: config/themecustomizer/controlls/_element.php:81
+msgid "div"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:15
+msgid "span"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:16
+msgid "p"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:17
+msgid "ul"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:18
+#: config/themecustomizer/controlls/_element.php:82
+msgid "li"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:19
+#: config/themecustomizer/controlls/_element.php:83
+msgid "section"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:20
+#: config/themecustomizer/controlls/_element.php:84
+msgid "header"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:21
+#: config/themecustomizer/controlls/_element.php:85
+msgid "footer"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:22
+msgid "article"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:23
+#: config/themecustomizer/controlls/_element.php:86
+msgid "nav"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:24
+msgid "Not in use"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:34
+msgid "Gridchild Element:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:40
+msgid "Section Element:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:46
+msgid "Container Element:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:52
+msgid "Grid Element:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:60
+msgid "Module Outer Container Tag:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:66
+msgid "Module Container Tag:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:72
+msgid "Module Inner Container Tag:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:78
+msgid "Block Container Element:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:91
+msgid "Block Inner Container Tag:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:98
+msgid "Menu Title:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:99
+msgid "Choose heading element or hide menu title."
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:101
+msgid "Hide Title"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:102
+#: config/themecustomizer/controlls/title_element.php:15
+msgid "Heading 1"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:103
+#: config/themecustomizer/controlls/title_element.php:16
+msgid "Heading 2"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:104
+#: config/themecustomizer/controlls/title_element.php:17
+msgid "Heading 3"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:105
+#: config/themecustomizer/controlls/title_element.php:18
+msgid "Heading 4"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:106
+#: config/themecustomizer/controlls/title_element.php:19
+msgid "Heading 5"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:107
+#: config/themecustomizer/controlls/title_element.php:20
+msgid "Heading 6"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:108
+#: config/themecustomizer/controlls/list_item.php:19
+#: config/themecustomizer/controlls/title_element.php:22
+msgid "Div"
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:13
+msgid "This input accepts only json."
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:21
+msgid "Static HTML content:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:22
+msgid "Add JSON string to generate static HTML content"
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:30
+msgid "Author box json:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:31
+msgid ""
+"Available variables to get data: __image__, __title__, __link__, __text__."
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:43
+msgid "Query Args:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:44
+msgid ""
+"Add here your custom WP_Query in JSON Format. The simplest way is to use an "
+"online WP_Query Generator."
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:52
+msgid "Search Icon:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:53
+msgid "Add JSON string to generate HTML for Search Icon."
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:61
+msgid "Menu Items Wrap:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:62
+msgid "Edit the list wrapper of menu items here."
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:69
+msgid "Menu Walker Level 1 Wrap:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:76
+msgid "Menu Walker Level 2 Wrap:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:83
+msgid "Menu Walker Level 3 Wrap:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:90
+msgid "List Wrapper:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:97
+msgid "Title Wrapper:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:104
+msgid "Author Link Wrapper:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:111
+msgid "Header grid attributes:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:118
+msgid "Meta Wrap:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:125
+msgid "Caption Wrap:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:132
+msgid "Last Wrap:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:139
+msgid "Next Wrap:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:146
+msgid "Logo Wrapper:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:147
+#, php-format
+msgid ""
+"The variable %1$s gets the site-title, %2$s is used for subtitle. Eg. %1$s - "
+"%2$s displays YOUR-SITE-TITLE - YOUR-SUBTITLE."
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:154
+msgid "Toggle Button Wrapper:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:155
+msgid "Edit Json of Mobile Menu Toggle Button."
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:162
+msgid "Separator Wrapper:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:163
+msgid "Create HTML Separator with json."
+msgstr ""
+
+#: config/themecustomizer/controlls/_slug.php:18
+msgid "Meta Key:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_text.php:11
+msgid ""
+"Change text. <b>Note:</b> Please use translation files if you wish to make "
+"your site multilingual."
+msgstr ""
+
+#: config/themecustomizer/controlls/_text.php:19
+msgid "Date:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_text.php:20
+#, php-format
+msgid "Use the sprintf() variables %1$s and %2$s to display date and/or time."
+msgstr ""
+
+#: config/themecustomizer/controlls/_text.php:24
+#: config/themecustomizer/controlls/date_format.php:11
+msgid "Date Format:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_text.php:25
+msgid ""
+"Use PHP date function to display date in custom format. Eg. \"F j, Y\" to "
+"get \"March 10, 2001\"."
+msgstr ""
+
+#: config/themecustomizer/controlls/_text.php:29
+msgid "Time Format:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_text.php:30
+msgid ""
+"Use PHP date function to display time in custom format. Eg. \"g:i a\" to get "
+"\"5:16 pm\"."
+msgstr ""
+
+#: config/themecustomizer/controlls/_textarea.php:11
+msgid "Add custom text."
+msgstr ""
+
+#: config/themecustomizer/controlls/_textarea.php:19
+msgid "Moderation Note 1:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_textarea.php:23
+msgid "Moderation Note 2:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_toggle_true_false.php:14
+msgid "Choose true or false."
+msgstr ""
+
+#: config/themecustomizer/controlls/_wrap.php:12
+msgid "Add JSON to create wrapping HTML Elements."
+msgstr ""
+
+#: config/themecustomizer/controlls/_wrap.php:19
+msgid "Module HTML Wrap:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_wrap.php:23
+msgid "Moduleinner HTML Wrap:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_wrap.php:27
+msgid "Grid HTML Wrap:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_wrap.php:31
+msgid "Content HTML Wrap:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_wrap.php:35
+msgid "Legacy Widget Title HTML Wrap:"
+msgstr ""
+
+#: config/themecustomizer/controlls/after.php:11
+msgid "After Text:"
+msgstr ""
+
+#: config/themecustomizer/controlls/autofocus.php:11
+msgid "Autofocus"
+msgstr ""
+
+#: config/themecustomizer/controlls/avatar_container_class.php:11
+msgid "Avatar Container Class:"
+msgstr ""
+
+#: config/themecustomizer/controlls/avatar_size.php:11
+msgid "Avatar Size:"
+msgstr ""
+
+#: config/themecustomizer/controlls/before.php:11
+msgid "Before Text:"
+msgstr ""
+
+#: config/themecustomizer/controlls/button_class.php:11
+msgid "Button Class:"
+msgstr ""
+
+#: config/themecustomizer/controlls/caption.php:11
+msgid "Image Caption:"
+msgstr ""
+
+#: config/themecustomizer/controlls/caption.php:14
+msgid "Hide Caption"
+msgstr ""
+
+#: config/themecustomizer/controlls/caption.php:15
+msgid "Show Caption"
+msgstr ""
+
+#: config/themecustomizer/controlls/checkbox_class.php:11
+msgid "Checkbox Class:"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_archivecontainer.php:10
+msgid "Archive Container"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_archivecontainer.php:14
+#: config/themecustomizer/controlls/com_archivetitle.php:13
+#: config/themecustomizer/controlls/com_articlecontainer.php:14
+#: config/themecustomizer/controlls/com_articlelistcontainer.php:13
+#: config/themecustomizer/controlls/com_authorbox.php:13
+#: config/themecustomizer/controlls/com_blocks.php:14
+#: config/themecustomizer/controlls/com_content.php:14
+#: config/themecustomizer/controlls/com_custom_blocks.php:14
+#: config/themecustomizer/controlls/com_custom_container.php:14
+#: config/themecustomizer/controlls/com_custom_html.php:14
+#: config/themecustomizer/controlls/com_custom_nav.php:14
+#: config/themecustomizer/controlls/com_custom_queryloop.php:14
+#: config/themecustomizer/controlls/com_image.php:13
+#: config/themecustomizer/controlls/com_main.php:15
+#: config/themecustomizer/controlls/com_menu.php:13
+#: config/themecustomizer/controlls/com_navcontainer.php:13
+#: config/themecustomizer/controlls/com_navcontainer_inner.php:13
+#: config/themecustomizer/controlls/com_offcanvas_toggle.php:14
+#: config/themecustomizer/controlls/com_offcanvascontainer.php:13
+#: config/themecustomizer/controlls/com_search.php:13
+#: config/themecustomizer/controlls/com_section.php:11
+#: config/themecustomizer/controlls/com_section_blocks.php:13
+#: config/themecustomizer/controlls/com_section_extensions.php:14
+#: config/themecustomizer/controlls/com_section_html.php:13
+#: config/themecustomizer/controlls/com_section_nav.php:14
+#: config/themecustomizer/controlls/com_section_offcanvas.php:14
+#: config/themecustomizer/controlls/com_section_queryloop.php:13
+#: config/themecustomizer/controlls/com_separator.php:13
+#: config/themecustomizer/controlls/com_site_logo.php:14
+#: config/themecustomizer/controlls/presets.php:17
+msgid "⬤ Default"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_archivecontainer.php:14
+#: config/themecustomizer/controlls/com_archivetitle.php:13
+#: config/themecustomizer/controlls/com_articlecontainer.php:14
+#: config/themecustomizer/controlls/com_articlelistcontainer.php:13
+#: config/themecustomizer/controlls/com_authorbox.php:13
+#: config/themecustomizer/controlls/com_blocks.php:14
+#: config/themecustomizer/controlls/com_content.php:14
+#: config/themecustomizer/controlls/com_custom_blocks.php:14
+#: config/themecustomizer/controlls/com_custom_container.php:14
+#: config/themecustomizer/controlls/com_custom_html.php:14
+#: config/themecustomizer/controlls/com_custom_nav.php:14
+#: config/themecustomizer/controlls/com_custom_queryloop.php:14
+#: config/themecustomizer/controlls/com_image.php:13
+#: config/themecustomizer/controlls/com_main.php:15
+#: config/themecustomizer/controlls/com_menu.php:13
+#: config/themecustomizer/controlls/com_navcontainer.php:13
+#: config/themecustomizer/controlls/com_navcontainer_inner.php:13
+#: config/themecustomizer/controlls/com_offcanvas_toggle.php:14
+#: config/themecustomizer/controlls/com_offcanvascontainer.php:13
+#: config/themecustomizer/controlls/com_search.php:13
+#: config/themecustomizer/controlls/com_section.php:11
+#: config/themecustomizer/controlls/com_section_blocks.php:13
+#: config/themecustomizer/controlls/com_section_extensions.php:14
+#: config/themecustomizer/controlls/com_section_html.php:13
+#: config/themecustomizer/controlls/com_section_nav.php:14
+#: config/themecustomizer/controlls/com_section_offcanvas.php:14
+#: config/themecustomizer/controlls/com_section_queryloop.php:13
+#: config/themecustomizer/controlls/com_separator.php:13
+#: config/themecustomizer/controlls/com_site_logo.php:14
+#: config/themecustomizer/controlls/presets.php:17
+msgid "↺ Reset to Default"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_archivedescription.php:10
+msgid "Archive Description"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_archivetitle.php:10
+msgid "Archive Title"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_articlecontainer.php:10
+msgid "Article Container"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_articlelinks.php:10
+msgid "Last / Next Articlelinks"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_articlelistcontainer.php:9
+msgid "Article List Container"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_authorbox.php:10
+msgid "Author Box"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_blocks.php:10
+msgid "Sidebar"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_blocks.php:11
+msgid "Edit Sidebar."
+msgstr ""
+
+#: config/themecustomizer/controlls/com_body.php:9
+msgid "Global Body"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_body.php:10
+msgid "Edit Body Settings."
+msgstr ""
+
+#: config/themecustomizer/controlls/com_body.php:14
+msgid ""
+"The Default Body Font Size is the base-size of all other Fonts (1rem is "
+"equal to \"Global Body Font Size\")."
+msgstr ""
+
+#: config/themecustomizer/controlls/com_body.php:21
+msgid "Text Lead"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_body.php:25
+msgid "Text Large"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_body.php:29
+msgid "Article Meta"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_body.php:33
+msgid "Text Meta"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_body.php:37
+msgid "Text Small"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_colors.php:9
+msgid "Global Colors"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_colors.php:10
+msgid "Edit global Color settings here."
+msgstr ""
+
+#: config/themecustomizer/controlls/com_colors.php:20
+msgid "Background Default"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_colors.php:21
+#: config/themecustomizer/controlls/com_colors.php:32
+#: config/themecustomizer/controlls/com_colors.php:43
+#: config/themecustomizer/controlls/com_colors.php:54
+msgid "Color & Gradient"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_colors.php:26
+#: config/themecustomizer/controlls/com_colors.php:37
+#: config/themecustomizer/controlls/com_colors.php:48
+#: config/themecustomizer/controlls/com_colors.php:59
+msgid "Ratio 1"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_colors.php:28
+#: config/themecustomizer/controlls/com_colors.php:39
+#: config/themecustomizer/controlls/com_colors.php:50
+#: config/themecustomizer/controlls/com_colors.php:61
+msgid "Ratio 2"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_colors.php:31
+msgid "Background Primary"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_colors.php:42
+msgid "Background Secondary"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_colors.php:53
+msgid "Background Muted"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_colors.php:64
+msgid "Background Skew-Y"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_colors.php:74
+msgid "Global Text Colors"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_colors.php:77
+msgid "Emphasis"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_colors.php:81
+msgid "Inverse"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_colors.php:85
+msgid "Global Link Colors"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_colors.php:88
+msgid "Hover"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_colors.php:92
+msgid "Global Border Color"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_colors.php:97
+msgid "Global Alert Colors"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_colors.php:98
+msgid "Success"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_colors.php:100
+msgid "Warning"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_colors.php:102
+msgid "Danger"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_comments.php:10
+msgid "Comments"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_comments.php:11
+msgid ""
+"Change Comment Settings in <a href=\"javascript:wp.customize."
+"section( 'comments__commentscontainer' ).focus();\">\"ZMTheme: Comments\"</a>"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_commentscontainer.php:10
+msgid "Comments Container"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_commentscounter.php:10
+msgid "Comment Counter"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_commentsform.php:10
+msgid "Comments Form"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_commentslist.php:10
+msgid "Comments List"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_commentspagination.php:10
+msgid "Comments Pagination"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_content.php:10
+msgid "Center Content Container"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_custom_blocks.php:12
+msgid "Custom Blocks"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_custom_blocks.php:19
+#: config/themecustomizer/controlls/com_section.php:16
+msgid "Module Container"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_custom_container.php:12
+msgid "Custom Container"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_custom_html.php:12
+msgid "Custom HTML"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_custom_nav.php:12
+msgid "Custom Nav"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_custom_queryloop.php:12
+msgid "Custom QueryLoop"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_date.php:10
+msgid "Date"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_editlink.php:10
+msgid "Edit Post Link"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_errorpage.php:10
+msgid "404 Errorpage"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_heading.php:9
+msgid "Global Heading"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_heading.php:10
+msgid "Edit Heading Settings."
+msgstr ""
+
+#: config/themecustomizer/controlls/com_heading.php:18
+msgid "Article Title"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_heading.php:22
+msgid "Card Title"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_heading.php:26
+msgid "H1"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_heading.php:30
+msgid "H2"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_heading.php:34
+msgid "H3"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_heading.php:38
+msgid "H4"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_heading.php:42
+msgid "H5"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_heading.php:46
+msgid "H6"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_heading.php:50
+msgid "Heading 2xLarge"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_heading.php:54
+msgid "Heading xLarge"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_heading.php:58
+msgid "Heading Large"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_heading.php:62
+msgid "Heading Medium"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_heading.php:66
+msgid "Heading Small"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_image.php:10
+msgid "Featured Image"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_linkpages.php:10
+msgid "Link Pages"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_logo.php:9
+msgid "Global Logo"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_logo.php:10
+msgid "Edit Logo Settings."
+msgstr ""
+
+#: config/themecustomizer/controlls/com_logo.php:21
+msgid "Global Logo Colors"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_logo.php:22
+msgid "Color on Light Background"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_logo.php:24
+msgid "Hover color on Light Background"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_logo.php:26
+msgid "Color on Dark Background"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_logo.php:28
+msgid "Hover Color on Dark Background"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_main.php:10
+msgid "Center Main Container"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_menu.php:9
+msgid "Menu"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_menu.php:10
+msgid "Edit Menu."
+msgstr ""
+
+#: config/themecustomizer/controlls/com_navbar.php:10
+msgid "Global Navbar"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_navbar.php:11
+msgid "Edit Navbar Settings."
+msgstr ""
+
+#: config/themecustomizer/controlls/com_navbar.php:20
+msgid "Navbar Dimensions"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_navbar.php:24
+msgid "Dropdown Colors"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_navbar.php:25
+msgid "Background"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_navcontainer.php:9
+msgid "Navigation Container"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_navcontainer_inner.php:9
+msgid "Navigation Inner Container"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_offcanvas_toggle.php:10
+msgid "Toggle Button"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_offcanvas_toggle.php:11
+msgid "Define and edit the Toggle Button of the Mobile Menu view."
+msgstr ""
+
+#: config/themecustomizer/controlls/com_offcanvascontainer.php:9
+msgid "Offcanvas Container"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_pagination.php:10
+msgid "Pagination"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_powered.php:10
+msgid "Powered by"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_powered.php:11
+msgid "This is a Premium-Only Setting."
+msgstr ""
+
+#: config/themecustomizer/controlls/com_readmore.php:10
+msgid "Read More Button"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_search.php:10
+msgid "Search Form"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_separator.php:10
+msgid "Separator"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_site_logo.php:10
+msgid "Site Logo"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_site_logo.php:11
+msgid "Edit Site Logo."
+msgstr ""
+
+#: config/themecustomizer/controlls/com_taxonomyterms.php:10
+msgid "Taxonomy"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_template.php:10
+msgid "Template"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_the_content.php:10
+#: config/themecustomizer/section_headers.php:27
+msgid "Content"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_title.php:10
+#: config/themecustomizer/controlls/title_sprintf.php:11
+msgid "Title"
+msgstr ""
+
+#: config/themecustomizer/controlls/comment_body_class.php:11
+msgid "Comment Body Class:"
+msgstr ""
+
+#: config/themecustomizer/controlls/comment_container_class.php:11
+msgid "Comment Container Class:"
+msgstr ""
+
+#: config/themecustomizer/controlls/comments_closed_message.php:11
+msgid "\"Comments are closed\"-Message:"
+msgstr ""
+
+#: config/themecustomizer/controlls/custom_section_content.php:16
+msgid "Select Custom Section Content"
+msgstr ""
+
+#: config/themecustomizer/controlls/custom_section_content.php:18
+msgid "Default Widget"
+msgstr ""
+
+#: config/themecustomizer/controlls/date_format.php:12
+msgid ""
+"Use PHP date function to display date and/or time in custom format. Eg. \"F "
+"j, Y, g:i a\" to get \"March 10, 2001, 5:16 pm\"."
+msgstr ""
+
+#: config/themecustomizer/controlls/excerpt.php:11
+msgid "Only Excerpt?"
+msgstr ""
+
+#: config/themecustomizer/controlls/excerpt.php:12
+msgid "Choose out of showing the complete article, the excerpt or automatic."
+msgstr ""
+
+#: config/themecustomizer/controlls/excerpt.php:15
+msgid "Complete Article"
+msgstr ""
+
+#: config/themecustomizer/controlls/excerpt.php:16
+msgid "Auto Excerpt"
+msgstr ""
+
+#: config/themecustomizer/controlls/excerpt.php:18
+msgid "Manual Excerpt or nothing"
+msgstr ""
+
+#: config/themecustomizer/controlls/excerpt_length.php:11
+msgid "Excerpt Length:"
+msgstr ""
+
+#: config/themecustomizer/controlls/excluded_terms.php:11
+msgid "Excluded Terms:"
+msgstr ""
+
+#: config/themecustomizer/controlls/excluded_terms.php:12
+msgid "Add a comma-separated list of post-id's to exclude."
+msgstr ""
+
+#: config/themecustomizer/controlls/form_class.php:11
+msgid "Form Class:"
+msgstr ""
+
+#: config/themecustomizer/controlls/icon_ratio.php:11
+msgid "Icon ratio:"
+msgstr ""
+
+#: config/themecustomizer/controlls/icon_type.php:11
+msgid "Icon"
+msgstr ""
+
+#: config/themecustomizer/controlls/icon_type.php:12
+msgid "Choose Icon."
+msgstr ""
+
+#: config/themecustomizer/controlls/icon_type.php:15
+msgid "navbar-toggle-icon"
+msgstr ""
+
+#: config/themecustomizer/controlls/icon_type.php:16
+msgid "Plus"
+msgstr ""
+
+#: config/themecustomizer/controlls/icon_type.php:17
+msgid "plus-circle"
+msgstr ""
+
+#: config/themecustomizer/controlls/icon_type.php:18
+msgid "more"
+msgstr ""
+
+#: config/themecustomizer/controlls/icon_type.php:19
+msgid "more-vertical"
+msgstr ""
+
+#: config/themecustomizer/controlls/icon_type.php:20
+msgid "menu"
+msgstr ""
+
+#: config/themecustomizer/controlls/icon_type.php:21
+msgid "list"
+msgstr ""
+
+#: config/themecustomizer/controlls/icon_type.php:22
+msgid "table"
+msgstr ""
+
+#: config/themecustomizer/controlls/icon_type.php:23
+msgid "Grid"
+msgstr ""
+
+#: config/themecustomizer/controlls/icon_type.php:24
+msgid "thumbnails"
+msgstr ""
+
+#: config/themecustomizer/controlls/image_class.php:10
+msgid "Image Style"
+msgstr ""
+
+#: config/themecustomizer/controlls/image_class.php:11
+msgid "Choose one or several styling options for Images."
+msgstr ""
+
+#: config/themecustomizer/controlls/image_class.php:20
+msgid "Blend Mode: Multiply"
+msgstr ""
+
+#: config/themecustomizer/controlls/image_class.php:21
+msgid "Blend Mode: Screen"
+msgstr ""
+
+#: config/themecustomizer/controlls/image_class.php:22
+msgid "Blend Mode: Overlay"
+msgstr ""
+
+#: config/themecustomizer/controlls/image_class.php:23
+msgid "Blend Mode: Darken"
+msgstr ""
+
+#: config/themecustomizer/controlls/image_class.php:24
+msgid "Blend Mode: Lighten"
+msgstr ""
+
+#: config/themecustomizer/controlls/image_class.php:25
+msgid "Blend Mode: Color Dodge"
+msgstr ""
+
+#: config/themecustomizer/controlls/image_class.php:26
+msgid "Blend Mode: Color Burn"
+msgstr ""
+
+#: config/themecustomizer/controlls/image_class.php:27
+msgid "Blend Mode: Hard Light"
+msgstr ""
+
+#: config/themecustomizer/controlls/image_class.php:28
+msgid "Blend Mode: Soft Light"
+msgstr ""
+
+#: config/themecustomizer/controlls/image_class.php:29
+msgid "Blend Mode: Difference"
+msgstr ""
+
+#: config/themecustomizer/controlls/image_class.php:30
+msgid "Blend Mode: Exclusion"
+msgstr ""
+
+#: config/themecustomizer/controlls/image_class.php:31
+msgid "Blend Mode: Hue"
+msgstr ""
+
+#: config/themecustomizer/controlls/image_class.php:32
+msgid "Blend Mode: Saturation"
+msgstr ""
+
+#: config/themecustomizer/controlls/image_class.php:33
+msgid "Blend Mode: Color"
+msgstr ""
+
+#: config/themecustomizer/controlls/image_class.php:34
+msgid "Blend Mode: Luminosity"
+msgstr ""
+
+#: config/themecustomizer/controlls/image_link.php:11
+msgid "Image Link:"
+msgstr ""
+
+#: config/themecustomizer/controlls/image_link.php:14
+#: config/themecustomizer/controlls/linked.php:14
+msgid "No Link"
+msgstr ""
+
+#: config/themecustomizer/controlls/image_link.php:15
+msgid "Postlink"
+msgstr ""
+
+#: config/themecustomizer/controlls/image_link.php:16
+msgid "Imagelink"
+msgstr ""
+
+#: config/themecustomizer/controlls/image_size.php:11
+msgid "Image Size:"
+msgstr ""
+
+#: config/themecustomizer/controlls/image_size.php:14
+msgid "Thumbnail"
+msgstr ""
+
+#: config/themecustomizer/controlls/image_size.php:15
+msgid "Medium"
+msgstr ""
+
+#: config/themecustomizer/controlls/image_size.php:16
+msgid "Large"
+msgstr ""
+
+#: config/themecustomizer/controlls/image_size.php:17
+msgid "Full"
+msgstr ""
+
+#: config/themecustomizer/controlls/in_same_term.php:11
+msgid "In same term:"
+msgstr ""
+
+#: config/themecustomizer/controlls/in_same_term.php:12
+msgid "Choose wether to show posts only from same taxonomy term or all."
+msgstr ""
+
+#: config/themecustomizer/controlls/in_same_term.php:15
+msgid "False"
+msgstr ""
+
+#: config/themecustomizer/controlls/in_same_term.php:16
+msgid "True"
+msgstr ""
+
+#: config/themecustomizer/controlls/input_class.php:11
+msgid "Input Class:"
+msgstr ""
+
+#: config/themecustomizer/controlls/item_position.php:12
+msgid "Item Position"
+msgstr ""
+
+#: config/themecustomizer/controlls/label_class.php:11
+msgid "Label Class:"
+msgstr ""
+
+#: config/themecustomizer/controlls/link_class.php:11
+msgid "Link Style"
+msgstr ""
+
+#: config/themecustomizer/controlls/link_class.php:12
+msgid "Choose Link Styles."
+msgstr ""
+
+#: config/themecustomizer/controlls/link_class.php:16
+msgid "Link: Text"
+msgstr ""
+
+#: config/themecustomizer/controlls/link_class.php:17
+msgid "Link: Heading"
+msgstr ""
+
+#: config/themecustomizer/controlls/link_class.php:18
+msgid "Link:  Reset"
+msgstr ""
+
+#: config/themecustomizer/controlls/link_class.php:19
+msgid "Link: Muted"
+msgstr ""
+
+#: config/themecustomizer/controlls/link_class.php:20
+msgid "Link: Toggle"
+msgstr ""
+
+#: config/themecustomizer/controlls/link_class.php:21
+msgid "Link: Disabled"
+msgstr ""
+
+#: config/themecustomizer/controlls/link_class.php:35
+msgid "Button: Default"
+msgstr ""
+
+#: config/themecustomizer/controlls/link_class.php:36
+msgid "Button: Primary"
+msgstr ""
+
+#: config/themecustomizer/controlls/link_class.php:37
+msgid "Button: Secondary"
+msgstr ""
+
+#: config/themecustomizer/controlls/link_class.php:38
+msgid "Button: Text"
+msgstr ""
+
+#: config/themecustomizer/controlls/link_class.php:39
+msgid "Button: Link"
+msgstr ""
+
+#: config/themecustomizer/controlls/link_class.php:40
+msgid "Button: Danger"
+msgstr ""
+
+#: config/themecustomizer/controlls/link_class.php:42
+msgid "Button Size: Small"
+msgstr ""
+
+#: config/themecustomizer/controlls/link_class.php:43
+msgid "Button Size: Large"
+msgstr ""
+
+#: config/themecustomizer/controlls/link_text.php:11
+msgid "Link Text:"
+msgstr ""
+
+#: config/themecustomizer/controlls/link_url.php:11
+msgid "Link URL:"
+msgstr ""
+
+#: config/themecustomizer/controlls/link_url.php:12
+msgid "Set an external URL."
+msgstr ""
+
+#: config/themecustomizer/controlls/linked.php:11
+#: config/themecustomizer/controlls/linked.php:15
+msgid "Linked"
+msgstr ""
+
+#: config/themecustomizer/controlls/list_item.php:13
+msgid "List Item:"
+msgstr ""
+
+#: config/themecustomizer/controlls/list_item.php:14
+#: config/themecustomizer/controlls/title_element.php:12
+msgid "Choose HTML Tag."
+msgstr ""
+
+#: config/themecustomizer/controlls/list_item.php:17
+#: config/themecustomizer/controlls/title_element.php:21
+msgid "Paragraph"
+msgstr ""
+
+#: config/themecustomizer/controlls/list_item.php:18
+msgid "Li"
+msgstr ""
+
+#: config/themecustomizer/controlls/list_item.php:20
+#: config/themecustomizer/controlls/title_element.php:23
+msgid "Span"
+msgstr ""
+
+#: config/themecustomizer/controlls/menu_container_class.php:11
+msgid "Menu Container Class:"
+msgstr ""
+
+#: config/themecustomizer/controlls/menu_ul_class.php:11
+msgid "Menu List Class:"
+msgstr ""
+
+#: config/themecustomizer/controlls/module_view_status.php:14
+msgid "Show or hide: "
+msgstr ""
+
+#: config/themecustomizer/controlls/module_view_status.php:15
+msgid "Globally show or hide modul."
+msgstr ""
+
+#: config/themecustomizer/controlls/more_than_one_comment.php:11
+msgid "More than one Comments Text:"
+msgstr ""
+
+#: config/themecustomizer/controlls/next_or_number.php:11
+msgid "Next or Number:"
+msgstr ""
+
+#: config/themecustomizer/controlls/next_or_number.php:12
+msgid "Choose wether to show \"last and next page\" or \"page-numbers\"."
+msgstr ""
+
+#: config/themecustomizer/controlls/next_or_number.php:15
+msgid "Page-Numbers"
+msgstr ""
+
+#: config/themecustomizer/controlls/next_or_number.php:16
+msgid "Last-Next-Page"
+msgstr ""
+
+#: config/themecustomizer/controlls/next_text.php:11
+msgid "Next Text:"
+msgstr ""
+
+#: config/themecustomizer/controlls/no_comments.php:11
+msgid "No Comments Text:"
+msgstr ""
+
+#: config/themecustomizer/controlls/offcanvas_module.php:11
+msgid "Offcanvas Module"
+msgstr ""
+
+#: config/themecustomizer/controlls/offcanvas_module.php:12
+msgid "Connect this button to a offcanvas or modal module."
+msgstr ""
+
+#: config/themecustomizer/controlls/one_comment.php:11
+msgid "One Comment Text:"
+msgstr ""
+
+#: config/themecustomizer/controlls/parent_container.php:12
+msgid "Parent Container"
+msgstr ""
+
+#: config/themecustomizer/controlls/placeholder.php:11
+msgid "Placeholder Text:"
+msgstr ""
+
+#: config/themecustomizer/controlls/posts_templates_object.php:11
+msgid "Template Object"
+msgstr ""
+
+#: config/themecustomizer/controlls/posts_templates_object.php:12
+msgid "Chose Template Object to Render posts."
+msgstr ""
+
+#: config/themecustomizer/controlls/posts_templates_object.php:17
+msgid "Posts"
+msgstr ""
+
+#: config/themecustomizer/controlls/powered_text.php:11
+msgid "Powered Text:"
+msgstr ""
+
+#: config/themecustomizer/controlls/presets.php:11
+msgid "Select Preset"
+msgstr ""
+
+#: config/themecustomizer/controlls/prev_next.php:11
+msgid "Show or hide Prev / Next:"
+msgstr ""
+
+#: config/themecustomizer/controlls/prev_text.php:11
+msgid "Previous Text:"
+msgstr ""
+
+#: config/themecustomizer/controlls/read_more.php:11
+msgid "Read More Text:"
+msgstr ""
+
+#: config/themecustomizer/controlls/show_all.php:11
+msgid "Show All Pages:"
+msgstr ""
+
+#: config/themecustomizer/controlls/sortable.php:10
+msgid "Sortable Sections"
+msgstr ""
+
+#: config/themecustomizer/controlls/sortable.php:11
+msgid "Drag and Drop the items to sort modules or sections."
+msgstr ""
+
+#: config/themecustomizer/controlls/sticky_class.php:11
+msgid "Sticky Class:"
+msgstr ""
+
+#: config/themecustomizer/controlls/taxonomy.php:11
+msgid "Select a Taxonomy Term"
+msgstr ""
+
+#: config/themecustomizer/controlls/template_part.php:11
+msgid "Template:"
+msgstr ""
+
+#: config/themecustomizer/controlls/template_part.php:12
+msgid ""
+"You can choose custom static templates here, if there are files in template-"
+"parts folder. Checkout the example! <b>Note:</b> Be aware that static "
+"templates do not support all settings in customizer as the sortable function "
+"eg."
+msgstr ""
+
+#: config/themecustomizer/controlls/template_part.php:14
+msgid "Default Behavior"
+msgstr ""
+
+#: config/themecustomizer/controlls/text.php:11
+msgid "Text:"
+msgstr ""
+
+#: config/themecustomizer/controlls/text_separator.php:12
+msgid "Text Separator:"
+msgstr ""
+
+#: config/themecustomizer/controlls/textarea_class.php:11
+msgid "Textarea Class:"
+msgstr ""
+
+#: config/themecustomizer/controlls/title.php:11
+msgid "Title:"
+msgstr ""
+
+#: config/themecustomizer/controlls/title_element.php:11
+msgid "Title Tag:"
+msgstr ""
+
+#: config/themecustomizer/controlls/title_sprintf.php:12
+#, php-format
+msgid ""
+"Use the sprintf() variable %s to get the archive name. Leave empty to get "
+"default preformated WordPress values."
+msgstr ""
+
+#: config/themecustomizer/controlls/view_status.php:11
+msgid "Where to show this section:"
+msgstr ""
+
+#: config/themecustomizer/controlls/view_status.php:12
+msgid ""
+"Globally show or hide sections or choose out of the custom selection fields."
+msgstr ""
+
+#: config/themecustomizer/controlls/view_status.php:16
+msgid "Show on all Pages"
+msgstr ""
+
+#: config/themecustomizer/controlls/view_status.php:17
+msgid "Hide on all Pages"
+msgstr ""
+
+#: config/themecustomizer/controlls/view_status.php:18
+msgid "Use Custom Settings"
+msgstr ""
+
+#: config/themecustomizer/panels.php:13
+msgid "ZMTheme: "
+msgstr ""
+
+#: config/themecustomizer/panels.php:14
+msgid "Here you can edit Theme Settings."
+msgstr ""
+
+#: config/themecustomizer/panels.php:21
+msgid "Global Settings"
+msgstr ""
+
+#: config/themecustomizer/panels.php:22
+msgid "Define here global theme settings & styles affecting all Modules."
+msgstr ""
+
+#: config/themecustomizer/panels.php:29
+msgid "Sections: "
+msgstr ""
+
+#: config/themecustomizer/panels.php:30
+msgid ""
+"Section templates: The header, center and footer of this themes consists of "
+"sections. Sort, edit and style sections here."
+msgstr ""
+
+#: config/themecustomizer/panels.php:36
+msgid "Archive: "
+msgstr ""
+
+#: config/themecustomizer/panels.php:37
+msgid "Template of the archive container in archive view."
+msgstr ""
+
+#: config/themecustomizer/panels.php:43
+msgid "Posts Template: "
+msgstr ""
+
+#: config/themecustomizer/panels.php:44
+msgid "Template of a post list item in archive view."
+msgstr ""
+
+#: config/themecustomizer/panels.php:50
+msgid "Single Template: "
+msgstr ""
+
+#: config/themecustomizer/panels.php:51
+msgid "Template of a single post view."
+msgstr ""
+
+#: config/themecustomizer/panels.php:57
+msgid "Page Template: "
+msgstr ""
+
+#: config/themecustomizer/panels.php:58
+msgid "Template of a page view."
+msgstr ""
+
+#: config/themecustomizer/panels.php:64
+msgid "Custom Template: "
+msgstr ""
+
+#: config/themecustomizer/panels.php:65
+msgid "Template of a custom singular view."
+msgstr ""
+
+#: config/themecustomizer/panels.php:71
+msgid "Navigation: "
+msgstr ""
+
+#: config/themecustomizer/panels.php:72
+msgid "Template of a navigation."
+msgstr ""
+
+#: config/themecustomizer/panels.php:78
+msgid "Offcanvas: "
+msgstr ""
+
+#: config/themecustomizer/panels.php:79
+msgid "Template of an offcanvas navigation."
+msgstr ""
+
+#: config/themecustomizer/panels.php:85
+msgid "Comments Template"
+msgstr ""
+
+#: config/themecustomizer/panels.php:86
+msgid "Template of comments."
+msgstr ""
+
+#: config/themecustomizer/section_headers.php:20
+msgid "Module"
+msgstr ""
+
+#: config/themecustomizer/section_headers.php:34
+msgid "HTML"
+msgstr ""
+
+#: config/themecustomizer/section_headers.php:42
+msgid "Developer"
+msgstr ""
+
+#: config/themesettings/defaults.php:9
+msgid "General"
+msgstr ""
+
+#: config/themesettings/defaults.php:10
+msgid ""
+"If you need to, you can even edit all theme settings programmaticaly by "
+"creating and editing module or config files in your child theme :)"
+msgstr ""
+
+#: config/themesettings/defaults.php:12
+msgid "Need help?"
+msgstr ""
+
+#: config/themesettings/defaults.php:18
+msgid "About ZMTheme"
+msgstr ""
+
+#: config/themesettings/defaults.php:23
+msgid "Edit theme in customizer:"
+msgstr ""
+
+#: config/themesettings/defaults.php:24
+msgid "Customize"
+msgstr ""
+
+#: config/themesettings/settings_status.php:11
+msgid "Operating Mode"
+msgstr ""
+
+#: config/themesettings/settings_status.php:12
+#, fuzzy
+#| msgid ""
+#| "In Default Configuration theme mode, all ZMTheme Settings saved with "
+#| "customizer will be omitted (not deleted)."
+msgid ""
+"In default configuration mode, all ZMTheme settings saved with the "
+"Customizer and the Template Editor are ignored (not deleted)."
+msgstr ""
+"Im Themenmodus Standardkonfiguration werden alle mit dem Customizer "
+"gespeicherten ZMTheme-Einstellungen ausgelassen (nicht gelöscht)."
+
+#: config/themesettings/settings_status.php:19
+msgid "Default configuration (No additional options)"
+msgstr ""
+
+#: config/themesettings/settings_status.php:20
+msgid "Simple settings (No HTML or CSS knowledge necessary)"
+msgstr ""
+
+#~ msgid ""
+#~ "ZMPlugin contains a set of helper functions and options to customize your "
+#~ "website and manage some WordPress core features. Furthermore it's the "
+#~ "base of all ZMPlugin-Addons and adds ZMTheme settings and customizer "
+#~ "controlls."
+#~ msgstr ""
+#~ "ZMPlugin enthält eine Reihe von Hilfsfunktionen und Optionen zur "
+#~ "Anpassung Ihrer Website und zur Verwaltung einiger WordPress-"
+#~ "Kernfunktionen. Außerdem ist es die Basis aller ZMPlugin-Addons und fügt "
+#~ "ZMTheme-Einstellungen und Customizer-Kontrollen hinzu."
+
+#~ msgid ""
+#~ "In short, every part of ZMT theme is editable! The longer Version: All "
+#~ "ZMT modules can be easily customized via the WP-Customizer. All ZMT "
+#~ "themes are completly modular and configurable through the ZMPlugin "
+#~ "template editor. The template editor lets you create templates for each "
+#~ "posttype, archive, taxonomy you are using. Also you can edit and create "
+#~ "custom templates for navigation, offcanvas-containers and more."
+#~ msgstr ""
+#~ "Kurz gesagt, jeder Teil des ZMT-Themas ist bearbeitbar! Die längere "
+#~ "Version: Alle ZMT-Module können einfach über den WP-Customizer angepasst "
+#~ "werden. Alle ZMT-Themes sind vollständig modular und über den ZMPlugin "
+#~ "Template-Editor konfigurierbar. Mit dem Template-Editor können Sie "
+#~ "Templates für jeden Posttyp, jedes Archiv und jede Taxonomie, die Sie "
+#~ "verwenden, erstellen. Außerdem können Sie benutzerdefinierte Vorlagen für "
+#~ "die Navigation, Off-Canvas-Container und vieles mehr erstellen und "
+#~ "bearbeiten."

@@ -25,7 +25,7 @@ class SettingsInit {
         $zmplugin['default_admin_template']->setOptPra( $zmplugin['zmplugin']->getSlug() );
         $zmplugin['default_admin_template']->setDisplayName( $zmplugin['zmplugin']->getDisplayName() );
         $zmplugin['default_admin_template']->setTitle( __('Dashboard', 'zmplugin') );
-        $zmplugin['default_admin_template']->setDescr('The ZMPlugin Dashboard displays installed, available and beta Addons.');
+        //$zmplugin['default_admin_template']->setDescr('The ZMPlugin Dashboard displays installed, available and beta Addons.');
         $zmplugin['default_admin_template']->setInfoBoxTitle( $default_settings->info_box_title );
         $zmplugin['default_admin_template']->setInfoBoxLinks( $default_settings->info_box_links );
         /*$zmplugin['default_admin_template']->setInfoBoxHTML(\ZMP\Plugin\PluginHelper::getRequiredPluginsTable(
@@ -54,7 +54,7 @@ class SettingsInit {
       $template = clone $zmplugin['default_admin_template'];
       $template->setOptPra( $zmplugin['zmplugin']->getSlug().'-settings' );
       $template->setTitle( __('Settings', 'zmplugin') );
-      $template->setDescr( __('ZMPlugin contains a set of helper functions and options to customize your website and manage some WordPress core features. Furthermore it\'s the base of all ZMPlugin-Addons and adds ZMTheme settings and customizer controlls.','zmplugin') );
+      //$template->setDescr( __('ZMPlugin contains a set of helper functions and options to customize your website and manage some WordPress core features. Furthermore it\'s the base of all ZMPlugin-Addons and adds ZMTheme settings and customizer controlls.','zmplugin') );
 
       $this->admin_menu2->setSubMenuPage( $template->htmlAdminMenuStart() );
         $settingsform2 = new \ZMP\Plugin\Settings\Settings($template);

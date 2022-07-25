@@ -474,7 +474,7 @@ class Form {
 
           if($outerelement){
 
-            $html .= '<'.$outerelement.Helpers::getAttribute($outerclass,NULL,' class="%s"').'>';
+            $html .= '<'.esc_attr( $outerelement ).Helpers::getAttribute($outerclass,NULL,' class="%s"').'>';
 
           }
 
@@ -493,13 +493,13 @@ class Form {
           $toggle_attr = NULL;
           if(Helpers::getValuebyKeyorDefault('description_toggle',$attributes_array_or_name)) {
             $toggle_id = '#zm_descr_toggle_'.$this->getToggleCount();
-            $toggle_attr = ' uk-toggle="target: '.$toggle_id.'"';
+            $toggle_attr = ' uk-toggle="target: '.esc_attr( $toggle_id ).'"';
             $toggle_icon = ' <span uk-icon="icon:question;ratio:0.6"></span>';
           }
 
-          $html .= '<label'.Helpers::getAttribute($labelid,NULL,' for="%s"').Helpers::getAttribute($labelclass,NULL,' class="%s"').$toggle_attr.'>'.$attributes_array_or_name['label'].$toggle_icon.'</label>';
+          $html .= '<label'.Helpers::getAttribute($labelid,NULL,' for="%s"').Helpers::getAttribute($labelclass,NULL,' class="%s"').$toggle_attr.'>'.esc_html( $attributes_array_or_name['label'] ).$toggle_icon.'</label>';
 
-          $html .= '<'.$innerelement.Helpers::getAttribute($innerclass,NULL,' class="%s"').'>';
+          $html .= '<'.esc_attr( $innerelement ).Helpers::getAttribute($innerclass,NULL,' class="%s"').'>';
 
         }
 
@@ -507,7 +507,7 @@ class Form {
 
           $html .= '<div class="uk-inline uk-width-1-1">';
 
-          $html .= '<span class="uk-form-icon" uk-icon="icon: '.$attributes_array_or_name['icon'].'"></span>';
+          $html .= '<span class="uk-form-icon" uk-icon="icon: '.esc_attr( $attributes_array_or_name['icon'] ).'"></span>';
 
         }
 
@@ -523,7 +523,7 @@ class Form {
               } else {
 
                 //create minimal input element with type & name
-                $html .= '<input type="text" name="'.$attributes_array_or_name.'">';
+                $html .= '<input type="text" name="'.esc_attr( $attributes_array_or_name ).'">';
 
               }
 
@@ -552,12 +552,12 @@ class Form {
                 //add value back to array!
                 $attributes_array_or_name['value'] = $value;
 
-                $html .= '<textarea'.$allatts.'>'.$value.'</textarea>';
+                $html .= '<textarea'.$allatts.'>'.esc_textarea( $value ).'</textarea>';
 
               } else {
 
                 //create minimal input element with type & name
-                $html .= '<textarea name="'.$attributes_array_or_name.'"></textarea>';
+                $html .= '<textarea name="'.esc_attr( $attributes_array_or_name ).'"></textarea>';
 
               }
 
@@ -610,7 +610,7 @@ class Form {
 
                   $allattsopt = Helpers::processAttributesArray($singleoptionsarr);
 
-                  $html .= '<option'.$allattsopt.'>'.$singleoptionsarr['option'].'</option>';
+                  $html .= '<option'.$allattsopt.'>'.esc_html( $singleoptionsarr['option'] ).'</option>';
 
                 }
 
@@ -681,21 +681,21 @@ class Form {
                   //process new updated array with values and checkmarks
                   $allattsopt = Helpers::processAttributesArray($singleoptionsarr);
 
-                  $html .= '<label for="'.$name.$valueornr.'">';
+                  $html .= '<label for="'.esc_attr( $name.$valueornr ).'">';
 
                   if( $fieldtype == 'radio' ) {
 
-                    $html .= '<input type="radio" name="'.$name.'" id="'.$name.$valueornr.'"'.Helpers::getAttribute($class,NULL,' class="%s"').$allattsopt.'> ';
+                    $html .= '<input type="radio" name="'.esc_attr( $name ).'" id="'.esc_attr( $name.$valueornr ).'"'.Helpers::getAttribute($class,NULL,' class="%s"').$allattsopt.'> ';
 
                   }
 
                   if( $fieldtype == 'checkbox') {
 
-                    $html .= '<input type="checkbox" name="'.$name.'[]" id="'.$name.$valueornr.'"'.Helpers::getAttribute($class,NULL,' class="%s"').$allattsopt.'> ';
+                    $html .= '<input type="checkbox" name="'.esc_attr( $name ).'[]" id="'.esc_attr( $name.$valueornr ).'"'.Helpers::getAttribute($class,NULL,' class="%s"').$allattsopt.'> ';
 
                   }
 
-                  $html .= $singleoptionsarr['option'];
+                  $html .= esc_html( $singleoptionsarr['option'] );
                   $html .= '</label><br>';
 
                 }
@@ -719,25 +719,25 @@ class Form {
         if(Helpers::getValuebyKeyorDefault('description_toggle',$attributes_array_or_name)) {
           $toggle_id = 'zm_descr_toggle_'.$this->getToggleCount();
           $this->plusoneToggleCount();
-          $html .= '<div hidden id="'.$toggle_id.'" class="uk-card uk-card-default uk-card-body uk-card-small uk-margin-small">'.$attributes_array_or_name['description_toggle'].'</div>';
+          $html .= '<div hidden id="'.esc_attr( $toggle_id ).'" class="uk-card uk-card-default uk-card-body uk-card-small uk-margin-small">'.$attributes_array_or_name['description_toggle'].'</div>';
         }
 
         if(Helpers::getValuebyKeyorDefault('description',$attributes_array_or_name)) {
 
-          $html .= '<p class="uk-article-meta uk-text-italic">'.$attributes_array_or_name['description'].'</p>';
+          $html .= '<p class="uk-article-meta uk-text-italic">'.esc_html( $attributes_array_or_name['description'] ).'</p>';
 
         }
 
         //innerelement and label
         if(Helpers::getValuebyKeyorDefault('label',$attributes_array_or_name)) {
 
-          $html .= '</'.$innerelement.'>';
+          $html .= '</'.esc_attr( $innerelement ).'>';
 
         }
 
         if( $fieldtype != 'html' ) {
 
-          $html .= '</'.$outerelement.'>';
+          $html .= '</'.esc_attr( $outerelement ).'>';
 
         }
 
@@ -764,10 +764,11 @@ class Form {
       $html = '';
 
       //form element and attributes name, class, charset, action, autocomplete, enctype, method, novalidate, target, custom attribute
-      if($this->getFormElement()) {
+      $form_element = $this->getFormElement();
+      if($form_element) {
 
         //Start of form
-        $html .= '<'.$this->getFormElement().
+        $html .= '<'.esc_attr( $form_element ).
           Helpers::getAttribute($this->getOptionsgroupName(),NULL,' name="%s"').
           Helpers::getAttribute($this->getClass(),NULL,' class="%s"').
           Helpers::getAttribute($this->getCharset(),NULL,' accept-charset="%s"').
@@ -801,9 +802,9 @@ class Form {
       }
 
       //End of form
-      if($this->getFormElement()) {
+      if($form_element) {
 
-        $html .= '</'.$this->getFormElement().'>';
+        $html .= '</'.esc_attr( $form_element ).'>';
 
       }
 

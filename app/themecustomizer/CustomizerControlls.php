@@ -32,9 +32,9 @@ class CustomizerControlls extends WP_Customize_Control {
 
           ?>
 
-      			<div class="zm-toggleheader" data-zmtoggleheader-section_group="<?php echo $this->input_attrs['section_group']; ?>" data-zmtoggleheader-comid="<?php echo $this->input_attrs['com_id']; ?>">
+      			<div class="zm-toggleheader" data-zmtoggleheader-section_group="<?php echo esc_attr( $this->input_attrs['section_group'] ); ?>" data-zmtoggleheader-comid="<?php echo esc_attr( $this->input_attrs['com_id'] ); ?>">
       				<?php if( !empty( $this->label ) ) { ?>
-      					<span class=""><?php echo $this->label; ?></span>
+      					<span class=""><?php echo esc_html( $this->label ); ?></span>
                 <span class="uk-align-right uk-margin-remove uk-icon" uk-icon="chevron-down"></span>
       				<?php } ?>
       				<?php /* do not show description because toggleheader is hiding itself in dev mode when all controlls get a descr auto >=4!*//*
@@ -72,7 +72,7 @@ class CustomizerControlls extends WP_Customize_Control {
             $heightmax = 'uk-height-max-small ';
            ?>
 
-            <div class="zm-multicheckbox-buttons" id="zmmulticheckbox-buttons-<?php echo $this->id; ?>" >
+            <div class="zm-multicheckbox-buttons" id="zmmulticheckbox-buttons-<?php echo esc_attr( $this->id ); ?>" >
 
               <?php foreach ( $this->choices as $value => $label ) {
 
@@ -88,7 +88,7 @@ class CustomizerControlls extends WP_Customize_Control {
                   $multiinputid = sanitize_title( $this->id.''.$value ); ?>
 
                   <label class="uk-button uk-button-default uk-box-shadow-medium uk-button-small uk-margin-small-bottom" for="<?php echo $multiinputid; ?>">
-                    <i class="uk-margin-small-right" uk-icon="icon:close;ratio:0.7;"></i><?php echo $label; ?>
+                    <i class="uk-margin-small-right" uk-icon="icon:close;ratio:0.7;"></i><?php echo esc_html( $label ); ?>
                   </label>
 
                 <?php }
@@ -102,8 +102,8 @@ class CustomizerControlls extends WP_Customize_Control {
           <div
             class="<?php echo $heightmax; ?>zm-multicheckbox"
             <?php echo $overflowauto; ?>
-            id="zmmulticheckbox-<?php echo $this->id; ?>"
-            zm-datasettingname="<?php echo $this->id; ?>"
+            id="zmmulticheckbox-<?php echo esc_attr( $this->id ); ?>"
+            zm-datasettingname="<?php echo esc_attr( $this->id ); ?>"
             <?php echo $hideifmorethanseven; ?>
           >
 
@@ -125,7 +125,7 @@ class CustomizerControlls extends WP_Customize_Control {
                   <input
                     class="zm-multicheckbox-virtual-input"
                     id="<?php echo $multiinputid; ?>"
-                    zm-datachoicelabel="<?php echo esc_html( $label ); ?>"
+                    zm-datachoicelabel="<?php echo esc_attr( $label ); ?>"
                     zm-dataforid="<?php echo $multiinputid; ?>"
                     type="checkbox"
                     value="<?php echo esc_attr( $value ); ?>"
@@ -160,7 +160,7 @@ class CustomizerControlls extends WP_Customize_Control {
           <?php if(count($this->choices) >= 7){ ?>
 
             <hr>
-            <div class="zm-multicheckbox-toggle" zm-datamulticheckboxtoggletarget="zmmulticheckbox-<?php echo $this->id; ?>">
+            <div class="zm-multicheckbox-toggle" zm-datamulticheckboxtoggletarget="zmmulticheckbox-<?php echo esc_attr( $this->id ); ?>">
               <a href="#" class="uk-align-right uk-margin-remove" style="display:none;"><i uk-icon="ratio:0.7;icon:chevron-up;"></i> Hide</a>
               <a href="#" class="uk-align-right uk-margin-remove" ><i uk-icon="ratio:0.7;icon:chevron-down;"></i> Show</a>
             </div>
@@ -208,91 +208,6 @@ class CustomizerControlls extends WP_Customize_Control {
                 </label>
               </div>
             </div>
-
-          <?php
-
-        } elseif(strpos($this->type, 'zm-multiselect') !== false){
-
-          //options: none yet
-
-          if ( empty( $this->choices ) ) {
-            return;
-          }
-
-          ?>
-
-          <div id="<?php echo esc_attr( $input_id ); ?>_container">
-            <label class="customize-control-title" for="<?php echo esc_attr( $input_id ); ?>">
-              <?php echo esc_html( $this->label ); ?>
-            </label>
-            <?php if ( ! empty( $this->description ) ) : ?>
-                <span id="<?php echo esc_attr( $description_id ); ?>" class="description customize-control-description"><?php echo $this->description; ?></span>
-            <?php endif; ?>
-            <select id="<?php echo esc_attr( $input_id ); ?>" <?php echo $describedby_attr; ?> <?php $this->link(); ?> multiple="multiple" style="height: 100%;">
-              <?php
-              foreach ( $this->choices as $value => $label ) {
-                $selected = ( in_array( $value, $this->value() ) ) ? selected( 1, 1, false ) : '';
-                echo '<option value="' . esc_attr( $value ) . '"' . $selected . '>' . $label . '</option>';
-              }
-              ?>
-            </select>
-          </div>
-
-          <script>
-            var select = new MSFmultiSelect(
-             document.querySelector('#<?php echo esc_attr( $input_id ); ?>'),
-             {
-              onChange:function(checked,value,instance){
-
-               // set value in customizer pane after each change
-               var control = wp.customize( '<?php echo $this->id; ?>' );
-               control.set( instance.getData() );
-
-              },
-              selectAll:false,
-              appendTo:'#<?php echo esc_attr( $input_id ); ?>_container'
-             }
-            );
-          </script>
-
-          <?php
-
-        } elseif(strpos($this->type, 'zm-2multiselect') !== false){
-
-          //options: none yet
-
-          if ( empty( $this->choices ) ) {
-            return;
-          }
-
-          ?>
-
-          <label>
-            <span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
-            <?php if ( ! empty( $this->description ) ) : ?>
-                <span id="<?php echo esc_attr( $description_id ); ?>" class="description customize-control-description"><?php echo $this->description; ?></span>
-            <?php endif; ?>
-            <select <?php $this->link(); ?> multiple="multiple" style="height: 100%;">
-              <?php
-                  foreach ( $this->choices as $value => $label ) {
-
-                      //new with array check!
-                      $selected = NULL;
-                      if(is_array( $this->value() )){
-                        $selected = ( in_array( $value, $this->value() ) ) ? selected( 1, 1, false ) : '';
-                      } elseif( $this->value() == $value ) {
-                        $selected = selected( 1, 1, false );
-                      }
-
-                      //old version returns php error if not array
-                      //$selected = ( in_array( $value, $this->value() ) ) ? selected( 1, 1, false ) : '';
-
-                      echo '<option value="' . esc_attr( $value ) . '"' . $selected . '>' . $label . '</option>';
-
-                  }
-              ?>
-            </select>
-          </label>
 
           <?php
 
@@ -352,7 +267,7 @@ class CustomizerControlls extends WP_Customize_Control {
                         <?php checked( $this->value(), $value ); ?>
                         class="uk-hidden"
                         />
-                    <label class="uk-button<?php echo $radiobuttonclass; ?> uk-width-1-1 uk-position-relative" for="<?php echo esc_attr( $input_id . '-radio-' . $value ); ?>">
+                    <label class="uk-button<?php echo esc_attr( $radiobuttonclass ); ?> uk-width-1-1 uk-position-relative" for="<?php echo esc_attr( $input_id . '-radio-' . $value ); ?>">
                       <?php if(strpos($this->type, '-valueisbuttonclass') !== false){ ?>
                         <?php //<span class="zm-radio-buttons-check uk-icon uk-hidden" uk-icon="icon:check;ratio:0.7"></span> ?>
 
@@ -460,9 +375,9 @@ class CustomizerControlls extends WP_Customize_Control {
                 <?php $color_key = str_replace( array( "uk-section-", "uk-card-"), "", $value); //overwrites style from global colors to controlls?>
 
                 <label
-                  class="<?php echo $radiobuttonclass; ?> uk-box-shadow-small uk-icon-button"
+                  class="<?php echo esc_attr( $radiobuttonclass ); ?> uk-box-shadow-small uk-icon-button"
                   <?php echo $this->getColorByKey($color_key); ?>
-                  title="<?php echo $label; ?>"
+                  title="<?php echo esc_attr( $label ); ?>"
                   for="<?php echo esc_attr( $input_id . '-radio-' . $value ); ?>"
                 >
 
@@ -775,7 +690,7 @@ class CustomizerControlls extends WP_Customize_Control {
           <div uk-grid class="uk-grid-row-collapse uk-grid-column-small ">
             <div class="uk-width-1-1">
               <?php if( array_key_exists( 'heading', $input_attrs ) ) {
-                echo '<div class="customize-control-title">'.$input_attrs['heading'].'</div>';
+                echo '<div class="customize-control-title">'.esc_html( $input_attrs['heading'] ).'</div>';
               } ?>
             </div>
             <div class="uk-width-1-4 uk-flex uk-flex-middle">
@@ -788,12 +703,12 @@ class CustomizerControlls extends WP_Customize_Control {
                   type="range"
                   class="zmsendrangetoinput"
                   id="<?php echo esc_attr( $input_id ); ?>-zmrange"
-                  zm-datasettingname="<?php echo $this->id; ?>"
-                  zm-datarangeunit="<?php if( array_key_exists( 'unit', $input_attrs ) ) { echo $input_attrs['unit']; } ?>"
-                  value="<?php echo $range_val; ?>"
-                  <?php if( array_key_exists( 'min', $input_attrs ) ) { echo 'min="'.$input_attrs['min'].'"'; } ?>
-                  <?php if( array_key_exists( 'max', $input_attrs ) ) { echo 'max="'.$input_attrs['max'].'"'; } ?>
-                  <?php if( array_key_exists( 'step', $input_attrs ) ) { echo 'step="'.$input_attrs['step'].'"'; } ?>
+                  zm-datasettingname="<?php echo esc_attr( $this->id ); ?>"
+                  zm-datarangeunit="<?php if( array_key_exists( 'unit', $input_attrs ) ) { echo esc_attr( $input_attrs['unit'] ); } ?>"
+                  value="<?php echo esc_attr( $range_val ); ?>"
+                  <?php if( array_key_exists( 'min', $input_attrs ) )  { echo 'min="'.esc_attr( $input_attrs['min'] ).'"'; } ?>
+                  <?php if( array_key_exists( 'max', $input_attrs ) )  { echo 'max="'.esc_attr( $input_attrs['max'] ).'"'; } ?>
+                  <?php if( array_key_exists( 'step', $input_attrs ) ) { echo 'step="'.esc_attr( $input_attrs['step'] ).'"'; } ?>
               />
             </div>
             <div class="uk-width-1-4 uk-flex uk-flex-middle">
@@ -840,7 +755,7 @@ class CustomizerControlls extends WP_Customize_Control {
       			<input
               class="alpha-color-control"
               type="text"
-              data-show-opacity="<?php echo $show_opacity; ?>"
+              data-show-opacity="<?php echo esc_attr( $show_opacity ); ?>"
               data-palette="<?php echo esc_attr( $palette ); ?>"
               data-default-color="<?php echo esc_attr( $this->settings['default']->default ); ?>"
               zm-dataonlyhex="<?php if ( array_key_exists( 'onlyhexcolors', $input_attrs ) && $input_attrs['onlyhexcolors'] == true ) { echo '1'; } ?>"
@@ -872,7 +787,7 @@ class CustomizerControlls extends WP_Customize_Control {
 
           <select
             class="zm-presets"
-            zm-datasettingname="<?php echo str_replace( '_args_presets', '', $this->id ); ?>"
+            zm-datasettingname="<?php echo esc_attr( str_replace( '_args_presets', '', $this->id ) ); ?>"
             id="<?php echo esc_attr( $input_id ); ?>"
             <?php echo $describedby_attr; ?> <?php $this->link(); ?>
           >
@@ -968,10 +883,10 @@ class CustomizerControlls extends WP_Customize_Control {
               '<li zm-datasortableitemid="'.$child_com_id.'" class="ui-state-default uk-box-shadow-medium zmhovercomid">
                 <div uk-grid class="uk-card uk-card-default uk-card-body uk-padding-small uk-grid-small uk-flex-middle uk-sortable-handle">
                   <div><i uk-icon="table"></i></div>
-                  <div class="uk-text-small">'.\ZMT\Theme\Helpers::transformObjectKeystoLabel($key).'</div>
+                  <div class="uk-text-small">'.esc_html( \ZMT\Theme\Helpers::transformObjectKeystoLabel($key) ).'</div>
                   <div class="uk-width-expand uk-text-right">
                   '.$this->getSortableItemsInternalLinks($key,$child_com_id).'
-                    <a href="javascript:wp.customize.section( \''.$child_com_id.'\' ).focus();"><i uk-icon="icon:cog;ratio:0.8" class="uk-margin-small-left"></i></a>
+                    <a href="javascript:wp.customize.section( \''.esc_attr( $child_com_id ).'\' ).focus();"><i uk-icon="icon:cog;ratio:0.8" class="uk-margin-small-left"></i></a>
                   </div>
                 </div>
               </li>';
@@ -1008,7 +923,7 @@ class CustomizerControlls extends WP_Customize_Control {
 
       //create ul list if has result
       if($result){
-         $result = '<ul zm-datasortablecontainer="'.$com_id.'" class="zm-sortable">'.$result.'</ul>';
+         $result = '<ul zm-datasortablecontainer="'.esc_attr( $com_id ).'" class="zm-sortable">'.$result.'</ul>';
        }
 
        if( $zmtheme['theme']->getSettingsStatus() >= 3 && \ZMP\Plugin\PluginHelper::isPremiumVersion() ){
@@ -1023,7 +938,7 @@ class CustomizerControlls extends WP_Customize_Control {
         }
 
          $result .= '<div class="uk-text-right uk-text-small uk-margin-small-top">';
-           $result .= '<a class="zm-template-editor-button zm-template-editor-button-active" data-switcher-pos="'.$pos.'" href="#">'.$template_editor_string.'<span uk-icon="ratio:0.7;icon:settings" class="uk-margin-small-left"></span></a>';
+           $result .= '<a class="zm-template-editor-button zm-template-editor-button-active" data-switcher-pos="'.esc_attr( $pos ).'" href="#">'.esc_html( $template_editor_string ).'<span uk-icon="ratio:0.7;icon:settings" class="uk-margin-small-left"></span></a>';
          $result .= '</div>';
 
        }
@@ -1055,7 +970,7 @@ class CustomizerControlls extends WP_Customize_Control {
         $section_content_type = $zmtheme[ $id ]->getSectionContentType();
         if( $section_content_type == 'default' || ( $section_content_type == 'custom' && $zmtheme[ $id ]->getArg('custom_section_content') == 'default' ) ){
 
-          $result .= '<a href="javascript:wp.customize.section( \'sidebar-widgets-'.$id.'_defsidebar\' ).focus();"><i uk-icon="icon:pencil;ratio:0.8"></i></a>';
+          $result .= '<a href="javascript:wp.customize.section( \'sidebar-widgets-'.esc_attr( $id ).'_defsidebar\' ).focus();"><i uk-icon="icon:pencil;ratio:0.8"></i></a>';
 
         }
 
@@ -1063,7 +978,7 @@ class CustomizerControlls extends WP_Customize_Control {
 
       if( get_class($zmtheme[ $id ]) == 'ZMT\Theme\Modules\modSidebar' ){
 
-        $result .= '<a href="javascript:wp.customize.section( \'sidebar-widgets-'.$id.'\' ).focus();"><i uk-icon="icon:pencil;ratio:0.8"></i></a>';
+        $result .= '<a href="javascript:wp.customize.section( \'sidebar-widgets-'.esc_attr( $id ).'\' ).focus();"><i uk-icon="icon:pencil;ratio:0.8"></i></a>';
 
       }
 

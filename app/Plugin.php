@@ -47,21 +47,7 @@ class Plugin {
     * @access private
     */
     private $config_version;
-    private $version_notice;
 
-  /**
-    * VersionNotice
-    */
-    public function setVersionNotice($version_notice) {
-
-      $this->version_notice = $version_notice;
-
-    }
-    public function getVersionNotice() {
-
-      return $this->version_notice;
-
-    }
   /**
     * Version-Status von config file config.php
     */
@@ -78,7 +64,7 @@ class Plugin {
 
     public function versionErrorNotice() {
 
-      echo '<div class="notice-warning notice"><p>'.esc_html($this->getVersionNotice()).'</p></div>';
+      echo '<div class="notice-warning notice"><p>Warning: Versions of '.esc_html( $this->getDisplayName() ).' are not consistent!</p></div>';
 
     }
 

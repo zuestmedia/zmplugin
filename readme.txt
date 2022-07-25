@@ -1,9 +1,9 @@
 === ZMPlugin ===
 Contributors: zuestmedia
-Stable tag: 0.9.1
+Stable tag: 0.9.2
 Tags: editor, template-builder, customizer, zmtheme
 Requires at least: 4.7
-Tested up to: 6.0
+Tested up to: 6.0.1
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -30,6 +30,21 @@ Yes. The website management and config settings are working on all themes. The e
 2. This is the second screen shot
 
 == Changelog ==
+
+= 0.9.2 =
+* Update: Tested up to: 6.0.1
+* Update: Descriptions optimized
+* Update: UIKIT updated to Version 3.15.1
+* Fix: hide template-editor sidebar in customizer
+* Removed: Customizer controlls - multiselect & javascript
+* Update: Added new dropdown-background-color css var setting
+* Update: Security - escaping functions added to templates
+* Update: Module Configs (uk-sticky, uk-navbar)
+* Update: New Settings added: Tracking & Analytics, Cookie Consent Banner
+* Update: New Settings added: WP Dashboard, WP Login Form
+* Update: View Settings extended
+* Update: Internationalization - added/updated translations
+* Update: removed VersionNotice from config and Plugin
 
 = 0.9.1 =
 * Connected with ZM Update API

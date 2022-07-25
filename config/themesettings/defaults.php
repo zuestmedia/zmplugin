@@ -7,7 +7,7 @@ class defaults {
   function __construct(){
 
     $this->general_title = __( 'General', 'zmplugin' );
-    $this->general_description = __( '<b>Note:</b> If you are a dev, you can edit all theme settings programmaticaly by creating and editing config files in your child theme :)', 'zmplugin' );
+    $this->general_description = __( 'If you need to, you can even edit all theme settings programmaticaly by creating and editing module or config files in your child theme :)', 'zmplugin' );
 
     $this->info_box_title = __( 'Need help?', 'zmplugin' );
     //$this->info_box_content = __( 'Please check out these links for more infos about ZMTheme or to get support building your website.', 'zmplugin' );

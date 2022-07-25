@@ -53,7 +53,8 @@ class ThemeSettingsInit {
         $zmtheme['default_admin_template']->setOptPra( \ZMT\Theme\Helpers::getSlug() );
         $zmtheme['default_admin_template']->setDisplayName( $zmtheme['theme']->getDisplayName() );
         $zmtheme['default_admin_template']->setTitle( __('Template Editor', 'zmplugin') );
-        $zmtheme['default_admin_template']->setDescr( __('In short, every part of ZMT theme is editable! The longer Version: All ZMT modules can be easily customized via the WP-Customizer. All ZMT themes are completly modular and configurable through the ZMPlugin template editor. The template editor lets you create templates for each posttype, archive, taxonomy you are using. Also you can edit and create custom templates for navigation, offcanvas-containers and more.', 'zmplugin') );
+        //$zmtheme['default_admin_template']->setDescr( __('In short, every part of ZMT theme is editable! The longer Version: All ZMT modules can be easily customized via the WP-Customizer. All ZMT themes are completly modular and configurable through the ZMPlugin template editor. The template editor lets you create templates for each posttype, archive, taxonomy you are using. Also you can edit and create custom templates for navigation, offcanvas-containers and more.', 'zmplugin') );
+        $zmtheme['default_admin_template']->setDescr( __('The "Template-Editor" lets you edit and extend all templates of this ZMTheme.', 'zmplugin') );
         $zmtheme['default_admin_template']->setInfoBoxTitle( $theme_settings_obj->defaults->info_box_title );
         $zmtheme['default_admin_template']->setInfoBoxLinks( $theme_settings_obj->defaults->info_box_links );
         //$zmtheme['default_admin_template']->setInfoBoxHTML($infoboxhtml);//optional

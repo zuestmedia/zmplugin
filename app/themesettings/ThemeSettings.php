@@ -53,7 +53,8 @@ class ThemeSettings {
 
         $impexpmenu->setSubMenuPage( $template->htmlAdminMenuStart() );
 
-          $impexpmenu->setSubMenuPage('<p>Happy Browsing</p>');
+          //$impexpmenu->setSubMenuPage('<p>Happy Browsing</p>');
+          $impexpmenu->setSubMenuPage( __('Discover all one-click installable designs for your ZMTheme here. The designs can be installed with or without blocks/widgets.', 'zmplugin') );
           $impexpmenu->setSubMenuPage('<div>'.$desing_explorer->getCachedHTML().'</div>');
 
         $impexpmenu->setSubMenuPage( $template->htmlAdminMenuEnd() );

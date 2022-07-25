@@ -315,33 +315,6 @@ li[id*="_viewconditions_"] label {
   font-weight:normal;
 }
 
-/** multiselect*/
-.zm-textarea-multiselect{
-  background-color: rgb(255, 255, 255) !important;
-  border-radius: 3px;
-  background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A) !important;
-  background-repeat: no-repeat !important;
-  background-position: 100% 50% !important;
-  background-size: 16px 16px !important;
-  padding: 6px 20px 6px 8px;
-  line-height: 2;
-  font-size: 14px;
-  height:40px;
-  min-height:40px;
-}
-.zm-textarea-multiselect:hover, .zm-textarea-multiselect:focus{
-  background-color: #f8f8f8 !important;
-  color:#016087;
-}
-.msf_multiselect li {
-  padding: 4px 4px 4px 10px;
-  margin-bottom: 0;
-}
-.msf_multiselect li:hover {
-  background-color:#39f;
-  color:white;
-}
-
 /**radio buttons*/
 .zm-radio-buttons{
   box-shadow: 0 5px 15px rgb(0 0 0 / 8%);

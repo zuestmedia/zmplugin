@@ -19,7 +19,7 @@ class view_conditions extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls\Build
     $this->validation = 'classarray';
 
     //$this->transport = 'refresh';
-    $this->choices = array(
+    /*$this->choices = array(
       'frontpage' =>  __( 'FrontPage', 'zmplugin' ),
       'blogpage' =>  __( 'BlogPage', 'zmplugin' ),
       'page' =>  __( 'Pages', 'zmplugin' ),
@@ -27,7 +27,9 @@ class view_conditions extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls\Build
       'archive' =>  __( 'ArchivePage', 'zmplugin' ),
       'searchpage' =>  __( 'SearchPage', 'zmplugin' ),
       'errorpage' =>  __( 'ErrorPage', 'zmplugin' ),
-    );
+    );*/
+
+    $this->choices = \ZMT\Theme\Helpers::getViewConditionsChoices();
 
   }
 
