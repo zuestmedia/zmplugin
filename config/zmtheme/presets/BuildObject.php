@@ -59,6 +59,8 @@ class BuildObject extends \ZMP\Plugin\ExtendPresets {
 
     $this->offcanvascontainer =  Build::newClass( $n->getClass('offcanvascontainer') );
 
+    $this->queryterm =  Build::newClass( $n->getClass('queryterm') );
+
 
     $this->section_blocks =  Build::newClass( $n->getClass('section_blocks') );
     $this->section_html =  Build::newClass( $n->getClass('section_html') );

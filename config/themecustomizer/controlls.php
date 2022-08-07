@@ -165,6 +165,10 @@ class controlls extends \ZMP\Plugin\ExtendControlls {
 
     $this->com_taxonomyterms =        Build::newClass( $n->getClass('com_taxonomyterms') );
 
+    $this->com_postmeta =             Build::newClass( $n->getClass('com_postmeta') );
+    
+    $this->com_queryterm =             Build::newClass( $n->getClass('com_queryterm') );
+
     $this->com_readmore =             Build::newClass( $n->getClass('com_readmore') );
     $this->com_separator =            Build::newClass( $n->getClass('com_separator') );
     $this->com_pagination =           Build::newClass( $n->getClass('com_pagination') );

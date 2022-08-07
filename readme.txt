@@ -1,6 +1,6 @@
 === ZMPlugin ===
 Contributors: zuestmedia
-Stable tag: 0.9.2
+Stable tag: 0.9.3
 Tags: editor, template-builder, customizer, zmtheme
 Requires at least: 4.7
 Tested up to: 6.0.1
@@ -30,6 +30,11 @@ Yes. The website management and config settings are working on all themes. The e
 2. This is the second screen shot
 
 == Changelog ==
+
+= 0.9.3 =
+* Update: ci/cd update
+* Update: QueryTerm presets added and controll updated
+* Update: added com_postmeta controll (no view_status settings without com_ file!)
 
 = 0.9.2 =
 * Update: Tested up to: 6.0.1

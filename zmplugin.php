@@ -5,7 +5,7 @@
   Description: ZMPlugin offers various website management and configuration settings and extends the customizer functionality for themes based on ZMTheme-Framework.
   Author: Michael Züst
   Author URI: https://zuestmedia.ch/
-  Version: 0.9.2
+  Version: 0.9.3
   Text Domain: zmplugin
   Domain Path: /languages
   ZMDLID: 2myl7t6emmbu4819uojautl0m0fo2fdktoaw
