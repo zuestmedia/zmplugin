@@ -7,7 +7,6 @@ class com_main_section_offcanvas extends \ZMP\Plugin\Config\ThemeCustomizer\Cont
   function __construct(){
 
     parent::__construct();
-    //nothing to do here, is a copy of section_blocks
 
   }
 

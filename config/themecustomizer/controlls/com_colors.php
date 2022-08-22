@@ -9,6 +9,9 @@ class com_colors {
     $this->label = __( 'Global Colors', 'zmplugin' );
     $this->description = __( 'Edit global Color settings here.', 'zmplugin' );
 
+    $this->presets = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\presets(4,2);
+    $this->presets->choices = \ZMT\Theme\Helpers::getPresetChoices( 'colors', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
+
     //one time wp original color controll needs to be loaded!!! it's necessary sonst fehlen scripts n css für eigene color controlls :-)
     //bisher wurde color_border als type="color" geladen um die scripts sicher zu laden... jetzt nicht mehr nach umstellung auf single file objects
     //then its enough to load it via custom-background color theme_support setting
@@ -81,24 +84,24 @@ class com_colors {
       $this->color_text_inverse->description = __( 'Inverse', 'zmplugin' );
 
     //Link Colors
-    $this->color_text_link = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_cssvar_alphacolor_marginremove_hex(10,3);
+    $this->color_text_link = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_cssvar_alphacolor_marginremove_hex(10,2);
       $this->color_text_link->label = __( 'Global Link Colors', 'zmplugin' );
       $this->color_text_link->description = __( 'Default', 'zmplugin' );
-    $this->color_text_link_hover = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_cssvar_alphacolor_hex(10,3);
+    $this->color_text_link_hover = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_cssvar_alphacolor_hex(10,2);
       $this->color_text_link_hover->description = __( 'Hover', 'zmplugin' );
 
     //Border Colors
-    $this->color_border = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_cssvar_alphacolor_hex(10,3);
+    $this->color_border = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_cssvar_alphacolor_hex(10,2);
       $this->color_border->label = __( 'Global Border Color', 'zmplugin' );
       $this->color_border->description = __( 'Default', 'zmplugin' );
 
     //Success, Warning, Danger
-    $this->color_background_success = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_cssvar_alphacolor_marginremove_hex(10,3);
+    $this->color_background_success = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_cssvar_alphacolor_marginremove_hex(10,2);
       $this->color_background_success->label = __( 'Global Alert Colors', 'zmplugin' );
       $this->color_background_success->description = __( 'Success', 'zmplugin' );
-    $this->color_background_warning = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_cssvar_alphacolor_marginremove_hex(10,3);
+    $this->color_background_warning = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_cssvar_alphacolor_marginremove_hex(10,2);
       $this->color_background_warning->description = __( 'Warning', 'zmplugin' );
-    $this->color_background_danger = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_cssvar_alphacolor_hex(10,3);
+    $this->color_background_danger = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_cssvar_alphacolor_hex(10,2);
       $this->color_background_danger->description = __( 'Danger', 'zmplugin' );
 
   }

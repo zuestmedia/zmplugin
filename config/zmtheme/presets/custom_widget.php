@@ -2,7 +2,7 @@
 
 namespace ZMP\Plugin\Config\ZMTheme\Presets;
 
-class custom_blocks {
+class custom_widget {
 
   function __construct(){
 

@@ -6,9 +6,9 @@ class config {
 
   function __construct(){
 
-    $this->pluginname = __( 'ZMPlugin', 'zmplugin' );
+    $this->pluginname = __( 'ZM Plugin', 'zmplugin' );
 
-    $this->version = '0.9.3';
+    $this->version = '0.9.4';
 
   }
 

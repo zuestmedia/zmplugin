@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zmplugin-0.9.3\n"
-"POT-Creation-Date: 2022-07-25 21:18+0200\n"
-"PO-Revision-Date: 2022-07-25 21:18+0200\n"
+"POT-Creation-Date: 2022-08-22 15:50+0200\n"
+"PO-Revision-Date: 2022-08-22 15:51+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -75,6 +75,10 @@ msgstr ""
 
 #: app/settings/AppSettings.php:600
 msgid "Decline"
+msgstr ""
+
+#: app/settings/BlockPatterns.php:30
+msgid "ZM Patterns"
 msgstr ""
 
 #: app/settings/Dashboard.php:24
@@ -392,8 +396,7 @@ msgstr ""
 
 #: app/themesettings/ThemeSettings.php:97
 #: app/themesettings/ThemeSettingsInit.php:55
-#: config/themecustomizer/controlls/sortable.php:13
-msgid "Template Editor"
+msgid "Theme Settings"
 msgstr ""
 
 #: app/themesettings/ThemeSettings.php:114
@@ -402,8 +405,13 @@ msgstr ""
 
 #: app/themesettings/ThemeSettingsInit.php:57
 msgid ""
-"The \"Template-Editor\" lets you edit and extend all templates of this "
-"ZMTheme."
+"You can run your ZM theme in default mode without custom settings options or "
+"choose between simple, professional or developer mode. Your theme can be "
+"completely customized to your needs. The higher the settings mode, the more "
+"style and settings options you have. For an easy start, we recommend using "
+"simple mode and a starter design from Design Explorer so you can begin with "
+"a stable and clean base. After that, all blocks as well as modules can be "
+"customized, extended or deleted. "
 msgstr ""
 
 #: config/appsettings.php:11
@@ -501,10 +509,10 @@ msgstr ""
 #: config/themecustomizer/controlls/_cssvar_font_family.php:16
 #: config/themecustomizer/controlls/_cssvar_fontstyle.php:16
 #: config/themecustomizer/controlls/_cssvar_text_transform.php:16
-#: config/themecustomizer/controlls/com_colors.php:65
-#: config/themecustomizer/controlls/com_colors.php:75
-#: config/themecustomizer/controlls/com_colors.php:86
-#: config/themecustomizer/controlls/com_colors.php:93
+#: config/themecustomizer/controlls/com_colors.php:68
+#: config/themecustomizer/controlls/com_colors.php:78
+#: config/themecustomizer/controlls/com_colors.php:89
+#: config/themecustomizer/controlls/com_colors.php:96
 msgid "Default"
 msgstr ""
 
@@ -808,7 +816,7 @@ msgstr ""
 #: config/themecustomizer/controlls/_class_color_background.php:16
 #: config/themecustomizer/controlls/_class_image_background_color.php:14
 #: config/themecustomizer/controlls/_class_skewy.php:16
-#: config/themecustomizer/controlls/com_colors.php:67
+#: config/themecustomizer/controlls/com_colors.php:70
 msgid "Primary"
 msgstr ""
 
@@ -816,7 +824,7 @@ msgstr ""
 #: config/themecustomizer/controlls/_class_color_background.php:17
 #: config/themecustomizer/controlls/_class_image_background_color.php:15
 #: config/themecustomizer/controlls/_class_skewy.php:17
-#: config/themecustomizer/controlls/com_colors.php:70
+#: config/themecustomizer/controlls/com_colors.php:73
 msgid "Secondary"
 msgstr ""
 
@@ -1395,7 +1403,7 @@ msgstr ""
 
 #: config/themecustomizer/controlls/_class_color_background.php:18
 #: config/themecustomizer/controlls/_class_image_background_color.php:13
-#: config/themecustomizer/controlls/com_colors.php:79
+#: config/themecustomizer/controlls/com_colors.php:82
 msgid "Muted"
 msgstr ""
 
@@ -2585,10 +2593,10 @@ msgid "Linear Color Stop"
 msgstr ""
 
 #: config/themecustomizer/controlls/_cssvar_gradient_deg.php:11
-#: config/themecustomizer/controlls/com_colors.php:24
-#: config/themecustomizer/controlls/com_colors.php:35
-#: config/themecustomizer/controlls/com_colors.php:46
-#: config/themecustomizer/controlls/com_colors.php:57
+#: config/themecustomizer/controlls/com_colors.php:27
+#: config/themecustomizer/controlls/com_colors.php:38
+#: config/themecustomizer/controlls/com_colors.php:49
+#: config/themecustomizer/controlls/com_colors.php:60
 msgid "Angle"
 msgstr ""
 
@@ -2980,6 +2988,10 @@ msgstr ""
 msgid "Before Text:"
 msgstr ""
 
+#: config/themecustomizer/controlls/block_template.php:11
+msgid "Select Block Template"
+msgstr ""
+
 #: config/themecustomizer/controlls/button_class.php:11
 msgid "Button Class:"
 msgstr ""
@@ -3009,13 +3021,13 @@ msgstr ""
 #: config/themecustomizer/controlls/com_articlecontainer.php:14
 #: config/themecustomizer/controlls/com_articlelistcontainer.php:13
 #: config/themecustomizer/controlls/com_authorbox.php:13
-#: config/themecustomizer/controlls/com_blocks.php:14
+#: config/themecustomizer/controlls/com_colors.php:13
 #: config/themecustomizer/controlls/com_content.php:14
-#: config/themecustomizer/controlls/com_custom_blocks.php:14
 #: config/themecustomizer/controlls/com_custom_container.php:14
 #: config/themecustomizer/controlls/com_custom_html.php:14
 #: config/themecustomizer/controlls/com_custom_nav.php:14
 #: config/themecustomizer/controlls/com_custom_queryloop.php:14
+#: config/themecustomizer/controlls/com_custom_widget.php:14
 #: config/themecustomizer/controlls/com_image.php:13
 #: config/themecustomizer/controlls/com_main.php:15
 #: config/themecustomizer/controlls/com_menu.php:13
@@ -3023,16 +3035,18 @@ msgstr ""
 #: config/themecustomizer/controlls/com_navcontainer_inner.php:13
 #: config/themecustomizer/controlls/com_offcanvas_toggle.php:14
 #: config/themecustomizer/controlls/com_offcanvascontainer.php:13
+#: config/themecustomizer/controlls/com_queryterm.php:13
 #: config/themecustomizer/controlls/com_search.php:13
 #: config/themecustomizer/controlls/com_section.php:11
-#: config/themecustomizer/controlls/com_section_blocks.php:13
 #: config/themecustomizer/controlls/com_section_extensions.php:14
 #: config/themecustomizer/controlls/com_section_html.php:13
 #: config/themecustomizer/controlls/com_section_nav.php:14
 #: config/themecustomizer/controlls/com_section_offcanvas.php:14
 #: config/themecustomizer/controlls/com_section_queryloop.php:13
+#: config/themecustomizer/controlls/com_section_widget.php:13
 #: config/themecustomizer/controlls/com_separator.php:13
 #: config/themecustomizer/controlls/com_site_logo.php:14
+#: config/themecustomizer/controlls/com_widget.php:14
 #: config/themecustomizer/controlls/presets.php:17
 msgid "⬤ Default"
 msgstr ""
@@ -3042,13 +3056,13 @@ msgstr ""
 #: config/themecustomizer/controlls/com_articlecontainer.php:14
 #: config/themecustomizer/controlls/com_articlelistcontainer.php:13
 #: config/themecustomizer/controlls/com_authorbox.php:13
-#: config/themecustomizer/controlls/com_blocks.php:14
+#: config/themecustomizer/controlls/com_colors.php:13
 #: config/themecustomizer/controlls/com_content.php:14
-#: config/themecustomizer/controlls/com_custom_blocks.php:14
 #: config/themecustomizer/controlls/com_custom_container.php:14
 #: config/themecustomizer/controlls/com_custom_html.php:14
 #: config/themecustomizer/controlls/com_custom_nav.php:14
 #: config/themecustomizer/controlls/com_custom_queryloop.php:14
+#: config/themecustomizer/controlls/com_custom_widget.php:14
 #: config/themecustomizer/controlls/com_image.php:13
 #: config/themecustomizer/controlls/com_main.php:15
 #: config/themecustomizer/controlls/com_menu.php:13
@@ -3056,16 +3070,18 @@ msgstr ""
 #: config/themecustomizer/controlls/com_navcontainer_inner.php:13
 #: config/themecustomizer/controlls/com_offcanvas_toggle.php:14
 #: config/themecustomizer/controlls/com_offcanvascontainer.php:13
+#: config/themecustomizer/controlls/com_queryterm.php:13
 #: config/themecustomizer/controlls/com_search.php:13
 #: config/themecustomizer/controlls/com_section.php:11
-#: config/themecustomizer/controlls/com_section_blocks.php:13
 #: config/themecustomizer/controlls/com_section_extensions.php:14
 #: config/themecustomizer/controlls/com_section_html.php:13
 #: config/themecustomizer/controlls/com_section_nav.php:14
 #: config/themecustomizer/controlls/com_section_offcanvas.php:14
 #: config/themecustomizer/controlls/com_section_queryloop.php:13
+#: config/themecustomizer/controlls/com_section_widget.php:13
 #: config/themecustomizer/controlls/com_separator.php:13
 #: config/themecustomizer/controlls/com_site_logo.php:14
+#: config/themecustomizer/controlls/com_widget.php:14
 #: config/themecustomizer/controlls/presets.php:17
 msgid "↺ Reset to Default"
 msgstr ""
@@ -3092,14 +3108,6 @@ msgstr ""
 
 #: config/themecustomizer/controlls/com_authorbox.php:10
 msgid "Author Box"
-msgstr ""
-
-#: config/themecustomizer/controlls/com_blocks.php:10
-msgid "Sidebar"
-msgstr ""
-
-#: config/themecustomizer/controlls/com_blocks.php:11
-msgid "Edit Sidebar."
 msgstr ""
 
 #: config/themecustomizer/controlls/com_body.php:9
@@ -3144,84 +3152,84 @@ msgstr ""
 msgid "Edit global Color settings here."
 msgstr ""
 
-#: config/themecustomizer/controlls/com_colors.php:20
+#: config/themecustomizer/controlls/com_colors.php:23
 msgid "Background Default"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_colors.php:21
-#: config/themecustomizer/controlls/com_colors.php:32
-#: config/themecustomizer/controlls/com_colors.php:43
-#: config/themecustomizer/controlls/com_colors.php:54
+#: config/themecustomizer/controlls/com_colors.php:24
+#: config/themecustomizer/controlls/com_colors.php:35
+#: config/themecustomizer/controlls/com_colors.php:46
+#: config/themecustomizer/controlls/com_colors.php:57
 msgid "Color & Gradient"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_colors.php:26
-#: config/themecustomizer/controlls/com_colors.php:37
-#: config/themecustomizer/controlls/com_colors.php:48
-#: config/themecustomizer/controlls/com_colors.php:59
+#: config/themecustomizer/controlls/com_colors.php:29
+#: config/themecustomizer/controlls/com_colors.php:40
+#: config/themecustomizer/controlls/com_colors.php:51
+#: config/themecustomizer/controlls/com_colors.php:62
 msgid "Ratio 1"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_colors.php:28
-#: config/themecustomizer/controlls/com_colors.php:39
-#: config/themecustomizer/controlls/com_colors.php:50
-#: config/themecustomizer/controlls/com_colors.php:61
+#: config/themecustomizer/controlls/com_colors.php:31
+#: config/themecustomizer/controlls/com_colors.php:42
+#: config/themecustomizer/controlls/com_colors.php:53
+#: config/themecustomizer/controlls/com_colors.php:64
 msgid "Ratio 2"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_colors.php:31
+#: config/themecustomizer/controlls/com_colors.php:34
 msgid "Background Primary"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_colors.php:42
+#: config/themecustomizer/controlls/com_colors.php:45
 msgid "Background Secondary"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_colors.php:53
+#: config/themecustomizer/controlls/com_colors.php:56
 msgid "Background Muted"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_colors.php:64
+#: config/themecustomizer/controlls/com_colors.php:67
 msgid "Background Skew-Y"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_colors.php:74
+#: config/themecustomizer/controlls/com_colors.php:77
 msgid "Global Text Colors"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_colors.php:77
+#: config/themecustomizer/controlls/com_colors.php:80
 msgid "Emphasis"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_colors.php:81
+#: config/themecustomizer/controlls/com_colors.php:84
 msgid "Inverse"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_colors.php:85
+#: config/themecustomizer/controlls/com_colors.php:88
 msgid "Global Link Colors"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_colors.php:88
+#: config/themecustomizer/controlls/com_colors.php:91
 msgid "Hover"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_colors.php:92
+#: config/themecustomizer/controlls/com_colors.php:95
 msgid "Global Border Color"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_colors.php:97
+#: config/themecustomizer/controlls/com_colors.php:100
 msgid "Global Alert Colors"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_colors.php:98
+#: config/themecustomizer/controlls/com_colors.php:101
 msgid "Success"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_colors.php:100
+#: config/themecustomizer/controlls/com_colors.php:103
 msgid "Warning"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_colors.php:102
+#: config/themecustomizer/controlls/com_colors.php:105
 msgid "Danger"
 msgstr ""
 
@@ -3259,15 +3267,6 @@ msgstr ""
 msgid "Center Content Container"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_custom_blocks.php:12
-msgid "Custom Blocks"
-msgstr ""
-
-#: config/themecustomizer/controlls/com_custom_blocks.php:19
-#: config/themecustomizer/controlls/com_section.php:16
-msgid "Module Container"
-msgstr ""
-
 #: config/themecustomizer/controlls/com_custom_container.php:12
 msgid "Custom Container"
 msgstr ""
@@ -3282,6 +3281,15 @@ msgstr ""
 
 #: config/themecustomizer/controlls/com_custom_queryloop.php:12
 msgid "Custom QueryLoop"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_custom_widget.php:12
+msgid "Custom Widget"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_custom_widget.php:19
+#: config/themecustomizer/controlls/com_section.php:16
+msgid "Module Container"
 msgstr ""
 
 #: config/themecustomizer/controlls/com_date.php:10
@@ -3448,12 +3456,20 @@ msgstr ""
 msgid "Pagination"
 msgstr ""
 
+#: config/themecustomizer/controlls/com_postmeta.php:10
+msgid "Post Meta"
+msgstr ""
+
 #: config/themecustomizer/controlls/com_powered.php:10
 msgid "Powered by"
 msgstr ""
 
 #: config/themecustomizer/controlls/com_powered.php:11
 msgid "This is a Premium-Only Setting."
+msgstr ""
+
+#: config/themecustomizer/controlls/com_queryterm.php:10
+msgid "Query Terms"
 msgstr ""
 
 #: config/themecustomizer/controlls/com_readmore.php:10
@@ -3492,6 +3508,14 @@ msgstr ""
 #: config/themecustomizer/controlls/com_title.php:10
 #: config/themecustomizer/controlls/title_sprintf.php:11
 msgid "Title"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_widget.php:10
+msgid "Widget"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_widget.php:11
+msgid "Edit Sidebar."
 msgstr ""
 
 #: config/themecustomizer/controlls/comment_body_class.php:11
@@ -3951,6 +3975,10 @@ msgstr ""
 
 #: config/themecustomizer/controlls/sortable.php:11
 msgid "Drag and Drop the items to sort modules or sections."
+msgstr ""
+
+#: config/themecustomizer/controlls/sortable.php:13
+msgid "Template Editor"
 msgstr ""
 
 #: config/themecustomizer/controlls/sticky_class.php:11

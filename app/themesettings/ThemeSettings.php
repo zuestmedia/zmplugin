@@ -41,7 +41,7 @@ class ThemeSettings {
         $impexpmenu = new \ZMP\Plugin\AdminMenu( \ZMT\Theme\Helpers::getSlug().'_designs' );
         $impexpmenu->setSubMenuPageParent( 'themes.php' );
         $impexpmenu->setSubMenuPageName( __( 'Design Explorer', 'zmpro' ) );
-        $impexpmenu->setPosition( 2 );
+        $impexpmenu->setPosition( 5 );
 
         global $zmtheme;
 
@@ -94,8 +94,8 @@ class ThemeSettings {
         */
         $admin_menu = new \ZMP\Plugin\AdminMenu( \ZMT\Theme\Helpers::getSlug() );
         $admin_menu->setSubMenuPageParent( 'themes.php' );
-        $admin_menu->setSubMenuPageName( __('Template Editor','zmplugin') );
-        $admin_menu->setPosition( 1 );
+        $admin_menu->setSubMenuPageName( __('Theme Settings','zmplugin') );
+        $admin_menu->setPosition( 4 );
 
       /**
         * Init Form

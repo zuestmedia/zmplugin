@@ -1,11 +1,11 @@
 <?php
   /*
-  Plugin Name: ZMPlugin
+  Plugin Name: ZM Plugin
   Plugin URI: https://zmplugin.com/
-  Description: ZMPlugin offers various website management and configuration settings and extends the customizer functionality for themes based on ZMTheme-Framework.
+  Description: ZM Plugin offers various website management and configuration settings and extends the customizer functionality for themes based on ZM Theme-Framework.
   Author: Michael Züst
   Author URI: https://zuestmedia.ch/
-  Version: 0.9.3
+  Version: 0.9.4
   Text Domain: zmplugin
   Domain Path: /languages
   ZMDLID: 2myl7t6emmbu4819uojautl0m0fo2fdktoaw

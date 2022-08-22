@@ -55,20 +55,23 @@ class BuildObject extends \ZMP\Plugin\ExtendPresets {
 
     $this->offcanvas_toggle =  Build::newClass( $n->getClass('offcanvas_toggle') );
 
-    $this->blocks =  Build::newClass( $n->getClass('blocks') );
+    $this->widget =  Build::newClass( $n->getClass('widget') );
 
     $this->offcanvascontainer =  Build::newClass( $n->getClass('offcanvascontainer') );
 
     $this->queryterm =  Build::newClass( $n->getClass('queryterm') );
 
+    $this->colors =  Build::newClass( $n->getClass('colors') );
 
-    $this->section_blocks =  Build::newClass( $n->getClass('section_blocks') );
+
+
+    $this->section_widget =  Build::newClass( $n->getClass('section_widget') );
     $this->section_html =  Build::newClass( $n->getClass('section_html') );
     $this->section_nav =  Build::newClass( $n->getClass('section_nav') );
     $this->section_offcanvas =  Build::newClass( $n->getClass('section_offcanvas') );
     $this->section_queryloop =  Build::newClass( $n->getClass('section_queryloop') );
 
-    $this->custom_blocks =  Build::newClass( $n->getClass('custom_blocks') );
+    $this->custom_widget =  Build::newClass( $n->getClass('custom_widget') );
     $this->custom_container =  Build::newClass( $n->getClass('custom_container') );
     $this->custom_html =  Build::newClass( $n->getClass('custom_html') );
     $this->custom_nav =  Build::newClass( $n->getClass('custom_nav') );

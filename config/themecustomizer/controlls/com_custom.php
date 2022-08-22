@@ -6,7 +6,7 @@ class com_custom {
 
   function __construct(){
 
-    $this->presets = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\presets(4,3);
+    $this->presets = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\presets(4,2);
 
   }
 

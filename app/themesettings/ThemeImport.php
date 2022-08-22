@@ -60,10 +60,131 @@ class ThemeImport {
           update_option( 'sidebars_widgets', $array_content['sidebars_widgets'] );
           $count_imports++;
         }
+        if(array_key_exists( 'zm_blocks', $array_content )){
+          ThemeImport::importZMBlocks($array_content['zm_blocks']);
+          $count_imports++;
+        }
+        if(array_key_exists( 'show_on_front', $array_content )){
+          ThemeImport::setShowOnFront($array_content['show_on_front']);
+          $count_imports++;
+        }
 
       }
 
+
+      //always asign nav_menu_locations by slugs or remove array if no matching menus...
+      ThemeImport::updateNavMenuLocations();
+
       return $count_imports;
+
+    }
+
+    static function importZMBlocks($new_zm_blocks_array){
+
+      //existing blocks (use same functions as for export to get array)
+      $existing_zm_blocks_array = \ZMP\Pro\ThemeSettings\ThemeExport::getZMBlocksArray();
+
+      foreach($new_zm_blocks_array as $new_zm_block_key => $new_zm_block_array){
+
+        //does not import or overwrite existing slugs! of zm_blocks (post id does not matter)
+        if(array_key_exists($new_zm_block_key, $existing_zm_blocks_array) == false){
+
+          //wp_insert_post
+          wp_insert_post(
+            array(
+              'post_name'     => $new_zm_block_key,
+              'post_title'    => wp_strip_all_tags($new_zm_block_array['post_title']),
+              'post_content'  => $new_zm_block_array['post_content'],
+              'post_status'   => 'publish',
+              'post_type'     => 'zm_blocks',
+            )
+          );
+
+        }
+
+      }
+
+    }
+
+
+  /**
+    * theme_mod: 'nav_menu_locations'
+    * recreate nav_menu_locations array in theme_mods to assign menu locations correctly
+    * uses name of menu in appearance/menu settings and com_label of Menu modules in template editor
+    * if slugs are same, assigns menu!
+    */
+    static function updateNavMenuLocations(){
+
+      global $zmtheme;
+
+      $new_nav_menu_locations = array();
+
+      foreach($zmtheme as $com_id => $object){
+
+        if( strpos($com_id, '__menu') !== false ) {
+
+          //check if is really modMenu class! (safety check)
+          if( strpos(get_class($zmtheme[ $com_id ]), 'modMenu') !== false ){
+
+            $label = $zmtheme[ $com_id ]->getComLabel();
+
+            if($label){
+
+              $slug = sanitize_title($label);
+
+              $term_obj = get_term_by( 'slug', $slug, 'nav_menu' );
+
+              if($term_obj){
+
+                $nav_menu_location_id = $term_obj->term_taxonomy_id;
+
+                $new_nav_menu_locations[ $com_id ] = $nav_menu_location_id;
+
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+      //result: set new theme mod for nav_menu_locations
+      set_theme_mod( 'nav_menu_locations', $new_nav_menu_locations );
+
+    }
+
+    static function setShowOnFront($value){
+
+      if($value == 'posts'){
+
+        update_option( 'show_on_front', 'posts' );
+
+      } elseif($value == 'page'){
+
+        //uze get_page_by_path to get id on import: if show_on_front (posts or page) is page
+        if( get_option( 'page_for_posts' ) == 0 ){
+          $blog_page_obj = get_page_by_path( 'blog' );
+          if(is_object($blog_page_obj)){
+            update_option( 'page_for_posts', $blog_page_obj->ID );
+          }
+        }
+
+        if( get_option( 'page_on_front' ) == 0 ){
+          $front_page_obj = get_page_by_path( 'home' );
+          if(is_object($front_page_obj)){
+            update_option( 'page_on_front', $front_page_obj->ID );
+          }
+        }
+
+        if( get_option( 'page_for_posts' ) != 0 && get_option( 'page_on_front' ) != 0 ){
+
+          update_option( 'show_on_front', 'page' );
+
+        }
+
+      }
 
     }
 

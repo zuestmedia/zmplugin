@@ -118,7 +118,7 @@ class SettingsTemplate {
             $html .= '<h1 class="uk-margin-bottom">'.$this->getTitle().'</h1>';
 
             if($this->getDescr()){
-              $html .= '<p class="uk-margin-medium-bottom">'.$this->getDescr().'</p>';
+              $html .= '<p class="uk-margin-medium-bottom uk-width-2xlarge">'.$this->getDescr().'</p>';
             }
 
       return $html;
