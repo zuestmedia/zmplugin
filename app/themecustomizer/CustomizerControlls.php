@@ -877,13 +877,21 @@ class CustomizerControlls extends WP_Customize_Control {
               $com_status = $zmtheme[ $child_com_id ]->getComStatus();
             }
 
+            $com_label = NULL;
+            if( method_exists( $zmtheme[ $child_com_id ], 'getComLabel' ) ){
+              $com_label = $zmtheme[ $child_com_id ]->getComLabel();
+            }
+            if($com_label == NULL){
+              $com_label = \ZMT\Theme\Helpers::transformObjectKeystoLabel($key);
+            }
+
             if( $com_status == '1' && $com_lock_status == false ){
 
               $modules[$key]['content'] =
               '<li zm-datasortableitemid="'.$child_com_id.'" class="ui-state-default uk-box-shadow-medium zmhovercomid">
                 <div uk-grid class="uk-card uk-card-default uk-card-body uk-padding-small uk-grid-small uk-flex-middle uk-sortable-handle">
                   <div><i uk-icon="table"></i></div>
-                  <div class="uk-text-small">'.esc_html( \ZMT\Theme\Helpers::transformObjectKeystoLabel($key) ).'</div>
+                  <div class="uk-text-small">'.esc_html( $com_label ).'</div>
                   <div class="uk-width-expand uk-text-right">
                   '.$this->getSortableItemsInternalLinks($key,$child_com_id).'
                     <a href="javascript:wp.customize.section( \''.esc_attr( $child_com_id ).'\' ).focus();"><i uk-icon="icon:cog;ratio:0.8" class="uk-margin-small-left"></i></a>

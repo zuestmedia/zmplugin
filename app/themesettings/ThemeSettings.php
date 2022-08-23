@@ -120,7 +120,7 @@ class ThemeSettings {
         if( $zmtheme['theme']->getSettingsStatus() >= 3  && \ZMP\Plugin\PluginHelper::isPremiumVersion() ) {
 
           $zmform->addField('html',
-            $zmtheme['default_admin_template']->htmlSettingsFormAccordionBetween( $theme_settings_obj->settings->config_prepare_title )
+            $zmtheme['default_admin_template']->htmlSettingsFormAccordionBetween( __('Template Editor','zmplugin') )
           );
 
           $zmform = $this->getThemeSettingsFormThemeConfig( $zmform );

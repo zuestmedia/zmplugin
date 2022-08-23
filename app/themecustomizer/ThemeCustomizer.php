@@ -90,10 +90,12 @@ class ThemeCustomizer extends Customizer {
         $active_callback = new CustomizerActiveCallbackPanels();
         $active_callback->setComTypeObjectName($key1);
 
+        $com_type_obj = new \ZMT\Theme\ComponentTypeLabel();
+
         $result[ $key1 ] = array(
           //'active_callback'       => array($active_callback2,'is_active_com_object'),
           'priority'              => 160,
-          'title'                 => \ZMT\Theme\Helpers::transformObjectKeystoLabel($key1), //Visible title of section
+          'title'                 => $com_type_obj->getComLabelOrKey($key1), //Visible title of section
         );
 
         if($key1 == 'globals') {
