@@ -30,23 +30,27 @@ class BlockPatterns {
         array( 'label' => __( 'ZM Patterns', 'zmplugin' ) )
       );
 
-      $file_name_array = scandir( $this->plugin_dir.'/block_patterns' );
+      if(file_exists($this->plugin_dir.'/block_patterns')){        
 
-      foreach($file_name_array as $file_name){
+        $file_name_array = scandir( $this->plugin_dir.'/block_patterns' );
 
-        if (strpos($file_name, '.html') !== false) {
+        foreach($file_name_array as $file_name){
 
-          $slug = str_replace(".html", "", $file_name);
-          $name = ucwords( str_replace("_", " ", $slug) );
+          if (strpos($file_name, '.html') !== false) {
 
-          register_block_pattern(
-            'zmb-patterns/'.$slug,
-            array(
-                'title'       => $name,
-                'content' => file_get_contents( $this->plugin_dir.'/block_patterns/'.$file_name ),
-                'categories' => array( 'zmb-patterns' ),
-            )
-          );
+            $slug = str_replace(".html", "", $file_name);
+            $name = ucwords( str_replace("_", " ", $slug) );
+
+            register_block_pattern(
+              'zmb-patterns/'.$slug,
+              array(
+                  'title'       => $name,
+                  'content' => file_get_contents( $this->plugin_dir.'/block_patterns/'.$file_name ),
+                  'categories' => array( 'zmb-patterns' ),
+              )
+            );
+
+          }
 
         }
 
