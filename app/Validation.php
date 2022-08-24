@@ -198,6 +198,13 @@ class  Validation {
 
 			}
 
+			if($this->getErrorHandler() == 'WPAjaxErrorsNEW') {
+
+
+				return 'jasodlfaosdfisdfjsferrrrroooorrrr';//old value will be returned back to form if any validation issue/failure!
+
+			}
+
 			if($this->getErrorHandler() == 'WPCusotmizerErrors') {
 
 				//WPCustomizer ErrorHandler!!
@@ -540,8 +547,8 @@ class  Validation {
 	}
 
 	public function slug($val,$key=false) {
-		if(!preg_match('/^[a-z0-9\-\s]+$/', $val)  && $val ) {
-			return $this->createErrorObject(908,'Please enter a slug (a-z0-9-)! Your Input could not be processed.',$key);
+		if(!preg_match('/^[a-z0-9._\-\s]+$/', $val)  && $val ) {
+			return $this->createErrorObject(908,'Please enter a slug (a-z0-9-._)! Your Input could not be processed.',$key);
 		}
 		return $val;
 	}
@@ -562,8 +569,8 @@ class  Validation {
 	}
 
 	public function text($val,$key=false) {
-		if(!preg_match('/^[a-z0-9.,\-\s]+$/i', $val)  && $val ) {
-			return $this->createErrorObject(909,'Please enter text (a-zA-Z0-9-.,)! Your Input could not be processed.',$key);
+		if(!preg_match('/^[a-z0-9.,_\-\s]+$/i', $val)  && $val ) {
+			return $this->createErrorObject(909,'Please enter text (a-zA-Z0-9-.,_)! Your Input could not be processed.',$key);
 		}
 		return $val;
 	}

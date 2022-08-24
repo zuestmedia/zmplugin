@@ -8,7 +8,7 @@ class view_status extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls\BuildSing
 
     //Values
     $this->type = 'select';
-    $this->label = __( 'Where to show this section:', 'zmplugin' );
+    $this->label = __( 'Display Settings:', 'zmplugin' );
     $this->description = __( 'Globally show or hide sections or choose out of the custom selection fields.', 'zmplugin' );
     $this->validation = 'int';
     $this->transport = 'refresh';//sonst geht active callback nicht...

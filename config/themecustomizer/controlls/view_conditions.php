@@ -16,7 +16,7 @@ class view_conditions extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls\Build
     $this->description = 'hide';
 
     //$this->validation = 'bool';
-    $this->validation = 'classarray';
+    $this->validation = 'slugarray';
 
     //$this->transport = 'refresh';
     /*$this->choices = array(

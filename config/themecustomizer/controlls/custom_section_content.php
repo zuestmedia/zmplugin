@@ -13,7 +13,7 @@ class custom_section_content extends \ZMP\Plugin\Config\ThemeCustomizer\Controll
     //$this->active_callback_value = 'default';
     //$this->active_callback_value_alt_1 = 'queryloop';
     $this->transport = 'refresh';//sonst geht active callback nicht...
-    $this->label = __( 'Select Custom Section Content', 'zmplugin' );
+    $this->label = __( 'Select Content', 'zmplugin' );
     $this->validation = 'class';
     $this->choices = \ZMT\Theme\Helpers::getCustomSectionContentChoices( __('Default Widget', 'zmplugin') );
 
