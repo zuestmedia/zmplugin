@@ -178,13 +178,43 @@ class ThemeSettings {
                 'labelclass'=>'uk-form-label uk-margin-remove-top',
                 'class'=>'uk-select uk-form-small',
                 'description'=>$theme_settings_obj->settings_status->description,
-                'description_toggle'=>$theme_settings_obj->defaults->general_description,
+                //'description_toggle'=>$theme_settings_obj->defaults->general_description,
                 'validation'=>$theme_settings_obj->settings_status->validation,
                 'name'=>$zmtheme['theme']->getSettingsStatusFieldName(),
                 'default_value'=>$zmtheme['theme']->getSettingsStatusDefaultValue(),
                 'options'=> $theme_settings_obj->settings_status->choices
               )
           );
+
+          if( $zmtheme['theme']->getSettingsStatus() >= 3  ){
+
+          /**
+            * Setting: CSS Choice
+            * Setters/Getters: ZMTheme
+            */
+            $temp_form_object->addField(
+              'select',
+                array(
+                  'label'=>'CSS Type',
+                  'outerelement'=>'div',
+                  'outerclass'=>'uk-card uk-card-body uk-card-small uk-padding-remove-left',
+                  'innerclass'=>'uk-form-controls',
+                  'labelclass'=>'uk-form-label uk-margin-remove-top',
+                  'class'=>'uk-select uk-form-small',
+                  'description'=>__('Depending on the color palette in use, different CSS options can be used. If you use only light or dark background colors, the respective option may be chosen to reduce the CSS file size.', 'zmplugin'),
+                  //'description_toggle'=>$theme_settings_obj->defaults->general_description,
+                  'validation'=>'slug',
+                  'name'=>$zmtheme['theme']->getCSSTypeFieldName(),
+                  'default_value'=>$zmtheme['theme']->getCSSTypeDefaultValue(),
+                  'options'=> array(
+                      array('option'=> __( 'Mixed Colors', 'zmplugin' ),'value'=>'default'),
+                      array('option'=> __( 'Dark Colors', 'zmplugin' ),'value'=>'dark'),
+                      array('option'=> __( 'Light Colors', 'zmplugin' ),'value'=>'light'),
+                    )
+                )
+            );
+
+          }
 
         return $temp_form_object;
 

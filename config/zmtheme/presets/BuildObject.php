@@ -61,9 +61,11 @@ class BuildObject extends \ZMP\Plugin\ExtendPresets {
 
     $this->queryterm =  Build::newClass( $n->getClass('queryterm') );
 
-    $this->colors =  Build::newClass( $n->getClass('colors') );
-
-
+    $this->colors  =  Build::newClass( $n->getClass('colors') );
+    $this->body    =  Build::newClass( $n->getClass('body') );
+    $this->heading =  Build::newClass( $n->getClass('heading') );
+    $this->logo    =  Build::newClass( $n->getClass('logo') );
+    $this->navbar  =  Build::newClass( $n->getClass('navbar') );
 
     $this->section_widget =  Build::newClass( $n->getClass('section_widget') );
     $this->section_html =  Build::newClass( $n->getClass('section_html') );

@@ -8,7 +8,7 @@ class taxonomy extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls\BuildSingleC
 
     //Values
     $this->type = 'select';
-    $this->label = __( 'Select a Taxonomy Term', 'zmplugin' );
+    $this->label = __( 'Select a Taxonomy', 'zmplugin' );
     $this->validation = 'class';
     $this->choices = \ZMT\Theme\Helpers::getTaxonomiesChoices();
 

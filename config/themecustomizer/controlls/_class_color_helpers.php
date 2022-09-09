@@ -13,7 +13,7 @@ class _class_color_helpers extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls\
     $this->choices = array(
       'zmgradient' =>  __( 'Background Gradient', 'zmplugin' ),
       'uk-preserve-color' => __('Preserve Color', 'zmplugin' ),
-      'uk-light' => __('Light on Dark Color', 'zmplugin' ),
+      'uk-light uk-dark' => __('Inverse Color', 'zmplugin' ),
     );
 
   }

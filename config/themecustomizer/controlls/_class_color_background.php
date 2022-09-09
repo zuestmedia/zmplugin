@@ -13,9 +13,9 @@ class _class_color_background extends \ZMP\Plugin\Config\ThemeCustomizer\Control
     $this->validation = 'class';
     $this->choices = array(
       'uk-section-default' => __( 'Default', 'zmplugin' ),
+      'uk-section-muted' => __( 'Muted', 'zmplugin' ),
       'uk-section-primary' => __( 'Primary', 'zmplugin' ),
       'uk-section-secondary' => __( 'Secondary', 'zmplugin' ),
-      'uk-section-muted' => __( 'Muted', 'zmplugin' ),
       'uk-section-transparent' => __( 'Transparent', 'zmplugin' ),
     );
 

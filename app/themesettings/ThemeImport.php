@@ -22,6 +22,12 @@ class ThemeImport {
       //theme-slug (same for parent or child theme)
       $optgroup = $zmtheme['theme']->getOptGroup();
 
+      $css_type_key = $zmtheme['theme']->getCSSTypeFieldNamewithoutOptGroup();
+      if(array_key_exists( $css_type_key, $array_content )){
+        update_option( $optgroup.$css_type_key, $array_content[$css_type_key] );
+        $count_imports++;
+      }
+
       $template_config_key = \ZMT\Theme\Prepare::getTemplateConfigOptionsModNamewithoutOptGroup();
       if(array_key_exists( $template_config_key, $array_content )){
         update_option( $optgroup.$template_config_key, $array_content[$template_config_key] );

@@ -1,9 +1,9 @@
 === ZM Plugin ===
 Contributors: zuestmedia
-Stable tag: 0.9.7
+Stable tag: 0.9.8
 Tags: editor, template-builder, customizer, zmtheme
 Requires at least: 4.7
-Tested up to: 6.0.1
+Tested up to: 6.0.2
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -30,6 +30,13 @@ Yes. The website management and config settings are working on all themes. The e
 2. This is the second screen shot
 
 == Changelog ==
+
+= 0.9.8 =
+* Update: UIKIT Version 3.15.6
+* Update: Presets CSSVars
+* New: CSSType Settings
+* Update: css_type import/export
+* Update: customizer controlls
 
 = 0.9.7 =
 * Update: some Controlls & Validation - prepared for template-editor quickedit pro setting.
