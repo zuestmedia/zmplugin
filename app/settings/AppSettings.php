@@ -529,9 +529,13 @@ class AppSettings extends \ZMP\Plugin\App {
       }
       .zmcookieconsentnotice{
         margin-left: 40px !important;
-        color: var(--color_text_muted, #999) !important;
+        color: rgba(var(--color_text_inverse,255,255,255),.5) !important;
         text-decoration: none;
         cursor: pointer;
+      }
+      .zmcookieconsentnotice:hover{
+        color: rgba(var(--color_text_inverse,255,255,255),.7) !important;
+        text-decoration: none;
       }
       .zmcookieconsentbutton{
         cursor: pointer;
@@ -553,6 +557,9 @@ class AppSettings extends \ZMP\Plugin\App {
         vertical-align: middle;
         text-align: center;
         text-decoration: none;
+      }
+      .zmcookieconsentbutton:hover{
+        filter:brightness(110%);
       }
       .zmcookieconsentbuttonaccept{}
       .zmcookieconsentbuttondecline{
@@ -591,13 +598,13 @@ class AppSettings extends \ZMP\Plugin\App {
           tag_button_accept.className = 'zmcookieconsentbutton zmcookieconsentbuttonaccept';
           tag_button_accept.setAttribute('id', 'zmcookieconsentaccept2');
           //tag_button_accept.innerHTML = 'Accept';
-          tag_button_accept.innerHTML = '<?php echo __( 'Accept', 'zmplugin' ); ?>';
+          tag_button_accept.innerHTML = '<?php echo __( '✓ Accept', 'zmplugin' ); ?>';
 
           var tag_button_decline = document.createElement("span");
           tag_button_decline.className = 'zmcookieconsentbutton zmcookieconsentbuttondecline';
           tag_button_decline.setAttribute('id', 'zmcookieconsentdecline2');
           //tag_button_decline.innerHTML = 'Decline';
-          tag_button_decline.innerHTML = '<?php echo __( 'Decline', 'zmplugin' ); ?>';
+          tag_button_decline.innerHTML = '<?php echo __( '✗ Decline', 'zmplugin' ); ?>';
 
                 tag_text.appendChild(tag_cookie_notice);
                 tag_text.appendChild(tag_button_accept);

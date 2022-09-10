@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zmplugin-0.9.3\n"
-"POT-Creation-Date: 2022-08-22 15:50+0200\n"
-"PO-Revision-Date: 2022-08-22 15:51+0200\n"
+"POT-Creation-Date: 2022-09-10 12:17+0200\n"
+"PO-Revision-Date: 2022-09-10 12:54+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -64,18 +64,21 @@ msgid ""
 "enhance site navigation, analyze site usage, and assist in our marketing "
 "efforts."
 msgstr ""
+"Wenn Sie auf \"Akzeptieren\" klicken, akzeptieren Sie die Speicherung von "
+"Cookies auf Ihrem Gerät, um die Navigation zu verbessern, die Nutzung zu "
+"analysieren und unsere Marketingaktivitäten zu unterstützen."
 
-#: app/settings/AppSettings.php:588
+#: app/settings/AppSettings.php:595
 msgid "Cookie Notice"
-msgstr ""
+msgstr "Cookie Info"
 
-#: app/settings/AppSettings.php:594
-msgid "Accept"
-msgstr ""
+#: app/settings/AppSettings.php:601
+msgid "✓ Accept"
+msgstr "✓ Akzeptieren"
 
-#: app/settings/AppSettings.php:600
-msgid "Decline"
-msgstr ""
+#: app/settings/AppSettings.php:607
+msgid "✗ Decline"
+msgstr "✗ Ablehnen"
 
 #: app/settings/BlockPatterns.php:30
 msgid "ZM Patterns"
@@ -403,6 +406,30 @@ msgstr ""
 msgid "General Settings"
 msgstr ""
 
+#: app/themesettings/ThemeSettings.php:123
+#: config/themecustomizer/controlls/sortable.php:13
+msgid "Template Editor"
+msgstr ""
+
+#: app/themesettings/ThemeSettings.php:204
+msgid ""
+"Depending on the color palette in use, different CSS options can be used. If "
+"you use only light or dark background colors, the respective option may be "
+"chosen to reduce the CSS file size."
+msgstr ""
+
+#: app/themesettings/ThemeSettings.php:210
+msgid "Mixed Colors"
+msgstr ""
+
+#: app/themesettings/ThemeSettings.php:211
+msgid "Dark Colors"
+msgstr ""
+
+#: app/themesettings/ThemeSettings.php:212
+msgid "Light Colors"
+msgstr ""
+
 #: app/themesettings/ThemeSettingsInit.php:57
 msgid ""
 "You can run your ZM theme in default mode without custom settings options or "
@@ -435,7 +462,7 @@ msgid "Yes"
 msgstr ""
 
 #: config/config.php:9
-msgid "ZMPlugin"
+msgid "ZM Plugin"
 msgstr ""
 
 #: config/settings.php:9
@@ -510,7 +537,7 @@ msgstr ""
 #: config/themecustomizer/controlls/_cssvar_fontstyle.php:16
 #: config/themecustomizer/controlls/_cssvar_text_transform.php:16
 #: config/themecustomizer/controlls/com_colors.php:68
-#: config/themecustomizer/controlls/com_colors.php:78
+#: config/themecustomizer/controlls/com_colors.php:80
 #: config/themecustomizer/controlls/com_colors.php:89
 #: config/themecustomizer/controlls/com_colors.php:96
 msgid "Default"
@@ -593,6 +620,7 @@ msgid "Sticky until parent container ends"
 msgstr ""
 
 #: config/themecustomizer/controlls/_attrs_sticky.php:17
+#: config/themecustomizer/controlls/_attrs_sticky.php:20
 msgid "Sticky slide top"
 msgstr ""
 
@@ -601,26 +629,30 @@ msgid "Sticky show on scroll up"
 msgstr ""
 
 #: config/themecustomizer/controlls/_attrs_sticky.php:19
-msgid "Sticky slide top w box-shadow"
-msgstr ""
-
-#: config/themecustomizer/controlls/_attrs_sticky.php:20
-msgid "Sticky changecolor default"
+msgid "Sticky show on scroll up w box-shadow"
 msgstr ""
 
 #: config/themecustomizer/controlls/_attrs_sticky.php:21
-msgid "Sticky changecolor primary"
+msgid "Sticky slide top w box-shadow"
 msgstr ""
 
 #: config/themecustomizer/controlls/_attrs_sticky.php:22
-msgid "Sticky changecolor secondary"
+msgid "Sticky changecolor default"
 msgstr ""
 
 #: config/themecustomizer/controlls/_attrs_sticky.php:23
-msgid "Sticky changecolor muted"
+msgid "Sticky changecolor primary"
 msgstr ""
 
 #: config/themecustomizer/controlls/_attrs_sticky.php:24
+msgid "Sticky changecolor secondary"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_sticky.php:25
+msgid "Sticky changecolor muted"
+msgstr ""
+
+#: config/themecustomizer/controlls/_attrs_sticky.php:26
 msgid "Stickychangecolor transparent"
 msgstr ""
 
@@ -813,7 +845,7 @@ msgid "Block Body"
 msgstr ""
 
 #: config/themecustomizer/controlls/_class_card_color_background.php:13
-#: config/themecustomizer/controlls/_class_color_background.php:16
+#: config/themecustomizer/controlls/_class_color_background.php:17
 #: config/themecustomizer/controlls/_class_image_background_color.php:14
 #: config/themecustomizer/controlls/_class_skewy.php:16
 #: config/themecustomizer/controlls/com_colors.php:70
@@ -821,7 +853,7 @@ msgid "Primary"
 msgstr ""
 
 #: config/themecustomizer/controlls/_class_card_color_background.php:14
-#: config/themecustomizer/controlls/_class_color_background.php:17
+#: config/themecustomizer/controlls/_class_color_background.php:18
 #: config/themecustomizer/controlls/_class_image_background_color.php:15
 #: config/themecustomizer/controlls/_class_skewy.php:17
 #: config/themecustomizer/controlls/com_colors.php:73
@@ -1401,7 +1433,7 @@ msgstr ""
 msgid "Choose a background color."
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_color_background.php:18
+#: config/themecustomizer/controlls/_class_color_background.php:16
 #: config/themecustomizer/controlls/_class_image_background_color.php:13
 #: config/themecustomizer/controlls/com_colors.php:82
 msgid "Muted"
@@ -1420,7 +1452,7 @@ msgid "Preserve Color"
 msgstr ""
 
 #: config/themecustomizer/controlls/_class_color_helpers.php:16
-msgid "Light on Dark Color"
+msgid "Inverse Color"
 msgstr ""
 
 #: config/themecustomizer/controlls/_class_container.php:11
@@ -3021,6 +3053,7 @@ msgstr ""
 #: config/themecustomizer/controlls/com_articlecontainer.php:14
 #: config/themecustomizer/controlls/com_articlelistcontainer.php:13
 #: config/themecustomizer/controlls/com_authorbox.php:13
+#: config/themecustomizer/controlls/com_body.php:13
 #: config/themecustomizer/controlls/com_colors.php:13
 #: config/themecustomizer/controlls/com_content.php:14
 #: config/themecustomizer/controlls/com_custom_container.php:14
@@ -3028,9 +3061,12 @@ msgstr ""
 #: config/themecustomizer/controlls/com_custom_nav.php:14
 #: config/themecustomizer/controlls/com_custom_queryloop.php:14
 #: config/themecustomizer/controlls/com_custom_widget.php:14
+#: config/themecustomizer/controlls/com_heading.php:13
 #: config/themecustomizer/controlls/com_image.php:13
+#: config/themecustomizer/controlls/com_logo.php:13
 #: config/themecustomizer/controlls/com_main.php:15
 #: config/themecustomizer/controlls/com_menu.php:13
+#: config/themecustomizer/controlls/com_navbar.php:14
 #: config/themecustomizer/controlls/com_navcontainer.php:13
 #: config/themecustomizer/controlls/com_navcontainer_inner.php:13
 #: config/themecustomizer/controlls/com_offcanvas_toggle.php:14
@@ -3056,6 +3092,7 @@ msgstr ""
 #: config/themecustomizer/controlls/com_articlecontainer.php:14
 #: config/themecustomizer/controlls/com_articlelistcontainer.php:13
 #: config/themecustomizer/controlls/com_authorbox.php:13
+#: config/themecustomizer/controlls/com_body.php:13
 #: config/themecustomizer/controlls/com_colors.php:13
 #: config/themecustomizer/controlls/com_content.php:14
 #: config/themecustomizer/controlls/com_custom_container.php:14
@@ -3063,9 +3100,12 @@ msgstr ""
 #: config/themecustomizer/controlls/com_custom_nav.php:14
 #: config/themecustomizer/controlls/com_custom_queryloop.php:14
 #: config/themecustomizer/controlls/com_custom_widget.php:14
+#: config/themecustomizer/controlls/com_heading.php:13
 #: config/themecustomizer/controlls/com_image.php:13
+#: config/themecustomizer/controlls/com_logo.php:13
 #: config/themecustomizer/controlls/com_main.php:15
 #: config/themecustomizer/controlls/com_menu.php:13
+#: config/themecustomizer/controlls/com_navbar.php:14
 #: config/themecustomizer/controlls/com_navcontainer.php:13
 #: config/themecustomizer/controlls/com_navcontainer_inner.php:13
 #: config/themecustomizer/controlls/com_offcanvas_toggle.php:14
@@ -3118,29 +3158,29 @@ msgstr ""
 msgid "Edit Body Settings."
 msgstr ""
 
-#: config/themecustomizer/controlls/com_body.php:14
+#: config/themecustomizer/controlls/com_body.php:17
 msgid ""
 "The Default Body Font Size is the base-size of all other Fonts (1rem is "
 "equal to \"Global Body Font Size\")."
 msgstr ""
 
-#: config/themecustomizer/controlls/com_body.php:21
+#: config/themecustomizer/controlls/com_body.php:24
 msgid "Text Lead"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_body.php:25
+#: config/themecustomizer/controlls/com_body.php:28
 msgid "Text Large"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_body.php:29
+#: config/themecustomizer/controlls/com_body.php:32
 msgid "Article Meta"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_body.php:33
+#: config/themecustomizer/controlls/com_body.php:36
 msgid "Text Meta"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_body.php:37
+#: config/themecustomizer/controlls/com_body.php:40
 msgid "Text Small"
 msgstr ""
 
@@ -3153,7 +3193,7 @@ msgid "Edit global Color settings here."
 msgstr ""
 
 #: config/themecustomizer/controlls/com_colors.php:23
-msgid "Background Default"
+msgid "Default Color"
 msgstr ""
 
 #: config/themecustomizer/controlls/com_colors.php:24
@@ -3178,15 +3218,15 @@ msgid "Ratio 2"
 msgstr ""
 
 #: config/themecustomizer/controlls/com_colors.php:34
-msgid "Background Primary"
+msgid "Muted Color"
 msgstr ""
 
 #: config/themecustomizer/controlls/com_colors.php:45
-msgid "Background Secondary"
+msgid "Primary Color"
 msgstr ""
 
 #: config/themecustomizer/controlls/com_colors.php:56
-msgid "Background Muted"
+msgid "Secondary Color"
 msgstr ""
 
 #: config/themecustomizer/controlls/com_colors.php:67
@@ -3197,7 +3237,7 @@ msgstr ""
 msgid "Global Text Colors"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_colors.php:80
+#: config/themecustomizer/controlls/com_colors.php:78
 msgid "Emphasis"
 msgstr ""
 
@@ -3218,18 +3258,46 @@ msgid "Global Border Color"
 msgstr ""
 
 #: config/themecustomizer/controlls/com_colors.php:100
-msgid "Global Alert Colors"
+msgid "Global Logo Colors"
 msgstr ""
 
 #: config/themecustomizer/controlls/com_colors.php:101
-msgid "Success"
+msgid "Color on Light Background"
 msgstr ""
 
 #: config/themecustomizer/controlls/com_colors.php:103
-msgid "Warning"
+msgid "Hover color on Light Background"
 msgstr ""
 
 #: config/themecustomizer/controlls/com_colors.php:105
+msgid "Color on Dark Background"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_colors.php:107
+msgid "Hover Color on Dark Background"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_colors.php:111
+msgid "Dropdown Colors"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_colors.php:112
+msgid "Background"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_colors.php:116
+msgid "Global Alert Colors"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_colors.php:117
+msgid "Success"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_colors.php:119
+msgid "Warning"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_colors.php:121
 msgid "Danger"
 msgstr ""
 
@@ -3312,55 +3380,55 @@ msgstr ""
 msgid "Edit Heading Settings."
 msgstr ""
 
-#: config/themecustomizer/controlls/com_heading.php:18
+#: config/themecustomizer/controlls/com_heading.php:21
 msgid "Article Title"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_heading.php:22
+#: config/themecustomizer/controlls/com_heading.php:25
 msgid "Card Title"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_heading.php:26
+#: config/themecustomizer/controlls/com_heading.php:29
 msgid "H1"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_heading.php:30
+#: config/themecustomizer/controlls/com_heading.php:33
 msgid "H2"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_heading.php:34
+#: config/themecustomizer/controlls/com_heading.php:37
 msgid "H3"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_heading.php:38
+#: config/themecustomizer/controlls/com_heading.php:41
 msgid "H4"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_heading.php:42
+#: config/themecustomizer/controlls/com_heading.php:45
 msgid "H5"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_heading.php:46
+#: config/themecustomizer/controlls/com_heading.php:49
 msgid "H6"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_heading.php:50
+#: config/themecustomizer/controlls/com_heading.php:53
 msgid "Heading 2xLarge"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_heading.php:54
+#: config/themecustomizer/controlls/com_heading.php:57
 msgid "Heading xLarge"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_heading.php:58
+#: config/themecustomizer/controlls/com_heading.php:61
 msgid "Heading Large"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_heading.php:62
+#: config/themecustomizer/controlls/com_heading.php:65
 msgid "Heading Medium"
 msgstr ""
 
-#: config/themecustomizer/controlls/com_heading.php:66
+#: config/themecustomizer/controlls/com_heading.php:69
 msgid "Heading Small"
 msgstr ""
 
@@ -3378,26 +3446,6 @@ msgstr ""
 
 #: config/themecustomizer/controlls/com_logo.php:10
 msgid "Edit Logo Settings."
-msgstr ""
-
-#: config/themecustomizer/controlls/com_logo.php:21
-msgid "Global Logo Colors"
-msgstr ""
-
-#: config/themecustomizer/controlls/com_logo.php:22
-msgid "Color on Light Background"
-msgstr ""
-
-#: config/themecustomizer/controlls/com_logo.php:24
-msgid "Hover color on Light Background"
-msgstr ""
-
-#: config/themecustomizer/controlls/com_logo.php:26
-msgid "Color on Dark Background"
-msgstr ""
-
-#: config/themecustomizer/controlls/com_logo.php:28
-msgid "Hover Color on Dark Background"
 msgstr ""
 
 #: config/themecustomizer/controlls/com_main.php:10
@@ -3420,16 +3468,8 @@ msgstr ""
 msgid "Edit Navbar Settings."
 msgstr ""
 
-#: config/themecustomizer/controlls/com_navbar.php:20
+#: config/themecustomizer/controlls/com_navbar.php:23
 msgid "Navbar Dimensions"
-msgstr ""
-
-#: config/themecustomizer/controlls/com_navbar.php:24
-msgid "Dropdown Colors"
-msgstr ""
-
-#: config/themecustomizer/controlls/com_navbar.php:25
-msgid "Background"
 msgstr ""
 
 #: config/themecustomizer/controlls/com_navcontainer.php:9
@@ -3531,7 +3571,7 @@ msgid "\"Comments are closed\"-Message:"
 msgstr ""
 
 #: config/themecustomizer/controlls/custom_section_content.php:16
-msgid "Select Custom Section Content"
+msgid "Select Content"
 msgstr ""
 
 #: config/themecustomizer/controlls/custom_section_content.php:18
@@ -3977,16 +4017,12 @@ msgstr ""
 msgid "Drag and Drop the items to sort modules or sections."
 msgstr ""
 
-#: config/themecustomizer/controlls/sortable.php:13
-msgid "Template Editor"
-msgstr ""
-
 #: config/themecustomizer/controlls/sticky_class.php:11
 msgid "Sticky Class:"
 msgstr ""
 
 #: config/themecustomizer/controlls/taxonomy.php:11
-msgid "Select a Taxonomy Term"
+msgid "Select a Taxonomy"
 msgstr ""
 
 #: config/themecustomizer/controlls/template_part.php:11
@@ -4033,7 +4069,7 @@ msgid ""
 msgstr ""
 
 #: config/themecustomizer/controlls/view_status.php:11
-msgid "Where to show this section:"
+msgid "Display Settings:"
 msgstr ""
 
 #: config/themecustomizer/controlls/view_status.php:12

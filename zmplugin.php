@@ -5,7 +5,7 @@
   Description: ZM Plugin offers various website management and configuration settings and extends the customizer functionality for themes based on ZM Theme-Framework.
   Author: Michael Züst
   Author URI: https://zuestmedia.ch/
-  Version: 0.9.8
+  Version: 0.9.9
   Text Domain: zmplugin
   Domain Path: /languages
   ZMDLID: 2myl7t6emmbu4819uojautl0m0fo2fdktoaw
