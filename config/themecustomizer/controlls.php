@@ -28,6 +28,9 @@ use ZMP\Plugin\Config\ThemeCustomizer\Controlls\_class_section;
 
 use ZMP\Plugin\Config\ThemeCustomizer\Controlls\_class_container;
 
+use ZMP\Plugin\Config\ThemeCustomizer\Controlls\_background_status;
+use ZMP\Plugin\Config\ThemeCustomizer\Controlls\_background_url;
+use ZMP\Plugin\Config\ThemeCustomizer\Controlls\_background_featured;
 use ZMP\Plugin\Config\ThemeCustomizer\Controlls\_background_image;
 use ZMP\Plugin\Config\ThemeCustomizer\Controlls\_background_image_size;
 use ZMP\Plugin\Config\ThemeCustomizer\Controlls\_class_background_img;
@@ -98,32 +101,36 @@ class controlls extends \ZMP\Plugin\ExtendControlls {
     //com group: section
     $this->com_section =              Build::newClass( $n->getClass('com_section') );
 
-    $this->com_section_widget =       Build::newClass( $n->getClass('com_section_widget') );
-    $this->com_section_html =         Build::newClass( $n->getClass('com_section_html') );
-    $this->com_section_nav =          Build::newClass( $n->getClass('com_section_nav') );
-    $this->com_section_offcanvas =    Build::newClass( $n->getClass('com_section_offcanvas') );
-    $this->com_section_queryloop =    Build::newClass( $n->getClass('com_section_queryloop') );
-    $this->com_section_extensions =   Build::newClass( $n->getClass('com_section_extensions') );
+    $this->com_section_widget =          Build::newClass( $n->getClass('com_section_widget') );
+    $this->com_section_block_template =  Build::newClass( $n->getClass('com_section_block_template') );
+    $this->com_section_html =            Build::newClass( $n->getClass('com_section_html') );
+    $this->com_section_nav =             Build::newClass( $n->getClass('com_section_nav') );
+    $this->com_section_offcanvas =       Build::newClass( $n->getClass('com_section_offcanvas') );
+    $this->com_section_queryloop =       Build::newClass( $n->getClass('com_section_queryloop') );
+    $this->com_section_extensions =      Build::newClass( $n->getClass('com_section_extensions') );
 
-    $this->com_main_section_widget =       Build::newClass( $n->getClass('com_main_section_widget') );
-    $this->com_main_section_html =         Build::newClass( $n->getClass('com_main_section_html') );
-    $this->com_main_section_nav =          Build::newClass( $n->getClass('com_main_section_nav') );
-    $this->com_main_section_offcanvas =    Build::newClass( $n->getClass('com_main_section_offcanvas') );
-    $this->com_main_section_queryloop =    Build::newClass( $n->getClass('com_main_section_queryloop') );
-    $this->com_main_section_extensions =   Build::newClass( $n->getClass('com_main_section_extensions') );
+    $this->com_main_section_widget =          Build::newClass( $n->getClass('com_main_section_widget') );
+    $this->com_main_section_block_template =  Build::newClass( $n->getClass('com_main_section_block_template') );
+    $this->com_main_section_html =            Build::newClass( $n->getClass('com_main_section_html') );
+    $this->com_main_section_nav =             Build::newClass( $n->getClass('com_main_section_nav') );
+    $this->com_main_section_offcanvas =       Build::newClass( $n->getClass('com_main_section_offcanvas') );
+    $this->com_main_section_queryloop =       Build::newClass( $n->getClass('com_main_section_queryloop') );
+    $this->com_main_section_extensions =      Build::newClass( $n->getClass('com_main_section_extensions') );
 
-    $this->com_content_section_widget =       Build::newClass( $n->getClass('com_content_section_widget') );
-    $this->com_content_section_html =         Build::newClass( $n->getClass('com_content_section_html') );
-    $this->com_content_section_nav =          Build::newClass( $n->getClass('com_content_section_nav') );
-    $this->com_content_section_offcanvas =    Build::newClass( $n->getClass('com_content_section_offcanvas') );
-    $this->com_content_section_queryloop =    Build::newClass( $n->getClass('com_content_section_queryloop') );
-    $this->com_content_section_extensions =   Build::newClass( $n->getClass('com_content_section_extensions') );
+    $this->com_content_section_widget =          Build::newClass( $n->getClass('com_content_section_widget') );
+    $this->com_content_section_block_template =  Build::newClass( $n->getClass('com_content_section_block_template') );
+    $this->com_content_section_html =            Build::newClass( $n->getClass('com_content_section_html') );
+    $this->com_content_section_nav =             Build::newClass( $n->getClass('com_content_section_nav') );
+    $this->com_content_section_offcanvas =       Build::newClass( $n->getClass('com_content_section_offcanvas') );
+    $this->com_content_section_queryloop =       Build::newClass( $n->getClass('com_content_section_queryloop') );
+    $this->com_content_section_extensions =      Build::newClass( $n->getClass('com_content_section_extensions') );
 
-    $this->com_custom_container =     Build::newClass( $n->getClass('com_custom_container') );
-    $this->com_custom_widget =        Build::newClass( $n->getClass('com_custom_widget') );
-    $this->com_custom_html =          Build::newClass( $n->getClass('com_custom_html') );
-    $this->com_custom_nav =           Build::newClass( $n->getClass('com_custom_nav') );
-    $this->com_custom_queryloop =     Build::newClass( $n->getClass('com_custom_queryloop') );
+    $this->com_custom_container =      Build::newClass( $n->getClass('com_custom_container') );
+    $this->com_custom_widget =         Build::newClass( $n->getClass('com_custom_widget') );
+    $this->com_custom_block_template = Build::newClass( $n->getClass('com_custom_block_template') );
+    $this->com_custom_html =           Build::newClass( $n->getClass('com_custom_html') );
+    $this->com_custom_nav =            Build::newClass( $n->getClass('com_custom_nav') );
+    $this->com_custom_queryloop =      Build::newClass( $n->getClass('com_custom_queryloop') );
 
     //center sortable-sections-containers
     $this->com_main =                 Build::newClass( $n->getClass('com_main') );
@@ -213,11 +220,17 @@ class controlls extends \ZMP\Plugin\ExtendControlls {
 
     $this->section_class_skewy =                     new _class_skewy(22,4,'module','default','section_element');
 
-    $this->section_background_image =                new _background_image(23,2,'module','default','section_element');
-      $this->section_class_background_img =          new _class_background_img(24,2,'module','default','section_background_image');
-      $this->section_background_image_size =         new _background_image_size(23,2,'module','default','section_background_image');
-      $this->section_class_background_pos =          new _class_background_pos(25,2,'module','default','section_background_image');
-      $this->section_class_background_mods =         new _class_background_mods(26,2,'module','default','section_background_image');
+    $this->section_background_status =               new _background_status(23,2,'module','default','section_element');
+
+      $this->section_background_image =              new _background_image(23,2,'module','default','section_background_status'); //only showing if status = file
+      $this->section_background_url =                new _background_url(23,2,'module','default','section_background_status'); //only showing if status = url
+
+      //showing if status not NULL
+      $this->section_background_featured =           new _background_featured(23,2,'module','default','section_background_status');
+      $this->section_class_background_img =          new _class_background_img(24,2,'module','default','section_background_status');
+      $this->section_background_image_size =         new _background_image_size(23,2,'module','default','section_background_status');
+      $this->section_class_background_pos =          new _class_background_pos(25,2,'module','default','section_background_status');
+      $this->section_class_background_mods =         new _class_background_mods(26,2,'module','default','section_background_status');
 
     $this->section_attrs_sticky =                    new _attrs_sticky(27,2,'module','default','section_element');
 
@@ -279,11 +292,18 @@ class controlls extends \ZMP\Plugin\ExtendControlls {
     //ContainerSortableMain & ContainerSortableErrorPage
     $this->moduleouter_class_color_background =      new _class_color_background(20,2,'module','default','moduleouter_element');
     $this->moduleouter_class_color_helpers =         new _class_color_helpers(21,2,'module','default','moduleouter_element');
-     $this->moduleouter_background_image =           new _background_image(22,2,'module','default','moduleouter_element');
-      $this->moduleouter_background_image_size =     new _background_image_size(23,2,'module','default','moduleouter_background_image');
-      $this->moduleouter_class_background_img =      new _class_background_img(24,2,'module','default','moduleouter_background_image');
-      $this->moduleouter_class_background_pos =      new _class_background_pos(25,2,'module','default','moduleouter_background_image');
-      $this->moduleouter_class_background_mods =     new _class_background_mods(26,2,'module','default','moduleouter_background_image');
+
+      $this->moduleouter_background_status =         new _background_status(22,2,'module','default','moduleouter_element');
+
+        $this->moduleouter_background_url =          new _background_url(22,2,'module','default','moduleouter_background_status');
+        $this->moduleouter_background_image =        new _background_image(22,2,'module','default','moduleouter_background_status');
+
+        $this->moduleouter_background_featured =     new _background_featured(22,2,'module','default','moduleouter_background_status');
+        $this->moduleouter_background_image_size =   new _background_image_size(23,2,'module','default','moduleouter_background_status');
+        $this->moduleouter_class_background_img =    new _class_background_img(24,2,'module','default','moduleouter_background_status');
+        $this->moduleouter_class_background_pos =    new _class_background_pos(25,2,'module','default','moduleouter_background_status');
+        $this->moduleouter_class_background_mods =   new _class_background_mods(26,2,'module','default','moduleouter_background_status');
+
     $this->moduleouter_class_section =               new _class_section(29,2,'module','default','moduleouter_element');
 
 

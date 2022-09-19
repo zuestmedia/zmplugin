@@ -68,12 +68,14 @@ class BuildObject extends \ZMP\Plugin\ExtendPresets {
     $this->navbar  =  Build::newClass( $n->getClass('navbar') );
 
     $this->section_widget =  Build::newClass( $n->getClass('section_widget') );
+    $this->section_block_template =  Build::newClass( $n->getClass('section_block_template') );
     $this->section_html =  Build::newClass( $n->getClass('section_html') );
     $this->section_nav =  Build::newClass( $n->getClass('section_nav') );
     $this->section_offcanvas =  Build::newClass( $n->getClass('section_offcanvas') );
     $this->section_queryloop =  Build::newClass( $n->getClass('section_queryloop') );
 
     $this->custom_widget =  Build::newClass( $n->getClass('custom_widget') );
+    $this->custom_block_template =  Build::newClass( $n->getClass('custom_block_template') );
     $this->custom_container =  Build::newClass( $n->getClass('custom_container') );
     $this->custom_html =  Build::newClass( $n->getClass('custom_html') );
     $this->custom_nav =  Build::newClass( $n->getClass('custom_nav') );

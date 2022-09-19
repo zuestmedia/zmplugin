@@ -37,8 +37,10 @@ class _json extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_textarea {
     $this->default();
 
     //Values
+    /*
     $this->active_callback_item = 'custom_section_content';
     $this->active_callback_item_functionname = 'CallbackAlt1';
+    */
 
     $this->label = __( 'Query Args:', 'zmplugin' );
     $this->description = __( 'Add here your custom WP_Query in JSON Format. The simplest way is to use an online WP_Query Generator.', 'zmplugin' );

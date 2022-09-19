@@ -7,8 +7,9 @@ class _background_image extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls\Bui
   protected function default() {
 
     //Values
-    $this->active_callback_master = 1;
-    $this->transport = 'refresh';//sonst geht active callback nicht...
+    //$this->active_callback_master = 1;
+    $this->active_callback_item_functionname = 'CallbackAlt1';//Alt1 = active_callback_value_alt_1 of background_status
+    //$this->transport = 'refresh';//sonst geht active callback nicht...
     $this->type = 'media';
     $this->mime_type = 'image';
     /*$this->button_labels = array( // Optional

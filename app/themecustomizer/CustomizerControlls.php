@@ -976,7 +976,7 @@ class CustomizerControlls extends WP_Customize_Control {
       if( get_class($zmtheme[ $id ]) == 'ZMT\Theme\Modules\modSection' || get_class($zmtheme[ $id ]) == 'ZMT\Theme\Modules\modContainer' ){
 
         $section_content_type = $zmtheme[ $id ]->getSectionContentType();
-        if( $section_content_type == 'default' || ( $section_content_type == 'custom' && $zmtheme[ $id ]->getArg('custom_section_content') == 'default' ) ){
+        if( $section_content_type == 'default' ){
 
           $result .= '<a href="javascript:wp.customize.section( \'sidebar-widgets-'.esc_attr( $id ).'_defsidebar\' ).focus();"><i uk-icon="icon:pencil;ratio:0.8"></i></a>';
 

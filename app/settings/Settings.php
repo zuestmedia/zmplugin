@@ -12,6 +12,12 @@ class Settings {
 
       $settings_obj = new \ZMP\Plugin\Config\appsettings();
 
+      //register action button
+      $cleancache = new \ZMP\Plugin\Settings\AdminButtonBlockPatternsCache( 'zm_blockpatterns_cache_cleaning' );
+      $cleancache->setAdminUrl('admin.php?page='.$zmplugin['zmplugin']->getSlug().'-settings' );
+      $cleancache->setAdminNotice(__('Blockpatterns cache cleaned.', 'zmplugin'));
+      $cleancache->registerGetParams();
+
       /**
       * ZMPluginForm
       */
@@ -29,7 +35,68 @@ class Settings {
 
 
         $this->form->addField('html',
-          $template->htmlSettingsFormAccordionStart(__('Private Mode','zmplugin'))
+          $template->htmlSettingsFormAccordionStart(__('Block Patterns','zmplugin'))
+        );
+
+          $this->form->addField('html',
+            '<div class="uk-card uk-card-body uk-card-small uk-padding-remove-top uk-padding-remove-left"><label class="uk-form-label">'.__('Clean Block Patterns Cache','zmplugin').' </label><div class="uk-form-controls">'.$cleancache->getActionButton( __('Clean cache', 'zmplugin'), 'uk-button uk-button-primary uk-button-small' ).'</div></div>'
+          );
+
+
+
+
+        $this->form->addField('html',
+          $template->htmlSettingsFormAccordionBetween(__('Cookie Consent Banner','zmplugin'), false)
+        );
+
+
+          $this->form->addField('html','<p>'.__('Load "Tracking & Analytics" Scripts only after Cookie Consent Banner has been accepted.', 'zmplugin').'</p>');
+
+          $this->form->addField(
+            'select',
+              array(
+                'label'=> __('Status', 'zmplugin'),
+                'class'=>'uk-select uk-form-width-large',
+                'options'=>$settings_obj->nonadmin_redirect_choices,
+                'name'=>$zmplugin['app']->getCookieConsentStatusTextFieldName(),
+                'default_value'=>$zmplugin['app']->getCookieConsentStatusDefaultValue()
+              ),
+              'option_mod',//type
+              '_bool',//optionsgroup + "_option_mod_name"
+              'boolarray'
+          );
+
+          $this->form->addField(
+            'textarea',
+              array(
+                'label'=> __('Text', 'zmp-breadcrumbs'),
+                'class'=>'uk-textarea uk-form-width-large',
+                'name'=>$zmplugin['app']->getCookieConsentTextTextFieldName(),
+                'default_value'=>$zmplugin['app']->getCookieConsentTextDefaultValue()
+              ),
+              'option_mod',//type
+              '_text',//optionsgroup + "_option_mod_name"
+              'textarray'
+          );
+
+          $this->form->addField(
+            'input',
+              array(
+                'type'=> 'url',
+                'label'=> __('Privacy URL', 'zmplugin'),
+                'class'=>'uk-input uk-form-width-large',
+                'placeholder'=>'https://example.com/privacy/',
+                'icon'=>'world',
+                'name'=>$zmplugin['app']->getCookieConsentPrivacyUrlTextFieldName(),
+                'default_value'=>$zmplugin['app']->getCookieConsentPrivacyUrlDefaultValue()
+              ),
+              'option_mod',//type
+              '_url',//optionsgroup + "_option_mod_name"
+              'urlarray'
+          );
+
+        $this->form->addField('html',
+          $template->htmlSettingsFormAccordionBetween(__('Private Mode','zmplugin'))
         );
 
 
@@ -172,58 +239,6 @@ class Settings {
               '_text',//optionsgroup + "_option_mod_name"
               'textarray'
           );
-
-
-        $this->form->addField('html',
-          $template->htmlSettingsFormAccordionBetween(__('Cookie Consent Banner','zmplugin'))
-        );
-
-
-          $this->form->addField('html','<p>'.__('Load "Tracking & Analytics" Scripts only after Cookie Consent Banner has been accepted.', 'zmplugin').'</p>');
-
-          $this->form->addField(
-            'select',
-              array(
-                'label'=> __('Status', 'zmplugin'),
-                'class'=>'uk-select uk-form-width-large',
-                'options'=>$settings_obj->nonadmin_redirect_choices,
-                'name'=>$zmplugin['app']->getCookieConsentStatusTextFieldName(),
-                'default_value'=>$zmplugin['app']->getCookieConsentStatusDefaultValue()
-              ),
-              'option_mod',//type
-              '_bool',//optionsgroup + "_option_mod_name"
-              'boolarray'
-          );
-
-          $this->form->addField(
-            'textarea',
-              array(
-                'label'=> __('Text', 'zmp-breadcrumbs'),
-                'class'=>'uk-textarea uk-form-width-large',
-                'name'=>$zmplugin['app']->getCookieConsentTextTextFieldName(),
-                'default_value'=>$zmplugin['app']->getCookieConsentTextDefaultValue()
-              ),
-              'option_mod',//type
-              '_text',//optionsgroup + "_option_mod_name"
-              'textarray'
-          );
-
-          $this->form->addField(
-            'input',
-              array(
-                'type'=> 'url',
-                'label'=> __('Privacy URL', 'zmplugin'),
-                'class'=>'uk-input uk-form-width-large',
-                'placeholder'=>'https://example.com/privacy/',
-                'icon'=>'world',
-                'name'=>$zmplugin['app']->getCookieConsentPrivacyUrlTextFieldName(),
-                'default_value'=>$zmplugin['app']->getCookieConsentPrivacyUrlDefaultValue()
-              ),
-              'option_mod',//type
-              '_url',//optionsgroup + "_option_mod_name"
-              'urlarray'
-          );
-
 
         $this->form->addField('html',
           $template->htmlSettingsFormAccordionBetween(__('WP Dashboard','zmplugin'))

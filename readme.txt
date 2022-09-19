@@ -1,6 +1,6 @@
 === ZM Plugin ===
 Contributors: zuestmedia
-Stable tag: 0.9.9
+Stable tag: 0.9.10
 Tags: editor, template-builder, customizer, zmtheme
 Requires at least: 4.7
 Tested up to: 6.0.2
@@ -30,6 +30,12 @@ Yes. The website management and config settings are working on all themes. The e
 2. This is the second screen shot
 
 == Changelog ==
+
+= 0.9.10 =
+* New: BlockPatterns API
+* Removed: static BlockPatterns html
+* Updated: Customizer Controlls Background Image and others
+* Updated: Presets files created
 
 = 0.9.9 =
 * Update: Language Files

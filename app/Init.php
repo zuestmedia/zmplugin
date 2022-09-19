@@ -9,7 +9,7 @@ class Init {
       do_action( 'zmplugin_load_admin_config' );
 
       $this->initPlugin();
-      $this->initPluginSettings();
+      $this->initPluginLoaded();
 
       do_action( 'zmplugin_load_zmpro' );
 
@@ -33,14 +33,22 @@ class Init {
 
     }
 
-    public function initPluginSettings(){
-      add_action('zmplugin_loaded', array( $this, 'PluginSettingsStart' ));
+    public function initPluginLoaded(){
+      add_action('zmplugin_loaded', array( $this, 'PluginLoadedStart' ));
     }
 
-    public function PluginSettingsStart(){
+    public function PluginLoadedStart(){
+
+      //start block patterns
+      if (class_exists ('\ZMP\Plugin\Settings\InitBlockPatterns')) {
+
+        new \ZMP\Plugin\Settings\InitBlockPatterns();
+
+      }
 
       if(is_admin()) {
 
+        //start plugin admin settings
         if (class_exists ('\ZMP\Plugin\Settings\SettingsInit')) {
 
           new \ZMP\Plugin\Settings\SettingsInit();
