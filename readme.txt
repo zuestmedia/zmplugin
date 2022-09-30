@@ -1,6 +1,6 @@
 === ZM Plugin ===
 Contributors: zuestmedia
-Stable tag: 0.9.10
+Stable tag: 0.9.11
 Tags: editor, template-builder, customizer, zmtheme
 Requires at least: 4.7
 Tested up to: 6.0.2
@@ -30,6 +30,14 @@ Yes. The website management and config settings are working on all themes. The e
 2. This is the second screen shot
 
 == Changelog ==
+
+= 0.9.11 =
+* Update: Presets some args not resetting anymore on preset Change
+* Update: Presets postmeta choices
+* Update: Presets sitelogo choices
+* Update: UIKIT Version 3.15.10
+* Update: Customizer Visibility Controll - tablet landscape
+* New: Customizer Image Controll - align
 
 = 0.9.10 =
 * New: BlockPatterns API

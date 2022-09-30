@@ -60,6 +60,8 @@ use ZMP\Plugin\Config\ThemeCustomizer\Controlls\_class_navbar_item_pos;
 use ZMP\Plugin\Config\ThemeCustomizer\Controlls\_class_text_helpers;
 use ZMP\Plugin\Config\ThemeCustomizer\Controlls\_class_text_helpers_string;
 use ZMP\Plugin\Config\ThemeCustomizer\Controlls\_class_text_align;
+
+use ZMP\Plugin\Config\ThemeCustomizer\Controlls\_class_align;
 use ZMP\Plugin\Config\ThemeCustomizer\Controlls\_class_margin_vertical;
 
 use ZMP\Plugin\Config\ThemeCustomizer\Controlls\_class_child_width;
@@ -348,6 +350,11 @@ class controlls extends \ZMP\Plugin\ExtendControlls {
     //module margin and text align helpers
     $this->module_class_margin_vertical =            new _class_margin_vertical(20,2,'module','default','module_element');
     $this->module_class_text_align =                 new _class_text_align(21,2,'module','default','module_element');
+
+    //alignement (now only applied to featured image...)
+    $this->module_class_align =                      new _class_align(21,2,'module','default','module_element');
+
+
 
 
   /**

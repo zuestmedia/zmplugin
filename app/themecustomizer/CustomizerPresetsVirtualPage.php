@@ -94,8 +94,20 @@ class CustomizerPresetsVirtualPage extends \ZMP\Plugin\VirtualPage {
 
             //reset_to_default is resulting in default value!
             if ( $preset_id != 'default' && $preset_id != 'reset_to_default' ) {
+
               unset($result['presets']);
+
+              //unset user settings like taxonomy, posttype, template usw...
+              unset($result['meta_key']);
+              unset($result['custom_section_content']);
+              unset($result['taxonomy']);
+              unset($result['query_args_json']);
+              unset($result['offcanvas_module']);
+              unset($result['posts_templates_object']);
+              unset($result['block_template']);
+
             }
+
             unset($result['item_position']);
             unset($result['parent_container']);
 

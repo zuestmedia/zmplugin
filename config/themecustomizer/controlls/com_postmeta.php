@@ -9,6 +9,9 @@ class com_postmeta {
     //Values
     $this->label = __( 'Post Meta', 'zmplugin' );
 
+    $this->presets = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\presets();
+    $this->presets->choices = \ZMT\Theme\Helpers::getPresetChoices( 'postmeta', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
+
   }
 
 }
