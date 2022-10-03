@@ -8,7 +8,7 @@ class config {
 
     $this->pluginname = __( 'ZM Plugin', 'zmplugin' );
 
-    $this->version = '0.9.11';
+    $this->version = '1.0.0';
 
   }
 

@@ -2,10 +2,10 @@
   /*
   Plugin Name: ZM Plugin
   Plugin URI: https://zmplugin.com/
-  Description: ZM Plugin offers various website management and configuration settings and extends the customizer functionality for themes based on ZM Theme-Framework.
-  Author: Michael Züst
-  Author URI: https://zuestmedia.ch/
-  Version: 0.9.11
+  Description: ZM Plugin is an extension for WordPress themes based on the ZM-Theme-Framework and extends ZMT-Themes with various options and customizer settings.
+  Author: ZuestMedia
+  Author URI: https://zmplugin.com/
+  Version: 1.0.0
   Text Domain: zmplugin
   Domain Path: /languages
   ZMDLID: 2myl7t6emmbu4819uojautl0m0fo2fdktoaw

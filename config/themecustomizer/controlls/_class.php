@@ -72,5 +72,9 @@ class _class extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls\BuildSingleCon
     $this->default();
     $this->label = __( 'Meta Nav Class:', 'zmplugin' );
   }
+  protected function avatar_class() {
+    $this->default();
+    $this->label = __( 'Avatar Class:', 'zmplugin' );
+  }
 
 }

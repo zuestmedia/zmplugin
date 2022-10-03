@@ -1,35 +1,75 @@
 === ZM Plugin ===
 Contributors: zuestmedia
-Stable tag: 0.9.11
-Tags: editor, template-builder, customizer, zmtheme
+Stable tag: 1.0.0
+Tags: block patterns, cookie consent banner, customizer, zmtheme
 Requires at least: 4.7
 Tested up to: 6.0.2
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-ZM Plugin offers various website management and configuration settings and stiles and options functionality for themes based on ZM Theme-Framework.
+ZM Plugin is an extension for WordPress themes based on the ZM-Theme-Framework and extends ZMT-Themes with various options and customizer settings.
 
 == Description ==
 
-[ZM Plugin](https://zmplugin.com/) offers various website management and configuration settings to adjust WordPress core functionality for all Themes and Plugins. Furthermore ZM Plugin extends the customizer for all themes based on [ZM Theme-Framework](https://zmtheme.com/).
+[ZM Plugin](https://zmplugin.com/) is an extension for WordPress themes based on the [ZM-Theme-Framework](https://zmtheme.com/) (ZMT) and extends ZMT-Themes with various options and customizer settings. This plugin can also be used as a "standalone" plugin in a reduced scope.
+
+== Plugin Features ==
+
+= Block Patterns =
+Access to a selection of pre-built block patterns that can be easily inserted in the WordPress Gutenberg editor.
+
+= Block Templates <sup>*</sup> =
+ZMT themes use block templates to display content statically or dynamically. All block templates can be edited using the WordPress Gutenberg editor.
+
+= Cookie Consent Banner =
+Cookie Consent Banner for GDPR compliant integration of Google Analytics, Google Tag Manager and Matomo (self-hosted).
+
+= Customizer settings <sup>*</sup> =
+When using a WordPress theme based on the ZM theme framework, additional customizer settings are displayed.
+
+= Design Explorer <sup>*</sup> =
+The design explorer offers the possibility to import directly prefabricated starter designs.
+
+= Private Mode =
+Private mode to redirect visitors to the login form or to a page of their choice. Useful for maintenance work or not yet finished websites.
+
+= Tracking & Analytics  =
+Google Analytics 4, Google Tag Manager or Matomo (self-hosted) can be integrated. GDPR compliant if desired, if Cookie Consent banner is enabled.
+
+= WP Dashboard Options =
+Personalization options for the WordPress dashboard. WordPress logo, help tabs as well as footer text can be customized.
+
+= WP Login Options =
+Personalization options for the WordPress login form (wp-login.php). The login logo as well as the redirect destination can be customized.
+
+<sup>*</sup> only available in combination with [ZMT Themes](https://zmtheme.com/), e.g. Corporate or Modular
+
+== Resources ==
+
+Learn more about ZM WordPress themes and plugins at [zmtheme.com](https://zmtheme.com/).
+
+If you have any questions or need help, visit the [support page](https://zmtheme.com/support/).
+
+You can also find us on [Github](https://github.com/zuestmedia/)!
+
 
 == Frequently Asked Questions ==
 
 = How to install ZM Plugin? =
-
 To install ZM Plugin, go to Dashboard >> Plugins >> Add new. Then enter "ZM Plugin" in the search field, click on install and activate.
 
 = Does ZM Plugin work as standalone? =
-
 Yes. The website management and config settings are working on all themes. The extended customizer settings are only available with ZMTheme WordPress Themes.
 
-== Screenshots ==
-
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Screenshots are stored in the /assets directory.
-2. This is the second screen shot
-
 == Changelog ==
+
+= 1.0.0 =
+* Update: readme.txt
+* Update: theme-settings-template documentation and pro link changed
+* Added: new controlls - avatar_class, meta_subnav_attrs
+* Added: controll choice - _element "main"
+* Update: Services Free/Pro id
 
 = 0.9.11 =
 * Update: Presets some args not resetting anymore on preset Change

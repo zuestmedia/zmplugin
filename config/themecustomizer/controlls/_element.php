@@ -18,6 +18,7 @@ class _element extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls\BuildSingleC
       'li' => __( 'li', 'zmplugin' ),
       'section' => __( 'section', 'zmplugin' ),
       'header' => __( 'header', 'zmplugin' ),
+      'main' => __( 'main', 'zmplugin' ),
       'footer' => __( 'footer', 'zmplugin' ),
       'article' => __( 'article', 'zmplugin' ),
       'nav' => __( 'nav', 'zmplugin' ),

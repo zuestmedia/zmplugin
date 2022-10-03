@@ -113,6 +113,13 @@ class _json extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_textarea {
     $this->label = __( 'Header grid attributes:', 'zmplugin' );
 
   }
+  protected function meta_subnav_attrs() {
+
+    $this->default();
+
+    $this->label = __( 'Meta Nav Attributes:', 'zmplugin' );
+
+  }
   protected function meta_wrap() {
 
     $this->default();

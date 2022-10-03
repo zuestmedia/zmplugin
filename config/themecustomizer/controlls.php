@@ -495,6 +495,7 @@ class controlls extends \ZMP\Plugin\ExtendControlls {
     $this->header_class = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_class(120,4,NULL,'header_class');//commentslist
     $this->meta_class = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_class(120,4,NULL,'meta_class');//commentslist
     $this->meta_subnav_class = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_class(120,4,NULL,'meta_subnav_class');//commentslist
+    $this->avatar_class = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_class(120,4,NULL,'avatar_class');//commentslist
 
     //xy extends _range
     $this->avatar_size = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\avatar_size(10,2,'content'); //commentslist
@@ -514,6 +515,7 @@ class controlls extends \ZMP\Plugin\ExtendControlls {
     $this->title_wrap = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_json(120,4,NULL,'title_wrap');//commentslist
     $this->author_link_wrap = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_json(120,4,NULL,'author_link_wrap');//commentslist
     $this->header_grid = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_json(120,4,NULL,'header_grid');//commentslist
+    $this->meta_subnav_attrs = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_json(120,4,NULL,'meta_subnav_attrs');//commentslist
     $this->meta_wrap = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_json(120,4,NULL,'meta_wrap');//postmeta, termmeta
     $this->caption_wrap = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_json(120,4,NULL,'caption_wrap'); //image
     $this->last_wrap = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_json(120,4,NULL,'last_wrap');//articlelinks

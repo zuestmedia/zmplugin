@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zmplugin-0.9.3\n"
-"POT-Creation-Date: 2022-09-10 12:17+0200\n"
-"PO-Revision-Date: 2022-09-10 12:54+0200\n"
+"POT-Creation-Date: 2022-10-03 23:56+0200\n"
+"PO-Revision-Date: 2022-10-03 23:56+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -80,10 +80,6 @@ msgstr "✓ Akzeptieren"
 msgid "✗ Decline"
 msgstr "✗ Ablehnen"
 
-#: app/settings/BlockPatterns.php:30
-msgid "ZM Patterns"
-msgstr ""
-
 #: app/settings/Dashboard.php:24
 msgid "Overview"
 msgstr ""
@@ -115,15 +111,53 @@ msgid ""
 "extends the customizer functionality for themes based on ZMTheme-Framework."
 msgstr ""
 
-#: app/settings/Settings.php:32
+#: app/settings/Settings.php:18
+msgid "Blockpatterns cache cleaned."
+msgstr ""
+
+#: app/settings/Settings.php:38
+msgid "Block Patterns"
+msgstr ""
+
+#: app/settings/Settings.php:42
+msgid "Clean Block Patterns Cache"
+msgstr ""
+
+#: app/settings/Settings.php:42
+msgid "Clean cache"
+msgstr ""
+
+#: app/settings/Settings.php:49
+msgid "Cookie Consent Banner"
+msgstr ""
+
+#: app/settings/Settings.php:53
+msgid ""
+"Load \"Tracking & Analytics\" Scripts only after Cookie Consent Banner has "
+"been accepted."
+msgstr ""
+
+#: app/settings/Settings.php:58
+msgid "Status"
+msgstr ""
+
+#: app/settings/Settings.php:72
+msgid "Text"
+msgstr ""
+
+#: app/settings/Settings.php:86
+msgid "Privacy URL"
+msgstr ""
+
+#: app/settings/Settings.php:99
 msgid "Private Mode"
 msgstr ""
 
-#: app/settings/Settings.php:39
+#: app/settings/Settings.php:106
 msgid "Redirect Visitors"
 msgstr ""
 
-#: app/settings/Settings.php:40
+#: app/settings/Settings.php:107
 #, fuzzy
 #| msgid ""
 #| "When you activate the private mode, all non-logged-in site visitors will "
@@ -136,11 +170,11 @@ msgstr ""
 "Besucher der Website zur Login-Seite oder zu einer benutzerdefinierten "
 "Umleitungsurl umgeleitet."
 
-#: app/settings/Settings.php:57
+#: app/settings/Settings.php:124
 msgid "Custom Redirect URL"
 msgstr ""
 
-#: app/settings/Settings.php:58
+#: app/settings/Settings.php:125
 msgid ""
 "By default visitors will be redirected to wp-login page. Place a custom URL "
 "where you want your visitors to land if not on login page. Don't forget to "
@@ -151,11 +185,11 @@ msgstr ""
 "wenn sie nicht auf der Login-Seite sind. Vergessen Sie nicht, diese Seite "
 "auszuschließen."
 
-#: app/settings/Settings.php:74
+#: app/settings/Settings.php:141
 msgid "Excluded Pages"
 msgstr ""
 
-#: app/settings/Settings.php:75
+#: app/settings/Settings.php:142
 msgid ""
 "Add a commaseparated list of pages, that will be excluded from private mode. "
 "Use page-id's or page-slug's."
@@ -163,112 +197,90 @@ msgstr ""
 "Fügen Sie eine kommagetrennte Liste von Seiten hinzu, die vom privaten Modus "
 "ausgeschlossen werden sollen. Verwenden Sie page-id's oder page-slug's."
 
-#: app/settings/Settings.php:90
+#: app/settings/Settings.php:157
 msgid "Tracking & Analytics"
 msgstr ""
 
-#: app/settings/Settings.php:93
+#: app/settings/Settings.php:160
 msgid "Matomo"
 msgstr ""
 
-#: app/settings/Settings.php:94
+#: app/settings/Settings.php:161
 msgid "Only works with self-hosted Matomo version."
 msgstr ""
 
-#: app/settings/Settings.php:100
+#: app/settings/Settings.php:167
 msgid "Server URL"
 msgstr ""
 
-#: app/settings/Settings.php:116
+#: app/settings/Settings.php:183
 msgid "Site-ID"
 msgstr ""
 
-#: app/settings/Settings.php:130
+#: app/settings/Settings.php:197
 msgid "No Cookie Tracking?"
 msgstr ""
 
-#: app/settings/Settings.php:132
+#: app/settings/Settings.php:199
 msgid ""
 "To load Matomo Analytics GDPR compliant without cookie consent, activate "
 "\"No Cookie Tracking\" on your Server and activate this option. So Matomo "
 "Analytics Script will be loaded without cookie consent question."
 msgstr ""
 
-#: app/settings/Settings.php:142
+#: app/settings/Settings.php:209
 msgid "Google Analytics 4"
 msgstr ""
 
-#: app/settings/Settings.php:148
+#: app/settings/Settings.php:215
 msgid "Measurement-ID"
 msgstr ""
 
-#: app/settings/Settings.php:159
+#: app/settings/Settings.php:226
 msgid "Google Tag Manager"
 msgstr ""
 
-#: app/settings/Settings.php:165
+#: app/settings/Settings.php:232
 msgid "Container-ID"
 msgstr ""
 
-#: app/settings/Settings.php:178
-msgid "Cookie Consent Banner"
-msgstr ""
-
-#: app/settings/Settings.php:182
-msgid ""
-"Load \"Tracking & Analytics\" Scripts only after Cookie Consent Banner has "
-"been accepted."
-msgstr ""
-
-#: app/settings/Settings.php:187
-msgid "Status"
-msgstr ""
-
-#: app/settings/Settings.php:201
-msgid "Text"
-msgstr ""
-
-#: app/settings/Settings.php:215
-msgid "Privacy URL"
-msgstr ""
-
-#: app/settings/Settings.php:229
+#: app/settings/Settings.php:244
 msgid "WP Dashboard"
 msgstr ""
 
-#: app/settings/Settings.php:236
+#: app/settings/Settings.php:251
 msgid "Dashboard Logo"
 msgstr ""
 
-#: app/settings/Settings.php:250
+#: app/settings/Settings.php:265
 msgid "Help Tabs"
 msgstr ""
 
-#: app/settings/Settings.php:265
+#: app/settings/Settings.php:280
 msgid "Footer Text"
 msgstr ""
 
-#: app/settings/Settings.php:278
+#: app/settings/Settings.php:293
 msgid "WP Login"
 msgstr ""
 
-#: app/settings/Settings.php:286
+#: app/settings/Settings.php:301
 msgid "Login Logo Title"
 msgstr ""
 
-#: app/settings/Settings.php:287
+#: app/settings/Settings.php:302
 msgid "Add a title instead of an image."
 msgstr ""
 
-#: app/settings/Settings.php:302
+#: app/settings/Settings.php:317
 msgid "Login Logo Image-URL"
 msgstr ""
 
-#: app/settings/Settings.php:318
+#: app/settings/Settings.php:333
 msgid "Login Logo Target-URL"
 msgstr ""
 
-#: app/settings/Settings.php:333
+#: app/settings/Settings.php:348
 msgid "Redirect after Login to Home"
 msgstr ""
 
@@ -656,16 +668,46 @@ msgstr ""
 msgid "Stickychangecolor transparent"
 msgstr ""
 
-#: config/themecustomizer/controlls/_background_image.php:23
-msgid "Background Image"
+#: config/themecustomizer/controlls/_background_featured.php:14
+msgid "Use featured image"
+msgstr ""
+
+#: config/themecustomizer/controlls/_background_featured.php:15
+msgid "Shows featured image if available."
 msgstr ""
 
 #: config/themecustomizer/controlls/_background_image.php:24
+#: config/themecustomizer/controlls/_background_status.php:17
+msgid "Background Image"
+msgstr ""
+
+#: config/themecustomizer/controlls/_background_image.php:25
 msgid "Add a custom Image."
 msgstr ""
 
 #: config/themecustomizer/controlls/_background_image_size.php:12
 msgid "Background Image Size:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_background_status.php:20
+msgid "No Background Image"
+msgstr ""
+
+#: config/themecustomizer/controlls/_background_status.php:21
+msgid "Image from File"
+msgstr ""
+
+#: config/themecustomizer/controlls/_background_status.php:22
+msgid "Image from URL"
+msgstr ""
+
+#: config/themecustomizer/controlls/_background_url.php:11
+msgid "Image URL:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_background_url.php:12
+#: config/themecustomizer/controlls/link_url.php:12
+msgid "Set an external URL."
 msgstr ""
 
 #: config/themecustomizer/controlls/_class.php:11
@@ -722,6 +764,58 @@ msgstr ""
 
 #: config/themecustomizer/controlls/_class.php:73
 msgid "Meta Nav Class:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class.php:77
+msgid "Avatar Class:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_align.php:11
+msgid "Alignement"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_align.php:15
+msgid "Align: Left"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_align.php:16
+msgid "Align: Center"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_align.php:17
+msgid "Align: Right"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_align.php:19
+msgid "Align: Left @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_align.php:20
+msgid "Align: Right @s"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_align.php:22
+msgid "Align: Left @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_align.php:23
+msgid "Align: Right @m"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_align.php:25
+msgid "Align: Left @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_align.php:26
+msgid "Align: Right @l"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_align.php:28
+msgid "Align: Left @xl"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_align.php:29
+msgid "Align: Right @xl"
 msgstr ""
 
 #: config/themecustomizer/controlls/_class_background_img.php:11
@@ -2267,10 +2361,14 @@ msgid "Hide on Mobile"
 msgstr ""
 
 #: config/themecustomizer/controlls/_class_visibility.php:16
-msgid "Hide on Tablet"
+msgid "Hide on Tablet Portrait"
 msgstr ""
 
 #: config/themecustomizer/controlls/_class_visibility.php:17
+msgid "Hide on Tablet Landscape"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_visibility.php:18
 msgid "Hide on Desktop"
 msgstr ""
 
@@ -2669,7 +2767,7 @@ msgid "Choose Tag."
 msgstr ""
 
 #: config/themecustomizer/controlls/_element.php:14
-#: config/themecustomizer/controlls/_element.php:81
+#: config/themecustomizer/controlls/_element.php:82
 msgid "div"
 msgstr ""
 
@@ -2686,117 +2784,121 @@ msgid "ul"
 msgstr ""
 
 #: config/themecustomizer/controlls/_element.php:18
-#: config/themecustomizer/controlls/_element.php:82
+#: config/themecustomizer/controlls/_element.php:83
 msgid "li"
 msgstr ""
 
 #: config/themecustomizer/controlls/_element.php:19
-#: config/themecustomizer/controlls/_element.php:83
+#: config/themecustomizer/controlls/_element.php:84
 msgid "section"
 msgstr ""
 
 #: config/themecustomizer/controlls/_element.php:20
-#: config/themecustomizer/controlls/_element.php:84
+#: config/themecustomizer/controlls/_element.php:85
 msgid "header"
 msgstr ""
 
 #: config/themecustomizer/controlls/_element.php:21
-#: config/themecustomizer/controlls/_element.php:85
-msgid "footer"
+msgid "main"
 msgstr ""
 
 #: config/themecustomizer/controlls/_element.php:22
-msgid "article"
+#: config/themecustomizer/controlls/_element.php:86
+msgid "footer"
 msgstr ""
 
 #: config/themecustomizer/controlls/_element.php:23
-#: config/themecustomizer/controlls/_element.php:86
-msgid "nav"
+msgid "article"
 msgstr ""
 
 #: config/themecustomizer/controlls/_element.php:24
+#: config/themecustomizer/controlls/_element.php:87
+msgid "nav"
+msgstr ""
+
+#: config/themecustomizer/controlls/_element.php:25
 msgid "Not in use"
 msgstr ""
 
-#: config/themecustomizer/controlls/_element.php:34
+#: config/themecustomizer/controlls/_element.php:35
 msgid "Gridchild Element:"
 msgstr ""
 
-#: config/themecustomizer/controlls/_element.php:40
+#: config/themecustomizer/controlls/_element.php:41
 msgid "Section Element:"
 msgstr ""
 
-#: config/themecustomizer/controlls/_element.php:46
+#: config/themecustomizer/controlls/_element.php:47
 msgid "Container Element:"
 msgstr ""
 
-#: config/themecustomizer/controlls/_element.php:52
+#: config/themecustomizer/controlls/_element.php:53
 msgid "Grid Element:"
 msgstr ""
 
-#: config/themecustomizer/controlls/_element.php:60
+#: config/themecustomizer/controlls/_element.php:61
 msgid "Module Outer Container Tag:"
 msgstr ""
 
-#: config/themecustomizer/controlls/_element.php:66
+#: config/themecustomizer/controlls/_element.php:67
 msgid "Module Container Tag:"
 msgstr ""
 
-#: config/themecustomizer/controlls/_element.php:72
+#: config/themecustomizer/controlls/_element.php:73
 msgid "Module Inner Container Tag:"
 msgstr ""
 
-#: config/themecustomizer/controlls/_element.php:78
+#: config/themecustomizer/controlls/_element.php:79
 msgid "Block Container Element:"
 msgstr ""
 
-#: config/themecustomizer/controlls/_element.php:91
+#: config/themecustomizer/controlls/_element.php:92
 msgid "Block Inner Container Tag:"
 msgstr ""
 
-#: config/themecustomizer/controlls/_element.php:98
+#: config/themecustomizer/controlls/_element.php:99
 msgid "Menu Title:"
 msgstr ""
 
-#: config/themecustomizer/controlls/_element.php:99
+#: config/themecustomizer/controlls/_element.php:100
 msgid "Choose heading element or hide menu title."
 msgstr ""
 
-#: config/themecustomizer/controlls/_element.php:101
+#: config/themecustomizer/controlls/_element.php:102
 msgid "Hide Title"
 msgstr ""
 
-#: config/themecustomizer/controlls/_element.php:102
+#: config/themecustomizer/controlls/_element.php:103
 #: config/themecustomizer/controlls/title_element.php:15
 msgid "Heading 1"
 msgstr ""
 
-#: config/themecustomizer/controlls/_element.php:103
+#: config/themecustomizer/controlls/_element.php:104
 #: config/themecustomizer/controlls/title_element.php:16
 msgid "Heading 2"
 msgstr ""
 
-#: config/themecustomizer/controlls/_element.php:104
+#: config/themecustomizer/controlls/_element.php:105
 #: config/themecustomizer/controlls/title_element.php:17
 msgid "Heading 3"
 msgstr ""
 
-#: config/themecustomizer/controlls/_element.php:105
+#: config/themecustomizer/controlls/_element.php:106
 #: config/themecustomizer/controlls/title_element.php:18
 msgid "Heading 4"
 msgstr ""
 
-#: config/themecustomizer/controlls/_element.php:106
+#: config/themecustomizer/controlls/_element.php:107
 #: config/themecustomizer/controlls/title_element.php:19
 msgid "Heading 5"
 msgstr ""
 
-#: config/themecustomizer/controlls/_element.php:107
+#: config/themecustomizer/controlls/_element.php:108
 #: config/themecustomizer/controlls/title_element.php:20
 msgid "Heading 6"
 msgstr ""
 
-#: config/themecustomizer/controlls/_element.php:108
+#: config/themecustomizer/controlls/_element.php:109
 #: config/themecustomizer/controlls/list_item.php:19
 #: config/themecustomizer/controlls/title_element.php:22
 msgid "Div"
@@ -2823,100 +2925,104 @@ msgid ""
 "Available variables to get data: __image__, __title__, __link__, __text__."
 msgstr ""
 
-#: config/themecustomizer/controlls/_json.php:43
+#: config/themecustomizer/controlls/_json.php:45
 msgid "Query Args:"
 msgstr ""
 
-#: config/themecustomizer/controlls/_json.php:44
+#: config/themecustomizer/controlls/_json.php:46
 msgid ""
 "Add here your custom WP_Query in JSON Format. The simplest way is to use an "
 "online WP_Query Generator."
 msgstr ""
 
-#: config/themecustomizer/controlls/_json.php:52
+#: config/themecustomizer/controlls/_json.php:54
 msgid "Search Icon:"
 msgstr ""
 
-#: config/themecustomizer/controlls/_json.php:53
+#: config/themecustomizer/controlls/_json.php:55
 msgid "Add JSON string to generate HTML for Search Icon."
 msgstr ""
 
-#: config/themecustomizer/controlls/_json.php:61
+#: config/themecustomizer/controlls/_json.php:63
 msgid "Menu Items Wrap:"
 msgstr ""
 
-#: config/themecustomizer/controlls/_json.php:62
+#: config/themecustomizer/controlls/_json.php:64
 msgid "Edit the list wrapper of menu items here."
 msgstr ""
 
-#: config/themecustomizer/controlls/_json.php:69
+#: config/themecustomizer/controlls/_json.php:71
 msgid "Menu Walker Level 1 Wrap:"
 msgstr ""
 
-#: config/themecustomizer/controlls/_json.php:76
+#: config/themecustomizer/controlls/_json.php:78
 msgid "Menu Walker Level 2 Wrap:"
 msgstr ""
 
-#: config/themecustomizer/controlls/_json.php:83
+#: config/themecustomizer/controlls/_json.php:85
 msgid "Menu Walker Level 3 Wrap:"
 msgstr ""
 
-#: config/themecustomizer/controlls/_json.php:90
+#: config/themecustomizer/controlls/_json.php:92
 msgid "List Wrapper:"
 msgstr ""
 
-#: config/themecustomizer/controlls/_json.php:97
+#: config/themecustomizer/controlls/_json.php:99
 msgid "Title Wrapper:"
 msgstr ""
 
-#: config/themecustomizer/controlls/_json.php:104
+#: config/themecustomizer/controlls/_json.php:106
 msgid "Author Link Wrapper:"
 msgstr ""
 
-#: config/themecustomizer/controlls/_json.php:111
+#: config/themecustomizer/controlls/_json.php:113
 msgid "Header grid attributes:"
 msgstr ""
 
-#: config/themecustomizer/controlls/_json.php:118
+#: config/themecustomizer/controlls/_json.php:120
+msgid "Meta Nav Attributes:"
+msgstr ""
+
+#: config/themecustomizer/controlls/_json.php:127
 msgid "Meta Wrap:"
 msgstr ""
 
-#: config/themecustomizer/controlls/_json.php:125
+#: config/themecustomizer/controlls/_json.php:134
 msgid "Caption Wrap:"
 msgstr ""
 
-#: config/themecustomizer/controlls/_json.php:132
+#: config/themecustomizer/controlls/_json.php:141
 msgid "Last Wrap:"
 msgstr ""
 
-#: config/themecustomizer/controlls/_json.php:139
+#: config/themecustomizer/controlls/_json.php:148
 msgid "Next Wrap:"
 msgstr ""
 
-#: config/themecustomizer/controlls/_json.php:146
+#: config/themecustomizer/controlls/_json.php:155
 msgid "Logo Wrapper:"
 msgstr ""
 
-#: config/themecustomizer/controlls/_json.php:147
+#: config/themecustomizer/controlls/_json.php:156
 #, php-format
 msgid ""
 "The variable %1$s gets the site-title, %2$s is used for subtitle. Eg. %1$s - "
 "%2$s displays YOUR-SITE-TITLE - YOUR-SUBTITLE."
 msgstr ""
 
-#: config/themecustomizer/controlls/_json.php:154
+#: config/themecustomizer/controlls/_json.php:163
 msgid "Toggle Button Wrapper:"
 msgstr ""
 
-#: config/themecustomizer/controlls/_json.php:155
+#: config/themecustomizer/controlls/_json.php:164
 msgid "Edit Json of Mobile Menu Toggle Button."
 msgstr ""
 
-#: config/themecustomizer/controlls/_json.php:162
+#: config/themecustomizer/controlls/_json.php:171
 msgid "Separator Wrapper:"
 msgstr ""
 
-#: config/themecustomizer/controlls/_json.php:163
+#: config/themecustomizer/controlls/_json.php:172
 msgid "Create HTML Separator with json."
 msgstr ""
 
@@ -3056,6 +3162,7 @@ msgstr ""
 #: config/themecustomizer/controlls/com_body.php:13
 #: config/themecustomizer/controlls/com_colors.php:13
 #: config/themecustomizer/controlls/com_content.php:14
+#: config/themecustomizer/controlls/com_custom_block_template.php:14
 #: config/themecustomizer/controlls/com_custom_container.php:14
 #: config/themecustomizer/controlls/com_custom_html.php:14
 #: config/themecustomizer/controlls/com_custom_nav.php:14
@@ -3071,9 +3178,11 @@ msgstr ""
 #: config/themecustomizer/controlls/com_navcontainer_inner.php:13
 #: config/themecustomizer/controlls/com_offcanvas_toggle.php:14
 #: config/themecustomizer/controlls/com_offcanvascontainer.php:13
+#: config/themecustomizer/controlls/com_postmeta.php:13
 #: config/themecustomizer/controlls/com_queryterm.php:13
 #: config/themecustomizer/controlls/com_search.php:13
 #: config/themecustomizer/controlls/com_section.php:11
+#: config/themecustomizer/controlls/com_section_block_template.php:13
 #: config/themecustomizer/controlls/com_section_extensions.php:14
 #: config/themecustomizer/controlls/com_section_html.php:13
 #: config/themecustomizer/controlls/com_section_nav.php:14
@@ -3095,6 +3204,7 @@ msgstr ""
 #: config/themecustomizer/controlls/com_body.php:13
 #: config/themecustomizer/controlls/com_colors.php:13
 #: config/themecustomizer/controlls/com_content.php:14
+#: config/themecustomizer/controlls/com_custom_block_template.php:14
 #: config/themecustomizer/controlls/com_custom_container.php:14
 #: config/themecustomizer/controlls/com_custom_html.php:14
 #: config/themecustomizer/controlls/com_custom_nav.php:14
@@ -3110,9 +3220,11 @@ msgstr ""
 #: config/themecustomizer/controlls/com_navcontainer_inner.php:13
 #: config/themecustomizer/controlls/com_offcanvas_toggle.php:14
 #: config/themecustomizer/controlls/com_offcanvascontainer.php:13
+#: config/themecustomizer/controlls/com_postmeta.php:13
 #: config/themecustomizer/controlls/com_queryterm.php:13
 #: config/themecustomizer/controlls/com_search.php:13
 #: config/themecustomizer/controlls/com_section.php:11
+#: config/themecustomizer/controlls/com_section_block_template.php:13
 #: config/themecustomizer/controlls/com_section_extensions.php:14
 #: config/themecustomizer/controlls/com_section_html.php:13
 #: config/themecustomizer/controlls/com_section_nav.php:14
@@ -3333,6 +3445,10 @@ msgstr ""
 
 #: config/themecustomizer/controlls/com_content.php:10
 msgid "Center Content Container"
+msgstr ""
+
+#: config/themecustomizer/controlls/com_custom_block_template.php:12
+msgid "Custom Block Template"
 msgstr ""
 
 #: config/themecustomizer/controlls/com_custom_container.php:12
@@ -3877,10 +3993,6 @@ msgstr ""
 msgid "Link URL:"
 msgstr ""
 
-#: config/themecustomizer/controlls/link_url.php:12
-msgid "Set an external URL."
-msgstr ""
-
 #: config/themecustomizer/controlls/linked.php:11
 #: config/themecustomizer/controlls/linked.php:15
 msgid "Linked"
@@ -3981,7 +4093,7 @@ msgstr ""
 msgid "Chose Template Object to Render posts."
 msgstr ""
 
-#: config/themecustomizer/controlls/posts_templates_object.php:17
+#: config/themecustomizer/controlls/posts_templates_object.php:18
 msgid "Posts"
 msgstr ""
 
