@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zmplugin-0.9.3\n"
-"POT-Creation-Date: 2022-10-03 23:56+0200\n"
-"PO-Revision-Date: 2022-10-03 23:56+0200\n"
+"POT-Creation-Date: 2022-10-22 17:12+0200\n"
+"PO-Revision-Date: 2022-10-22 17:12+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -92,7 +92,7 @@ msgstr ""
 msgid "Manage"
 msgstr ""
 
-#: app/settings/Dashboard.php:33
+#: app/settings/Dashboard.php:33 app/themesettings/BlockTemplates.php:86
 msgid "Add new"
 msgstr ""
 
@@ -293,6 +293,126 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
+#: app/themesettings/BlockTemplates.php:26
+msgid "Assigned to"
+msgstr ""
+
+#: app/themesettings/BlockTemplates.php:82
+#: app/themesettings/BlockTemplates.php:85
+#: app/themesettings/BlockTemplates.php:117
+msgid "Block Templates"
+msgstr ""
+
+#: app/themesettings/BlockTemplates.php:83
+#: app/themesettings/BlockTemplates.php:107
+msgid "Block Template"
+msgstr ""
+
+#: app/themesettings/BlockTemplates.php:84
+msgid "My Block Templates"
+msgstr ""
+
+#: app/themesettings/BlockTemplates.php:87
+msgid "Add new Block Template"
+msgstr ""
+
+#: app/themesettings/BlockTemplates.php:88
+msgid "Edit Block Template"
+msgstr ""
+
+#: app/themesettings/BlockTemplates.php:89
+msgid "New Block Template"
+msgstr ""
+
+#: app/themesettings/BlockTemplates.php:90
+msgid "View Block Template"
+msgstr ""
+
+#: app/themesettings/BlockTemplates.php:91
+msgid "View Block Templates"
+msgstr ""
+
+#: app/themesettings/BlockTemplates.php:92
+msgid "Search Block Templates"
+msgstr ""
+
+#: app/themesettings/BlockTemplates.php:93
+msgid "No Block Templates found"
+msgstr ""
+
+#: app/themesettings/BlockTemplates.php:94
+msgid "No Block Templates found in trash"
+msgstr ""
+
+#: app/themesettings/BlockTemplates.php:95
+#: app/themesettings/BlockTemplates.php:113
+msgid "Parent Block Template:"
+msgstr ""
+
+#: app/themesettings/BlockTemplates.php:96
+msgid "Featured image for this Block Template"
+msgstr ""
+
+#: app/themesettings/BlockTemplates.php:97
+msgid "Set featured image for this Block Template"
+msgstr ""
+
+#: app/themesettings/BlockTemplates.php:98
+msgid "Remove featured image for this Block Template"
+msgstr ""
+
+#: app/themesettings/BlockTemplates.php:99
+msgid "Use as featured image for this Block Template"
+msgstr ""
+
+#: app/themesettings/BlockTemplates.php:100
+msgid "Block Template archives"
+msgstr ""
+
+#: app/themesettings/BlockTemplates.php:101
+msgid "Insert into Block Template"
+msgstr ""
+
+#: app/themesettings/BlockTemplates.php:102
+msgid "Upload to this Block Template"
+msgstr ""
+
+#: app/themesettings/BlockTemplates.php:103
+msgid "Filter Block Templates list"
+msgstr ""
+
+#: app/themesettings/BlockTemplates.php:104
+msgid "Block Templates list navigation"
+msgstr ""
+
+#: app/themesettings/BlockTemplates.php:105
+msgid "Block Templates list"
+msgstr ""
+
+#: app/themesettings/BlockTemplates.php:106
+msgid "Block Templates attributes"
+msgstr ""
+
+#: app/themesettings/BlockTemplates.php:108
+msgid "Block Template published"
+msgstr ""
+
+#: app/themesettings/BlockTemplates.php:109
+msgid "Block Template published privately."
+msgstr ""
+
+#: app/themesettings/BlockTemplates.php:110
+msgid "Block Template reverted to draft."
+msgstr ""
+
+#: app/themesettings/BlockTemplates.php:111
+msgid "Block Template scheduled"
+msgstr ""
+
+#: app/themesettings/BlockTemplates.php:112
+msgid "Block Template updated."
+msgstr ""
+
 #: app/themesettings/DesignExplorer.php:38
 msgid "Free"
 msgstr ""
@@ -474,7 +594,7 @@ msgid "Yes"
 msgstr ""
 
 #: config/config.php:9
-msgid "ZM Plugin"
+msgid "ZMPlugin"
 msgstr ""
 
 #: config/settings.php:9

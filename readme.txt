@@ -1,6 +1,6 @@
-=== ZM Plugin ===
+=== ZMPlugin ===
 Contributors: zuestmedia
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 Tags: block patterns, cookie consent banner, customizer, zmtheme
 Requires at least: 4.7
 Tested up to: 6.0.2
@@ -8,11 +8,11 @@ Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-ZM Plugin is an extension for WordPress themes based on the ZM-Theme-Framework and extends ZMT-Themes with various options and customizer settings.
+ZMPlugin is an extension for WordPress themes based on the ZM-Theme-Framework and extends ZMT-Themes with various options and customizer settings.
 
 == Description ==
 
-[ZM Plugin](https://zmplugin.com/) is an extension for WordPress themes based on the [ZM-Theme-Framework](https://zmtheme.com/) (ZMT) and extends ZMT-Themes with various options and customizer settings. This plugin can also be used as a "standalone" plugin in a reduced scope.
+[ZMPlugin](https://zmplugin.com/) is an extension for WordPress themes based on the [ZM-Theme-Framework](https://zmtheme.com/) (ZMT) and extends ZMT-Themes with various options and customizer settings. This plugin can also be used as a "standalone" plugin in a reduced scope.
 
 == Plugin Features ==
 
@@ -56,13 +56,18 @@ You can also find us on [Github](https://github.com/zuestmedia/)!
 
 == Frequently Asked Questions ==
 
-= How to install ZM Plugin? =
-To install ZM Plugin, go to Dashboard >> Plugins >> Add new. Then enter "ZM Plugin" in the search field, click on install and activate.
+= How to install ZMPlugin? =
+To install ZM Plugin, go to Dashboard >> Plugins >> Add new. Then enter "ZMPlugin" in the search field, click on install and activate.
 
-= Does ZM Plugin work as standalone? =
+= Does ZMPlugin work as standalone? =
 Yes. The website management and config settings are working on all themes. The extended customizer settings are only available with ZMTheme WordPress Themes.
 
 == Changelog ==
+
+= 1.0.1 =
+* New: Moved BlockTemplates Custom Post Type from theme to plugin
+* Update: readme.txt
+* Update: Language Files de_DE
 
 = 1.0.0 =
 * Update: readme.txt

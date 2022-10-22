@@ -11,6 +11,8 @@ class Config {
       $zmrestroute->setRoute('/designdata/(?P<pid>\d+)');
       $zmrestroute->addRestRoute();
 
+      $zmblocktemplates = new \ZMP\Plugin\ThemeSettings\BlockTemplates();
+
     }
 
 }
