@@ -243,17 +243,22 @@ class  Validation {
 	public function sanitizearray($array) {
 		//-->https://wordpress.stackexchange.com/questions/24736/wordpress-sanitize-array
 		//when you iterate an array in a foreach statement, it works on a copy of that array. so if you really want to modify $value, you have to add & before it.
-    foreach ( $array as $key => &$value ) {
-			if( $this->keycheck($key) === false ){
-				return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
-			}
-        if ( is_array( $value ) ) {
-            $value = $this->sanitizearray($value);
-        }
-        else {
-            $value = $this->sanitize( $value );
-        }
-    }
+
+		if($array){// to only start foreach if has value (has to be array or object), if null returns just null no php warning then.
+
+	    foreach ( $array as $key => &$value ) {
+				if( $this->keycheck($key) === false ){
+					return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
+				}
+	        if ( is_array( $value ) ) {
+	            $value = $this->sanitizearray($value);
+	        }
+	        else {
+	            $value = $this->sanitize( $value );
+	        }
+	    }
+
+		}
 
     return $array;
 	}
@@ -266,18 +271,20 @@ class  Validation {
 		return $val;
 	}
 	public function intarray($array) {
-    foreach ( $array as $key => &$value ) {
-			if( $this->keycheck($key) === false ){
-				return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
-			}
-        if ( is_array( $value ) ) {
-            $value = $this->intarray($value);
-        }
-        else {
-            $value = $this->int( $value, $key );
-						if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
-        }
-    }
+		if($array){// to only start foreach if has value (has to be array or object), if null returns just null no php warning then.
+	    foreach ( $array as $key => &$value ) {
+				if( $this->keycheck($key) === false ){
+					return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
+				}
+	        if ( is_array( $value ) ) {
+	            $value = $this->intarray($value);
+	        }
+	        else {
+	            $value = $this->int( $value, $key );
+							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+	        }
+	    }
+		}
     return $array;
 	}
 
@@ -289,18 +296,20 @@ class  Validation {
 		return $val;
 	}
 	public function floatarray($array) {
-    foreach ( $array as $key => &$value ) {
-			if( $this->keycheck($key) === false ){
-				return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
-			}
-        if ( is_array( $value ) ) {
-            $value = $this->floatarray($value);
-        }
-        else {
-            $value = $this->float( $value, $key );
-						if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
-        }
-    }
+		if($array){// to only start foreach if has value (has to be array or object), if null returns just null no php warning then.
+	    foreach ( $array as $key => &$value ) {
+				if( $this->keycheck($key) === false ){
+					return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
+				}
+	        if ( is_array( $value ) ) {
+	            $value = $this->floatarray($value);
+	        }
+	        else {
+	            $value = $this->float( $value, $key );
+							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+	        }
+	    }
+		}
     return $array;
 	}
 
@@ -311,18 +320,20 @@ class  Validation {
 		return $val;
 	}
 	public function numericarray($array) {
-    foreach ( $array as $key => &$value ) {
-			if( $this->keycheck($key) === false ){
-				return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
-			}
-        if ( is_array( $value ) ) {
-            $value = $this->numericarray($value);
-        }
-        else {
-            $value = $this->numeric( $value, $key );
-						if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
-        }
-    }
+		if($array){// to only start foreach if has value (has to be array or object), if null returns just null no php warning then.
+	    foreach ( $array as $key => &$value ) {
+				if( $this->keycheck($key) === false ){
+					return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
+				}
+	        if ( is_array( $value ) ) {
+	            $value = $this->numericarray($value);
+	        }
+	        else {
+	            $value = $this->numeric( $value, $key );
+							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+	        }
+	    }
+		}
     return $array;
 	}
 
@@ -334,18 +345,20 @@ class  Validation {
 		return $val;
 	}
 	public function strarray($array) {
-    foreach ( $array as $key => &$value ) {
-			if( $this->keycheck($key) === false ){
-				return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
-			}
-        if ( is_array( $value ) ) {
-            $value = $this->strarray($value);
-        }
-        else {
-            $value = $this->str( $value, $key );
-						if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
-        }
-    }
+		if($array){// to only start foreach if has value (has to be array or object), if null returns just null no php warning then.
+	    foreach ( $array as $key => &$value ) {
+				if( $this->keycheck($key) === false ){
+					return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
+				}
+	        if ( is_array( $value ) ) {
+	            $value = $this->strarray($value);
+	        }
+	        else {
+	            $value = $this->str( $value, $key );
+							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+	        }
+	    }
+		}
     return $array;
 	}
 
@@ -357,17 +370,19 @@ class  Validation {
 		return $val;
 	}
 	public function boolarray($array) {
-		foreach ( $array as $key => &$value ) {
-			if( $this->keycheck($key) === false ){
-				return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
+		if($array){// to only start foreach if has value (has to be array or object), if null returns just null no php warning then.
+			foreach ( $array as $key => &$value ) {
+				if( $this->keycheck($key) === false ){
+					return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
+				}
+					if ( is_array( $value ) ) {
+							$value = $this->boolarray($value);
+					}
+					else {
+							$value = $this->bool( $value, $key );
+							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+					}
 			}
-				if ( is_array( $value ) ) {
-						$value = $this->boolarray($value);
-				}
-				else {
-						$value = $this->bool( $value, $key );
-						if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
-				}
 		}
 		return $array;
 	}
@@ -380,17 +395,19 @@ class  Validation {
 		return $val;
 	}
 	public function emailarray($array) {
-		foreach ( $array as $key => &$value ) {
-			if( $this->keycheck($key) === false ){
-				return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
+		if($array){// to only start foreach if has value (has to be array or object), if null returns just null no php warning then.
+			foreach ( $array as $key => &$value ) {
+				if( $this->keycheck($key) === false ){
+					return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
+				}
+					if ( is_array( $value ) ) {
+							$value = $this->emailarray($value);
+					}
+					else {
+							$value = $this->email( $value, $key );
+							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+					}
 			}
-				if ( is_array( $value ) ) {
-						$value = $this->emailarray($value);
-				}
-				else {
-						$value = $this->email( $value, $key );
-						if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
-				}
 		}
 		return $array;
 	}
@@ -403,17 +420,19 @@ class  Validation {
 		return $val;
 	}
 	public function urlarray($array) {
-		foreach ( $array as $key => &$value ) {
-			if( $this->keycheck($key) === false ){
-				return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
+		if($array){// to only start foreach if has value (has to be array or object), if null returns just null no php warning then.
+			foreach ( $array as $key => &$value ) {
+				if( $this->keycheck($key) === false ){
+					return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
+				}
+					if ( is_array( $value ) ) {
+							$value = $this->urlarray($value);
+					}
+					else {
+							$value = $this->url( $value, $key );
+							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+					}
 			}
-				if ( is_array( $value ) ) {
-						$value = $this->urlarray($value);
-				}
-				else {
-						$value = $this->url( $value, $key );
-						if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
-				}
 		}
 		return $array;
 	}
@@ -434,18 +453,20 @@ class  Validation {
 		return $val;
 	}
 	public function jsonarray($array) {
-    foreach ( $array as $key => &$value ) {
-			if( $this->keycheck($key) === false ){
-				return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
-			}
-        if ( is_array( $value ) ) {
-            $value = $this->jsonarray($value);
-        }
-        else {
-            $value = $this->json( $value, $key );
-						if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
-        }
-    }
+		if($array){// to only start foreach if has value (has to be array or object), if null returns just null no php warning then.
+	    foreach ( $array as $key => &$value ) {
+				if( $this->keycheck($key) === false ){
+					return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
+				}
+	        if ( is_array( $value ) ) {
+	            $value = $this->jsonarray($value);
+	        }
+	        else {
+	            $value = $this->json( $value, $key );
+							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+	        }
+	    }
+		}
     return $array;
 	}
 
@@ -461,18 +482,20 @@ class  Validation {
 		return $val;
 	}
 	public function htmlarray($array) {
-    foreach ( $array as $key => &$value ) {
-			if( $this->keycheck($key) === false ){
-				return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
-			}
-        if ( is_array( $value ) ) {
-            $value = $this->htmlarray($value);
-        }
-        else {
-            $value = $this->html( $value, $key );
-						if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
-        }
-    }
+		if($array){// to only start foreach if has value (has to be array or object), if null returns just null no php warning then.
+	    foreach ( $array as $key => &$value ) {
+				if( $this->keycheck($key) === false ){
+					return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
+				}
+	        if ( is_array( $value ) ) {
+	            $value = $this->htmlarray($value);
+	        }
+	        else {
+	            $value = $this->html( $value, $key );
+							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+	        }
+	    }
+		}
     return $array;
 	}
 
@@ -487,18 +510,20 @@ class  Validation {
 		return $val;
 	}
 	public function percentarray($array) {
-    foreach ( $array as $key => &$value ) {
-			if( $this->keycheck($key) === false ){
-				return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
-			}
-        if ( is_array( $value ) ) {
-            $value = $this->percentarray($value);
-        }
-        else {
-            $value = $this->percent( $value, $key );
-						if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
-        }
-    }
+		if($array){// to only start foreach if has value (has to be array or object), if null returns just null no php warning then.
+	    foreach ( $array as $key => &$value ) {
+				if( $this->keycheck($key) === false ){
+					return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
+				}
+	        if ( is_array( $value ) ) {
+	            $value = $this->percentarray($value);
+	        }
+	        else {
+	            $value = $this->percent( $value, $key );
+							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+	        }
+	    }
+		}
     return $array;
 	}
 
@@ -509,18 +534,20 @@ class  Validation {
 		return $val;
 	}
 	public function colorarray($array) {
-    foreach ( $array as $key => &$value ) {
-			if( $this->keycheck($key) === false ){
-				return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
-			}
-        if ( is_array( $value ) ) {
-            $value = $this->colorarray($value);
-        }
-        else {
-            $value = $this->color( $value, $key );
-						if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
-        }
-    }
+		if($array){// to only start foreach if has value (has to be array or object), if null returns just null no php warning then.
+	    foreach ( $array as $key => &$value ) {
+				if( $this->keycheck($key) === false ){
+					return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
+				}
+	        if ( is_array( $value ) ) {
+	            $value = $this->colorarray($value);
+	        }
+	        else {
+	            $value = $this->color( $value, $key );
+							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+	        }
+	    }
+		}
     return $array;
 	}
 
@@ -531,18 +558,20 @@ class  Validation {
 		return $val;
 	}
 	public function classarray($array) {
-    foreach ( $array as $key => &$value ) {
-			if( $this->keycheck($key) === false ){//returns false if key error!
-				return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
-			}
-        if ( is_array( $value ) ) {
-            $value = $this->classarray($value);
-        }
-        else {
-            $value = $this->class( $value, $key );
-						if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
-        }
-    }
+		if($array){// to only start foreach if has value (has to be array or object), if null returns just null no php warning then.
+	    foreach ( $array as $key => &$value ) {
+				if( $this->keycheck($key) === false ){//returns false if key error!
+					return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
+				}
+	        if ( is_array( $value ) ) {
+	            $value = $this->classarray($value);
+	        }
+	        else {
+	            $value = $this->class( $value, $key );
+							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+	        }
+	    }
+		}
     return $array;
 	}
 
@@ -553,18 +582,20 @@ class  Validation {
 		return $val;
 	}
 	public function slugarray($array) {
-    foreach ( $array as $key => &$value ) {
-			if( $this->keycheck($key) === false ){
-				return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
-			}
-        if ( is_array( $value ) ) {
-            $value = $this->slugarray($value);
-        }
-        else {
-            $value = $this->slug( $value, $key );
-						if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
-        }
-    }
+		if($array){// to only start foreach if has value (has to be array or object), if null returns just null no php warning then.
+	    foreach ( $array as $key => &$value ) {
+				if( $this->keycheck($key) === false ){
+					return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
+				}
+	        if ( is_array( $value ) ) {
+	            $value = $this->slugarray($value);
+	        }
+	        else {
+	            $value = $this->slug( $value, $key );
+							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+	        }
+	    }
+		}
     return $array;
 	}
 
@@ -575,18 +606,20 @@ class  Validation {
 		return $val;
 	}
 	public function textarray($array) {
-    foreach ( $array as $key => &$value ) {
-			if( $this->keycheck($key) === false ){
-				return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
-			}
-        if ( is_array( $value ) ) {
-            $value = $this->textarray($value);
-        }
-        else {
-            $value = $this->text( $value, $key );
-						if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
-        }
-    }
+		if($array){// to only start foreach if has value (has to be array or object), if null returns just null no php warning then.
+	    foreach ( $array as $key => &$value ) {
+				if( $this->keycheck($key) === false ){
+					return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
+				}
+	        if ( is_array( $value ) ) {
+	            $value = $this->textarray($value);
+	        }
+	        else {
+	            $value = $this->text( $value, $key );
+							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+	        }
+	    }
+		}
     return $array;
 	}
 
@@ -597,18 +630,20 @@ class  Validation {
 		return $val;
 	}
 	public function lcarray($array) {
-    foreach ( $array as $key => &$value ) {
-			if( $this->keycheck($key) === false ){
-				return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
-			}
-        if ( is_array( $value ) ) {
-            $value = $this->lcarray($value);
-        }
-        else {
-            $value = $this->lc( $value, $key );
-						if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
-        }
-    }
+		if($array){// to only start foreach if has value (has to be array or object), if null returns just null no php warning then.
+	    foreach ( $array as $key => &$value ) {
+				if( $this->keycheck($key) === false ){
+					return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
+				}
+	        if ( is_array( $value ) ) {
+	            $value = $this->lcarray($value);
+	        }
+	        else {
+	            $value = $this->lc( $value, $key );
+							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+	        }
+	    }
+		}
     return $array;
 	}
 
