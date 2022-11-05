@@ -1,6 +1,6 @@
 === ZMPlugin ===
 Contributors: zuestmedia
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 Tags: block patterns, cookie consent banner, customizer, zmtheme
 Requires at least: 4.7
 Tested up to: 6.1
@@ -64,8 +64,11 @@ Yes. The website management and config settings are working on all themes. The e
 
 == Changelog ==
 
+= 1.0.3 =
+* Fix: Plugin URI / Author URI
+
 = 1.0.2 =
-* Update: Tested up to: 6.1 
+* Update: Tested up to: 6.1
 * Fix: Validation - arrays checks for NULL now, (PHP Warning during saving themesettings)
 
 = 1.0.1 =

@@ -1,11 +1,11 @@
 <?php
   /*
   Plugin Name: ZMPlugin
-  Plugin URI: https://zmplugin.com/
+  Plugin URI: https://zmtheme.com/pdtype/plugin/
   Description: ZMPlugin is an extension for WordPress themes based on the ZM-Theme-Framework and extends ZMT-Themes with various options and customizer settings.
   Author: ZuestMedia
-  Author URI: https://zmplugin.com/
-  Version: 1.0.2
+  Author URI: https://zuestmedia.com/
+  Version: 1.0.3
   Text Domain: zmplugin
   Domain Path: /languages
   ZMDLID: 2myl7t6emmbu4819uojautl0m0fo2fdktoaw
