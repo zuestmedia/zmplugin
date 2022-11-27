@@ -127,6 +127,13 @@ class _json extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_textarea {
     $this->label = __( 'Meta Wrap:', 'zmplugin' );
 
   }
+  protected function read_more_wrap() {
+
+    $this->default();
+
+    $this->label = __( 'Read More Wrap:', 'zmplugin' );
+
+  }
   protected function caption_wrap() {
 
     $this->default();

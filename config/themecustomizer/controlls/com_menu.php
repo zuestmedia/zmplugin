@@ -10,7 +10,7 @@ class com_menu {
     $this->description = __( 'Edit Menu.', 'zmplugin' );
 
     $this->presets = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\presets();
-    $this->presets->choices = \ZMT\Theme\Helpers::getPresetChoices( 'menu', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
+    $this->presets->choices = \ZMP\Plugin\ThemeHelper::getPresetChoices( 'menu', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
 
     //$this->menu_container_class = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\menu_container_class();
     //$this->menu_ul_class = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\menu_ul_class();

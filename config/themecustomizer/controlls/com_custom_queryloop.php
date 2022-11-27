@@ -11,7 +11,7 @@ class com_custom_queryloop extends com_custom {
     //Values
     $this->label = __( 'Custom QueryLoop', 'zmplugin' );
 
-    $this->presets->choices = \ZMT\Theme\Helpers::getPresetChoices( 'custom_queryloop', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
+    $this->presets->choices = \ZMP\Plugin\ThemeHelper::getPresetChoices( 'custom_queryloop', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
 
   }
 

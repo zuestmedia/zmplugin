@@ -32,17 +32,12 @@ class CustomizerControlls extends WP_Customize_Control {
 
           ?>
 
-      			<div class="zm-toggleheader" data-zmtoggleheader-section_group="<?php echo esc_attr( $this->input_attrs['section_group'] ); ?>" data-zmtoggleheader-comid="<?php echo esc_attr( $this->input_attrs['com_id'] ); ?>">
+      			<a href="#" class="zm-toggleheader uk-display-block uk-link-reset" data-zmtoggleheader-section_group="<?php echo esc_attr( $this->input_attrs['section_group'] ); ?>" data-zmtoggleheader-comid="<?php echo esc_attr( $this->input_attrs['com_id'] ); ?>">
       				<?php if( !empty( $this->label ) ) { ?>
       					<span class=""><?php echo esc_html( $this->label ); ?></span>
                 <span class="uk-align-right uk-margin-remove uk-icon" uk-icon="chevron-down"></span>
       				<?php } ?>
-      				<?php /* do not show description because toggleheader is hiding itself in dev mode when all controlls get a descr auto >=4!*//*
-                if( !empty( $this->description ) ) { ?>
-      					  <span class="customize-control-description"><?php echo $this->description; ?></span>
-  				      <?php }
-                */ ?>
-      			</div>
+      			</a>
 
       		<?php
 
@@ -67,7 +62,7 @@ class CustomizerControlls extends WP_Customize_Control {
             if(count($this->choices) >= 7){
 
             //display or not select list if more than 7 hide
-            $hideifmorethanseven = ' style="display:none;"';
+            $hideifmorethanseven = 'display:none;';
             $overflowauto = 'uk-overflow-auto';
             $heightmax = 'uk-height-max-small ';
            ?>
@@ -87,7 +82,7 @@ class CustomizerControlls extends WP_Customize_Control {
 
                   $multiinputid = sanitize_title( $this->id.''.$value ); ?>
 
-                  <label class="uk-button uk-button-default uk-box-shadow-medium uk-button-small uk-margin-small-bottom" for="<?php echo $multiinputid; ?>">
+                  <label class="uk-button uk-button-default uk-box-shadow-medium uk-button-small uk-margin-small-bottom" for="<?php echo esc_attr( $multiinputid ); ?>">
                     <i class="uk-margin-small-right" uk-icon="icon:close;ratio:0.7;"></i><?php echo esc_html( $label ); ?>
                   </label>
 
@@ -100,11 +95,11 @@ class CustomizerControlls extends WP_Customize_Control {
           <?php } ?>
 
           <div
-            class="<?php echo $heightmax; ?>zm-multicheckbox"
-            <?php echo $overflowauto; ?>
+            class="<?php echo esc_attr( $heightmax ); ?>zm-multicheckbox"
+            <?php echo esc_attr( $overflowauto ); ?>
             id="zmmulticheckbox-<?php echo esc_attr( $this->id ); ?>"
             zm-datasettingname="<?php echo esc_attr( $this->id ); ?>"
-            <?php echo $hideifmorethanseven; ?>
+            style="<?php echo esc_attr( $hideifmorethanseven ); ?>"
           >
 
             <?php foreach ( $this->choices as $value => $label ) {
@@ -124,14 +119,14 @@ class CustomizerControlls extends WP_Customize_Control {
 
                   <input
                     class="zm-multicheckbox-virtual-input"
-                    id="<?php echo $multiinputid; ?>"
+                    id="<?php echo esc_attr( $multiinputid ); ?>"
                     zm-datachoicelabel="<?php echo esc_attr( $label ); ?>"
-                    zm-dataforid="<?php echo $multiinputid; ?>"
+                    zm-dataforid="<?php echo esc_attr( $multiinputid ); ?>"
                     type="checkbox"
                     value="<?php echo esc_attr( $value ); ?>"
                     <?php echo $checked; ?>
                   />
-                  <label for="<?php echo $multiinputid; ?>"><?php echo $label; ?></label>
+                  <label for="<?php echo esc_attr( $multiinputid ); ?>"><?php echo $label; ?></label>
 
                 </div>
 
@@ -149,9 +144,6 @@ class CustomizerControlls extends WP_Customize_Control {
             class=""
             <?php echo $describedby_attr; ?>
             type="hidden"
-            <?php /* value="<?php echo esc_attr( $value ); ?>"
-            datavalue="<?php echo esc_attr( $this->value() ); ?>"
-            name="<?php echo esc_attr( $name ); ?>" */ ?>
             <?php $this->link(); ?>
           />
 
@@ -195,7 +187,7 @@ class CustomizerControlls extends WP_Customize_Control {
                 <?php endif; ?>
               </div>
               <div class="uk-flex uk-flex-middle">
-                <label class="zm-switch<?php echo $displayoptions; ?>">
+                <label class="zm-switch<?php echo esc_attr( $displayoptions ); ?>">
                   <input
                       id="<?php echo esc_attr( $input_id ); ?>"
                       <?php echo $describedby_attr; ?>
@@ -204,7 +196,7 @@ class CustomizerControlls extends WP_Customize_Control {
                       <?php $this->link(); ?>
                       <?php checked( $this->value() ); ?>
                   />
-                  <span class="zm-slider<?php echo $displayoptions; ?>"></span>
+                  <span class="zm-slider<?php echo esc_attr( $displayoptions ); ?>"></span>
                 </label>
               </div>
             </div>
@@ -213,8 +205,7 @@ class CustomizerControlls extends WP_Customize_Control {
 
         } elseif(strpos($this->type, 'zm-radiobutton') !== false){
 
-          //options button: '-valueisbuttonclass' ($value = backgroundcolor/fontstyle of buttons)
-          //options grid: '-w-1-3' , '-w-1-4' (default = uk-child-width-1-2)
+          //_class_background_pos
 
           if ( empty( $this->choices ) ) {
               return;
@@ -242,7 +233,7 @@ class CustomizerControlls extends WP_Customize_Control {
               <span id="<?php echo esc_attr( $description_id ); ?>" class="description customize-control-description"><?php echo $this->description; ?></span>
           <?php endif; ?>
 
-          <div uk-grid class="uk-grid uk-grid-collapse<?php echo $gridclass; ?> zm-radio-buttons<?php echo $radioactiveclass; ?>">
+          <div uk-grid class="uk-grid uk-grid-collapse<?php echo esc_attr( $gridclass ); ?> zm-radio-buttons<?php echo esc_attr( $radioactiveclass ); ?>">
 
             <?php foreach ( $this->choices as $value => $label ) :
 
@@ -269,14 +260,11 @@ class CustomizerControlls extends WP_Customize_Control {
                         />
                     <label class="uk-button<?php echo esc_attr( $radiobuttonclass ); ?> uk-width-1-1 uk-position-relative" for="<?php echo esc_attr( $input_id . '-radio-' . $value ); ?>">
                       <?php if(strpos($this->type, '-valueisbuttonclass') !== false){ ?>
-                        <?php //<span class="zm-radio-buttons-check uk-icon uk-hidden" uk-icon="icon:check;ratio:0.7"></span> ?>
-
                         <span class="zm-radio-buttons-active uk-icon uk-animation-stroke uk-hidden" style="--uk-animation-stroke: 50;" uk-icon="icon:paint-bucket;ratio:1.2"></span>
                         <span class="zm-radio-buttons-inactive uk-icon" uk-icon="icon:plus;ratio:0.7"></span>
                       <?php } else {
 
-                        //echo esc_html( $label );
-                        echo  $label;
+                        echo $label;
 
                       } ?></label>
                 </div>
@@ -289,57 +277,9 @@ class CustomizerControlls extends WP_Customize_Control {
 
           <?php
 
-        } elseif(strpos($this->type, 'zm-radiowidth') !== false){
-
-          if ( empty( $this->choices ) ) {
-              return;
-          }
-
-          $name = '_customize-radio-' . $this->id;
-          ?>
-          <?php if ( ! empty( $this->label ) ) : ?>
-              <span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
-          <?php endif; ?>
-          <?php if ( ! empty( $this->description ) ) : ?>
-              <span id="<?php echo esc_attr( $description_id ); ?>" class="description customize-control-description"><?php echo $this->description; ?></span>
-          <?php endif; ?>
-
-          <div uk-grid class="uk-child-width-1-1 uk-grid-collapse">
-
-            <?php foreach ( $this->choices as $value => $label ) : ?>
-
-              <div class="uk-text-center zm-newradio-button radiowidth">
-                <input
-                    id="<?php echo esc_attr( $input_id . '-radio-' . $value ); ?>"
-                    type="radio"
-                    <?php echo $describedby_attr; ?>
-                    value="<?php echo esc_attr( $value ); ?>"
-                    name="<?php echo esc_attr( $name ); ?>"
-                    <?php $this->link(); ?>
-                    <?php checked( $this->value(), $value ); ?>
-                    class="uk-hidden"
-                    />
-                <label class="" for="<?php echo esc_attr( $input_id . '-radio-' . $value ); ?>">
-
-                  <div class="<?php echo $label; ?> uk-button uk-button-default zmactive uk-box-shadow-medium uk-button-small uk-padding-remove">
-                    <div uk-grid class="uk-grid-collapse uk-child-width-expand">
-                      <div><i class="uk-text-left" uk-icon="arrow-left"></i></div>
-                      <div class="zm-newradio-inactive"><i class="uk-text-center" uk-icon="menu"></i></div>
-                      <div class="zm-newradio-active uk-animation-stroke uk-hidden" style="--uk-animation-stroke: 100;"><i class="uk-text-center" uk-icon="check"></i></div>
-                      <div><i class="uk-text-right" uk-icon="arrow-right"></i></div>
-                    </div>
-                  </div>
-
-                </label>
-              </div>
-
-            <?php endforeach; ?>
-
-          </div>
-
-          <?php
-
         } elseif(strpos($this->type, 'zm-radiocolors') !== false){
+
+          //_class_color_background
 
           if ( empty( $this->choices ) ) {
               return;
@@ -392,58 +332,9 @@ class CustomizerControlls extends WP_Customize_Control {
 
           <?php
 
-        } elseif(strpos($this->type, 'zm-radioheight') !== false){
-
-          if ( empty( $this->choices ) ) {
-              return;
-          }
-
-          $name = '_customize-radio-' . $this->id;
-          ?>
-          <?php if ( ! empty( $this->label ) ) : ?>
-              <span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
-          <?php endif; ?>
-          <?php if ( ! empty( $this->description ) ) : ?>
-              <span id="<?php echo esc_attr( $description_id ); ?>" class="description customize-control-description"><?php echo $this->description; ?></span>
-          <?php endif; ?>
-
-          <div class="uk-flex uk-flex-middle uk-flex-center">
-
-            <?php foreach ( $this->choices as $value => $label ) : ?>
-
-              <div class="uk-text-center zm-newradio-button radioheight">
-                <input
-                    id="<?php echo esc_attr( $input_id . '-radio-' . $value ); ?>"
-                    type="radio"
-                    <?php echo $describedby_attr; ?>
-                    value="<?php echo esc_attr( $value ); ?>"
-                    name="<?php echo esc_attr( $name ); ?>"
-                    <?php $this->link(); ?>
-                    <?php checked( $this->value(), $value ); ?>
-                    class="uk-hidden"
-                    />
-                <label class="" for="<?php echo esc_attr( $input_id . '-radio-' . $value ); ?>">
-
-                  <div class="uk-button uk-button-default zmactive uk-box-shadow-medium uk-button-small">
-                		<div><i class="uk-text-left" uk-icon="arrow-up"></i></div>
-                		<div class="uk-flex uk-flex-middle uk-text-center" style="height: <?php echo $label; ?>;">
-                      <div class="zm-newradio-inactive"><i class="uk-text-center" uk-icon="menu"></i></div>
-                      <div class="zm-newradio-active uk-animation-stroke uk-hidden" style="--uk-animation-stroke: 100;"><i class="uk-text-center" uk-icon="check"></i></div>
-                    </div>
-
-                		<div><i class="uk-text-right" uk-icon="arrow-down"></i></div>
-                	</div>
-
-                </label>
-              </div>
-
-            <?php endforeach; ?>
-
-          </div>
-
-          <?php
-
         } elseif(strpos($this->type, 'zm-radioverticalpadding') !== false){
+
+          //_class_section
 
           if ( empty( $this->choices ) ) {
               return;
@@ -475,9 +366,9 @@ class CustomizerControlls extends WP_Customize_Control {
                     />
                 <label class="" for="<?php echo esc_attr( $input_id . '-radio-' . $value ); ?>">
 
-                  <div class="uk-section-default uk-box-shadow-small" style="padding: calc( (64px - <?php echo $label; ?>) / 2 ) 2px;">
+                  <div class="uk-section-default uk-box-shadow-small" style="padding: calc( (64px - <?php echo esc_attr( $label ); ?>) / 2 ) 2px;">
 
-                    <div class="uk-button uk-button-default zmactive uk-button-small uk-padding-remove uk-flex uk-flex-middle" style="height: <?php echo $label; ?> ;">
+                    <div class="uk-button uk-button-default zmactive uk-button-small uk-padding-remove uk-flex uk-flex-middle" style="height: <?php echo esc_attr( $label ); ?> ;">
 
   					             <div class="uk-section-default uk-width-1-1">
 
@@ -535,7 +426,7 @@ class CustomizerControlls extends WP_Customize_Control {
 
           					<div class="uk-button uk-button-default zmactive uk-button-small uk-padding-remove uk-display-inline-block uk-height-1-1 uk-width-1-1">
 
-                      <div class="uk-section-default uk-position-relative uk-display-inline-block uk-height-1-1 " style="width:<?php echo $label; ?>;">
+                      <div class="uk-section-default uk-position-relative uk-display-inline-block uk-height-1-1 " style="width:<?php echo esc_attr( $label ); ?>;">
 
                         <div class="zm-newradio-inactive uk-position-center"><i class="uk-text-center" uk-icon="menu"></i></div>
                         <div class="zm-newradio-active uk-position-center uk-animation-stroke uk-hidden" style="--uk-animation-stroke: 100;"><i class="uk-text-center" uk-icon="check"></i></div>
@@ -591,7 +482,7 @@ class CustomizerControlls extends WP_Customize_Control {
 
           					<div class="uk-button uk-button-default zmactive uk-button-small uk-padding-remove uk-display-inline-block uk-height-1-1 uk-width-1-1">
 
-                      <div class="uk-section-default uk-position-relative uk-display-inline-block" style="width: <?php echo $label; ?>;margin: calc( (100% - <?php echo $label; ?>) / 2 ) 0;height: <?php echo $label; ?>;">
+                      <div class="uk-section-default uk-position-relative uk-display-inline-block" style="width: <?php echo esc_attr( $label ); ?>;margin: calc( (100% - <?php echo esc_attr( $label ); ?>) / 2 ) 0;height: <?php echo esc_attr( $label ); ?>;">
 
                         <div class="zm-newradio-inactive uk-position-center"><i class="uk-text-center" uk-icon="menu"></i></div>
                         <div class="zm-newradio-active uk-position-center uk-animation-stroke uk-hidden" style="--uk-animation-stroke: 100;"><i class="uk-text-center" uk-icon="check"></i></div>

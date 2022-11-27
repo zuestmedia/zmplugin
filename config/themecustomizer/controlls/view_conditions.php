@@ -6,10 +6,6 @@ class view_conditions extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls\Build
 
   protected function default() {
 
-    //SPECIAL CASE in THEMECUSTOMIZER.php
-    //creates foreach choice one controll
-
-    //$this->type = 'zm-toggleswitch-small-round';
     $this->type = 'zm-multicheckbox';
 
     //$this->label = NULL;
@@ -19,17 +15,7 @@ class view_conditions extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls\Build
     $this->validation = 'slugarray';
 
     //$this->transport = 'refresh';
-    /*$this->choices = array(
-      'frontpage' =>  __( 'FrontPage', 'zmplugin' ),
-      'blogpage' =>  __( 'BlogPage', 'zmplugin' ),
-      'page' =>  __( 'Pages', 'zmplugin' ),
-      'single' =>  __( 'Single Post', 'zmplugin' ),
-      'archive' =>  __( 'ArchivePage', 'zmplugin' ),
-      'searchpage' =>  __( 'SearchPage', 'zmplugin' ),
-      'errorpage' =>  __( 'ErrorPage', 'zmplugin' ),
-    );*/
-
-    $this->choices = \ZMT\Theme\Helpers::getViewConditionsChoices();
+    $this->choices = \ZMP\Plugin\ThemeHelper::getViewConditionsChoices();
 
   }
 

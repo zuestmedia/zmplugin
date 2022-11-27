@@ -594,13 +594,13 @@ class AppSettings extends \ZMP\Plugin\App {
           tag_cookie_notice.setAttribute('href', '<?php echo esc_url( $this->getCookieConsentPrivacyUrl() ); ?>');
           tag_cookie_notice.innerHTML = '<?php echo __( 'Cookie Notice', 'zmplugin' ); ?>';
 
-          var tag_button_accept = document.createElement("span");
+          var tag_button_accept = document.createElement("button");
           tag_button_accept.className = 'zmcookieconsentbutton zmcookieconsentbuttonaccept';
           tag_button_accept.setAttribute('id', 'zmcookieconsentaccept2');
           //tag_button_accept.innerHTML = 'Accept';
           tag_button_accept.innerHTML = '<?php echo __( '✓ Accept', 'zmplugin' ); ?>';
 
-          var tag_button_decline = document.createElement("span");
+          var tag_button_decline = document.createElement("button");
           tag_button_decline.className = 'zmcookieconsentbutton zmcookieconsentbuttondecline';
           tag_button_decline.setAttribute('id', 'zmcookieconsentdecline2');
           //tag_button_decline.innerHTML = 'Decline';

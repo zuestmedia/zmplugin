@@ -381,6 +381,17 @@ class PluginHelper {
 
   }
 
+/**
+  * LoadTextdomain before Config Files!!
+  */
+  static function LoadTextDomainbeforeConfigFiles($plugin_basename){
+
+    $slug = dirname( $plugin_basename );
+
+    load_plugin_textdomain( $slug, false, $slug.'/languages' );
+
+ }
+
   /**
   * Registers a Plugin in ZMPlugin
   */

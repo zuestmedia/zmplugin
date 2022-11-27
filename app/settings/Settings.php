@@ -66,7 +66,7 @@ class Settings {
               'boolarray'
           );
 
-          $this->form->addField(
+          /* old with text not working with umlaute äüö $this->form->addField(
             'textarea',
               array(
                 'label'=> __('Text', 'zmp-breadcrumbs'),
@@ -77,6 +77,19 @@ class Settings {
               'option_mod',//type
               '_text',//optionsgroup + "_option_mod_name"
               'textarray'
+          );*/
+          /* TODO: remove new because only should use translations!??? */
+          $this->form->addField(
+            'textarea',
+              array(
+                'label'=> __('Text', 'zmp-breadcrumbs'),
+                'class'=>'uk-textarea uk-form-width-large',
+                'name'=>$zmplugin['app']->getCookieConsentTextTextFieldName(),
+                'default_value'=>$zmplugin['app']->getCookieConsentTextDefaultValue()
+              ),
+              'option_mod',//type
+              '_sanitize',//optionsgroup + "_option_mod_name"
+              'sanitizearray'
           );
 
           $this->form->addField(

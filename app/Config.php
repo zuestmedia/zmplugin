@@ -13,6 +13,9 @@ class Config {
       */
       global $zmplugin;
 
+      //preload textdomain TODO: recheck when translation is on wp.org if it works like this!!! --> check action reference (reihenfolge textdomain wird erst nach plugins_loaded geladen!!!)
+      PluginHelper::LoadTextDomainbeforeConfigFiles( $zmplugin['plugin_basename'] );
+
       $zmplugin['default_config'] = new \ZMP\Plugin\Config\config();
 
       $config = $zmplugin['default_config'];

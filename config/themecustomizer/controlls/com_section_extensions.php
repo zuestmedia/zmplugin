@@ -9,9 +9,9 @@ class com_section_extensions extends \ZMP\Plugin\Config\ThemeCustomizer\Controll
     parent::__construct();
 
     $this->custom_section_content = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\custom_section_content(5,3);
-    $this->custom_section_content->choices = \ZMT\Theme\Helpers::getCustomSectionContentExtensionsChoices( );
+    $this->custom_section_content->choices = \ZMP\Plugin\ThemeHelper::getCustomSectionContentExtensionsChoices( );
 
-    $this->presets->choices = \ZMT\Theme\Helpers::getPresetChoices( 'section_extensions', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
+    $this->presets->choices = \ZMP\Plugin\ThemeHelper::getPresetChoices( 'section_extensions', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
 
   }
 

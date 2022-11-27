@@ -11,7 +11,7 @@ class offcanvas_module extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls\Buil
     $this->label = __( 'Offcanvas Module', 'zmplugin' );
     $this->description = __( 'Connect this button to a offcanvas or modal module.', 'zmplugin' );
     $this->validation = 'class';
-    $this->choices = \ZMT\Theme\Helpers::getOffcanvasChoices();
+    $this->choices = \ZMP\Plugin\ThemeHelper::getOffcanvasChoices();
 
   }
 

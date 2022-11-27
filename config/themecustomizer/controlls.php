@@ -525,6 +525,8 @@ class controlls extends \ZMP\Plugin\ExtendControlls {
     $this->search_icon = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_json(120,4,NULL,'search_icon');// search
     $this->separator = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_json(120,4,NULL,'separator');// separator
 
+    $this->read_more_wrap = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_json(120,4,NULL,'read_more_wrap');// readmore
+
     //xy extends _textarea
     $this->text = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\text(10,2,'content');//errorpage
     //new _textarea
@@ -551,7 +553,6 @@ class controlls extends \ZMP\Plugin\ExtendControlls {
     $this->text_separator = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\text_separator(10,2,'content');//linkpages, taxonomyterm
     $this->link_url = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\link_url(10,3,'content');//(val=url!) powered
     $this->powered_text = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\powered_text(10,3,'content');// powered
-    $this->read_more = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\read_more(10,2,'content');// readmore
     $this->placeholder = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\placeholder(10,2,'content');// search
     //new _text
     $this->datentime_sprintf = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_text(10,3,'content','datentime_sprintf');//commentslist

@@ -22,6 +22,7 @@ class _element extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls\BuildSingleC
       'footer' => __( 'footer', 'zmplugin' ),
       'article' => __( 'article', 'zmplugin' ),
       'nav' => __( 'nav', 'zmplugin' ),
+      'figure' => __( 'figure', 'zmplugin' ),
       '' => __( 'Not in use', 'zmplugin' ),
     );
 

@@ -11,7 +11,7 @@ class com_custom_block_template extends com_custom {
     //Values
     $this->label = __( 'Custom Block Template', 'zmplugin' );
 
-    $this->presets->choices = \ZMT\Theme\Helpers::getPresetChoices( 'custom_block_template', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
+    $this->presets->choices = \ZMP\Plugin\ThemeHelper::getPresetChoices( 'custom_block_template', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
 
   }
 

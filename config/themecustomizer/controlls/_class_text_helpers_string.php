@@ -73,6 +73,37 @@ class _class_text_helpers_string extends \ZMP\Plugin\Config\ThemeCustomizer\Cont
       'uk-text-center@xl' =>  __( 'Text Align: Center @xl', 'zmplugin' ),
       'uk-text-right@xl' =>  __( 'Text Align: Right @xl', 'zmplugin' ),
 
+      'uk-margin-left' =>  __( 'Margin Left', 'zmplugin' ),
+      'uk-margin-right' =>  __( 'Margin Right', 'zmplugin' ),
+      'uk-margin-small-left' =>  __( 'Small Margin Left', 'zmplugin' ),
+      'uk-margin-small-right' =>  __( 'Small Margin Right', 'zmplugin' ),
+      'uk-margin-medium-left' =>  __( 'Medium Margin Left', 'zmplugin' ),
+      'uk-margin-medium-right' =>  __( 'Medium Margin Right', 'zmplugin' ),
+      'uk-margin-large-left' =>  __( 'Large Margin Left', 'zmplugin' ),
+      'uk-margin-large-right' =>  __( 'Large Margin Right', 'zmplugin' ),
+      'uk-margin-xlarge-left' =>  __( 'X-Large Margin Left', 'zmplugin' ),
+      'uk-margin-xlarge-right' =>  __( 'X-Large Margin Right', 'zmplugin' ),
+
+      'uk-margin-auto' =>  __( 'Auto Margin', 'zmplugin' ),
+      'uk-margin-auto-left' =>  __( 'Auto Margin Left', 'zmplugin' ),
+      'uk-margin-auto-right' =>  __( 'Auto Margin Right', 'zmplugin' ),
+
+      'uk-margin-auto@s' =>  __( 'Auto Margin @s', 'zmplugin' ),
+      'uk-margin-auto-left@s' =>  __( 'Auto Margin Left @s', 'zmplugin' ),
+      'uk-margin-auto-right@s' =>  __( 'Auto Margin Right @s', 'zmplugin' ),
+
+      'uk-margin-auto@m' =>  __( 'Auto Margin @m', 'zmplugin' ),
+      'uk-margin-auto-left@m' =>  __( 'Auto Margin Left @m', 'zmplugin' ),
+      'uk-margin-auto-right@m' =>  __( 'Auto Margin Right @m', 'zmplugin' ),
+
+      'uk-margin-auto@l' =>  __( 'Auto Margin @l', 'zmplugin' ),
+      'uk-margin-auto-left@l' =>  __( 'Auto Margin Left @l', 'zmplugin' ),
+      'uk-margin-auto-right@l' =>  __( 'Auto Margin Right @l', 'zmplugin' ),
+
+      'uk-margin-auto@xl' =>  __( 'Auto Margin @xl', 'zmplugin' ),
+      'uk-margin-auto-left@xl' =>  __( 'Auto Margin Left @xl', 'zmplugin' ),
+      'uk-margin-auto-right@xl' =>  __( 'Auto Margin Right @xl', 'zmplugin' ),
+
     );
 
   }

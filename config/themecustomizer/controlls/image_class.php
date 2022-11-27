@@ -12,7 +12,9 @@ class image_class extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls\BuildSing
     $this->validation = 'classarray';
     $this->choices = array(
 
-      //must be doubled if has background and blend mode...
+      //must be doubled if has background and blend mode...      
+      'uk-display-block' =>  __( 'Display: Block', 'zmplugin' ),
+
       'uk-border-rounded' =>  __( 'Border: Rounded', 'zmplugin' ),
       'uk-border-circle' =>  __( 'Border: Circle', 'zmplugin' ),
       'uk-border-pill' =>  __( 'Border: Pill', 'zmplugin' ),

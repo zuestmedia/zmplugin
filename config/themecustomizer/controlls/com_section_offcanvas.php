@@ -9,9 +9,9 @@ class com_section_offcanvas extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls
     parent::__construct();
 
     $this->custom_section_content = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\custom_section_content(5,3);
-    $this->custom_section_content->choices = \ZMT\Theme\Helpers::getOffcanvasChoices( );
+    $this->custom_section_content->choices = \ZMP\Plugin\ThemeHelper::getOffcanvasChoices( );
 
-    $this->presets->choices = \ZMT\Theme\Helpers::getPresetChoices( 'section_offcanvas', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
+    $this->presets->choices = \ZMP\Plugin\ThemeHelper::getPresetChoices( 'section_offcanvas', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
 
   }
 

@@ -10,7 +10,7 @@ class com_section_widget extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls\co
 
     //new
     //$this->presets = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\presets();
-    $this->presets->choices = \ZMT\Theme\Helpers::getPresetChoices( 'section_widget', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
+    $this->presets->choices = \ZMP\Plugin\ThemeHelper::getPresetChoices( 'section_widget', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
 
   }
 

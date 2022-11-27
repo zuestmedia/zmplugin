@@ -15,7 +15,7 @@ class custom_section_content extends \ZMP\Plugin\Config\ThemeCustomizer\Controll
     $this->transport = 'refresh';//sonst geht active callback nicht...
     $this->label = __( 'Select Content', 'zmplugin' );
     $this->validation = 'class';
-    $this->choices = \ZMT\Theme\Helpers::getCustomSectionContentChoices( __('Default Widget', 'zmplugin') );
+    $this->choices = \ZMP\Plugin\ThemeHelper::getCustomSectionContentChoices( __('Default Widget', 'zmplugin') );
 
   }
 

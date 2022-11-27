@@ -11,7 +11,7 @@ class com_custom_html extends com_custom {
     //Values
     $this->label = __( 'Custom HTML', 'zmplugin' );
 
-    $this->presets->choices = \ZMT\Theme\Helpers::getPresetChoices( 'custom_html', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
+    $this->presets->choices = \ZMP\Plugin\ThemeHelper::getPresetChoices( 'custom_html', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
 
   }
 

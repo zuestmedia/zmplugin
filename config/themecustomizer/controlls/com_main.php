@@ -12,7 +12,7 @@ class com_main {
 
     //new
     $this->presets = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\presets();
-    $this->presets->choices = \ZMT\Theme\Helpers::getPresetChoices( 'main', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
+    $this->presets->choices = \ZMP\Plugin\ThemeHelper::getPresetChoices( 'main', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
 
   }
 

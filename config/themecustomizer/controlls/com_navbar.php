@@ -11,10 +11,11 @@ class com_navbar {
     $this->description = __( 'Edit Navbar Settings.', 'zmplugin' );
 
     $this->presets = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\presets(4,2);
-    $this->presets->choices = \ZMT\Theme\Helpers::getPresetChoices( 'navbar', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
+    $this->presets->choices = \ZMP\Plugin\ThemeHelper::getPresetChoices( 'navbar', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
 
     $this->navbar_fontfamily = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_cssvar_font_family(10,2);
     $this->navbar_fontsize = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_cssvar_fontsize_px(10,2);
+    $this->navbar_text_transform = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_cssvar_text_transform(10,2);
     $this->navbar_fontweight = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_cssvar_font_weight(10,2);
     $this->navbar_fontstyle = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_cssvar_fontstyle(10,2);
     $this->navbar_letterspacing = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_cssvar_letter_spacing(10,2);

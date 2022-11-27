@@ -11,7 +11,7 @@ class com_widget {
     $this->description = __( 'Edit Sidebar.', 'zmplugin' );
 
     $this->presets = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\presets();
-    $this->presets->choices = \ZMT\Theme\Helpers::getPresetChoices( 'widget', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
+    $this->presets->choices = \ZMP\Plugin\ThemeHelper::getPresetChoices( 'widget', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
 
   }
 

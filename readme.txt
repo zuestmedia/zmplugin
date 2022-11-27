@@ -1,6 +1,6 @@
 === ZMPlugin ===
 Contributors: zuestmedia
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 Tags: block patterns, cookie consent banner, customizer, zmtheme
 Requires at least: 4.7
 Tested up to: 6.1
@@ -49,7 +49,7 @@ Personalization options for the WordPress login form (wp-login.php). The login l
 
 Learn more about ZM WordPress themes and plugins at [zmtheme.com](https://zmtheme.com/).
 
-If you have any questions or need help, visit the [support page](https://zmtheme.com/support/).
+If you have any questions or need help, visit the [documentation page](https://zmtheme.com/documentation/).
 
 You can also find us on [Github](https://github.com/zuestmedia/)!
 
@@ -63,6 +63,16 @@ To install ZM Plugin, go to Dashboard >> Plugins >> Add new. Then enter "ZMPlugi
 Yes. The website management and config settings are working on all themes. The extended customizer settings are only available with ZMTheme WordPress Themes.
 
 == Changelog ==
+
+= 1.0.4 =
+* New: ThemeHelper Class, Blockpatterns Class
+* Update: UIKIT Version 3.15.14
+* Update: Load Textdomain early
+* Update: various controlls choices and preset settings
+* Fix: Escaping CustomizerControlls and remove some unused controlls
+* Fix: Order of Adminmenu Pages
+* Fix: Readme Resources documentation url updated
+* Fix: Translations of Cookie Consent Banner
 
 = 1.0.3 =
 * Fix: Plugin URI / Author URI
@@ -153,3 +163,10 @@ Yes. The website management and config settings are working on all themes. The e
 
 = 0.9.0 =
 * Initial release of ZMPlugin
+
+== Copyright ==
+ZMPlugin WordPress Plugin, Copyright 2022 zmplugin.com
+ZMPlugin is distributed under the terms of the GNU GPL
+
+== Resources ==
+* uikit © 2022 YOOtheme GmbH, MIT

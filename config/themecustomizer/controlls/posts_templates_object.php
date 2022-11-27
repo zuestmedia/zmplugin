@@ -15,7 +15,7 @@ class posts_templates_object extends \ZMP\Plugin\Config\ThemeCustomizer\Controll
   /*  $this->active_callback_item = 'custom_section_content';//only applys in queryloop settings not in articlelist
     $this->active_callback_item_functionname = 'CallbackAlt1';//only applys in queryloop settings not in articlelist
     */
-    $this->choices = \ZMT\Theme\Helpers::getPostsTemplateObjectsChoices( __('Posts', 'zmplugin') );
+    $this->choices = \ZMP\Plugin\ThemeHelper::getPostsTemplateObjectsChoices( __('Posts', 'zmplugin') );
 
   }
 

@@ -10,7 +10,7 @@ class com_search {
     $this->label = __( 'Search Form', 'zmplugin' );
 
     $this->presets = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\presets();
-    $this->presets->choices = \ZMT\Theme\Helpers::getPresetChoices( 'search', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
+    $this->presets->choices = \ZMP\Plugin\ThemeHelper::getPresetChoices( 'search', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
 
     //$this->form_class = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\form_class();
     //$this->input_class = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\input_class();

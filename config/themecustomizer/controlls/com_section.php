@@ -8,7 +8,7 @@ class com_section {
 
     //new
     $this->presets = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\presets();
-    $this->presets->choices = \ZMT\Theme\Helpers::getPresetChoices( 'section', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
+    $this->presets->choices = \ZMP\Plugin\ThemeHelper::getPresetChoices( 'section', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
 
     //module container needs to be hidden, if not, grid does not work because of surounding container of ***!!!widgets!!!***
     $this->module_element = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_element();

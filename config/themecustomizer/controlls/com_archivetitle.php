@@ -10,7 +10,7 @@ class com_archivetitle {
     $this->label = __( 'Archive Title', 'zmplugin' );
 
     $this->presets = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\presets();
-    $this->presets->choices = \ZMT\Theme\Helpers::getPresetChoices( 'archivetitle', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
+    $this->presets->choices = \ZMP\Plugin\ThemeHelper::getPresetChoices( 'archivetitle', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
 
     //$this->title_element = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\title_element();
     //$this->title_class = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\title_class();

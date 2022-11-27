@@ -10,7 +10,7 @@ class com_heading {
     $this->description = __( 'Edit Heading Settings.', 'zmplugin' );
 
     $this->presets = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\presets(4,2);
-    $this->presets->choices = \ZMT\Theme\Helpers::getPresetChoices( 'heading', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
+    $this->presets->choices = \ZMP\Plugin\ThemeHelper::getPresetChoices( 'heading', __('⬤ Default', 'zmplugin'), __('↺ Reset to Default', 'zmplugin')  );
 
     $this->heading_font_family = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_cssvar_font_family(10,2);
     $this->heading_text_transform = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_cssvar_text_transform(10,2);
