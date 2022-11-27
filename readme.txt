@@ -1,9 +1,9 @@
 === ZMPlugin ===
 Contributors: zuestmedia
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 Tags: block patterns, cookie consent banner, customizer, zmtheme
 Requires at least: 4.7
-Tested up to: 6.1
+Tested up to: 6.1.1
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -63,6 +63,9 @@ To install ZM Plugin, go to Dashboard >> Plugins >> Add new. Then enter "ZMPlugi
 Yes. The website management and config settings are working on all themes. The extended customizer settings are only available with ZMTheme WordPress Themes.
 
 == Changelog ==
+
+= 1.0.5 =
+* New: new customizer controlls for imageoverlay size and wrap in articlecontainer
 
 = 1.0.4 =
 * New: ThemeHelper Class, Blockpatterns Class

@@ -463,6 +463,10 @@ class controlls extends \ZMP\Plugin\ExtendControlls {
     $this->image_class =               new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\image_class(10,2,'content');//image
     $this->caption =                   new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\caption(10,2,'content');//image
 
+    //spezial nicht in content, in module!
+    $this->imageoverlay_wrap =         new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_json(100,2,NULL,'imageoverlay');//articlecontainer
+    $this->imageoverlay_size =         new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\image_size(100,2,'module','imageoverlay','imageoverlay_wrap');//articlecontainer
+
     $this->list_item =                 new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\list_item(120,2);//taxonomyterm
 
     $this->autofocus =                 new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\autofocus(10,4,'developer');//search

@@ -23,6 +23,17 @@ class _json extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_textarea {
 
   }
 
+  protected function imageoverlay() {
+
+    $this->default();
+
+    $this->active_callback_master = 1;
+    $this->transport = 'refresh';//sonst geht active callback nicht...
+
+    $this->label = __( 'Image Overlay json:', 'zmplugin' );
+
+  }
+
   protected function author_box() {
 
     $this->default();

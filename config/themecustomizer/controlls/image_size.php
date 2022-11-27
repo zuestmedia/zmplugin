@@ -19,4 +19,10 @@ class image_size extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls\BuildSingl
 
   }
 
+  protected function imageoverlay() {
+
+    $this->default();
+
+  }
+
 }
