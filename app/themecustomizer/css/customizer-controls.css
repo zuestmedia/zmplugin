@@ -553,3 +553,20 @@ label .zm-radio-buttons-inactive {
 .zm-multicheckbox-buttons > label{
   font-size:12px;
 }
+
+
+/** Customizer Rotation background-pos */
+.zm-rotate-minus-45{
+  transform: rotate(-45deg);
+}
+.zm-rotate-plus-45{
+  transform: rotate(45deg);
+}
+
+/** Customizer IMAGEPOS background-img-size */
+.zm-imgcoverpos{
+  top:67%;left:49%;
+}
+.zm-imgcoverorigsize{
+  top:31%;left:22%;
+}

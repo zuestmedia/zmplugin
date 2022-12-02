@@ -214,7 +214,7 @@ class SettingsTemplate {
         if($tempformlocation != 0) {
 
           $accordionscript = '<script>
-            UIkit.accordion("#zmthememenu").toggle('.$tempformlocation.');
+            UIkit.accordion("#zmthememenu").toggle('.esc_attr( $tempformlocation ).');
           </script>';
 
           $temp_form_object->addField('html',$accordionscript);
@@ -224,7 +224,7 @@ class SettingsTemplate {
       } elseif( isset( $_GET['switcherpos'] ) && is_numeric( $_GET['switcherpos'] ) ){
 
         $accordionscript = '<script>
-          UIkit.accordion("#zmthememenu").toggle('.$_GET['switcherpos'].');
+          UIkit.accordion("#zmthememenu").toggle('.esc_attr( $_GET['switcherpos'] ).');
         </script>';
 
         $temp_form_object->addField('html',$accordionscript);

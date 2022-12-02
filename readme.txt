@@ -1,6 +1,6 @@
 === ZMPlugin ===
 Contributors: zuestmedia
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 Tags: block patterns, cookie consent banner, customizer, zmtheme
 Requires at least: 4.7
 Tested up to: 6.1.1
@@ -63,6 +63,14 @@ To install ZM Plugin, go to Dashboard >> Plugins >> Add new. Then enter "ZMPlugi
 Yes. The website management and config settings are working on all themes. The extended customizer settings are only available with ZMTheme WordPress Themes.
 
 == Changelog ==
+
+= 1.0.6 =
+* New: Custom CSS classes for background-img-size and background-pos
+* New: WP_KSES settings added to CustomizerControlls / ThemeCustomizer
+* Fix: Escaping all $variables in CustomizerControlls (wp_kses)
+* Fix: Presets access_level auto = 3
+* Removed: getRequiredPluginsTable
+* Removed: Skewy
 
 = 1.0.5 =
 * New: new customizer controlls for imageoverlay size and wrap in articlecontainer

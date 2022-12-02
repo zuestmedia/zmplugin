@@ -50,8 +50,6 @@ class BlockTemplates {
 
       if( is_array($zmtblockassignment) && in_array( $post_slug, $zmtblockassignment ) ){
 
-        //echo '<span style="color:green;">'; _e('Assigned to: ', 'zmplugin'); echo '</span>';
-
         $newarray = array();
         foreach($zmtblockassignment as $key => $value){
 
@@ -62,11 +60,10 @@ class BlockTemplates {
           }
 
         }
-        echo implode(' <br>', $newarray );
+        echo esc_html( implode(', ', $newarray ) );
 
       } else {
 
-        //echo '<span style="color:red;">'; _e('Not assigned', 'zmplugin'); echo '</span>';
         echo '-';
 
       }

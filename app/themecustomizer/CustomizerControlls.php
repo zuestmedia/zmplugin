@@ -13,7 +13,21 @@ class CustomizerControlls extends WP_Customize_Control {
     * https://developer.wordpress.org/reference/classes/wp_customize_control/#user-contributed-notes
     * add custom controll class extensions to create own controlls!
     */
-    //public $type = 'toggleswitch';
+    //public $type = 'toggleswitch';        
+
+    public $zm_kses = false;
+
+    public function __construct( $manager, $id, $args ) {
+
+      parent::__construct( $manager, $id, $args );      
+
+      if(array_key_exists('zm_kses',$args)){
+
+        $this->zm_kses = $args['zm_kses'];
+
+      }
+
+    }
 
     /**
     * Render the control's content.
@@ -22,7 +36,6 @@ class CustomizerControlls extends WP_Customize_Control {
 
       $input_id         = '_customize-input-' . $this->id;
       $description_id   = '_customize-description-' . $this->id;
-      $describedby_attr = ( ! empty( $this->description ) ) ? ' aria-describedby="' . esc_attr( $description_id ) . '" ' : '';
 
       $input_attrs = $this->input_attrs;
 
@@ -71,14 +84,7 @@ class CustomizerControlls extends WP_Customize_Control {
 
               <?php foreach ( $this->choices as $value => $label ) {
 
-                $checked = NULL;
-                if(is_array( $this->value() )){
-                  $checked = ( in_array( $value, $this->value() ) ) ? checked( 1, 1, false ) : '';
-                } elseif( $this->value() == $value ) {
-                  $checked = checked( 1, 1, false);
-                }
-
-                if( $checked ){
+                if( $this->getMCBChecked( $value, $this->value() ) ){
 
                   $multiinputid = sanitize_title( $this->id.''.$value ); ?>
 
@@ -102,16 +108,7 @@ class CustomizerControlls extends WP_Customize_Control {
             style="<?php echo esc_attr( $hideifmorethanseven ); ?>"
           >
 
-            <?php foreach ( $this->choices as $value => $label ) {
-
-                $checked = NULL;
-                if(is_array( $this->value() )){
-                  $checked = ( in_array( $value, $this->value() ) ) ? checked( 1, 1, false ) : '';
-                } elseif( $this->value() == $value ) {
-                  $checked = checked( 1, 1, false);
-                }
-
-                ?>
+            <?php foreach ( $this->choices as $value => $label ) { ?>
 
                 <div class="zm-multicheckbox-label">
 
@@ -124,9 +121,25 @@ class CustomizerControlls extends WP_Customize_Control {
                     zm-dataforid="<?php echo esc_attr( $multiinputid ); ?>"
                     type="checkbox"
                     value="<?php echo esc_attr( $value ); ?>"
-                    <?php echo $checked; ?>
+                    <?php echo $this->getMCBChecked( $value, $this->value() ); ?>
                   />
-                  <label for="<?php echo esc_attr( $multiinputid ); ?>"><?php echo $label; ?></label>
+                  <label for="<?php echo esc_attr( $multiinputid ); ?>">
+                  
+                    <?php 
+
+                      if($this->zm_kses){
+
+                        echo wp_kses( $label, $this->zm_kses );
+
+                      } else {
+
+                        echo esc_html( $label ); 
+
+                      }
+                    
+                    ?>
+                
+                  </label>
 
                 </div>
 
@@ -142,7 +155,7 @@ class CustomizerControlls extends WP_Customize_Control {
           <input
             id="<?php echo esc_attr( $input_id ); ?>"
             class=""
-            <?php echo $describedby_attr; ?>
+            <?php echo ( ! empty( $this->description ) ) ? ' aria-describedby="' . esc_attr( $description_id ) . '" ' : ''; ?>
             type="hidden"
             <?php $this->link(); ?>
           />
@@ -189,8 +202,8 @@ class CustomizerControlls extends WP_Customize_Control {
               <div class="uk-flex uk-flex-middle">
                 <label class="zm-switch<?php echo esc_attr( $displayoptions ); ?>">
                   <input
-                      id="<?php echo esc_attr( $input_id ); ?>"
-                      <?php echo $describedby_attr; ?>
+                      id="<?php echo esc_attr( $input_id ); ?>"                      
+                      <?php echo ( ! empty( $this->description ) ) ? ' aria-describedby="' . esc_attr( $description_id ) . '" ' : ''; ?>
                       type="checkbox"
                       value="<?php echo esc_attr( $this->value() ); ?>"
                       <?php $this->link(); ?>
@@ -250,8 +263,8 @@ class CustomizerControlls extends WP_Customize_Control {
                 <div class="zm-radio-buttons-control">
                     <input
                         id="<?php echo esc_attr( $input_id . '-radio-' . $value ); ?>"
-                        type="radio"
-                        <?php echo $describedby_attr; ?>
+                        type="radio"                      
+                        <?php echo ( ! empty( $this->description ) ) ? ' aria-describedby="' . esc_attr( $description_id ) . '" ' : ''; ?>
                         value="<?php echo esc_attr( $value ); ?>"
                         name="<?php echo esc_attr( $name ); ?>"
                         <?php $this->link(); ?>
@@ -264,7 +277,15 @@ class CustomizerControlls extends WP_Customize_Control {
                         <span class="zm-radio-buttons-inactive uk-icon" uk-icon="icon:plus;ratio:0.7"></span>
                       <?php } else {
 
-                        echo $label;
+                        if($this->zm_kses){
+
+                          echo wp_kses( $label, $this->zm_kses );
+
+                        } else {
+
+                          echo esc_html( $label ); 
+
+                        }
 
                       } ?></label>
                 </div>
@@ -301,8 +322,8 @@ class CustomizerControlls extends WP_Customize_Control {
               <div class="zm-newradio-button radiocolors">
                 <input
                     id="<?php echo esc_attr( $input_id . '-radio-' . $value ); ?>"
-                    type="radio"
-                    <?php echo $describedby_attr; ?>
+                    type="radio"                      
+                    <?php echo ( ! empty( $this->description ) ) ? ' aria-describedby="' . esc_attr( $description_id ) . '" ' : ''; ?>
                     value="<?php echo esc_attr( $value ); ?>"
                     name="<?php echo esc_attr( $name ); ?>"
                     <?php $this->link(); ?>
@@ -356,8 +377,8 @@ class CustomizerControlls extends WP_Customize_Control {
               <div class="uk-text-center zm-newradio-button radioverticalpadding">
                 <input
                     id="<?php echo esc_attr( $input_id . '-radio-' . $value ); ?>"
-                    type="radio"
-                    <?php echo $describedby_attr; ?>
+                    type="radio"                      
+                    <?php echo ( ! empty( $this->description ) ) ? ' aria-describedby="' . esc_attr( $description_id ) . '" ' : ''; ?>
                     value="<?php echo esc_attr( $value ); ?>"
                     name="<?php echo esc_attr( $name ); ?>"
                     <?php $this->link(); ?>
@@ -412,8 +433,8 @@ class CustomizerControlls extends WP_Customize_Control {
               <div class="uk-text-center zm-newradio-button radiocontainerwidth">
                 <input
                     id="<?php echo esc_attr( $input_id . '-radio-' . $value ); ?>"
-                    type="radio"
-                    <?php echo $describedby_attr; ?>
+                    type="radio"                      
+                    <?php echo ( ! empty( $this->description ) ) ? ' aria-describedby="' . esc_attr( $description_id ) . '" ' : ''; ?>
                     value="<?php echo esc_attr( $value ); ?>"
                     name="<?php echo esc_attr( $name ); ?>"
                     <?php $this->link(); ?>
@@ -468,8 +489,8 @@ class CustomizerControlls extends WP_Customize_Control {
               <div class="uk-text-center zm-newradio-button radiocontainercardpadding">
                 <input
                     id="<?php echo esc_attr( $input_id . '-radio-' . $value ); ?>"
-                    type="radio"
-                    <?php echo $describedby_attr; ?>
+                    type="radio"                      
+                    <?php echo ( ! empty( $this->description ) ) ? ' aria-describedby="' . esc_attr( $description_id ) . '" ' : ''; ?>
                     value="<?php echo esc_attr( $value ); ?>"
                     name="<?php echo esc_attr( $name ); ?>"
                     <?php $this->link(); ?>
@@ -524,8 +545,8 @@ class CustomizerControlls extends WP_Customize_Control {
               <div class="uk-text-center zm-newradio-button radiobackgroundsize">
                 <input
                     id="<?php echo esc_attr( $input_id . '-radio-' . $value ); ?>"
-                    type="radio"
-                    <?php echo $describedby_attr; ?>
+                    type="radio"                      
+                    <?php echo ( ! empty( $this->description ) ) ? ' aria-describedby="' . esc_attr( $description_id ) . '" ' : ''; ?>
                     value="<?php echo esc_attr( $value ); ?>"
                     name="<?php echo esc_attr( $name ); ?>"
                     <?php $this->link(); ?>
@@ -540,7 +561,19 @@ class CustomizerControlls extends WP_Customize_Control {
 
                       <div class="uk-section-default uk-position-relative uk-display-inline-block uk-overflow-hidden" style="width:82%;margin:10% 0;height:70%;">
 
-                        <?php echo $label; ?>
+                      <?php 
+
+                        if($this->zm_kses){
+
+                          echo wp_kses( $label, $this->zm_kses );
+
+                        } else {
+
+                          echo esc_html( $label ); 
+
+                        }
+
+                      ?>
 
                       </div>
 
@@ -607,8 +640,8 @@ class CustomizerControlls extends WP_Customize_Control {
                 id="<?php echo esc_attr( $input_id ); ?>"
                 class="uk-input uk-form-small"
                 value="<?php echo esc_attr( $this->value() ); ?>"
-                <?php $this->link(); ?>
-                <?php echo $describedby_attr; ?>
+                <?php $this->link(); ?>                      
+                <?php echo ( ! empty( $this->description ) ) ? ' aria-describedby="' . esc_attr( $description_id ) . '" ' : ''; ?>
               />
             </div>
           </div>
@@ -679,8 +712,9 @@ class CustomizerControlls extends WP_Customize_Control {
           <select
             class="zm-presets"
             zm-datasettingname="<?php echo esc_attr( str_replace( '_args_presets', '', $this->id ) ); ?>"
-            id="<?php echo esc_attr( $input_id ); ?>"
-            <?php echo $describedby_attr; ?> <?php $this->link(); ?>
+            id="<?php echo esc_attr( $input_id ); ?>"                      
+            <?php echo ( ! empty( $this->description ) ) ? ' aria-describedby="' . esc_attr( $description_id ) . '" ' : ''; ?>
+            <?php $this->link(); ?>
           >
               <?php
               foreach ( $this->choices as $value => $label ) {
@@ -714,6 +748,19 @@ class CustomizerControlls extends WP_Customize_Control {
 
 
     }//render_content
+
+    public function getMCBChecked($value, $thisvalue){
+
+      $checked = NULL;
+      if(is_array( $thisvalue )){
+        $checked = ( in_array( $value, $thisvalue ) ) ? checked( 1, 1, false ) : '';
+      } elseif( $thisvalue == $value ) {
+        $checked = checked( 1, 1, false);
+      }
+
+      return $checked;
+
+    }
 
     public function getColorByKey($key){
 

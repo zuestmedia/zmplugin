@@ -17,6 +17,13 @@ class _class_visibility extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls\Bui
       'zm-hidden-tablet-landscape' => __('Hide on Tablet Landscape', 'zmplugin' ).'<i uk-icon="tablet-landscape" class="uk-align-right uk-margin-remove"></i>',
       'zm-hidden-desktop' => __('Hide on Desktop', 'zmplugin' ).'<i uk-icon="desktop" class="uk-align-right uk-margin-remove"></i>',
     );
+    //KSES if has html in labels, use kses to escape in CustomizerControlls    
+    $this->zm_kses = array(
+      'i' => array(
+        'class' => array(),
+        'uk-icon' => array()
+      )
+    );
 
   }
 

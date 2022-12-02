@@ -122,10 +122,8 @@ class AdminMenu {
 
     }
 
-    //echo Main admin backend menu
     public function getMenuPage() {
 
-      //need to echo to show menu!
       echo $this->menu_page;
 
     }
@@ -207,10 +205,8 @@ class AdminMenu {
       $this->sub_menu_page .= $sub_menu_page;
 
     }
-    //echo SubMenu admin backend menu
     public function getSubMenuPage() {
 
-      //need to echo to show menu!
       echo $this->sub_menu_page;
 
     }

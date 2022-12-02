@@ -28,10 +28,6 @@ class SettingsInit {
         //$zmplugin['default_admin_template']->setDescr('The ZMPlugin Dashboard displays installed, available and beta Addons.');
         $zmplugin['default_admin_template']->setInfoBoxTitle( $default_settings->info_box_title );
         $zmplugin['default_admin_template']->setInfoBoxLinks( $default_settings->info_box_links );
-        /*$zmplugin['default_admin_template']->setInfoBoxHTML(\ZMP\Plugin\PluginHelper::getRequiredPluginsTable(
-          $zmplugin['zmplugin']->getRequiredPluginsNVersions(),
-          $zmplugin['zmplugin']->getSlug()
-        ));//optional */
         $zmplugin['default_admin_template']->setVersionTextWrap( $default_settings->version_text_wrap );
         $zmplugin['default_admin_template']->setVersion( $zmplugin['zmplugin']->getConfigVersion() );
 

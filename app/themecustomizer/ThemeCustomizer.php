@@ -533,6 +533,10 @@ class ThemeCustomizer extends Customizer {
               $result['controlls'][ $settingNcontroll_key ]['type'] = $controll_obj->type;
             }
 
+            if( property_exists($controll_obj, 'zm_kses') ){
+              $result['controlls'][ $settingNcontroll_key ]['zm_kses'] = $controll_obj->zm_kses;
+            }
+
           }
 
 
@@ -542,8 +546,6 @@ class ThemeCustomizer extends Customizer {
             global $zmtheme_activecallbacks;
 
             if( !isset( $zmtheme_activecallbacks[ $settingNcontroll_key ] ) ){
-
-              //echo $settingNcontroll_key;
 
               $zmtheme_activecallbacks[ $settingNcontroll_key ] = new CustomizerActiveCallback( $settingNcontroll_key );
 
@@ -580,7 +582,7 @@ class ThemeCustomizer extends Customizer {
             //  check if is_defsidebar, then
 
             /*if( strpos( $settingNcontroll_key, '_defsidebar' )  !== false ){
-              echo $newcomid = $newcomid.'_defsidebar';
+              $newcomid = $newcomid.'_defsidebar';
             }*/
 
             if( isset( $zmtheme_activecallbacks[ $newcomid.'_args_'.$controll_obj->active_callback_item ] ) ){

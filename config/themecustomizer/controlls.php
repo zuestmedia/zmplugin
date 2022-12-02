@@ -51,7 +51,6 @@ use ZMP\Plugin\Config\ThemeCustomizer\Controlls\_class_card_helpers;
 
 use ZMP\Plugin\Config\ThemeCustomizer\Controlls\_class_color_background;
 use ZMP\Plugin\Config\ThemeCustomizer\Controlls\_class_color_helpers;
-use ZMP\Plugin\Config\ThemeCustomizer\Controlls\_class_skewy;
 
 use ZMP\Plugin\Config\ThemeCustomizer\Controlls\_class_title;
 
@@ -219,8 +218,6 @@ class controlls extends \ZMP\Plugin\ExtendControlls {
 
     $this->section_class_color_background =          new _class_color_background(20,2,'module','default','section_element');
     $this->section_class_color_helpers =             new _class_color_helpers(21,2,'module','default','section_element');
-
-    $this->section_class_skewy =                     new _class_skewy(22,4,'module','default','section_element');
 
     $this->section_background_status =               new _background_status(23,2,'module','default','section_element');
 
@@ -426,7 +423,7 @@ class controlls extends \ZMP\Plugin\ExtendControlls {
     $this->view_conditions =           new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\view_conditions(2,2,'settings');
 
     //presets priority and access_level are defined in file! (the only one)
-    $this->presets =                   new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\presets(4,2);
+    $this->presets =                   new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\presets();
 
     $this->sortable =                  new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\sortable(5,2,'content');//containers
 
