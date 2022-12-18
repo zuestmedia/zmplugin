@@ -336,17 +336,22 @@ class Helpers {
 
       $upload_dir = wp_upload_dir();
       $upload_dir = $upload_dir['basedir'];
-
-      $file  = $upload_dir . '/' . $file . '.log';
-      $file  = fopen( $file, 'r' );
+      $file  = $upload_dir . '/' . $file . '.log';      
 
       $result = NULL;
-      while ($line = fgets($file)) {
-        $content = explode('::', $line);
-        $result .= "<strong>$content[0]</strong> $content[1]<br>";
-      }
 
-      fclose($file);
+      if( file_exists($file) ){
+
+        $file  = fopen( $file, 'r' );
+
+        while ($line = fgets($file)) {
+          $content = explode('::', $line);
+          $result .= "<strong>$content[0]</strong> $content[1]<br>";
+        }
+  
+        fclose($file);
+
+      }
 
       return $result;
 
