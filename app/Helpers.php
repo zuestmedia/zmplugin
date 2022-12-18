@@ -311,5 +311,45 @@ class Helpers {
 
     }
 
+    /**
+     * Usage: 
+     * \ZMP\Plugin\Helpers::addLogfileEntry( 'test' );
+     * \ZMP\Plugin\Helpers::showLogfileEntries();
+     */
+    static function addLogfileEntry( $entry, $file = 'zmplugin' ){
 
+      $upload_dir = wp_upload_dir();
+      $upload_dir = $upload_dir['basedir'];
+      // If the entry is array, json_encode.
+      if ( is_array( $entry ) ) { 
+        $entry = json_encode( $entry ); 
+      } 
+      // Write the log file.
+      $file  = $upload_dir . '/' . $file . '.log';
+      $file  = fopen( $file, 'a' );
+      $bytes = fwrite( $file, current_time( 'mysql' ) . "::" . $entry . "\n" ); 
+      fclose( $file ); 
+      return $bytes;
+
+    }
+    static function showLogfileEntries($file = 'zmplugin'){
+
+      $upload_dir = wp_upload_dir();
+      $upload_dir = $upload_dir['basedir'];
+
+      $file  = $upload_dir . '/' . $file . '.log';
+      $file  = fopen( $file, 'r' );
+
+      $result = NULL;
+      while ($line = fgets($file)) {
+        $content = explode('::', $line);
+        $result .= "<strong>$content[0]</strong> $content[1]<br>";
+      }
+
+      fclose($file);
+
+      return $result;
+
+    }
+    
 }
