@@ -20,6 +20,8 @@ class AdminButtonRestore extends \ZMP\Plugin\AdminButton {
     delete_option( $zmtheme['theme']->getOptGroup().\ZMT\Theme\Component::getComLockStatusOptionsModNamewithoutOptGroup() );
     delete_option( $zmtheme['theme']->getOptGroup().\ZMT\Theme\Component::getComLabelOptionsModNamewithoutOptGroup() );
 
+    delete_option( $zmtheme['theme']->getOptGroup().'_css_type' );
+
     delete_option( $zmtheme['theme']->getOptGroup().'_imp_json' );
     delete_option( $zmtheme['theme']->getOptGroup().'_temp_sub_form_location' );
 

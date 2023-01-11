@@ -301,6 +301,19 @@ class PluginHelper {
 
   }
 
+  static function registerExtensionCheck($plugin_basename){
+
+    if($plugin_basename !== false){
+
+      PluginHelper::registerExtension($plugin_basename);
+
+    }
+
+    //returns true if ext can be loaded, false if not
+    return PluginHelper::doExtensionsCheck();
+
+  }
+
   static function registerExtensionModules( $extendmodules_array, $plugin_basename ){
 
     global $zmextensionmodules;
