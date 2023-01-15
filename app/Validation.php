@@ -600,8 +600,8 @@ class  Validation {
 	}
 
 	public function text($val,$key=false) {
-		if(!preg_match('/^[a-z0-9.,_\-\s]+$/i', $val)  && $val ) {
-			return $this->createErrorObject(909,'Please enter text (a-zA-Z0-9-.,_)! Your Input could not be processed.',$key);
+		if(!preg_match('/^[a-z0-9.,:;_\-\s]+$/i', $val)  && $val ) {
+			return $this->createErrorObject(909,'Please enter text (a-zA-Z0-9-.,:;_-)! Your Input could not be processed.',$key);
 		}
 		return $val;
 	}
