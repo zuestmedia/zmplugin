@@ -281,7 +281,7 @@ class  Validation {
 	        }
 	        else {
 	            $value = $this->int( $value, $key );
-							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+				if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
 	        }
 	    }
 		}
@@ -306,7 +306,7 @@ class  Validation {
 	        }
 	        else {
 	            $value = $this->float( $value, $key );
-							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+				if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
 	        }
 	    }
 		}
@@ -330,7 +330,7 @@ class  Validation {
 	        }
 	        else {
 	            $value = $this->numeric( $value, $key );
-							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+				if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
 	        }
 	    }
 		}
@@ -341,7 +341,7 @@ class  Validation {
 		if (!is_string($val)) {
 			return $this->createErrorObject(902,'Please enter a string! Your Input could not be processed.',$key);
 		}
-		$val = trim(htmlspecialchars($val));
+		//$val = trim(htmlspecialchars($val));
 		return $val;
 	}
 	public function strarray($array) {
@@ -355,7 +355,7 @@ class  Validation {
 	        }
 	        else {
 	            $value = $this->str( $value, $key );
-							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+				if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
 	        }
 	    }
 		}
@@ -376,11 +376,11 @@ class  Validation {
 					return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
 				}
 					if ( is_array( $value ) ) {
-							$value = $this->boolarray($value);
+						$value = $this->boolarray($value);
 					}
 					else {
-							$value = $this->bool( $value, $key );
-							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+						$value = $this->bool( $value, $key );
+						if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
 					}
 			}
 		}
@@ -401,11 +401,11 @@ class  Validation {
 					return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
 				}
 					if ( is_array( $value ) ) {
-							$value = $this->emailarray($value);
+						$value = $this->emailarray($value);
 					}
 					else {
-							$value = $this->email( $value, $key );
-							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+						$value = $this->email( $value, $key );
+						if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
 					}
 			}
 		}
@@ -426,11 +426,11 @@ class  Validation {
 					return $this->createErrorObject(911,'Please enter a valid option_mod_key (a-zA-Z0-9_-)! Your Input could not be processed.');
 				}
 					if ( is_array( $value ) ) {
-							$value = $this->urlarray($value);
+						$value = $this->urlarray($value);
 					}
 					else {
-							$value = $this->url( $value, $key );
-							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+						$value = $this->url( $value, $key );
+						if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
 					}
 			}
 		}
@@ -463,7 +463,7 @@ class  Validation {
 	        }
 	        else {
 	            $value = $this->json( $value, $key );
-							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+				if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
 	        }
 	    }
 		}
@@ -492,7 +492,7 @@ class  Validation {
 	        }
 	        else {
 	            $value = $this->html( $value, $key );
-							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+				if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
 	        }
 	    }
 		}
@@ -520,7 +520,7 @@ class  Validation {
 	        }
 	        else {
 	            $value = $this->percent( $value, $key );
-							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+				if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
 	        }
 	    }
 		}
@@ -544,7 +544,7 @@ class  Validation {
 	        }
 	        else {
 	            $value = $this->color( $value, $key );
-							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+				if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
 	        }
 	    }
 		}
@@ -568,7 +568,7 @@ class  Validation {
 	        }
 	        else {
 	            $value = $this->class( $value, $key );
-							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+				if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
 	        }
 	    }
 		}
@@ -592,7 +592,7 @@ class  Validation {
 	        }
 	        else {
 	            $value = $this->slug( $value, $key );
-							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+				if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
 	        }
 	    }
 		}
@@ -616,7 +616,7 @@ class  Validation {
 	        }
 	        else {
 	            $value = $this->text( $value, $key );
-							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+				if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
 	        }
 	    }
 		}
@@ -640,7 +640,7 @@ class  Validation {
 	        }
 	        else {
 	            $value = $this->lc( $value, $key );
-							if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
+				if(is_object($value)||is_array($value)){return $value;}//return errorobject instead of array! so its showing error in multiselect fields eg...
 	        }
 	    }
 		}
