@@ -39,6 +39,7 @@ class RestRoute {
         register_rest_route( $this->getNamespace(), $this->getRoute(), array(
             'methods' => 'GET',
             'callback' => array( $this, 'restResponse' ),
+            'permission_callback' => '__return_true'
         ));
     });
 

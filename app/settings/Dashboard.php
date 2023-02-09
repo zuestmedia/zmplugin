@@ -52,7 +52,7 @@ class Dashboard {
         $template->htmlSettingsFormAccordionBetween(__('Available','zmplugin'),false)
       );
 
-        $this->form->addField('html','<p>Get list of add-ons from zmplugin.com via rest api and then get information from wordpress.org api</p>');
+        $this->form->addField('html','<p>Get list of add-ons from zuestmedia.com via rest api and then get information from wordpress.org api</p>');
 
 
       $this->form->addField('html',
@@ -65,7 +65,7 @@ class Dashboard {
         $template->htmlSettingsFormAccordionBetween(__('Beta','zmplugin'),false)
       );
 
-        $this->form->addField('html','<p>Get list of beta add-ons from zmplugin.com via rest api. those add-ons are not yet released on wordpress.org and having instead a connection to own update-server-api.</p>');
+        $this->form->addField('html','<p>Get list of beta add-ons from zuestmedia.com via rest api. those add-ons are not yet released on wordpress.org and having instead a connection to own update-server-api.</p>');
 
       //$this->form->addField( 'html','<button class="zm-theme-save-button uk-button uk-button-primary uk-margin-top" type="submit"><span uk-icon="cog"></span> '.__('Save Changes').'</button>');
 */

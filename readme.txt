@@ -1,7 +1,7 @@
 === ZMPlugin ===
 Contributors: zuestmedia
-Stable tag: 1.0.11
-Tags: block patterns, cookie consent banner, customizer, zmtheme
+Stable tag: 1.0.12
+Tags: block patterns, templates, cookie consent banner
 Requires at least: 4.7
 Tested up to: 6.1.1
 Requires PHP: 7.0
@@ -12,7 +12,7 @@ ZMPlugin is an extension for WordPress themes based on the ZM-Theme-Framework an
 
 == Description ==
 
-[ZMPlugin](https://zmplugin.com/) is an extension for WordPress themes based on the [ZM-Theme-Framework](https://zmtheme.com/) (ZMT) and extends ZMT-Themes with various options and customizer settings. This plugin can also be used as a "standalone" plugin in a reduced scope.
+[ZMPlugin](https://zuestmedia.com/plugins/) is an extension for WordPress themes based on the [ZM-Theme-Framework](https://zuestmedia.com/themes/) (ZMT) and extends ZMT-Themes with various options and customizer settings. This plugin can also be used as a "standalone" plugin in a reduced scope.
 
 == Plugin Features ==
 
@@ -43,16 +43,15 @@ Personalization options for the WordPress dashboard. WordPress logo, help tabs a
 = WP Login Options =
 Personalization options for the WordPress login form (wp-login.php). The login logo as well as the redirect destination can be customized.
 
-<sup>*</sup> only available in combination with [ZMT Themes](https://zmtheme.com/), e.g. Corporate or Modular
+<sup>*</sup> only available in combination with [ZMT Themes](https://zuestmedia.com/themes/), e.g. Corporate or Modular
 
 == Resources ==
 
-Learn more about ZM WordPress themes and plugins at [zmtheme.com](https://zmtheme.com/).
+Learn more about ZM WordPress themes and plugins [here](https://zuestmedia.com/).
 
-If you have any questions or need help, visit the [documentation page](https://zmtheme.com/documentation/).
+If you have any questions or need help, visit the [help page](https://zuestmedia.com/help/).
 
 You can also find us on [Github](https://github.com/zuestmedia/)!
-
 
 == Frequently Asked Questions ==
 
@@ -63,6 +62,10 @@ To install ZM Plugin, go to Dashboard >> Plugins >> Add new. Then enter "ZMPlugi
 Yes. The website management and config settings are working on all themes. The extended customizer settings are only available with ZMTheme WordPress Themes.
 
 == Changelog ==
+
+= 1.0.12 =
+* Update UIKIT CSS & JS to 3.15.24
+* Update: CI/CD Routines
 
 = 1.0.11 =
 * Fix: Validation "text" added ;:- 
@@ -191,9 +194,11 @@ Yes. The website management and config settings are working on all themes. The e
 = 0.9.0 =
 * Initial release of ZMPlugin
 
-== Copyright ==
-ZMPlugin WordPress Plugin, Copyright 2022 zmplugin.com
-ZMPlugin is distributed under the terms of the GNU GPL
+== The plugin uses the following third-party resources ==
+* uikit CSS, JS, Icons Framework
+License: MIT
+Source: https://getuikit.com/
 
-== Resources ==
-* uikit © 2022 YOOtheme GmbH, MIT
+== Copyright ==
+ZMPlugin WordPress Plugin, Copyright 2023 zuestmedia.com
+ZMPlugin is distributed under the terms of the GNU GPL
