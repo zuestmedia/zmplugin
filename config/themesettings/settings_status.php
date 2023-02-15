@@ -4,6 +4,12 @@ namespace ZMP\Plugin\Config\ThemeSettings;
 
 class settings_status {
 
+  public $type;
+  public $label;
+  public $description;
+  public $validation;
+  public $choices;
+
   function __construct(){
 
     //Theme Mode

@@ -4,6 +4,10 @@ namespace ZMP\Plugin\Config;
 
 class settings {
 
+  public $info_box_title;
+  public $info_box_links;
+  public $version_text_wrap;
+
   function __construct(){
 
     $this->info_box_title = __( 'Need Help?', 'zmplugin' );

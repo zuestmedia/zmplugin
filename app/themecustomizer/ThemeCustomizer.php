@@ -227,7 +227,7 @@ class ThemeCustomizer extends Customizer {
 
       $com_types_object = $zmtheme['default_components']->$component_type;
 
-      if( property_exists( $com_types_object->$component_name, 'isstartobj' ) ){
+      if( property_exists( $com_types_object->$component_name, 'isstartobj' ) && isset($com_types_object->$component_name->isstartobj) ){
 
         return $count;
 
@@ -256,7 +256,7 @@ class ThemeCustomizer extends Customizer {
       if( method_exists( $zmtheme[ $com_id ], 'getComStatus' ) ){
 
         //if is isstartobj el_lvl = 0
-        if(property_exists( $component, 'isstartobj' )){
+        if( property_exists( $component, 'isstartobj' ) && isset($component->isstartobj) ){
 
           $el_lvl = 0;
           $el_str = NULL;

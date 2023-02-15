@@ -200,7 +200,7 @@ class ThemeHelper {
 
         foreach($value as $key2 => $value2){
 
-          if( is_object($value2) && property_exists( $value2, 'isstartobj' ) ){
+          if( is_object($value2) && ( property_exists( $value2, 'isstartobj' ) && isset($value2->isstartobj) ) ){ //isset checks if != null
 
             $com_type_obj = new \ZMT\Theme\ComponentTypeLabel();
             $label = $com_type_obj->getComLabelOrKey($key);
@@ -231,7 +231,7 @@ class ThemeHelper {
 
         foreach($value as $key2 => $value2){
 
-          if( is_object($value2) && property_exists( $value2, 'isstartobj' ) ){
+          if( is_object($value2) && ( property_exists( $value2, 'isstartobj' ) && isset($value2->isstartobj) ) ){ //isset checks if != null
 
             $com_type_obj = new \ZMT\Theme\ComponentTypeLabel();
             $label = $com_type_obj->getComLabelOrKey($key);
@@ -263,7 +263,7 @@ class ThemeHelper {
 
         foreach($value as $key2 => $value2){
 
-          if( is_object($value2) && ( property_exists( $value2, 'isstartobj' ) || $key == 'extensions' ) ){
+          if( is_object($value2) && ( (property_exists( $value2, 'isstartobj' ) && isset($value2->isstartobj) ) || $key == 'extensions' ) ){
 
             if($key == 'extensions'){ $label = ucfirst($key2); }
 
@@ -299,7 +299,7 @@ class ThemeHelper {
 
         foreach($value as $key2 => $value2){
 
-          if( is_object($value2) && ( property_exists( $value2, 'isstartobj' ) || $key == 'extensions' ) ){
+          if( is_object($value2) && ( (property_exists( $value2, 'isstartobj' ) && isset($value2->isstartobj) ) || $key == 'extensions' ) ){
 
             if($key == 'extensions'){ $label = ucfirst($key2); }
 

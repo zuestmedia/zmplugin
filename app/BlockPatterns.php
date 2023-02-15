@@ -10,6 +10,8 @@ class BlockPatterns {
     * own blockpatterns from a folder called "block_patterns"
     */
 
+    public $dir;
+
     function __construct( $dir ){
 
       $this->dir = $dir;

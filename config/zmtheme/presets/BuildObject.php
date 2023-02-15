@@ -7,6 +7,56 @@ use ZMT\Theme\Build;
 
 class BuildObject extends \ZMP\Plugin\ExtendPresets {
 
+  public $archivecontainer;
+  public $archivetitle;
+  public $archivedescription;
+  public $articlelistcontainer;
+
+  public $articlecontainer;
+  
+  public $sections;
+  public $content;
+  public $main;
+  
+  public $image;
+  public $the_content;
+
+  public $navcontainer;
+  public $navcontainer_inner;
+    public $site_logo;
+    public $menu;
+    public $offcanvas_toggle;
+    public $search;
+    public $widget;
+
+  public $offcanvascontainer;
+
+  public $postmeta;
+  public $queryterm;
+
+  public $colors;
+  public $body;
+  public $heading;
+  public $logo;
+  public $navbar;
+
+  public $section_nav;
+  public $section_block_template;
+  public $section_widget;
+  public $section_queryloop;
+  public $section_html;
+  public $section_offcanvas;
+  
+  public $custom_container;
+  public $custom_widget;
+  public $custom_block_template;
+  public $custom_html;
+  public $custom_nav;
+  public $custom_queryloop;
+
+  public $separator;
+
+
   function __construct(){
 
     parent::__construct();
@@ -21,16 +71,11 @@ class BuildObject extends \ZMP\Plugin\ExtendPresets {
     * default result: $this->section = new section();
     */
     $this->archivecontainer =  Build::newClass( $n->getClass('archivecontainer') );
-
     $this->archivetitle =  Build::newClass( $n->getClass('archivetitle') );
     $this->archivedescription =  Build::newClass( $n->getClass('archivedescription') );
-
-
-    $this->articlecontainer =  Build::newClass( $n->getClass('articlecontainer') );
-
     $this->articlelistcontainer =  Build::newClass( $n->getClass('articlelistcontainer') );
 
-
+    $this->articlecontainer =  Build::newClass( $n->getClass('articlecontainer') );
 
     $this->sections =  Build::newClass( $n->getClass('sections') );
 

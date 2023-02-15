@@ -4,18 +4,7 @@ namespace ZMP\Plugin;
 
 class ScriptsProp extends Scripts {
 
-  /**
-    * Proprietary CSS array
-    * @var string
-    * @access private
-    */
     private $css_prop_array = NULL;
-
-  /**
-    * Proprietary JS array
-    * @var string
-    * @access private
-    */
     private $js_prop_array = NULL;
 
   /**
@@ -31,7 +20,7 @@ class ScriptsProp extends Scripts {
 
     /**
      * Get Proprietary CSS array
-     * @return string
+     * @return array
      */
     public function getCssPropArray() {
 
@@ -41,7 +30,7 @@ class ScriptsProp extends Scripts {
 
     /**
      * Set Proprietary CSS array
-     * @param string $css_prop_array
+     * @param array $css_prop_array
      */
     public function setCssPropArray($css_prop_array) {
 
@@ -51,7 +40,7 @@ class ScriptsProp extends Scripts {
 
     /**
      * Get Proprietary JS array
-     * @return string
+     * @return array
      */
     public function getJsPropArray() {
 
@@ -61,7 +50,7 @@ class ScriptsProp extends Scripts {
 
     /**
      * Set Proprietary JS array
-     * @param string $js_prop_array
+     * @param array $js_prop_array
      */
     public function setJsPropArray($js_prop_array) {
 

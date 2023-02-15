@@ -1,6 +1,6 @@
 === ZMPlugin ===
 Contributors: zuestmedia
-Stable tag: 1.0.12
+Stable tag: 1.0.13
 Tags: block patterns, templates, cookie consent banner
 Requires at least: 4.7
 Tested up to: 6.1.1
@@ -62,6 +62,9 @@ To install ZM Plugin, go to Dashboard >> Plugins >> Add new. Then enter "ZMPlugi
 Yes. The website management and config settings are working on all themes. The extended customizer settings are only available with ZMTheme WordPress Themes.
 
 == Changelog ==
+
+= 1.0.13 =
+* Update: prepared for PHP 9; defined all dynamic properties in classes (except themecustomizer settings and controls)
 
 = 1.0.12 =
 * Update UIKIT CSS & JS to 3.15.24

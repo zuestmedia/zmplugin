@@ -4,6 +4,10 @@ namespace ZMP\Plugin\Config;
 
 class appsettings {
 
+  public $nonadmin_redirect_choices;
+  public $show_hide;
+  public $no_yes;
+
   function __construct(){
 
     $this->nonadmin_redirect_choices = array(

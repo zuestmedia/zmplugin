@@ -4,6 +4,11 @@ namespace ZMP\Plugin\Config\ZMTheme\Presets;
 
 class site_logo {
 
+  public $nav;
+  public $nav_logo_and_subtitle;
+  public $navbar;
+  public $navbar_logo_and_subtitle;
+
   function __construct(){
 
     $this->nav = new \ZMT\Theme\DefaultConfig\configNavLogo( 'nav', false );

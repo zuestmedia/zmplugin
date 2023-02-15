@@ -4,6 +4,16 @@ namespace ZMP\Plugin\Config\ThemeSettings;
 
 class defaults {
 
+  public $general_title;
+  public $general_description;
+  public $info_box_title;
+  public $version_text_wrap;
+  public $info_box_links;
+  public $info_box_second_title;
+  public $info_box_customize;
+  public $button_text;
+  public $version_text;
+  
   function __construct(){
 
     $this->general_title = __( 'General', 'zmplugin' );
