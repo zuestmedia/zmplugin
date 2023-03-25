@@ -7,6 +7,7 @@ class appsettings {
   public $nonadmin_redirect_choices;
   public $show_hide;
   public $no_yes;
+  public $tls_ssl;
 
   function __construct(){
 
@@ -23,6 +24,11 @@ class appsettings {
     $this->no_yes = array(
         array('option'=> __( 'No', 'zmplugin' ),'value'=>false),
         array('option'=> __( 'Yes', 'zmplugin' ),'value'=>true),
+      );
+
+    $this->tls_ssl = array(
+        array('option'=> 'TLS','value'=>'tls'),
+        array('option'=> 'SSL','value'=>'ssl'),
       );
 
   }

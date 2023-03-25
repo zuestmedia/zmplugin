@@ -303,6 +303,153 @@ class Settings {
 
 
         $this->form->addField('html',
+          $template->htmlSettingsFormAccordionBetween(__('WP Mail (SMTP)','zmplugin'))
+        );
+
+          $this->form->addField('html','<p>'.__('Activate smtp, to send all Mails sent via wp_mail (function) through your custom smtp server. Works for all WP system mailings and with ContactForm7.', 'zmplugin').'</p>');
+
+          $this->form->addField(
+            'select',
+              array(
+                'label'=> __('SMTP', 'zmplugin'),
+                'description_toggle'=> __( 'Use smtp when sending via wp_mail.', 'zmplugin' ),
+                'class'=>'uk-select uk-form-width-large',
+                'options'=>$settings_obj->no_yes,
+                'name'=>$zmplugin['app']->getSMTPSettingFieldName('is_smtp'),
+                'default_value'=>$zmplugin['app']->getSMTPSettingDefaultValue('is_smtp')
+              ),
+              'option_mod',//type
+              '_smtp_settings',//optionsgroup + "_option_mod_name"
+              'sanitizearray'
+          );
+
+          if($zmplugin['app']->getSMTPSetting('is_smtp') == true){
+
+
+            $this->form->addField(
+              'input',
+                array(
+                  'type'=> 'email',
+                  'label'=> __('E-Mail', 'zmplugin'),
+                  'class'=>'uk-input uk-form-width-large',
+                  'placeholder'=>'email@example.com',
+                  'name'=>$zmplugin['app']->getSMTPSettingFieldName('smtp_from'),
+                  'default_value'=>$zmplugin['app']->getSMTPSettingDefaultValue('smtp_from')
+                ),
+                'option_mod',//type
+                '_smtp_settings',//optionsgroup + "_option_mod_name"
+                'sanitizearray'
+            );            
+
+            $this->form->addField(
+              'input',
+                array(
+                  'type'=> 'text',
+                  'label'=> __('From name', 'zmplugin'),
+                  'class'=>'uk-input uk-form-width-large',
+                  'placeholder'=>'Your name',
+                  'name'=>$zmplugin['app']->getSMTPSettingFieldName('smtp_fromname'),
+                  'default_value'=>$zmplugin['app']->getSMTPSettingDefaultValue('smtp_fromname')
+                ),
+                'option_mod',//type
+                '_smtp_settings',//optionsgroup + "_option_mod_name"
+                'sanitizearray'
+            );
+
+            $this->form->addField(
+              'input',
+                array(
+                  'type'=> 'text',
+                  'label'=> __('Username', 'zmplugin'),
+                  'class'=>'uk-input uk-form-width-large',
+                  'placeholder'=>'username / email',
+                  'name'=>$zmplugin['app']->getSMTPSettingFieldName('smtp_username'),
+                  'default_value'=>$zmplugin['app']->getSMTPSettingDefaultValue('smtp_username')
+                ),
+                'option_mod',//type
+                '_smtp_settings',//optionsgroup + "_option_mod_name"
+                'sanitizearray'
+            );
+
+            $this->form->addField(
+              'input',
+                array(
+                  'type'=> 'password',
+                  'autocomplete'=> 'new-password',
+                  'placeholder'=>'password',
+                  'label'=> __('Password', 'zmplugin'),
+                  'class'=>'uk-input uk-form-width-large',
+                  'name'=>$zmplugin['app']->getSMTPSettingFieldName('smtp_password'),
+                  'default_value'=>$zmplugin['app']->getSMTPSettingDefaultValue('smtp_password')
+                ),
+                'option_mod',//type
+                '_smtp_settings',//optionsgroup + "_option_mod_name"
+                'sanitizearray'
+            );
+
+            $this->form->addField(
+              'input',
+                array(
+                  'type'=> 'text',
+                  'label'=> __('Host', 'zmplugin'),
+                  'class'=>'uk-input uk-form-width-large',
+                  'placeholder'=>'smtp.example.com',
+                  'name'=>$zmplugin['app']->getSMTPSettingFieldName('smtp_host'),
+                  'default_value'=>$zmplugin['app']->getSMTPSettingDefaultValue('smtp_host')
+                ),
+                'option_mod',//type
+                '_smtp_settings',//optionsgroup + "_option_mod_name"
+                'sanitizearray'
+            );
+
+            $this->form->addField(
+              'input',
+                array(
+                  'type'=> 'number',
+                  'label'=> __('Port', 'zmplugin'),
+                  'class'=>'uk-input uk-form-width-large',
+                  'placeholder'=>'587',
+                  'name'=>$zmplugin['app']->getSMTPSettingFieldName('smtp_port'),
+                  'default_value'=>$zmplugin['app']->getSMTPSettingDefaultValue('smtp_port')
+                ),
+                'option_mod',//type
+                '_smtp_settings',//optionsgroup + "_option_mod_name"
+                'sanitizearray'
+            );
+
+            $this->form->addField(
+              'select',
+                array(
+                  'label'=> __('Authentication', 'zmplugin'),
+                  'description_toggle'=> __( 'Activate authentication when sending via smtp.', 'zmplugin' ),
+                  'class'=>'uk-select uk-form-width-large',
+                  'options'=>$settings_obj->no_yes,
+                  'name'=>$zmplugin['app']->getSMTPSettingFieldName('smtp_auth'),
+                  'default_value'=>$zmplugin['app']->getSMTPSettingDefaultValue('smtp_auth')
+                ),
+                'option_mod',//type
+                '_smtp_settings',//optionsgroup + "_option_mod_name"
+                'sanitizearray'
+            );
+
+            $this->form->addField(
+              'select',
+                array(
+                  'label'=> __('Security', 'zmplugin'),
+                  'class'=>'uk-select uk-form-width-large',
+                  'options'=>$settings_obj->tls_ssl,
+                  'name'=>$zmplugin['app']->getSMTPSettingFieldName('smtp_secure'),
+                  'default_value'=>$zmplugin['app']->getSMTPSettingDefaultValue('smtp_secure')
+                ),
+                'option_mod',//type
+                '_smtp_settings',//optionsgroup + "_option_mod_name"
+                'sanitizearray'
+            );
+
+          }
+
+
+        $this->form->addField('html',
           $template->htmlSettingsFormAccordionBetween(__('WP Login','zmplugin'))
         );
 

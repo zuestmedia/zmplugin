@@ -25,6 +25,8 @@ class AppSettings extends \ZMP\Plugin\App {
 
     $this->addCookieConsentBanner();
 
+    $this->addSMTP();
+
   }
 
   private $nonadmin_redirect = false;
@@ -840,6 +842,90 @@ class AppSettings extends \ZMP\Plugin\App {
       add_filter( 'wp_head', array( $this, 'getTrackingScripts' ) );
 
     }
+
+  }
+
+
+  private $smtp_settings = array(
+    "is_smtp" => false,//boolean
+    "smtp_from" => NULL,//email
+    "smtp_fromname" => NULL,//string
+    "smtp_username" => NULL,//string
+    "smtp_password" => NULL,//string
+    "smtp_host" => NULL,//domain
+    "smtp_port" => NULL,//numeric
+    "smtp_auth" => true,//boolean
+    "smtp_secure" => 'tsl',//tsl/ssl
+  );
+  public function getSMTPSettings(){
+    return Helpers::getOption(
+      $this->getOptPra().'_smtp_settings',
+      $this->getSMTPSettingsDefaultValues(),
+      '2',//always checks option if >= 2
+      'option'        
+    );
+  }
+  public function getSMTPSettingsDefaultValues(){
+    return $this->smtp_settings;
+  }      
+  //single SMTPSetting
+  public function getSMTPSetting($sub_field_name){
+    return Helpers::getOption(
+      $this->getSMTPSettingFieldName($sub_field_name),
+      $this->getSMTPSettingDefaultValue($sub_field_name),
+      '2',//always checks option if >= 2
+      'option_mod',
+      $this->getOptPra().'_smtp_settings'
+    );
+  }
+  public function getSMTPSettingFieldName($sub_field_name) {
+    return $sub_field_name;
+  } 
+  public function getSMTPSettingDefaultValue($key){
+    return $this->smtp_settings[$key];
+  }
+
+  public function addSMTP(){
+
+    add_action( 'phpmailer_init', array( $this, 'SMTPtoWPMail' ) );
+
+  }
+  public function SMTPtoWPMail( $phpmailer ) {
+
+    global $zmplugin;
+
+    //$this->smtp = $zmpaktione['app']->getSMTPSettings();
+    $settings = $zmplugin['app']->getSMTPSettings();
+
+    //var_dump($settings);
+
+    if($settings['is_smtp'] == 1){
+
+      $phpmailer->isSMTP();  
+      
+      if(!empty($settings['smtp_from'])){
+        $phpmailer->From = $settings['smtp_from'];
+      }
+      if(!empty($settings['smtp_fromname'])){
+        $phpmailer->FromName = $settings['smtp_fromname'];
+      }
+      if(!empty($settings['smtp_username'])){
+        $phpmailer->Username = $settings['smtp_username'];
+      }
+      if(!empty($settings['smtp_password'])){
+        $phpmailer->Password = $settings['smtp_password'];
+      }
+      if(!empty($settings['smtp_host'])){
+        $phpmailer->Host = $settings['smtp_host'];  
+      }
+      if(!empty($settings['smtp_port'])){
+        $phpmailer->Port = $settings['smtp_port'];
+      }
+
+      $phpmailer->SMTPSecure = $settings['smtp_secure'];
+      $phpmailer->SMTPAuth = $settings['smtp_auth'];
+
+    }   
 
   }
 
