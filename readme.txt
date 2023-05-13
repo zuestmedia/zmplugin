@@ -1,6 +1,6 @@
 === ZMPlugin ===
 Contributors: zuestmedia
-Stable tag: 1.0.14
+Stable tag: 1.0.15
 Tags: block patterns, templates, cookie consent banner
 Requires at least: 4.7
 Tested up to: 6.1.1
@@ -61,7 +61,12 @@ To install ZM Plugin, go to Dashboard >> Plugins >> Add new. Then enter "ZMPlugi
 = Does ZMPlugin work as standalone? =
 Yes. The website management and config settings are working on all themes. The extended customizer settings are only available with ZMTheme WordPress Themes.
 
-== Changelog ==
+== Changelog === 
+
+= 1.0.15 =
+* Update: UIKIT CSS & JS to 3.16.17
+* Fix: use posts_per_page instead of numberposts (works for all query types)
+* Fix: is_smtp settings
 
 = 1.0.14 =
 * New: WP Mail send through SMTP settings added

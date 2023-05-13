@@ -894,38 +894,39 @@ class AppSettings extends \ZMP\Plugin\App {
 
     global $zmplugin;
 
-    //$this->smtp = $zmpaktione['app']->getSMTPSettings();
     $settings = $zmplugin['app']->getSMTPSettings();
 
-    //var_dump($settings);
+    if( is_array($settings) ){
 
-    if($settings['is_smtp'] == 1){
+      if( array_key_exists('is_smtp', $settings) && $settings['is_smtp'] == 1 ){
 
-      $phpmailer->isSMTP();  
+        $phpmailer->isSMTP();  
+        
+        if(!empty($settings['smtp_from'])){
+          $phpmailer->From = $settings['smtp_from'];
+        }
+        if(!empty($settings['smtp_fromname'])){
+          $phpmailer->FromName = $settings['smtp_fromname'];
+        }
+        if(!empty($settings['smtp_username'])){
+          $phpmailer->Username = $settings['smtp_username'];
+        }
+        if(!empty($settings['smtp_password'])){
+          $phpmailer->Password = $settings['smtp_password'];
+        }
+        if(!empty($settings['smtp_host'])){
+          $phpmailer->Host = $settings['smtp_host'];  
+        }
+        if(!empty($settings['smtp_port'])){
+          $phpmailer->Port = $settings['smtp_port'];
+        }
+  
+        $phpmailer->SMTPSecure = $settings['smtp_secure'];
+        $phpmailer->SMTPAuth = $settings['smtp_auth'];
+  
+      }   
       
-      if(!empty($settings['smtp_from'])){
-        $phpmailer->From = $settings['smtp_from'];
-      }
-      if(!empty($settings['smtp_fromname'])){
-        $phpmailer->FromName = $settings['smtp_fromname'];
-      }
-      if(!empty($settings['smtp_username'])){
-        $phpmailer->Username = $settings['smtp_username'];
-      }
-      if(!empty($settings['smtp_password'])){
-        $phpmailer->Password = $settings['smtp_password'];
-      }
-      if(!empty($settings['smtp_host'])){
-        $phpmailer->Host = $settings['smtp_host'];  
-      }
-      if(!empty($settings['smtp_port'])){
-        $phpmailer->Port = $settings['smtp_port'];
-      }
-
-      $phpmailer->SMTPSecure = $settings['smtp_secure'];
-      $phpmailer->SMTPAuth = $settings['smtp_auth'];
-
-    }   
+    }
 
   }
 

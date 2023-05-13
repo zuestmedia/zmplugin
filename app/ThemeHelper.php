@@ -167,7 +167,7 @@ class ThemeHelper {
 
     $args = array(
       'post_type'   => 'zm_blocks',
-      'numberposts'   => -1,
+      'posts_per_page'   => -1,
     );
 
     $posts_array = get_posts($args);
