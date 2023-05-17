@@ -464,6 +464,8 @@ class controlls extends \ZMP\Plugin\ExtendControlls {
     $this->imageoverlay_wrap =         new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_json(100,2,NULL,'imageoverlay');//articlecontainer
     $this->imageoverlay_size =         new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\image_size(100,2,'module','imageoverlay','imageoverlay_wrap');//articlecontainer
 
+    $this->ajax_posts_loading =         new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\ajax_posts_loading(100,2,'module');//articlelist
+
     $this->list_item =                 new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\list_item(120,2);//taxonomyterm
 
     $this->autofocus =                 new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\autofocus(10,4,'developer');//search
@@ -483,6 +485,8 @@ class controlls extends \ZMP\Plugin\ExtendControlls {
     $this->sticky_class = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\sticky_class(120,4);//articlecontainer
     $this->form_class = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\form_class(120,4);//commentsform, search
     $this->button_class = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\button_class(120,4);//commentsform
+    $this->ajax_posts_loading_container_class = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\ajax_posts_loading_container_class(120,4);//articlelist
+    $this->ajax_posts_loading_button_class = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\ajax_posts_loading_button_class(120,4);//articlelist
     $this->input_class = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\input_class(120,4);//commentsform, search
     $this->textarea_class = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\textarea_class(120,4);//commentsform
     $this->checkbox_class = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\checkbox_class(120,4);//commentsform

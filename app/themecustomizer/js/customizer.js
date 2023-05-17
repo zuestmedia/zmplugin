@@ -896,19 +896,23 @@
 
         var sections_link = icon_el_1.attr('zmcustonav-comid');
 
-        var icon_link_sections = jQuery('<a>').attr(
-          {
-            "class": 'zm-focuspane uk-icon-button zm-customizer-button',
-            "uk-icon": section_icon_1,
-            "data-control": '{ "name":"' + sections_link + '", "type":"section" }',
-          }
-        );
+        if(sections_link){
 
-        var list_el_sections = jQuery('<li>');
+          var icon_link_sections = jQuery('<a>').attr(
+            {
+              "class": 'zm-focuspane uk-icon-button zm-customizer-button',
+              "uk-icon": section_icon_1,
+              "data-control": '{ "name":"' + sections_link + '", "type":"section" }',
+            }
+          );
 
-        list_el_sections.append(icon_link_sections);
+          var list_el_sections = jQuery('<li>');
 
-        innerhtml.append(list_el_sections);
+          list_el_sections.append(icon_link_sections);
+
+          innerhtml.append(list_el_sections);
+
+        }
 
       }
 
@@ -919,28 +923,32 @@
 
       var section_link = $element.attr('zmcustonav-comid');
 
-      //section icon --> if section = cog if module = thumbnails
-      var section_icon = 'cog';
-      if( $element.hasClass('module') ){
-        var section_icon = 'thumbnails';
-      }
-      if( $element.hasClass('custom-module') ){
+      if(section_link){
+
+        //section icon --> if section = cog if module = thumbnails
         var section_icon = 'cog';
-      }
-
-      var icon_link = jQuery('<a>').attr(
-        {
-          "class": 'zm-focuspane uk-icon-button zm-customizer-button',
-          "uk-icon": section_icon,
-          "data-control": '{ "name":"' + section_link + '", "type":"section" }',
+        if( $element.hasClass('module') ){
+          var section_icon = 'thumbnails';
         }
-      );
+        if( $element.hasClass('custom-module') ){
+          var section_icon = 'cog';
+        }
 
-      var list_el = jQuery('<li>');
+        var icon_link = jQuery('<a>').attr(
+          {
+            "class": 'zm-focuspane uk-icon-button zm-customizer-button',
+            "uk-icon": section_icon,
+            "data-control": '{ "name":"' + section_link + '", "type":"section" }',
+          }
+        );
 
-      list_el.append(icon_link);
+        var list_el = jQuery('<li>');
 
-      innerhtml.append(list_el);
+        list_el.append(icon_link);
+
+        innerhtml.append(list_el);
+
+      }
 
     }
 
