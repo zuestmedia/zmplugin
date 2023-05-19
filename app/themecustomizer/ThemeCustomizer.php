@@ -784,6 +784,7 @@ class ThemeCustomizer extends Customizer {
                         */
                         $activecallback = new CustomizerActiveCallback( $zmtheme[ $com_id ]->getViewStatusFieldName() );
                         $activecallback->setSettingValue('2');
+                        $activecallback->setSettingValueAlt1('3');
                       /**
                         * Create "setting" and "controll" for conditions array
                         */
@@ -792,7 +793,7 @@ class ThemeCustomizer extends Customizer {
                           $view_conditions_controlls_obj = $controlls->view_conditions;
                         }
 
-                        $view_conditions_controlls_obj->active_callback = array( $activecallback, 'Callback' );
+                        $view_conditions_controlls_obj->active_callback = array( $activecallback, 'ViewStatusCallback' );
 
                         $result = $this->SettingNControll(
                           $result,

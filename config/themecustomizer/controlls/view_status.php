@@ -13,9 +13,10 @@ class view_status extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls\BuildSing
     $this->validation = 'int';
     $this->transport = 'refresh';//sonst geht active callback nicht...
     $this->choices = array(
-      '0' =>  __( 'Show on all Pages', 'zmplugin' ),
+      '0' =>  __( 'Display on all Pages', 'zmplugin' ),
       '1' =>  __( 'Hide on all Pages', 'zmplugin' ),
-      '2' =>  __( 'Use Custom Settings', 'zmplugin' ),
+      '2' =>  __( 'Display if the following condition is met', 'zmplugin' ),
+      '3' =>  __( 'Do not display if the following condition is met', 'zmplugin' ),
     );
 
   }

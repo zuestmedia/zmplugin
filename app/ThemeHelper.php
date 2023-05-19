@@ -76,7 +76,7 @@ class ThemeHelper {
     }
 
     if ( class_exists( 'bbPress' ) ) {
-      $result['bbPress'] = __( 'bbPress', 'zmplugin' );
+      $result['bbpress'] = __( 'bbPress', 'zmplugin' );//key must be lowercase !!! validation is slug
     }
 
     $result['loggedin']   =  __( 'Logged in Users', 'zmplugin' );

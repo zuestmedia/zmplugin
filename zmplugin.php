@@ -5,7 +5,7 @@
   Description: ZMPlugin is an extension for WordPress themes based on the ZM-Theme-Framework and extends ZMT-Themes with various options and customizer settings.
   Author: ZuestMedia
   Author URI: https://zuestmedia.com/
-  Version: 1.0.16
+  Version: 1.0.17
   Text Domain: zmplugin
   Domain Path: /languages
   ZMDLID: 2myl7t6emmbu4819uojautl0m0fo2fdktoaw

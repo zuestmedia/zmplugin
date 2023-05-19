@@ -1,6 +1,6 @@
 === ZMPlugin ===
 Contributors: zuestmedia
-Stable tag: 1.0.16
+Stable tag: 1.0.17
 Tags: block patterns, templates, cookie consent banner
 Requires at least: 4.7
 Tested up to: 6.1.1
@@ -62,6 +62,11 @@ To install ZM Plugin, go to Dashboard >> Plugins >> Add new. Then enter "ZMPlugi
 Yes. The website management and config settings are working on all themes. The extended customizer settings are only available with ZMTheme WordPress Themes.
 
 == Changelog === 
+
+= 1.0.17 =
+* Update: View / display settings updated -> "hide if" view_status added
+* Update: ActiveCallbacks for hide if view_conditions in customizer
+* Fix: view_conditions bbpress lowercase because of slug validation!
 
 = 1.0.16 =
 * New: AJAX Post Loading controlls

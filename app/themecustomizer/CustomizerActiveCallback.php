@@ -107,7 +107,7 @@ class CustomizerActiveCallback {
 
       $setting = $control->manager->get_setting( $this->getSettingName() )->value();
 
-      if ( $setting == $this->getSettingValue() ) {
+      if ( $setting == $this->getSettingValue() || $setting == $this->getSettingValueAlt1() ) {
 
         return true;
 
