@@ -11,9 +11,9 @@ class services {
   //not in BuildObject!
   function __construct(){
 
-    $this->design_explorer_api      = 'https://design.zmtheme.com/wp-json/';
-    $this->design_explorer_free_post_tag_id = 7;
-    $this->design_explorer_pro_post_tag_id  = 8;
+    $this->design_explorer_api      = 'https://design.zuestmedia.com/wp-json/';
+    $this->design_explorer_free_post_tag_id = 2;
+    $this->design_explorer_pro_post_tag_id  = 3;
 
   }
 
