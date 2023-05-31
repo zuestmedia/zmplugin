@@ -519,8 +519,9 @@ class AppSettings extends \ZMP\Plugin\App {
       .zminnercookieconsentbox{
         margin: 0 !important;
         text-align: center !important;
-        background: var(--color_background_secondary, #253946);
-        color: rgba( var(--color_text_inverse, 255, 255, 255), 1 );
+        background-color: var(--wp--preset--color--default,#eaedea);
+        color: var(--wp--preset--color--default-text,#222222);
+        border-top: 1px solid var(--wp--preset--color--border,#999999);
         position: relative;
         padding: 15px 29px 15px 15px;
       }
@@ -531,20 +532,20 @@ class AppSettings extends \ZMP\Plugin\App {
       }
       .zmcookieconsentnotice{
         margin-left: 40px !important;
-        color: rgba(var(--color_text_inverse,255,255,255),.5) !important;
+        /*color: rgba(var(--color_text_inverse,255,255,255),.5) !important;*/
         text-decoration: none;
         cursor: pointer;
       }
       .zmcookieconsentnotice:hover{
-        color: rgba(var(--color_text_inverse,255,255,255),.7) !important;
-        text-decoration: none;
+        /*color: rgba(var(--color_text_inverse,255,255,255),.7) !important;*/
+        text-decoration: underline;
       }
       .zmcookieconsentbutton{
         cursor: pointer;
         margin-left: 40px !important;
         padding: 0 15px;
-        background-color: var(--color_background_muted, #f8f8f8);
-        color: var(--color_text_emphasis, #333);
+        background-color: var(--wp--preset--color--muted,#d5d6d2);
+        color: var(--wp--preset--color--emphasis-text,#111111);
         margin: 0;
         border: none;
         overflow: visible;
@@ -561,7 +562,7 @@ class AppSettings extends \ZMP\Plugin\App {
         text-decoration: none;
       }
       .zmcookieconsentbutton:hover{
-        filter:brightness(110%);
+        filter:brightness(92%);
       }
       .zmcookieconsentbuttonaccept{}
       .zmcookieconsentbuttondecline{
@@ -585,7 +586,7 @@ class AppSettings extends \ZMP\Plugin\App {
 
           var tag_alert = document.createElement("div");
           tag_alert.className = 'zminnercookieconsentbox';
-          tag_alert.setAttribute('uk-alert', '');
+          //tag_alert.setAttribute('uk-alert', '');
 
           var tag_text = document.createElement("p");
           tag_text.className = 'uk-text-small zmcookieconsenttext';
@@ -594,7 +595,7 @@ class AppSettings extends \ZMP\Plugin\App {
           var tag_cookie_notice = document.createElement("a");
           tag_cookie_notice.className = 'zmcookieconsentnotice';
           tag_cookie_notice.setAttribute('href', '<?php echo esc_url( $this->getCookieConsentPrivacyUrl() ); ?>');
-          tag_cookie_notice.innerHTML = '<?php echo __( 'Cookie Notice', 'zmplugin' ); ?>';
+          tag_cookie_notice.innerHTML = '<?php echo __( 'Privacy Notice', 'zmplugin' ); ?>';
 
           var tag_button_accept = document.createElement("button");
           tag_button_accept.className = 'zmcookieconsentbutton zmcookieconsentbuttonaccept';
@@ -613,7 +614,8 @@ class AppSettings extends \ZMP\Plugin\App {
                 tag_text.appendChild(tag_button_decline);
               tag_alert.appendChild(tag_text);
             tag_position.appendChild(tag_alert);
-          document.body.appendChild(tag_position);
+
+          document.body.prepend(tag_position);
 
         }
 
