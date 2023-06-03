@@ -205,6 +205,20 @@ class Settings {
           );
 
           $this->form->addField(
+            'textarea',
+              array(
+                'label'=> __('Tracker methods', 'zmplugin'),
+                'class'=>'uk-input uk-form-width-large',
+                'placeholder'=>'_paq.push(["setDocumentTitle", document.domain + "/" + document.title]);',
+                'name'=>$zmplugin['app']->getMatomoTrackerMethodTextFieldName(),
+                'default_value'=>$zmplugin['app']->getMatomoTrackerMethodDefaultValue()
+              ),
+              'option_mod',//type
+              '_script',//optionsgroup + "_option_mod_name"
+              'strarray'
+          );
+
+          $this->form->addField(
             'select',
               array(
                 'label'=> __('No Cookie Tracking?', 'zmplugin'),

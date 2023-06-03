@@ -437,6 +437,22 @@ class AppSettings extends \ZMP\Plugin\App {
     );
   }
 
+  public function getMatomoTrackerMethodTextFieldName() {
+    return '_matomo_tracker_method';
+  }
+  public function getMatomoTrackerMethodDefaultValue(){
+    return false;
+  }
+  public function getMatomoTrackerMethod(){
+    return Helpers::getOption(
+      $this->getMatomoTrackerMethodTextFieldName(),
+      $this->getMatomoTrackerMethodDefaultValue(),
+      '2',//always checks option if >= 2
+      'option_mod',
+      $this->getOptPra().'_script'
+    );
+  }
+
   public function getG4AIdTextFieldName() {
     return '_g4a_id';
   }
@@ -728,7 +744,39 @@ class AppSettings extends \ZMP\Plugin\App {
         function zmLoadMatoScript(){
 
           var _paq = window._paq = window._paq || [];
-          /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+          
+          <?php 
+
+          $tracker_methods_js = $this->getMatomoTrackerMethod();
+          
+          if($tracker_methods_js){             
+
+            $check1 = false;//starts with
+            if(substr_compare($tracker_methods_js, '_paq.push([', 0, strlen('_paq.push([')) === 0){
+              $check1 = true;
+            }
+            
+            $check2 = false;//ends with
+            if(substr_compare($tracker_methods_js, ']);', -strlen(']);')) === 0){
+              $check2 = true;
+            }
+
+            //starts and ends with check and not longer than 500 characters
+            if($check1 === true && $check2 === true && strlen($tracker_methods_js) < 500){
+            
+            ?>
+
+              /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+              <?php echo $tracker_methods_js; ?>
+
+            <?php 
+
+            }
+        
+          } 
+        
+          ?>
+
           _paq.push(['trackPageView']);
           _paq.push(['enableLinkTracking']);
           (function() {

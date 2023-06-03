@@ -1,6 +1,6 @@
 === ZMPlugin ===
 Contributors: zuestmedia
-Stable tag: 1.0.19
+Stable tag: 1.0.20
 Tags: block patterns, templates, cookie consent banner
 Requires at least: 4.7
 Tested up to: 6.2
@@ -62,6 +62,9 @@ To install ZM Plugin, go to Dashboard >> Plugins >> Add new. Then enter "ZMPlugi
 Yes. The website management and config settings are working on all themes. The extended customizer settings are only available with ZMTheme WordPress Themes.
 
 == Changelog === 
+
+= 1.0.20 =
+* New: added matomo tracker methods setting
 
 = 1.0.19 =
 * Update: CookieConsentBanner style and accessibility
