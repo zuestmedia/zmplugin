@@ -205,17 +205,80 @@ class Settings {
           );
 
           $this->form->addField(
-            'textarea',
+            'input',
               array(
-                'label'=> __('Tracker methods', 'zmplugin'),
-                'class'=>'uk-input uk-form-width-large',
-                'placeholder'=>'_paq.push(["setDocumentTitle", document.domain + "/" + document.title]);',
-                'name'=>$zmplugin['app']->getMatomoTrackerMethodTextFieldName(),
-                'default_value'=>$zmplugin['app']->getMatomoTrackerMethodDefaultValue()
+                'type'=> 'url',
+                'icon'=>'world',
+                'label'=> __('Website URL', 'zmplugin'),
+                'class'=>'uk-input uk-form-width-large','class'=>'uk-input uk-form-width-large',
+                'placeholder'=>'https://example.com/',
+                'description_toggle'=>'The website url to track as set in matomo website -> URLs settings (https://example.com)',
+                'name'=>$zmplugin['app']->getMatomoTrackerWebsiteUrlTextFieldName(),
+                'default_value'=>$zmplugin['app']->getMatomoTrackerWebsiteUrlDefaultValue()
               ),
               'option_mod',//type
-              '_script',//optionsgroup + "_option_mod_name"
-              'strarray'
+              '_url',//optionsgroup + "_option_mod_name"
+              'urlarray'
+          );
+
+          $this->form->addField(
+            'select',
+              array(
+                'label'=> __('Set document title', 'zmplugin'),
+                'class'=>'uk-select uk-form-width-large',
+                'description_toggle'=> 'Prepend the site domain to the page title when tracking <br> _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);',
+                'options'=>$settings_obj->no_yes,
+                'name'=>$zmplugin['app']->getMatomoTrackerMethodsetDocumentTitleTextFieldName(),
+                'default_value'=>$zmplugin['app']->getMatomoTrackerMethodsetDocumentTitleDefaultValue()
+              ),
+              'option_mod',//type
+              '_bool',//optionsgroup + "_option_mod_name"
+              'boolarray'
+          );
+
+          $this->form->addField(
+            'select',
+              array(
+                'label'=> __('Set cookie domain', 'zmplugin'),
+                'class'=>'uk-select uk-form-width-large',
+                'description_toggle'=> 'Share the tracking cookie across example.com, www.example.com, subdomain.example.com, ... <br> _paq.push(["setCookieDomain", "*.example.com"]);',
+                'options'=>$settings_obj->no_yes,
+                'name'=>$zmplugin['app']->getMatomoTrackerMethodsetCookieDomainTextFieldName(),
+                'default_value'=>$zmplugin['app']->getMatomoTrackerMethodsetCookieDomainDefaultValue()
+              ),
+              'option_mod',//type
+              '_bool',//optionsgroup + "_option_mod_name"
+              'boolarray'
+          );
+
+          $this->form->addField(
+            'select',
+              array(
+                'label'=> __('Set domains', 'zmplugin'),
+                'class'=>'uk-select uk-form-width-large',
+                'description_toggle'=> 'Tell Matomo the website domain so that clicks on these domains are not tracked as Outlinks <br> _paq.push(["setDomains", ["*.example.com"]]);',
+                'options'=>$settings_obj->no_yes,
+                'name'=>$zmplugin['app']->getMatomoTrackerMethodsetDomainsTextFieldName(),
+                'default_value'=>$zmplugin['app']->getMatomoTrackerMethodsetDomainsDefaultValue()
+              ),
+              'option_mod',//type
+              '_bool',//optionsgroup + "_option_mod_name"
+              'boolarray'
+          );
+
+          $this->form->addField(
+            'select',
+              array(
+                'label'=> __('Set DoNotTrack', 'zmplugin'),
+                'class'=>'uk-select uk-form-width-large',
+                'description_toggle'=> 'Enable client-side DoNotTrack detection <br> _paq.push(["setDoNotTrack", true]);',
+                'options'=>$settings_obj->no_yes,
+                'name'=>$zmplugin['app']->getMatomoTrackerMethodsetDoNotTrackTextFieldName(),
+                'default_value'=>$zmplugin['app']->getMatomoTrackerMethodsetDoNotTrackDefaultValue()
+              ),
+              'option_mod',//type
+              '_bool',//optionsgroup + "_option_mod_name"
+              'boolarray'
           );
 
           $this->form->addField(

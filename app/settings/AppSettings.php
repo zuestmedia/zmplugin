@@ -437,19 +437,83 @@ class AppSettings extends \ZMP\Plugin\App {
     );
   }
 
-  public function getMatomoTrackerMethodTextFieldName() {
-    return '_matomo_tracker_method';
+  public function getMatomoTrackerWebsiteUrlTextFieldName() {
+    return '_matomo_tracker_website_url';
   }
-  public function getMatomoTrackerMethodDefaultValue(){
+  public function getMatomoTrackerWebsiteUrlDefaultValue(){
     return false;
   }
-  public function getMatomoTrackerMethod(){
+  public function getMatomoTrackerWebsiteUrl(){
     return Helpers::getOption(
-      $this->getMatomoTrackerMethodTextFieldName(),
-      $this->getMatomoTrackerMethodDefaultValue(),
+      $this->getMatomoTrackerWebsiteUrlTextFieldName(),
+      $this->getMatomoTrackerWebsiteUrlDefaultValue(),
       '2',//always checks option if >= 2
       'option_mod',
-      $this->getOptPra().'_script'
+      $this->getOptPra().'_url'
+    );
+  }
+
+  public function getMatomoTrackerMethodsetDocumentTitleTextFieldName() {
+    return '_matomo_tracker_method_set_document_title';
+  }
+  public function getMatomoTrackerMethodsetDocumentTitleDefaultValue(){
+    return false;
+  }
+  public function getMatomoTrackerMethodsetDocumentTitle(){
+    return Helpers::getOption(
+      $this->getMatomoTrackerMethodsetDocumentTitleTextFieldName(),
+      $this->getMatomoTrackerMethodsetDocumentTitleDefaultValue(),
+      '2',//always checks option if >= 2
+      'option_mod',
+      $this->getOptPra().'_bool'
+    );
+  }
+
+  public function getMatomoTrackerMethodsetCookieDomainTextFieldName() {
+    return '_matomo_tracker_method_set_cookie_domain';
+  }
+  public function getMatomoTrackerMethodsetCookieDomainDefaultValue(){
+    return false;
+  }
+  public function getMatomoTrackerMethodsetCookieDomain(){
+    return Helpers::getOption(
+      $this->getMatomoTrackerMethodsetCookieDomainTextFieldName(),
+      $this->getMatomoTrackerMethodsetCookieDomainDefaultValue(),
+      '2',//always checks option if >= 2
+      'option_mod',
+      $this->getOptPra().'_bool'
+    );
+  }
+
+  public function getMatomoTrackerMethodsetDomainsTextFieldName() {
+    return '_matomo_tracker_method_set_domains';
+  }
+  public function getMatomoTrackerMethodsetDomainsDefaultValue(){
+    return false;
+  }
+  public function getMatomoTrackerMethodsetDomains(){
+    return Helpers::getOption(
+      $this->getMatomoTrackerMethodsetDomainsTextFieldName(),
+      $this->getMatomoTrackerMethodsetDomainsDefaultValue(),
+      '2',//always checks option if >= 2
+      'option_mod',
+      $this->getOptPra().'_bool'
+    );
+  }
+
+  public function getMatomoTrackerMethodsetDoNotTrackTextFieldName() {
+    return '_matomo_tracker_method_set_do_not_track';
+  }
+  public function getMatomoTrackerMethodsetDoNotTrackDefaultValue(){
+    return false;
+  }
+  public function getMatomoTrackerMethodsetDoNotTrack(){
+    return Helpers::getOption(
+      $this->getMatomoTrackerMethodsetDoNotTrackTextFieldName(),
+      $this->getMatomoTrackerMethodsetDoNotTrackDefaultValue(),
+      '2',//always checks option if >= 2
+      'option_mod',
+      $this->getOptPra().'_bool'
     );
   }
 
@@ -747,29 +811,48 @@ class AppSettings extends \ZMP\Plugin\App {
           
           <?php 
 
-          $tracker_methods_js = $this->getMatomoTrackerMethod();
+          $tracker_website_url = $this->getMatomoTrackerWebsiteUrl();
           
-          if($tracker_methods_js){             
+          if($tracker_website_url){
 
-            $check1 = false;//starts with
-            if(substr_compare($tracker_methods_js, '_paq.push([', 0, strlen('_paq.push([')) === 0){
-              $check1 = true;
-            }
-            
-            $check2 = false;//ends with
-            if(substr_compare($tracker_methods_js, ']);', -strlen(']);')) === 0){
-              $check2 = true;
-            }
+            $parsed_url_array = parse_url($tracker_website_url);
 
-            //starts and ends with check and not longer than 500 characters
-            if($check1 === true && $check2 === true && strlen($tracker_methods_js) < 500){
-            
-            ?>
+            if(array_key_exists('host',$parsed_url_array)){
 
-              /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-              <?php echo $tracker_methods_js; ?>
+              $host = $parsed_url_array['host'];
 
-            <?php 
+              $document_title = $this->getMatomoTrackerMethodsetDocumentTitle();
+              if($document_title){
+
+                //add document_title
+                echo '_paq.push(["setDocumentTitle", document.domain + "/" + document.title]);';
+
+              }
+
+              $cookie_domain = $this->getMatomoTrackerMethodsetCookieDomain();
+              if($cookie_domain){
+
+                //add cookie_domain
+                echo '_paq.push(["setCookieDomain", "*.'.esc_js($host).'"]);';
+
+              }
+
+              $domains = $this->getMatomoTrackerMethodsetDomains();
+              if($domains){
+
+                //add domains
+                echo '_paq.push(["setDomains", ["*.'.esc_js($host).'"]]);';
+
+              }
+
+              $donottrack = $this->getMatomoTrackerMethodsetDoNotTrack();
+              if($donottrack){
+
+                //add domains
+                echo '_paq.push(["setDoNotTrack", true]);';
+
+              }
+
 
             }
         
