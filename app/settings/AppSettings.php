@@ -787,7 +787,7 @@ class AppSettings extends \ZMP\Plugin\App {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-YZHBGBPXNH');
+          gtag('config', '<?php echo esc_attr( $this->getG4AId() ); ?>');
 
         }
       <?php } ?>
@@ -850,6 +850,14 @@ class AppSettings extends \ZMP\Plugin\App {
 
                 //add domains
                 echo '_paq.push(["setDoNotTrack", true]);';
+
+              }
+
+              $cookieless = $this->getMatomoNoCookieTrackingStatus();
+              if($cookieless){
+
+                //add domains
+                echo '_paq.push(["disableCookies"]);';
 
               }
 

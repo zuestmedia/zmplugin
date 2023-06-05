@@ -1,9 +1,9 @@
 === ZMPlugin ===
 Contributors: zuestmedia
-Stable tag: 1.0.21
-Tags: block patterns, templates, cookie consent banner
+Stable tag: 1.0.22
+Tags: block patterns, templates, cookie consent banner, smtp, private mode
 Requires at least: 4.7
-Tested up to: 6.2
+Tested up to: 6.2.2
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -37,6 +37,9 @@ Private mode to redirect visitors to the login form or to a page of their choice
 = Tracking & Analytics  =
 Google Analytics 4, Google Tag Manager or Matomo (self-hosted) can be integrated. GDPR compliant if desired, if Cookie Consent banner is enabled.
 
+= WP Mail SMTP =
+Send all mails sent via wp_mail() from your own SMTP server. Works for all system mailings and also with contact form 7.
+
 = WP Dashboard Options =
 Personalization options for the WordPress dashboard. WordPress logo, help tabs as well as footer text can be customized.
 
@@ -62,6 +65,11 @@ To install ZM Plugin, go to Dashboard >> Plugins >> Add new. Then enter "ZMPlugi
 Yes. The website management and config settings are working on all themes. The extended customizer settings are only available with ZMTheme WordPress Themes.
 
 == Changelog === 
+
+= 1.0.22 =
+* New: Translations for CH & AT
+* Update: add disableCookies option to Matomo script
+* Fix: GA4 Tracking Script updated
 
 = 1.0.21 =
 * Update: matomo settings created
