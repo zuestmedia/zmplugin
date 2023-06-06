@@ -1,6 +1,6 @@
 === ZMPlugin ===
 Contributors: zuestmedia
-Stable tag: 1.0.22
+Stable tag: 1.0.23
 Tags: block patterns, templates, cookie consent banner, smtp, private mode
 Requires at least: 4.7
 Tested up to: 6.2.2
@@ -65,6 +65,11 @@ To install ZM Plugin, go to Dashboard >> Plugins >> Add new. Then enter "ZMPlugi
 Yes. The website management and config settings are working on all themes. The extended customizer settings are only available with ZMTheme WordPress Themes.
 
 == Changelog === 
+
+= 1.0.23 =
+* New: Settings for trackingscripts to depend on cookie consent or not
+* Update: New translations for cookie-consent
+* Update: cookie consent script and css
 
 = 1.0.22 =
 * New: Translations for CH & AT

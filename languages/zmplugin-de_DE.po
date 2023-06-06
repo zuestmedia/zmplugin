@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zmplugin-0.9.3\n"
-"POT-Creation-Date: 2023-06-05 18:59+0200\n"
-"PO-Revision-Date: 2023-06-05 19:00+0200\n"
+"POT-Creation-Date: 2023-06-06 13:12+0200\n"
+"PO-Revision-Date: 2023-06-06 13:17+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -112,25 +112,31 @@ msgstr ""
 
 #: app/settings/AppSettings.php:364
 msgid ""
-"By clicking Accept, you accept the storing of cookies on your device to "
-"enhance site navigation, analyze site usage, and assist in our marketing "
-"efforts."
+"This website uses cookies to provide you with a better and more enjoyable "
+"browsing experience on the website."
 msgstr ""
-"Wenn Sie auf Akzeptieren klicken, akzeptieren Sie Cookies auf Ihrem Gerät, "
-"um die Nutzung zu analysieren und unsere Marketingaktivitäten zu "
-"unterstützen."
+"Diese Website verwendet Cookies, um Ihnen ein besseres und angenehmeres "
+"Surferlebnis auf der Website zu ermöglichen."
 
-#: app/settings/AppSettings.php:678
-msgid "Privacy Notice"
+#: app/settings/AppSettings.php:741 app/settings/AppSettings.php:1085
+msgid "Skip to Cookie Consent"
+msgstr "Zur Cookie-Einverständniserklärung springen"
+
+#: app/settings/AppSettings.php:753
+msgid "Cookie consent"
+msgstr "Cookie-Einverständniserklärung"
+
+#: app/settings/AppSettings.php:762
+msgid "Privacy policy"
 msgstr "Datenschutzerklärung"
 
-#: app/settings/AppSettings.php:684
-msgid "✓ Accept"
-msgstr "✓ Akzeptieren"
+#: app/settings/AppSettings.php:768
+msgid "✓ Ok, I agree"
+msgstr "✓ Ok, einverstanden"
 
-#: app/settings/AppSettings.php:690
-msgid "✗ Decline"
-msgstr "✗ Ablehnen"
+#: app/settings/AppSettings.php:774
+msgid "Reject"
+msgstr "Ablehnen"
 
 #: app/settings/Dashboard.php:24
 msgid "Overview"
@@ -300,113 +306,130 @@ msgid ""
 "Analytics Script will be loaded without cookie consent question."
 msgstr ""
 
-#: app/settings/Settings.php:299
+#: app/settings/Settings.php:302 app/settings/Settings.php:334
+#: app/settings/Settings.php:366
+msgid "Exclude from cookie consent"
+msgstr ""
+
+#: app/settings/Settings.php:304
+msgid "Load Matomo without cookie consent."
+msgstr ""
+
+#: app/settings/Settings.php:314
 msgid "Google Analytics 4"
 msgstr ""
 
-#: app/settings/Settings.php:305
+#: app/settings/Settings.php:320
 msgid "Measurement-ID"
 msgstr ""
 
-#: app/settings/Settings.php:316
+#: app/settings/Settings.php:336
+msgid "Load Google Analytics 4 without cookie consent."
+msgstr ""
+
+#: app/settings/Settings.php:346
 msgid "Google Tag Manager"
 msgstr ""
 
-#: app/settings/Settings.php:322
+#: app/settings/Settings.php:352
 msgid "Container-ID"
 msgstr ""
 
-#: app/settings/Settings.php:334
+#: app/settings/Settings.php:368
+msgid "Load Google Tag Manager without cookie consent."
+msgstr ""
+
+#: app/settings/Settings.php:379
 msgid "WP Dashboard"
 msgstr ""
 
-#: app/settings/Settings.php:341
+#: app/settings/Settings.php:386
 msgid "Dashboard Logo"
 msgstr ""
 
-#: app/settings/Settings.php:355
+#: app/settings/Settings.php:400
 msgid "Help Tabs"
 msgstr ""
 
-#: app/settings/Settings.php:370
+#: app/settings/Settings.php:415
 msgid "Footer Text"
 msgstr ""
 
-#: app/settings/Settings.php:383
+#: app/settings/Settings.php:428
 msgid "WP Mail (SMTP)"
 msgstr ""
 
-#: app/settings/Settings.php:386
+#: app/settings/Settings.php:431
 msgid ""
 "Activate smtp, to send all Mails sent via wp_mail (function) through your "
 "custom smtp server. Works for all WP system mailings and with ContactForm7."
 msgstr ""
 
-#: app/settings/Settings.php:391
+#: app/settings/Settings.php:436
 msgid "SMTP"
 msgstr ""
 
-#: app/settings/Settings.php:392
+#: app/settings/Settings.php:437
 msgid "Use smtp when sending via wp_mail."
 msgstr ""
 
-#: app/settings/Settings.php:410
+#: app/settings/Settings.php:455
 msgid "E-Mail"
 msgstr ""
 
-#: app/settings/Settings.php:425
+#: app/settings/Settings.php:470
 msgid "From name"
 msgstr ""
 
-#: app/settings/Settings.php:440
+#: app/settings/Settings.php:485
 msgid "Username"
 msgstr ""
 
-#: app/settings/Settings.php:457
+#: app/settings/Settings.php:502
 msgid "Password"
 msgstr ""
 
-#: app/settings/Settings.php:471
+#: app/settings/Settings.php:516
 msgid "Host"
 msgstr ""
 
-#: app/settings/Settings.php:486
+#: app/settings/Settings.php:531
 msgid "Port"
 msgstr ""
 
-#: app/settings/Settings.php:500
+#: app/settings/Settings.php:545
 msgid "Authentication"
 msgstr ""
 
-#: app/settings/Settings.php:501
+#: app/settings/Settings.php:546
 msgid "Activate authentication when sending via smtp."
 msgstr ""
 
-#: app/settings/Settings.php:515
+#: app/settings/Settings.php:560
 msgid "Security"
 msgstr ""
 
-#: app/settings/Settings.php:530
+#: app/settings/Settings.php:575
 msgid "WP Login"
 msgstr ""
 
-#: app/settings/Settings.php:538
+#: app/settings/Settings.php:583
 msgid "Login Logo Title"
 msgstr ""
 
-#: app/settings/Settings.php:539
+#: app/settings/Settings.php:584
 msgid "Add a title instead of an image."
 msgstr ""
 
-#: app/settings/Settings.php:554
+#: app/settings/Settings.php:599
 msgid "Login Logo Image-URL"
 msgstr ""
 
-#: app/settings/Settings.php:570
+#: app/settings/Settings.php:615
 msgid "Login Logo Target-URL"
 msgstr ""
 
-#: app/settings/Settings.php:585
+#: app/settings/Settings.php:630
 msgid "Redirect after Login to Home"
 msgstr ""
 
@@ -4719,8 +4742,20 @@ msgstr ""
 msgid "Simple settings (No HTML or CSS knowledge necessary)"
 msgstr ""
 
-#~ msgid "Cookie Notice"
-#~ msgstr "Cookie Info"
+#~ msgid ""
+#~ "By clicking Accept, you accept the storing of cookies on your device to "
+#~ "enhance site navigation, analyze site usage, and assist in our marketing "
+#~ "efforts."
+#~ msgstr ""
+#~ "Wenn Sie auf Akzeptieren klicken, akzeptieren Sie Cookies auf Ihrem "
+#~ "Gerät, um die Nutzung zu analysieren und unsere Marketingaktivitäten zu "
+#~ "unterstützen."
+
+#~ msgid "✓ Accept"
+#~ msgstr "✓ Akzeptieren"
+
+#~ msgid "✗ Decline"
+#~ msgstr "✗ Ablehnen"
 
 #~ msgid ""
 #~ "ZMPlugin contains a set of helper functions and options to customize your "

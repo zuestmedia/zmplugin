@@ -361,7 +361,7 @@ class AppSettings extends \ZMP\Plugin\App {
     return '_cookie_consent_text';
   }
   public function getCookieConsentTextDefaultValue(){
-    return __('By clicking Accept, you accept the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.', 'zmplugin');
+    return __('This website uses cookies to provide you with a better and more enjoyable browsing experience on the website.', 'zmplugin');
   }
   public function getCookieConsentText(){
     return Helpers::getOption(
@@ -386,22 +386,6 @@ class AppSettings extends \ZMP\Plugin\App {
       '2',//always checks option if >= 2
       'option_mod',
       $this->getOptPra().'_url'
-    );
-  }
-
-  public function getMatomoNoCookieTrackingStatusTextFieldName() {
-    return '_matomo_no_cookie_tracking_status';
-  }
-  public function getMatomoNoCookieTrackingStatusDefaultValue(){
-    return false;
-  }
-  public function getMatomoNoCookieTrackingStatus(){
-    return Helpers::getOption(
-      $this->getMatomoNoCookieTrackingStatusTextFieldName(),
-      $this->getMatomoNoCookieTrackingStatusDefaultValue(),
-      '2',//always checks option if >= 2
-      'option_mod',
-      $this->getOptPra().'_bool'
     );
   }
 
@@ -517,6 +501,38 @@ class AppSettings extends \ZMP\Plugin\App {
     );
   }
 
+  public function getMatomoNoCookieTrackingStatusTextFieldName() {
+    return '_matomo_no_cookie_tracking_status';
+  }
+  public function getMatomoNoCookieTrackingStatusDefaultValue(){
+    return false;
+  }
+  public function getMatomoNoCookieTrackingStatus(){
+    return Helpers::getOption(
+      $this->getMatomoNoCookieTrackingStatusTextFieldName(),
+      $this->getMatomoNoCookieTrackingStatusDefaultValue(),
+      '2',//always checks option if >= 2
+      'option_mod',
+      $this->getOptPra().'_bool'
+    );
+  }
+
+  public function excludeMatomoFromCookieConsentTextFieldName() {
+    return '_exclude_matomo_from_cookie_consent';
+  }
+  public function excludeMatomoFromCookieConsentDefaultValue(){
+    return false;
+  }
+  public function excludeMatomoFromCookieConsent(){
+    return Helpers::getOption(
+      $this->excludeMatomoFromCookieConsentTextFieldName(),
+      $this->excludeMatomoFromCookieConsentDefaultValue(),
+      '2',//always checks option if >= 2
+      'option_mod',
+      $this->getOptPra().'_bool'
+    );
+  }
+
   public function getG4AIdTextFieldName() {
     return '_g4a_id';
   }
@@ -533,6 +549,22 @@ class AppSettings extends \ZMP\Plugin\App {
     );
   }
 
+  public function excludeG4AFromCookieConsentTextFieldName() {
+    return '_exclude_ga4_from_cookie_consent';
+  }
+  public function excludeG4AFromCookieConsentDefaultValue(){
+    return false;
+  }
+  public function excludeG4AFromCookieConsent(){
+    return Helpers::getOption(
+      $this->excludeG4AFromCookieConsentTextFieldName(),
+      $this->excludeG4AFromCookieConsentDefaultValue(),
+      '2',//always checks option if >= 2
+      'option_mod',
+      $this->getOptPra().'_bool'
+    );
+  }
+
   public function getGTMIdTextFieldName() {
     return '_gtm_id';
   }
@@ -546,6 +578,22 @@ class AppSettings extends \ZMP\Plugin\App {
       '2',//always checks option if >= 2
       'option_mod',
       $this->getOptPra().'_text'
+    );
+  }
+
+  public function excludeGTMFromCookieConsentTextFieldName() {
+    return '_exclude_gtm_from_cookie_consent';
+  }
+  public function excludeGTMFromCookieConsentDefaultValue(){
+    return false;
+  }
+  public function excludeGTMFromCookieConsent(){
+    return Helpers::getOption(
+      $this->excludeGTMFromCookieConsentTextFieldName(),
+      $this->excludeGTMFromCookieConsentDefaultValue(),
+      '2',//always checks option if >= 2
+      'option_mod',
+      $this->getOptPra().'_bool'
     );
   }
 
@@ -589,29 +637,43 @@ class AppSettings extends \ZMP\Plugin\App {
     ?>
     <style>
       .zmoutercookieconsentbox{
-        z-index: 99999999;
+        z-index: 1000;
         position: fixed !important;
         bottom: 0;
         left: 0;
         right: 0;
         max-width: 100%;
-      }
-      .zminnercookieconsentbox{
-        margin: 0 !important;
-        text-align: center !important;
         background-color: var(--wp--preset--color--default,#eaedea);
         color: var(--wp--preset--color--default-text,#222222);
         border-top: 1px solid var(--wp--preset--color--border,#999999);
-        position: relative;
-        padding: 15px 29px 15px 15px;
       }
-      .zmcookieconsenttext{
-        margin-bottom: 0;
-        font-size: var(--text_small_fontsize, 0.875rem);
-        line-height: var(--text_small_lineheight, 1.5);
+      .zminnercookieconsentbox{
+        text-align: center !important;
+        position: relative;
+        display: flow-root;
+        box-sizing: content-box;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+      }
+      @media (min-width: 640px){
+          .zminnercookieconsentbox {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+      }
+      .zmcookieconsenttitle{
+        font-size: 1.4rem;
+        line-height: 1.5;
+      }
+      .zmcookieconsenttext{        
+        margin-top: 15px;
+        font-size: 0.875rem;
+        line-height: 1.5;
       }
       .zmcookieconsentnotice{
-        margin-left: 40px !important;
+        margin-left: 5px !important;
         /*color: rgba(var(--color_text_inverse,255,255,255),.5) !important;*/
         text-decoration: none;
         cursor: pointer;
@@ -622,7 +684,6 @@ class AppSettings extends \ZMP\Plugin\App {
       }
       .zmcookieconsentbutton{
         cursor: pointer;
-        margin-left: 40px !important;
         padding: 0 15px;
         background-color: var(--wp--preset--color--muted,#d5d6d2);
         color: var(--wp--preset--color--emphasis-text,#111111);
@@ -635,30 +696,49 @@ class AppSettings extends \ZMP\Plugin\App {
         text-transform: none;
         -webkit-appearance: none;
         border-radius: 0;
-        display: inline-block;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         box-sizing: border-box;
-        vertical-align: middle;
         text-align: center;
         text-decoration: none;
+        min-width:100%;
+      }
+      @media (min-width: 640px){
+          .zmcookieconsentbutton {
+            min-width:200px;
+        }
       }
       .zmcookieconsentbutton:hover{
-        filter:brightness(92%);
+        filter:brightness(95%);
       }
-      .zmcookieconsentbuttonaccept{}
+      .zmcookieconsentbuttonaccept{
+        /*color: var(--wp--preset--color--success,#107720);*/
+      }
       .zmcookieconsentbuttondecline{
-        margin-left: 20px !important;
+        margin-top: 5px !important;
+        background-color: transparent;
       }
     </style>
     <script>
 
         function zmRemoveCookieConsentBanner(){
 
-          element = document.getElementById('zmcookieconsentbanner');
-          element.remove();
+          skiplink = document.getElementById('zmcookieconsentskiplink');
+          skiplink.remove();
+
+          banner = document.getElementById('zmcookieconsentbanner');
+          banner.remove();
 
         }
 
         function zmCreateCookieConsentBanner(){
+
+          var tag_skip_link_cookie_consent = document.createElement("a");
+          tag_skip_link_cookie_consent.className = 'screen-reader-text';
+          tag_skip_link_cookie_consent.setAttribute('href', '#zmcookieconsentbanner');
+          tag_skip_link_cookie_consent.setAttribute('id', 'zmcookieconsentskiplink');
+          tag_skip_link_cookie_consent.innerHTML = '<?php echo __('Skip to Cookie Consent', 'zmplugin'); ?>';
 
           var tag_position = document.createElement("div");
           tag_position.className = 'zmoutercookieconsentbox';
@@ -668,34 +748,44 @@ class AppSettings extends \ZMP\Plugin\App {
           tag_alert.className = 'zminnercookieconsentbox';
           //tag_alert.setAttribute('uk-alert', '');
 
+          var tag_title = document.createElement("div");
+          tag_title.className = 'zmcookieconsenttitle';
+          tag_title.innerHTML = '<?php echo __( 'Cookie consent', 'zmplugin' ); ?>';
+
           var tag_text = document.createElement("p");
-          tag_text.className = 'uk-text-small zmcookieconsenttext';
+          tag_text.className = 'zmcookieconsenttext';
           tag_text.innerHTML = '<?php echo esc_html( $this->getCookieConsentText() ); ?>';
 
           var tag_cookie_notice = document.createElement("a");
           tag_cookie_notice.className = 'zmcookieconsentnotice';
           tag_cookie_notice.setAttribute('href', '<?php echo esc_url( $this->getCookieConsentPrivacyUrl() ); ?>');
-          tag_cookie_notice.innerHTML = '<?php echo __( 'Privacy Notice', 'zmplugin' ); ?>';
+          tag_cookie_notice.innerHTML = '<?php echo __( 'Privacy policy', 'zmplugin' ); ?>';
 
           var tag_button_accept = document.createElement("button");
           tag_button_accept.className = 'zmcookieconsentbutton zmcookieconsentbuttonaccept';
           tag_button_accept.setAttribute('id', 'zmcookieconsentaccept2');
           //tag_button_accept.innerHTML = 'Accept';
-          tag_button_accept.innerHTML = '<?php echo __( '✓ Accept', 'zmplugin' ); ?>';
+          tag_button_accept.innerHTML = '<?php echo __( '✓ Ok, I agree', 'zmplugin' ); ?>';
 
           var tag_button_decline = document.createElement("button");
           tag_button_decline.className = 'zmcookieconsentbutton zmcookieconsentbuttondecline';
           tag_button_decline.setAttribute('id', 'zmcookieconsentdecline2');
           //tag_button_decline.innerHTML = 'Decline';
-          tag_button_decline.innerHTML = '<?php echo __( '✗ Decline', 'zmplugin' ); ?>';
+          tag_button_decline.innerHTML = '<?php echo __( 'Reject', 'zmplugin' ); ?>';          
+
+          var tag_button_box = document.createElement("div");
+          tag_button_box.className = '';
 
                 tag_text.appendChild(tag_cookie_notice);
-                tag_text.appendChild(tag_button_accept);
-                tag_text.appendChild(tag_button_decline);
+                tag_button_box.appendChild(tag_button_accept);
+                tag_button_box.appendChild(tag_button_decline);
+              tag_alert.appendChild(tag_title);
               tag_alert.appendChild(tag_text);
+              tag_alert.appendChild(tag_button_box);
             tag_position.appendChild(tag_alert);
 
-          document.body.prepend(tag_position);
+          document.body.prepend(tag_skip_link_cookie_consent);
+          document.body.appendChild(tag_position);
 
         }
 
@@ -718,21 +808,28 @@ class AppSettings extends \ZMP\Plugin\App {
             document.getElementById("zmcookieconsentaccept2").onclick = function(){
 
               //console.log('cookie created with name: zm_cookie_consent value: 1 and days: 365');
-              zmCreateCookie('zm_cookie_consent', 1, 365);
+              zmCreateCookie('zm_cookie_consent', 1, 365*10);
               zmRemoveCookieConsentBanner();
 
-              zmLoadTrackingScripts();
+              var g4aexception = '<?php echo esc_attr( $this->excludeG4AFromCookieConsent() ); ?>';
+              if( g4aexception != 1){
+                zmLoadG4AScriptsWithCheck();
+              }
 
-              var matomoexception = '<?php echo esc_attr( $this->getMatomoNoCookieTrackingStatus() ); ?>';
+              var gtmexception = '<?php echo esc_attr( $this->excludeGTMFromCookieConsent() ); ?>';
+              if( gtmexception != 1){
+                zmLoadGTMScriptsWithCheck();
+              }
+              var matomoexception = '<?php echo esc_attr( $this->excludeMatomoFromCookieConsent() ); ?>';
               if( matomoexception != 1){
-                zmLoadMatomoScriptsWithException();
+                zmLoadMatomoScriptsWithCheck();
               }
 
             };
             document.getElementById("zmcookieconsentdecline2").onclick = function(){
 
               //console.log('cookie created with name: zm_cookie_consent value: 0 and days: 30');
-              zmCreateCookie('zm_cookie_consent', 0, 7);
+              zmCreateCookie('zm_cookie_consent', 0, 30);
               zmRemoveCookieConsentBanner();
 
             };
@@ -767,30 +864,41 @@ class AppSettings extends \ZMP\Plugin\App {
   }
 
   public function getTrackingScripts(){
-    /*
-    * g4-a:
-    * script tag must be added via document head appendChild...
-    * <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZHBGBPXNH"></script>
-    * noscript via php! to body --> no noscript via js!!! :-)
-    */
-    ?>
 
-    <script>
-      <?php if($this->getG4AId()){ ?>
+    /**
+      * G4A:
+      *
+      * script tag must be added via document head appendChild...
+      * <script async src="https://www.googletagmanager.com/gtag/js?id=XXX"></script>
+      *
+      * ga4 gtag function needs to be available globally, not nested inside function in script above!!!
+      * ga4 gtag function has no effect if script is not loaded, so add to head if g4a is activated even if no consent yet...
+      */
+    ?>    
+
+    <?php if($this->getG4AId()){ ?>
+
+      <script>
         function zmLoadG4AScript(){
 
           var script_w_src = document.createElement('script');
-          script_w_src.setAttribute('src','https://www.googletagmanager.com/gtag/js?id=<?php echo esc_attr( $this->getG4AId() ); ?>');
           script_w_src.setAttribute('async','');
+          script_w_src.setAttribute('src','https://www.googletagmanager.com/gtag/js?id=<?php echo esc_attr( $this->getG4AId() ); ?>');
           document.head.appendChild(script_w_src);
 
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '<?php echo esc_attr( $this->getG4AId() ); ?>');
-
         }
-      <?php } ?>
+      </script>
+
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '<?php echo esc_attr( $this->getG4AId() ); ?>');
+      </script>
+
+    <?php } ?>
+
+    <script>
 
       <?php if($this->getGTMId()){ ?>
         function zmLoadGTMScript(){
@@ -881,40 +989,46 @@ class AppSettings extends \ZMP\Plugin\App {
         }
       <?php } ?>
 
-      function zmLoadTrackingScripts(){
+      function zmLoadG4AScriptsWithCheck(){
 
-        //g4-a
-        <?php if($this->getG4AId()){ ?>
-        zmLoadG4AScript();
-        <?php } ?>
-
-        //gtm
-        <?php if($this->getGTMId()){ ?>
-        zmLoadGTMScript();
+        <?php if( $this->getG4AId() ){ ?>
+          zmLoadG4AScript();
         <?php } ?>
 
       }
-      function zmLoadMatomoScriptsWithException(){
+      function zmLoadGTMScriptsWithCheck(){
 
-        //mato
+        <?php if( $this->getGTMId() ){ ?>
+          zmLoadGTMScript();
+        <?php } ?>
+
+      }
+      function zmLoadMatomoScriptsWithCheck(){
+
         <?php if( $this->getMatomoUrl() && $this->getMatomoSiteId() ){ ?>
-        zmLoadMatoScript();
+          zmLoadMatoScript();
         <?php } ?>
 
       }
 
       function zmInitCookieConsentTrackingScripts(){
 
-          var zm_cookie_consent = zmReadCookie('zm_cookie_consent');
+        var zm_cookie_consent = zmReadCookie('zm_cookie_consent');
 
-          if( zm_cookie_consent == 1 ){
-            zmLoadTrackingScripts();
-          }
+        var g4aexception = '<?php echo esc_attr( $this->excludeG4AFromCookieConsent() ); ?>';
+        if( zm_cookie_consent == 1 || g4aexception == 1){
+          zmLoadG4AScriptsWithCheck();
+        }
 
-          var matomoexception = '<?php echo esc_attr( $this->getMatomoNoCookieTrackingStatus() ); ?>';
-          if( zm_cookie_consent == 1 || matomoexception == 1){
-            zmLoadMatomoScriptsWithException();
-          }
+        var gtmexception = '<?php echo esc_attr( $this->excludeGTMFromCookieConsent() ); ?>';
+        if( zm_cookie_consent == 1 || gtmexception == 1){
+          zmLoadGTMScriptsWithCheck();
+        }
+
+        var matomoexception = '<?php echo esc_attr( $this->excludeMatomoFromCookieConsent() ); ?>';
+        if( zm_cookie_consent == 1 || matomoexception == 1){
+          zmLoadMatomoScriptsWithCheck();
+        }
 
       }
 
@@ -930,17 +1044,16 @@ class AppSettings extends \ZMP\Plugin\App {
         } else {
 
           //load scripts always
-          zmLoadTrackingScripts();
-          zmLoadMatomoScriptsWithException();
+          zmLoadG4AScriptsWithCheck();
+          zmLoadGTMScriptsWithCheck();
+          zmLoadMatomoScriptsWithCheck();
 
         }
 
       }
 
-
       //do all checks, then load scripts if ok
       zmCheckCookieConsentStatusAndMaybeLoadScripts();
-
 
     </script>
 
@@ -964,6 +1077,12 @@ class AppSettings extends \ZMP\Plugin\App {
     }
 
     return false;
+
+  }
+
+  public function BodySkipLinks(){
+
+    echo '<a href="#cookie-consent" class="screen-reader-text">'.__('Skip to Cookie Consent', 'zmplugin').'</a>';
 
   }
 

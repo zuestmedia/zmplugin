@@ -296,6 +296,21 @@ class Settings {
               'boolarray'
           );
 
+          $this->form->addField(
+            'select',
+              array(
+                'label'=> __('Exclude from cookie consent', 'zmplugin'),
+                'class'=>'uk-select uk-form-width-large',
+                'description_toggle'=> __('Load Matomo without cookie consent.', 'zmplugin'),
+                'options'=>$settings_obj->no_yes,
+                'name'=>$zmplugin['app']->excludeMatomoFromCookieConsentTextFieldName(),
+                'default_value'=>$zmplugin['app']->excludeMatomoFromCookieConsentDefaultValue()
+              ),
+              'option_mod',//type
+              '_bool',//optionsgroup + "_option_mod_name"
+              'boolarray'
+          );
+
           $this->form->addField('html','<h3>'.__('Google Analytics 4', 'zmplugin').'</h3>');
 
           $this->form->addField(
@@ -313,6 +328,21 @@ class Settings {
               'textarray'
           );
 
+          $this->form->addField(
+            'select',
+              array(
+                'label'=> __('Exclude from cookie consent', 'zmplugin'),
+                'class'=>'uk-select uk-form-width-large',
+                'description_toggle'=> __('Load Google Analytics 4 without cookie consent.', 'zmplugin'),
+                'options'=>$settings_obj->no_yes,
+                'name'=>$zmplugin['app']->excludeG4AFromCookieConsentTextFieldName(),
+                'default_value'=>$zmplugin['app']->excludeG4AFromCookieConsentDefaultValue()
+              ),
+              'option_mod',//type
+              '_bool',//optionsgroup + "_option_mod_name"
+              'boolarray'
+          );
+
           $this->form->addField('html','<h3>'.__('Google Tag Manager', 'zmplugin').'</h3>');
 
           $this->form->addField(
@@ -328,6 +358,21 @@ class Settings {
               'option_mod',//type
               '_text',//optionsgroup + "_option_mod_name"
               'textarray'
+          );
+
+          $this->form->addField(
+            'select',
+              array(
+                'label'=> __('Exclude from cookie consent', 'zmplugin'),
+                'class'=>'uk-select uk-form-width-large',
+                'description_toggle'=> __('Load Google Tag Manager without cookie consent.', 'zmplugin'),
+                'options'=>$settings_obj->no_yes,
+                'name'=>$zmplugin['app']->excludeGTMFromCookieConsentTextFieldName(),
+                'default_value'=>$zmplugin['app']->excludeGTMFromCookieConsentDefaultValue()
+              ),
+              'option_mod',//type
+              '_bool',//optionsgroup + "_option_mod_name"
+              'boolarray'
           );
 
         $this->form->addField('html',
