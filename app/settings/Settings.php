@@ -96,7 +96,8 @@ class Settings {
             'input',
               array(
                 'type'=> 'url',
-                'label'=> __('Privacy URL', 'zmplugin'),
+                'label'=> __('Alternative Privacy URL', 'zmplugin'),
+                'description_toggle'=> __('By default, the WordPress Privacy-Url is used.', 'zmplugin'),
                 'class'=>'uk-input uk-form-width-large',
                 'placeholder'=>'https://example.com/privacy/',
                 'icon'=>'world',
@@ -106,6 +107,22 @@ class Settings {
               'option_mod',//type
               '_url',//optionsgroup + "_option_mod_name"
               'urlarray'
+          );
+
+          $this->form->addField(
+            'input',
+              array(
+                'type'=> 'text',
+                'label'=> __('Cookie Domain (optional)', 'zmplugin'),
+                'description_toggle'=> __('Set the cookie domain, eg. example.com, to use the cookie consent for example.com and all subdomains, eg. subdomain.example.com.', 'zmplugin'),
+                'class'=>'uk-input uk-form-width-large',
+                'placeholder'=>'example.com',
+                'name'=>$zmplugin['app']->getCookieDomainTextFieldName(),
+                'default_value'=>$zmplugin['app']->getCookieDomainDefaultValue()
+              ),
+              'option_mod',//type
+              '_text',//optionsgroup + "_option_mod_name"
+              'textarray'
           );
 
         $this->form->addField('html',
@@ -286,7 +303,7 @@ class Settings {
               array(
                 'label'=> __('No Cookie Tracking?', 'zmplugin'),
                 'class'=>'uk-select uk-form-width-large',
-                'description_toggle'=> __('To load Matomo Analytics GDPR compliant without cookie consent, activate "No Cookie Tracking" on your Server and activate this option. So Matomo Analytics Script will be loaded without cookie consent question.', 'zmplugin'),
+                'description_toggle'=> __('Disable cookies, to load Matomo Analytics GDPR compliant without cookie consent <br> _paq.push(["disableCookies"]);', 'zmplugin'),
                 'options'=>$settings_obj->no_yes,
                 'name'=>$zmplugin['app']->getMatomoNoCookieTrackingStatusTextFieldName(),
                 'default_value'=>$zmplugin['app']->getMatomoNoCookieTrackingStatusDefaultValue()

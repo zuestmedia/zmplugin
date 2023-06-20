@@ -389,6 +389,22 @@ class AppSettings extends \ZMP\Plugin\App {
     );
   }
 
+  public function getCookieDomainTextFieldName() {
+    return '_cookie_domain';
+  }
+  public function getCookieDomainDefaultValue(){
+    return false;
+  }
+  public function getCookieDomain(){
+    return Helpers::getOption(
+      $this->getCookieDomainTextFieldName(),
+      $this->getCookieDomainDefaultValue(),
+      '2',//always checks option if >= 2
+      'option_mod',
+      $this->getOptPra().'_text'
+    );
+  }
+
   public function getMatomoUrlTextFieldName() {
     return '_matomo_url';
   }
@@ -602,6 +618,14 @@ class AppSettings extends \ZMP\Plugin\App {
   */
   public function loadCookieConsentBannerCommonFunctions(){
 
+    $cookie_domain = $this->getCookieDomain();
+
+    $cookie_domain_string = '';
+
+    if($cookie_domain){
+      $cookie_domain_string = '; domain='.$cookie_domain;
+    }    
+
     ?>
 
     <script>
@@ -613,7 +637,7 @@ class AppSettings extends \ZMP\Plugin\App {
           var expires = "; expires="+date.toGMTString();
         }
         else var expires = "";
-        document.cookie = name+"="+value+expires+"; path=/";
+        document.cookie = name+"="+value+expires+"; path=/<?php echo esc_attr($cookie_domain_string); ?>";
       }
       function zmReadCookie(name) {
         var nameEQ = name + "=";
@@ -717,7 +741,7 @@ class AppSettings extends \ZMP\Plugin\App {
       }
       .zmcookieconsentbuttondecline{
         margin-top: 5px !important;
-        background-color: transparent;
+        /*background-color: transparent;*/
       }
     </style>
     <script>
@@ -756,10 +780,22 @@ class AppSettings extends \ZMP\Plugin\App {
           tag_text.className = 'zmcookieconsenttext';
           tag_text.innerHTML = '<?php echo esc_html( $this->getCookieConsentText() ); ?>';
 
-          var tag_cookie_notice = document.createElement("a");
-          tag_cookie_notice.className = 'zmcookieconsentnotice';
-          tag_cookie_notice.setAttribute('href', '<?php echo esc_url( $this->getCookieConsentPrivacyUrl() ); ?>');
-          tag_cookie_notice.innerHTML = '<?php echo __( 'Privacy policy', 'zmplugin' ); ?>';
+          <?php $privacy_url = get_privacy_policy_url();
+          if($privacy_url){ ?>
+
+            var tag_cookie_notice = document.createElement("a");
+            tag_cookie_notice.className = 'zmcookieconsentnotice';
+            tag_cookie_notice.setAttribute('href', '<?php echo esc_url( $privacy_url ); ?>');
+            tag_cookie_notice.innerHTML = '<?php echo __( 'Privacy policy', 'zmplugin' ); ?>';
+
+          <?php } elseif( $this->getCookieConsentPrivacyUrl() ){ ?>
+
+            var tag_cookie_notice = document.createElement("a");
+            tag_cookie_notice.className = 'zmcookieconsentnotice';
+            tag_cookie_notice.setAttribute('href', '<?php echo esc_url( $this->getCookieConsentPrivacyUrl() ); ?>');
+            tag_cookie_notice.innerHTML = '<?php echo __( 'Privacy policy', 'zmplugin' ); ?>';
+
+          <?php } ?>
 
           var tag_button_accept = document.createElement("button");
           tag_button_accept.className = 'zmcookieconsentbutton zmcookieconsentbuttonaccept';
@@ -776,7 +812,9 @@ class AppSettings extends \ZMP\Plugin\App {
           var tag_button_box = document.createElement("div");
           tag_button_box.className = '';
 
+          <?php if( $privacy_url || $this->getCookieConsentPrivacyUrl() ){ ?>
                 tag_text.appendChild(tag_cookie_notice);
+          <?php } ?>
                 tag_button_box.appendChild(tag_button_accept);
                 tag_button_box.appendChild(tag_button_decline);
               tag_alert.appendChild(tag_title);
@@ -1152,9 +1190,7 @@ class AppSettings extends \ZMP\Plugin\App {
   }
   public function SMTPtoWPMail( $phpmailer ) {
 
-    global $zmplugin;
-
-    $settings = $zmplugin['app']->getSMTPSettings();
+    $settings = $this->getSMTPSettings();
 
     if( is_array($settings) ){
 

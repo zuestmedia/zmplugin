@@ -1,6 +1,6 @@
 === ZMPlugin ===
 Contributors: zuestmedia
-Stable tag: 1.0.23
+Stable tag: 1.0.24
 Tags: block patterns, templates, cookie consent banner, smtp, private mode
 Requires at least: 4.7
 Tested up to: 6.2.2
@@ -8,36 +8,32 @@ Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-ZMPlugin is an extension for WordPress themes based on the ZM-Theme-Framework and extends ZMT-Themes with various options and customizer settings.
+ZMPlugin contains various extensions & features for WordPress websites that any project may need. This includes a cookie banner, tracking integration, private mode for development or updates, SMTP mail for sending mails and more...
 
 == Description ==
 
-[ZMPlugin](https://zuestmedia.com/plugins/) is an extension for WordPress themes based on the [ZM-Theme-Framework](https://zuestmedia.com/themes/) (ZMT) and extends ZMT-Themes with various options and customizer settings. This plugin can also be used as a "standalone" plugin in a reduced scope.
+[ZMPlugin](https://zuestmedia.com/plugins/) is the ZuestMedia basic plugin for WordPress websites and contains several features & extensions that every webmaster needs: 
+
+1. cookie consent banner (DSGVO compliant). 
+2. tracking & analytics integration (GA4, Tagmanager, Matomo). 
+3. private mode for websites in development or temporary forwarding/redirection. 
+4. send WordPress emails via SMTP server. 
+5. display options for dashboard and login form. 
+
+Also, all ZuestMedia themes based on [ZMTheme-Framework](https://zuestmedia.com/themes/) will be extended with theme settings, customizer settings and desing explorer.
 
 == Plugin Features ==
-
-= Block Patterns =
-Access to a selection of pre-built block patterns that can be easily inserted in the WordPress Gutenberg editor.
-
-= Block Templates <sup>*</sup> =
-ZMT themes use block templates to display content statically or dynamically. All block templates can be edited using the WordPress Gutenberg editor.
 
 = Cookie Consent Banner =
 Cookie Consent Banner for GDPR compliant integration of Google Analytics, Google Tag Manager and Matomo (self-hosted).
 
-= Customizer settings <sup>*</sup> =
-When using a WordPress theme based on the ZM theme framework, additional customizer settings are displayed.
-
-= Design Explorer <sup>*</sup> =
-The design explorer offers the possibility to import directly prefabricated starter designs.
+= Tracking & Analytics =
+Google Analytics 4, Google Tag Manager or Matomo (self-hosted) can be integrated. GDPR compliant if desired, if Cookie Consent banner is enabled.
 
 = Private Mode =
 Private mode to redirect visitors to the login form or to a page of their choice. Useful for maintenance work or not yet finished websites.
 
-= Tracking & Analytics  =
-Google Analytics 4, Google Tag Manager or Matomo (self-hosted) can be integrated. GDPR compliant if desired, if Cookie Consent banner is enabled.
-
-= WP Mail SMTP =
+= SMTP Mail =
 Send all mails sent via wp_mail() from your own SMTP server. Works for all system mailings and also with contact form 7.
 
 = WP Dashboard Options =
@@ -46,25 +42,43 @@ Personalization options for the WordPress dashboard. WordPress logo, help tabs a
 = WP Login Options =
 Personalization options for the WordPress login form (wp-login.php). The login logo as well as the redirect destination can be customized.
 
-<sup>*</sup> only available in combination with [ZMT Themes](https://zuestmedia.com/themes/), e.g. Corporate or Modular
+= Block Patterns =
+Access to a selection of pre-built block patterns that can be easily inserted in the WordPress Gutenberg editor.
+
+= Block Templates <sup>*</sup> =
+ZMT themes use block templates to display content statically or dynamically. All block templates can be edited using the WordPress Gutenberg editor.
+
+= Customizer settings <sup>*</sup> =
+When using a WordPress theme based on the ZM theme framework, additional customizer settings are displayed.
+
+= Design Explorer <sup>*</sup> =
+The design explorer offers the possibility to import directly prefabricated starter designs.
+
+<sup>*</sup> only available in combination with [ZuestMedia Themes](https://zuestmedia.com/themes/), e.g. Corporate or Modular
 
 == Resources ==
 
-Learn more about ZM WordPress themes and plugins [here](https://zuestmedia.com/).
+Learn more about ZuestMedia WordPress themes and plugins [here](https://zuestmedia.com/).
 
-If you have any questions or need help, visit the [help page](https://zuestmedia.com/help/).
+If you have any questions or need help, visit [zuestmedia.com](https://zuestmedia.com/).
 
 You can also find us on [Github](https://github.com/zuestmedia/)!
 
 == Frequently Asked Questions ==
 
 = How to install ZMPlugin? =
-To install ZM Plugin, go to Dashboard >> Plugins >> Add new. Then enter "ZMPlugin" in the search field, click on install and activate.
+To install ZMPlugin, go to Dashboard >> Plugins >> Add new. Then enter "ZMPlugin" in the search field, click on install and activate.
 
 = Does ZMPlugin work as standalone? =
-Yes. The website management and config settings are working on all themes. The extended customizer settings are only available with ZMTheme WordPress Themes.
+Yes. The website management and config settings are working on all themes. The extended customizer settings are only available with ZuestMedia WordPress Themes.
 
 == Changelog === 
+
+= 1.0.24 =
+* New: Cookie consent domain setting, to use on main and subdomain same cookie consent
+* Update: Readme text
+* Update: Privacy Url to cookie consent from WP privacy setting or alt url from plugin settings
+* Update: UIKIT CSS & JS to  3.16.21
 
 = 1.0.23 =
 * New: Settings for trackingscripts to depend on cookie consent or not
