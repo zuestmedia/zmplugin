@@ -259,14 +259,14 @@ class PluginHelper {
 
   static function getNrAllowedOfExt(){
 
-    $result = 5;
+    $result = 3;
     if( PluginHelper::isPremiumVersion() == true ){
 
       $result = '∞';
 
     } elseif ( PluginHelper::installedPremiumAddon() == true ){
 
-      $result = 6;
+      $result = 4;
 
     }
     return $result;

@@ -29,8 +29,8 @@ class Dashboard {
           $this->form->addField('html', '<div uk-grid class="uk-child-width-expand">' );
             $this->form->addField('html', '<p>'. __('Installed Add-ons', 'zmplugin').'</p>' );
             $this->form->addField('html','<p class="uk-text-right">');
-            $this->form->addField('html','<a href="plugins.php?s=zmplugin&plugin_status=all">'.__('Manage', 'zmplugin').'</a>');
-            $this->form->addField('html',' | <a href="plugin-install.php?s=zmplugin&tab=search&type=term">'.__('Add new', 'zmplugin').'</a>');
+            $this->form->addField('html','<a href="plugins.php?s=zmp&plugin_status=all">'.__('Manage', 'zmplugin').'</a>');
+            $this->form->addField('html',' | <a href="plugin-install.php?s=zmp&tab=search&type=term">'.__('Add new', 'zmplugin').'</a>');
             $this->form->addField('html','</p>');
           $this->form->addField('html','</div>');
         $this->form->addField('html','</div>');

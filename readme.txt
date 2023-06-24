@@ -1,34 +1,34 @@
 === ZMPlugin ===
 Contributors: zuestmedia
-Stable tag: 1.0.24
-Tags: block patterns, templates, cookie consent banner, smtp, private mode
+Stable tag: 1.0.25
+Tags: cookie notice, gdpr, analytics, matomo, private, smtp, mail
 Requires at least: 4.7
 Tested up to: 6.2.2
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-ZMPlugin contains various extensions & features for WordPress websites that any project may need. This includes a cookie banner, tracking integration, private mode for development or updates, SMTP mail for sending mails and more...
+Essential tools for webmasters; cookie notice, analytics integration, private mode, SMTP mail and extension for ZuestMedia themes.
 
 == Description ==
 
-[ZMPlugin](https://zuestmedia.com/plugins/) is the ZuestMedia basic plugin for WordPress websites and contains several features & extensions that every webmaster needs: 
+[ZMPlugin](https://zuestmedia.com/zmplugin/) is a basic plugin for WordPress websites and contains several essential tools that every webmaster needs:
 
-1. cookie consent banner (DSGVO compliant). 
-2. tracking & analytics integration (GA4, Tagmanager, Matomo). 
+1. cookie notice (GDPR compliant). 
+2. analytics integration (GA4, Tagmanager, Matomo). 
 3. private mode for websites in development or temporary forwarding/redirection. 
-4. send WordPress emails via SMTP server. 
+4. send WordPress system mails via SMTP server. 
 5. display options for dashboard and login form. 
 
-Also, all ZuestMedia themes based on [ZMTheme-Framework](https://zuestmedia.com/themes/) will be extended with theme settings, customizer settings and desing explorer.
+Furterhmore, all ZuestMedia themes based on [ZMTheme-Framework](https://zuestmedia.com/themes/) will be extended with theme settings, customizer settings and the design explorer to import starter designs.
 
 == Plugin Features ==
 
-= Cookie Consent Banner =
+= Cookie Notice =
 Cookie Consent Banner for GDPR compliant integration of Google Analytics, Google Tag Manager and Matomo (self-hosted).
 
-= Tracking & Analytics =
-Google Analytics 4, Google Tag Manager or Matomo (self-hosted) can be integrated. GDPR compliant if desired, if Cookie Consent banner is enabled.
+= Analytics =
+Google Analytics 4, Google Tag Manager or Matomo (self-hosted) can be integrated. GDPR compliant if configured correctly.
 
 = Private Mode =
 Private mode to redirect visitors to the login form or to a page of their choice. Useful for maintenance work or not yet finished websites.
@@ -52,27 +52,31 @@ ZMT themes use block templates to display content statically or dynamically. All
 When using a WordPress theme based on the ZM theme framework, additional customizer settings are displayed.
 
 = Design Explorer <sup>*</sup> =
-The design explorer offers the possibility to import directly prefabricated starter designs.
+The design explorer offers the possibility to import directly premade starter designs.
 
 <sup>*</sup> only available in combination with [ZuestMedia Themes](https://zuestmedia.com/themes/), e.g. Corporate or Modular
 
 == Resources ==
 
-Learn more about ZuestMedia WordPress themes and plugins [here](https://zuestmedia.com/).
+Learn more about ZuestMedia WordPress [themes](https://zuestmedia.com/themes/) and [plugins](https://zuestmedia.com/plugins/).
 
-If you have any questions or need help, visit [zuestmedia.com](https://zuestmedia.com/).
+If you have any questions or need help, visit the [ZMPlugin documentation](https://zuestmedia.com/doc/zmplugin-documentation/).
 
 You can also find us on [Github](https://github.com/zuestmedia/)!
 
 == Frequently Asked Questions ==
 
 = How to install ZMPlugin? =
-To install ZMPlugin, go to Dashboard >> Plugins >> Add new. Then enter "ZMPlugin" in the search field, click on install and activate.
-
-= Does ZMPlugin work as standalone? =
-Yes. The website management and config settings are working on all themes. The extended customizer settings are only available with ZuestMedia WordPress Themes.
+To install ZMPlugin, navigate to WordPress Dashboard >> Plugins >> Add New. Then type "ZMPlugin" in the search box, click install and activate.
 
 == Changelog === 
+
+= 1.0.25 =
+* Update: readme tags, description
+* Update: up to 3 extensions including zmplugin
+* Update: Cookie Consent button text & translation 
+* Update: zmplugin dashboard manage and install links 
+* Update: sidebar docs link to zuestmedia docs
 
 = 1.0.24 =
 * New: Cookie consent domain setting, to use on main and subdomain same cookie consent

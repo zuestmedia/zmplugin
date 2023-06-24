@@ -26,7 +26,7 @@ class defaults {
     $this->info_box_links = array(
       //array('link' => __( 'Customize', 'zmplugin' ), 'url' => esc_url( admin_url( 'customize.php' ) ), 'rel' => '', 'target' => '_blank', 'class' => 'uk-button uk-button-primary'),
       array('link' => __( 'About ZMTheme', 'zmplugin' ), 'url' => 'https://zuestmedia.com/themes/', 'rel' => 'nofollow', 'target' => '_blank', 'class' => ''),
-      array('link' => __( 'Documentation', 'zmplugin' ), 'url' => 'https://zuestmedia.com/help/', 'rel' => 'nofollow', 'target' => '_blank', 'class' => ''),
+      array('link' => __( 'Documentation', 'zmplugin' ), 'url' => 'https://zuestmedia.com/docs/', 'rel' => 'nofollow', 'target' => '_blank', 'class' => ''),
       array('link' => __( 'Pro', 'zmplugin' ), 'url' => 'https://zuestmedia.com/pro/', 'rel' => 'nofollow', 'target' => '_blank', 'class' => 'uk-text-danger'),
     );
 

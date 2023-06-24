@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: zmplugin-0.9.3\n"
-"POT-Creation-Date: 2023-06-06 13:12+0200\n"
-"PO-Revision-Date: 2023-06-06 13:17+0200\n"
+"POT-Creation-Date: 2023-06-24 18:50+0200\n"
+"PO-Revision-Date: 2023-06-24 18:51+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
@@ -118,25 +118,25 @@ msgstr ""
 "Diese Website verwendet Cookies, um Ihnen ein besseres und angenehmeres "
 "Surferlebnis auf der Website zu ermöglichen."
 
-#: app/settings/AppSettings.php:741 app/settings/AppSettings.php:1085
+#: app/settings/AppSettings.php:765 app/settings/AppSettings.php:1123
 msgid "Skip to Cookie Consent"
 msgstr "Zur Cookie-Einverständniserklärung springen"
 
-#: app/settings/AppSettings.php:753
+#: app/settings/AppSettings.php:777
 msgid "Cookie consent"
 msgstr "Cookie-Einverständniserklärung"
 
-#: app/settings/AppSettings.php:762
+#: app/settings/AppSettings.php:789 app/settings/AppSettings.php:796
 msgid "Privacy policy"
 msgstr "Datenschutzerklärung"
 
-#: app/settings/AppSettings.php:768
-msgid "✓ Ok, I agree"
+#: app/settings/AppSettings.php:804
+msgid "✓ Ok, I agree to cookies"
 msgstr "✓ Ok, einverstanden"
 
-#: app/settings/AppSettings.php:774
-msgid "Reject"
-msgstr "Ablehnen"
+#: app/settings/AppSettings.php:810
+msgid "Only necessary cookies"
+msgstr "Nur notwendige Cookies"
 
 #: app/settings/Dashboard.php:24
 msgid "Overview"
@@ -204,35 +204,45 @@ msgid "Text"
 msgstr ""
 
 #: app/settings/Settings.php:99
-msgid "Privacy URL"
+msgid "Alternative Privacy URL"
 msgstr ""
 
-#: app/settings/Settings.php:112
+#: app/settings/Settings.php:100
+msgid "By default, the WordPress Privacy-Url is used."
+msgstr ""
+
+#: app/settings/Settings.php:116
+msgid "Cookie Domain (optional)"
+msgstr ""
+
+#: app/settings/Settings.php:117
+msgid ""
+"Set the cookie domain, eg. example.com, to use the cookie consent for "
+"example.com and all subdomains, eg. subdomain.example.com."
+msgstr ""
+
+#: app/settings/Settings.php:129
 msgid "Private Mode"
 msgstr ""
 
-#: app/settings/Settings.php:119
+#: app/settings/Settings.php:136
 msgid "Redirect Visitors"
 msgstr ""
 
-#: app/settings/Settings.php:120
-#, fuzzy
-#| msgid ""
-#| "When you activate the private mode, all non-logged-in site visitors will "
-#| "be redirected to login-page or to a custom redirect url."
+#: app/settings/Settings.php:137
 msgid ""
 "When you activate this option, all non-logged-in site visitors will be "
 "redirected to login-page or to a custom redirect url."
 msgstr ""
 "Wenn Sie den privaten Modus aktivieren, werden alle nicht angemeldeten "
-"Besucher der Website zur Login-Seite oder zu einer benutzerdefinierten "
-"Umleitungsurl umgeleitet."
+"Besucher der Website zur Login-Seite oder zu einer benutzerdefinierten Url "
+"umgeleitet."
 
-#: app/settings/Settings.php:137
+#: app/settings/Settings.php:154
 msgid "Custom Redirect URL"
 msgstr ""
 
-#: app/settings/Settings.php:138
+#: app/settings/Settings.php:155
 msgid ""
 "By default visitors will be redirected to wp-login page. Place a custom URL "
 "where you want your visitors to land if not on login page. Don't forget to "
@@ -243,11 +253,11 @@ msgstr ""
 "wenn sie nicht auf der Login-Seite sind. Vergessen Sie nicht, diese Seite "
 "auszuschließen."
 
-#: app/settings/Settings.php:154
+#: app/settings/Settings.php:171
 msgid "Excluded Pages"
 msgstr ""
 
-#: app/settings/Settings.php:155
+#: app/settings/Settings.php:172
 msgid ""
 "Add a commaseparated list of pages, that will be excluded from private mode. "
 "Use page-id's or page-slug's."
@@ -255,181 +265,180 @@ msgstr ""
 "Fügen Sie eine kommagetrennte Liste von Seiten hinzu, die vom privaten Modus "
 "ausgeschlossen werden sollen. Verwenden Sie page-id's oder page-slug's."
 
-#: app/settings/Settings.php:170
+#: app/settings/Settings.php:187
 msgid "Tracking & Analytics"
 msgstr ""
 
-#: app/settings/Settings.php:173
+#: app/settings/Settings.php:190
 msgid "Matomo"
 msgstr ""
 
-#: app/settings/Settings.php:174
+#: app/settings/Settings.php:191
 msgid "Only works with self-hosted Matomo version."
 msgstr ""
 
-#: app/settings/Settings.php:180
+#: app/settings/Settings.php:197
 msgid "Server URL"
 msgstr ""
 
-#: app/settings/Settings.php:196
+#: app/settings/Settings.php:213
 msgid "Site-ID"
 msgstr ""
 
-#: app/settings/Settings.php:212
+#: app/settings/Settings.php:229
 msgid "Website URL"
 msgstr ""
 
-#: app/settings/Settings.php:227
+#: app/settings/Settings.php:244
 msgid "Set document title"
 msgstr ""
 
-#: app/settings/Settings.php:242
+#: app/settings/Settings.php:259
 msgid "Set cookie domain"
 msgstr ""
 
-#: app/settings/Settings.php:257
+#: app/settings/Settings.php:274
 msgid "Set domains"
 msgstr ""
 
-#: app/settings/Settings.php:272
+#: app/settings/Settings.php:289
 msgid "Set DoNotTrack"
 msgstr ""
 
-#: app/settings/Settings.php:287
+#: app/settings/Settings.php:304
 msgid "No Cookie Tracking?"
 msgstr ""
 
-#: app/settings/Settings.php:289
+#: app/settings/Settings.php:306
 msgid ""
-"To load Matomo Analytics GDPR compliant without cookie consent, activate "
-"\"No Cookie Tracking\" on your Server and activate this option. So Matomo "
-"Analytics Script will be loaded without cookie consent question."
+"Disable cookies, to load Matomo Analytics GDPR compliant without cookie "
+"consent <br> _paq.push([\"disableCookies\"]);"
 msgstr ""
 
-#: app/settings/Settings.php:302 app/settings/Settings.php:334
-#: app/settings/Settings.php:366
+#: app/settings/Settings.php:319 app/settings/Settings.php:351
+#: app/settings/Settings.php:383
 msgid "Exclude from cookie consent"
 msgstr ""
 
-#: app/settings/Settings.php:304
+#: app/settings/Settings.php:321
 msgid "Load Matomo without cookie consent."
 msgstr ""
 
-#: app/settings/Settings.php:314
+#: app/settings/Settings.php:331
 msgid "Google Analytics 4"
 msgstr ""
 
-#: app/settings/Settings.php:320
+#: app/settings/Settings.php:337
 msgid "Measurement-ID"
 msgstr ""
 
-#: app/settings/Settings.php:336
+#: app/settings/Settings.php:353
 msgid "Load Google Analytics 4 without cookie consent."
 msgstr ""
 
-#: app/settings/Settings.php:346
+#: app/settings/Settings.php:363
 msgid "Google Tag Manager"
 msgstr ""
 
-#: app/settings/Settings.php:352
+#: app/settings/Settings.php:369
 msgid "Container-ID"
 msgstr ""
 
-#: app/settings/Settings.php:368
+#: app/settings/Settings.php:385
 msgid "Load Google Tag Manager without cookie consent."
 msgstr ""
 
-#: app/settings/Settings.php:379
+#: app/settings/Settings.php:396
 msgid "WP Dashboard"
 msgstr ""
 
-#: app/settings/Settings.php:386
+#: app/settings/Settings.php:403
 msgid "Dashboard Logo"
 msgstr ""
 
-#: app/settings/Settings.php:400
+#: app/settings/Settings.php:417
 msgid "Help Tabs"
 msgstr ""
 
-#: app/settings/Settings.php:415
+#: app/settings/Settings.php:432
 msgid "Footer Text"
 msgstr ""
 
-#: app/settings/Settings.php:428
+#: app/settings/Settings.php:445
 msgid "WP Mail (SMTP)"
 msgstr ""
 
-#: app/settings/Settings.php:431
+#: app/settings/Settings.php:448
 msgid ""
 "Activate smtp, to send all Mails sent via wp_mail (function) through your "
 "custom smtp server. Works for all WP system mailings and with ContactForm7."
 msgstr ""
 
-#: app/settings/Settings.php:436
+#: app/settings/Settings.php:453
 msgid "SMTP"
 msgstr ""
 
-#: app/settings/Settings.php:437
+#: app/settings/Settings.php:454
 msgid "Use smtp when sending via wp_mail."
 msgstr ""
 
-#: app/settings/Settings.php:455
+#: app/settings/Settings.php:472
 msgid "E-Mail"
 msgstr ""
 
-#: app/settings/Settings.php:470
+#: app/settings/Settings.php:487
 msgid "From name"
 msgstr ""
 
-#: app/settings/Settings.php:485
+#: app/settings/Settings.php:502
 msgid "Username"
 msgstr ""
 
-#: app/settings/Settings.php:502
+#: app/settings/Settings.php:519
 msgid "Password"
 msgstr ""
 
-#: app/settings/Settings.php:516
+#: app/settings/Settings.php:533
 msgid "Host"
 msgstr ""
 
-#: app/settings/Settings.php:531
+#: app/settings/Settings.php:548
 msgid "Port"
 msgstr ""
 
-#: app/settings/Settings.php:545
+#: app/settings/Settings.php:562
 msgid "Authentication"
 msgstr ""
 
-#: app/settings/Settings.php:546
+#: app/settings/Settings.php:563
 msgid "Activate authentication when sending via smtp."
 msgstr ""
 
-#: app/settings/Settings.php:560
+#: app/settings/Settings.php:577
 msgid "Security"
 msgstr ""
 
-#: app/settings/Settings.php:575
+#: app/settings/Settings.php:592
 msgid "WP Login"
 msgstr ""
 
-#: app/settings/Settings.php:583
+#: app/settings/Settings.php:600
 msgid "Login Logo Title"
 msgstr ""
 
-#: app/settings/Settings.php:584
+#: app/settings/Settings.php:601
 msgid "Add a title instead of an image."
 msgstr ""
 
-#: app/settings/Settings.php:599
+#: app/settings/Settings.php:616
 msgid "Login Logo Image-URL"
 msgstr ""
 
-#: app/settings/Settings.php:615
+#: app/settings/Settings.php:632
 msgid "Login Logo Target-URL"
 msgstr ""
 
-#: app/settings/Settings.php:630
+#: app/settings/Settings.php:647
 msgid "Redirect after Login to Home"
 msgstr ""
 
@@ -4741,6 +4750,9 @@ msgstr ""
 #: config/themesettings/settings_status.php:26
 msgid "Simple settings (No HTML or CSS knowledge necessary)"
 msgstr ""
+
+#~ msgid "Reject"
+#~ msgstr "Ablehnen"
 
 #~ msgid ""
 #~ "By clicking Accept, you accept the storing of cookies on your device to "

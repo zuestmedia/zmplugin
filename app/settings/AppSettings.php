@@ -801,13 +801,13 @@ class AppSettings extends \ZMP\Plugin\App {
           tag_button_accept.className = 'zmcookieconsentbutton zmcookieconsentbuttonaccept';
           tag_button_accept.setAttribute('id', 'zmcookieconsentaccept2');
           //tag_button_accept.innerHTML = 'Accept';
-          tag_button_accept.innerHTML = '<?php echo __( '✓ Ok, I agree', 'zmplugin' ); ?>';
+          tag_button_accept.innerHTML = '<?php echo __( '✓ Ok, I agree to cookies', 'zmplugin' ); ?>';
 
           var tag_button_decline = document.createElement("button");
           tag_button_decline.className = 'zmcookieconsentbutton zmcookieconsentbuttondecline';
           tag_button_decline.setAttribute('id', 'zmcookieconsentdecline2');
           //tag_button_decline.innerHTML = 'Decline';
-          tag_button_decline.innerHTML = '<?php echo __( 'Reject', 'zmplugin' ); ?>';          
+          tag_button_decline.innerHTML = '<?php echo __( 'Only necessary cookies', 'zmplugin' ); ?>';          
 
           var tag_button_box = document.createElement("div");
           tag_button_box.className = '';
