@@ -15,7 +15,7 @@ class settings_status {
     //Theme Mode
     $this->type = 'select';
     $this->label = __( 'Operating Mode', 'zmplugin' );
-    $this->description = __( 'In default configuration mode, all ZMTheme settings saved with the Customizer and the Template Editor are ignored (not deleted).', 'zmplugin' );
+    $this->description = __( 'In default configuration mode, all ZuestMedia Theme settings saved with the Customizer and the Template Editor are ignored (not deleted).', 'zmplugin' );
     $this->validation = 'onetwo';
     /*$this->choices = array(
         array('option'=> __( 'Minimalist (Default configuration)', 'zmplugin' ),'value'=>'1'),

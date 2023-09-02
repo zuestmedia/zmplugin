@@ -1,14 +1,14 @@
 === ZMPlugin ===
 Contributors: zuestmedia
-Stable tag: 1.0.25
+Stable tag: 1.0.26
 Tags: cookie notice, gdpr, analytics, matomo, private, smtp, mail
 Requires at least: 4.7
-Tested up to: 6.2.2
+Tested up to: 6.3.1
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Essential tools for webmasters; cookie notice, analytics integration, private mode, SMTP mail and extension for ZuestMedia themes.
+Essential tools for webmasters; cookie notice, analytics integration, private mode, SMTP mail and extension for ZuestMedia WordPress Themes.
 
 == Description ==
 
@@ -20,7 +20,7 @@ Essential tools for webmasters; cookie notice, analytics integration, private mo
 4. send WordPress system mails via SMTP server. 
 5. display options for dashboard and login form. 
 
-Furterhmore, all ZuestMedia themes based on [ZMTheme-Framework](https://zuestmedia.com/themes/) will be extended with theme settings, customizer settings and the design explorer to import starter designs.
+Furterhmore, all [ZuestMedia WordPress Themes](https://zuestmedia.com/themes/) will be extended with theme settings, customizer settings and the design explorer to import starter designs.
 
 == Plugin Features ==
 
@@ -46,10 +46,10 @@ Personalization options for the WordPress login form (wp-login.php). The login l
 Access to a selection of pre-built block patterns that can be easily inserted in the WordPress Gutenberg editor.
 
 = Block Templates <sup>*</sup> =
-ZMT themes use block templates to display content statically or dynamically. All block templates can be edited using the WordPress Gutenberg editor.
+ZuestMedia WordPress Themes use block templates to display content statically or dynamically. All block templates can be edited using the WordPress Gutenberg editor.
 
 = Customizer settings <sup>*</sup> =
-When using a WordPress theme based on the ZM theme framework, additional customizer settings are displayed.
+When using a ZuestMedia WordPress Theme, additional customizer settings are displayed.
 
 = Design Explorer <sup>*</sup> =
 The design explorer offers the possibility to import directly premade starter designs.
@@ -70,6 +70,10 @@ You can also find us on [Github](https://github.com/zuestmedia/)!
 To install ZMPlugin, navigate to WordPress Dashboard >> Plugins >> Add New. Then type "ZMPlugin" in the search box, click install and activate.
 
 == Changelog === 
+
+= 1.0.26 =
+* Update: UIKIT CSS & JS to  3.16.26
+* Update: readme description
 
 = 1.0.25 =
 * Update: readme tags, description

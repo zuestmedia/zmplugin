@@ -2,10 +2,10 @@
   /*
   Plugin Name: ZMPlugin
   Plugin URI: https://zuestmedia.com/zmplugin/
-  Description: Essential tools for webmasters; cookie notice, analytics integration, private mode, SMTP mail and extension for ZuestMedia themes.
+  Description: Essential tools for webmasters; cookie notice, analytics integration, private mode, SMTP mail and extension for ZuestMedia WordPress Themes.
   Author: ZuestMedia
   Author URI: https://zuestmedia.com/
-  Version: 1.0.25
+  Version: 1.0.26
   Text Domain: zmplugin
   Domain Path: /languages
   ZMDLID: 2myl7t6emmbu4819uojautl0m0fo2fdktoaw
