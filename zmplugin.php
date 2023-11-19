@@ -5,11 +5,11 @@
   Description: Essential tools for webmasters; cookie notice, analytics integration, private mode, SMTP mail and extension for ZuestMedia WordPress Themes.
   Author: ZuestMedia
   Author URI: https://zuestmedia.com/
-  Version: 1.0.26
+  Version: 1.0.27
   Text Domain: zmplugin
   Domain Path: /languages
   ZMDLID: 2myl7t6emmbu4819uojautl0m0fo2fdktoaw
-  ZMUPDAPI: zm
+  ZMUPDAPI: wp
   */
 
   defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
