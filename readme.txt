@@ -1,6 +1,6 @@
 === ZMPlugin ===
 Contributors: zuestmedia
-Stable tag: 1.0.27
+Stable tag: 1.0.28
 Tags: cookie notice, gdpr, analytics, matomo, private, smtp, mail
 Requires at least: 4.7
 Tested up to: 6.4.1
@@ -70,6 +70,9 @@ You can also find us on [Github](https://github.com/zuestmedia/)!
 To install ZMPlugin, navigate to WordPress Dashboard >> Plugins >> Add New. Then type "ZMPlugin" in the search box, click install and activate.
 
 == Changelog === 
+
+= 1.0.28 =
+* Update: split files in months by default in addLogfileEntry & showLogfileEntries
 
 = 1.0.27 =
 * Update: Tested up to WordPress 6.4

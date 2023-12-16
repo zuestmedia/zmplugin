@@ -316,7 +316,13 @@ class Helpers {
      * \ZMP\Plugin\Helpers::addLogfileEntry( 'test' );
      * \ZMP\Plugin\Helpers::showLogfileEntries();
      */
-    static function addLogfileEntry( $entry, $file = 'zmplugin' ){
+    static function addLogfileEntry( $entry, $file = 'zmplugin', $split = 'month' ){
+
+      if($split == 'month'){
+
+        $file = $file.'-'.date('Y-m');
+
+      }
 
       $upload_dir = wp_upload_dir();
       $upload_dir = $upload_dir['basedir'];
@@ -332,7 +338,13 @@ class Helpers {
       return $bytes;
 
     }
-    static function showLogfileEntries($file = 'zmplugin'){
+    static function showLogfileEntries($file = 'zmplugin', $split = 'month'){
+
+      if($split == 'month'){
+
+        $file = $file.'-'.date('Y-m');
+
+      }
 
       $upload_dir = wp_upload_dir();
       $upload_dir = $upload_dir['basedir'];
