@@ -50,12 +50,12 @@ class DesignExplorer {
 
     $html = NULL;
 
-    $cat_rest_request = new \ZMP\Plugin\RestRequestExternal( $this->getRestRoute().'wp/v2/categories' );
+    $cat_rest_request = new \ZMP\Plugin\RestRequestExternal( $this->getRestRoute().'wp/v2/categories?per_page=100' );
     $cat_rest_object = $cat_rest_request->getRestObjectorArray();
 
     //var_dump($cat_rest_object);
 
-    $tag_rest_request = new \ZMP\Plugin\RestRequestExternal( $this->getRestRoute().'wp/v2/tags' );
+    $tag_rest_request = new \ZMP\Plugin\RestRequestExternal( $this->getRestRoute().'wp/v2/tags?per_page=100' );
     $tag_rest_object = $tag_rest_request->getRestObjectorArray();
 
     //var_dump($tag_rest_object);
@@ -127,10 +127,10 @@ class DesignExplorer {
 
     $html = NULL;
 
-    $rest_request = new \ZMP\Plugin\RestRequestExternal( $this->getRestRoute().'wp/v2/posts' );
+    $rest_request = new \ZMP\Plugin\RestRequestExternal( $this->getRestRoute().'wp/v2/posts?per_page=100' );
     $rest_object = $rest_request->getRestObjectorArray();
 
-    $media_rest_request = new \ZMP\Plugin\RestRequestExternal( $this->getRestRoute().'wp/v2/media' );
+    $media_rest_request = new \ZMP\Plugin\RestRequestExternal( $this->getRestRoute().'wp/v2/media?per_page=100' );
     $media_rest_object = $media_rest_request->getRestObjectorArray();
 
     $filtermenu = $this->getFilterMenu();

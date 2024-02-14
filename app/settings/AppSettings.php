@@ -262,11 +262,10 @@ class AppSettings extends \ZMP\Plugin\App {
     <style type="text/css">
       #login h1 a, .login h1 a {
         background-image: url( <?php echo esc_url( $this->getLoginLogoUrl() ); ?> );
-    		height:80px;
     		width:100%;
-    		background-size: auto;
-    		background-repeat: no-repeat;
+        background-size: contain;
         <?php if( $this->getLoginLogoUrl() == false ){ ?>
+        height:auto;
         text-indent: 0;
         <?php } ?>
       }
@@ -275,7 +274,7 @@ class AppSettings extends \ZMP\Plugin\App {
 
   }
   public function addLoginLogo(){
-    if( $this->getLoginLogoTitle() ){
+    if( $this->getLoginLogoUrl() || $this->getLoginLogoTitle()){
       add_action( 'login_enqueue_scripts',  array( $this, 'LoginLogo' ) );
     }
   }
@@ -309,13 +308,13 @@ class AppSettings extends \ZMP\Plugin\App {
     }
   }
 
-  public function HelpTab( $old_help, $screen_id, $screen ){
-      $screen->remove_help_tabs();
-      return $old_help;
+  public function HelpTab(){
+    $screen = get_current_screen();
+    $screen->remove_help_tabs();
   }
   public function removeHelpTab() {
     if( $this->getRemoveHelpTabs() ){
-      add_filter( 'contextual_help', array( $this, 'HelpTab' ), 999, 3 );
+      add_action( 'admin_head', array( $this, 'HelpTab' ) );
     }
   }
 

@@ -22,7 +22,7 @@ class BlockPatternsData {
 
   public function addBlockPatterns(){
 
-    $block_patterns_categories = $this->getBlockPatternsData('wp/v2/zmbp_cat','zm_blockpatterns_category_cache');
+    $block_patterns_categories = $this->getBlockPatternsData('wp/v2/zmbp_cat?per_page=100','zm_blockpatterns_category_cache');
 
     if(is_array($block_patterns_categories) && !empty($block_patterns_categories)){
 
@@ -37,7 +37,7 @@ class BlockPatternsData {
 
     }
 
-    $block_patterns = $this->getBlockPatternsData('zmp/v1/zmblockpatterns','zm_blockpatterns_data_cache');
+    $block_patterns = $this->getBlockPatternsData('zmp/v1/zmblockpatterns?per_page=100','zm_blockpatterns_data_cache');
 
     if(is_array($block_patterns) && !empty($block_patterns)){
 

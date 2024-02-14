@@ -1,34 +1,32 @@
 === ZMPlugin ===
 Contributors: zuestmedia
-Stable tag: 1.0.28
+Stable tag: 1.0.29
 Tags: cookie notice, gdpr, analytics, matomo, private, smtp, mail
 Requires at least: 4.7
-Tested up to: 6.4.1
+Tested up to: 6.4
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Essential tools for webmasters; cookie notice, analytics integration, private mode, SMTP mail and extension for ZuestMedia WordPress Themes.
+ZMPlugin contains various essential tools for WordPress websites that every webmaster may need and is the companion plugin to our themes.
 
 == Description ==
 
-[ZMPlugin](https://zuestmedia.com/zmplugin/) is a basic plugin for WordPress websites and contains several essential tools that every webmaster needs:
+[ZMPlugin](https://zuestmedia.com/zmplugin/) offers a whole range of features that every WordPress website administrator will benefit from:
 
-1. cookie notice (GDPR compliant). 
-2. analytics integration (GA4, Tagmanager, Matomo). 
-3. private mode for websites in development or temporary forwarding/redirection. 
-4. send WordPress system mails via SMTP server. 
-5. display options for dashboard and login form. 
-
-Furterhmore, all [ZuestMedia WordPress Themes](https://zuestmedia.com/themes/) will be extended with theme settings, customizer settings and the design explorer to import starter designs.
+1. Cookie consent banner (GDPR compliant)
+2. Tracking script integration (GA4, Tagmanager, Matomo)
+3. Private mode with redirection
+4. SMTP for WordPress transactional mails 
+5. Block Patterns 
 
 == Plugin Features ==
 
-= Cookie Notice =
-Cookie Consent Banner for GDPR compliant integration of Google Analytics, Google Tag Manager and Matomo (self-hosted).
+= Cookie consent banner =
+Cookie Consent Banner for GDPR compliant use of tracking solutions. Tracking scripts will only be loaded after consent has been given.
 
-= Analytics =
-Google Analytics 4, Google Tag Manager or Matomo (self-hosted) can be integrated. GDPR compliant if configured correctly.
+= Tracking script integration =
+Google Analytics 4, Google Tag Manager or Matomo (self-hosted) can be integrated. GDPR compliant if configured with cookie consent banner.
 
 = Private Mode =
 Private mode to redirect visitors to the login form or to a page of their choice. Useful for maintenance work or not yet finished websites.
@@ -36,25 +34,29 @@ Private mode to redirect visitors to the login form or to a page of their choice
 = SMTP Mail =
 Send all mails sent via wp_mail() from your own SMTP server. Works for all system mailings and also with contact form 7.
 
+= Block Patterns =
+Access to a selection of pre-built block patterns that can be easily inserted in the WordPress Gutenberg editor.
+
 = WP Dashboard Options =
 Personalization options for the WordPress dashboard. WordPress logo, help tabs as well as footer text can be customized.
 
 = WP Login Options =
 Personalization options for the WordPress login form (wp-login.php). The login logo as well as the redirect destination can be customized.
 
-= Block Patterns =
-Access to a selection of pre-built block patterns that can be easily inserted in the WordPress Gutenberg editor.
+== Theme Companion Features ==
 
-= Block Templates <sup>*</sup> =
-ZuestMedia WordPress Themes use block templates to display content statically or dynamically. All block templates can be edited using the WordPress Gutenberg editor.
+As a companion plugin for our [WordPress Themes](https://zuestmedia.com/themes/), ZMPlugin extends your WordPress dashboard with theme settings, customizer settings and the design explorer for importing starter designs.
 
-= Customizer settings <sup>*</sup> =
-When using a ZuestMedia WordPress Theme, additional customizer settings are displayed.
+= Block Templates =
+Our Themes use block templates to display static or dynamic content. All block templates can be edited using the WordPress Gutenberg editor.
 
-= Design Explorer <sup>*</sup> =
+= Theme & Customizer settings =
+When using a ZuestMedia WordPress Theme, various new menus and settings are added to the Dashboard and Customizer for customizing the theme.
+
+= Design Explorer =
 The design explorer offers the possibility to import directly premade starter designs.
 
-<sup>*</sup> only available in combination with [ZuestMedia Themes](https://zuestmedia.com/themes/), e.g. Corporate or Modular
+Only available in combination with ZuestMedia Themes, e.g. Corporate or [Modular](https://wordpress.org/themes/zmt-modular/).
 
 == Resources ==
 
@@ -69,7 +71,14 @@ You can also find us on [Github](https://github.com/zuestmedia/)!
 = How to install ZMPlugin? =
 To install ZMPlugin, navigate to WordPress Dashboard >> Plugins >> Add New. Then type "ZMPlugin" in the search box, click install and activate.
 
+= What extensions are available? =
+The [AI Assistant](https://wordpress.org/plugins/zmp-ai-assistant/) is an extension based on ZMPlugin that allows you to interact with Open AI’s artificial intelligence directly in the WordPress dashboard. 
+
 == Changelog === 
+
+= 1.0.29 =
+* Update: UIKIT CSS & JS to 3.18.3
+* Fix: rest api requests up to 10 (now 100)...!
 
 = 1.0.28 =
 * Update: split files in months by default in addLogfileEntry & showLogfileEntries
