@@ -77,6 +77,10 @@ class ThemeImport {
 
       }
 
+      //recreate zmtheme global vars again with new imported theme_mods! so menus can be created from new data in first run not in second!   
+      //same like in theme init...   
+      new \ZMT\Theme\Prepare( $zmtheme['theme']->getOptGroup(), $zmtheme['theme']->getSettingsStatus());
+      new \ZMT\Theme\Config();
 
       //always asign nav_menu_locations by slugs or remove array if no matching menus...
       ThemeImport::updateNavMenuLocations();
