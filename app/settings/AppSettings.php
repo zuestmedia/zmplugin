@@ -404,6 +404,22 @@ class AppSettings extends \ZMP\Plugin\App {
     );
   }
 
+  public function excludeTrackingLoggedinUserTextFieldName() {
+    return '_exclude_tracking_loggedin_user';
+  }
+  public function excludeTrackingLoggedinUserDefaultValue(){
+    return false;
+  }
+  public function excludeTrackingLoggedinUser(){
+    return Helpers::getOption(
+      $this->excludeTrackingLoggedinUserTextFieldName(),
+      $this->excludeTrackingLoggedinUserDefaultValue(),
+      '2',//always checks option if >= 2
+      'option_mod',
+      $this->getOptPra().'_bool'
+    );
+  }
+
   public function getMatomoUrlTextFieldName() {
     return '_matomo_url';
   }
@@ -1124,6 +1140,11 @@ class AppSettings extends \ZMP\Plugin\App {
   }
 
   public function addCookieConsentBanner() {
+    
+    //stop execution if is admin and tracking not allowed when logged in
+    if( current_user_can('administrator') && $this->excludeTrackingLoggedinUser() == true ) {
+      return;
+    }
 
     if($this->isAnalyticsScriptActive()){
 

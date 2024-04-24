@@ -1,9 +1,9 @@
 === ZMPlugin ===
 Contributors: zuestmedia
-Stable tag: 1.0.30
+Stable tag: 1.0.31
 Tags: cookie notice, gdpr, analytics, matomo, private, smtp, mail
 Requires at least: 4.7
-Tested up to: 6.4
+Tested up to: 6.5
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -75,6 +75,11 @@ To install ZMPlugin, navigate to WordPress Dashboard >> Plugins >> Add New. Then
 The [AI Assistant](https://wordpress.org/plugins/zmp-ai-assistant/) is an extension based on ZMPlugin that allows you to interact with Open AI’s artificial intelligence directly in the WordPress dashboard. 
 
 == Changelog === 
+
+= 1.0.31 =
+* Update: UIKIT CSS & JS to 3.20.5
+* New: Theme setting added to asign template modules by page_ids (view.php)
+* New: Setting to exclude logged-in admin user from tracking
 
 = 1.0.30 =
 * Fix: Theme imports fix menu assign by slug

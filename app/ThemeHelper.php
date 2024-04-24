@@ -14,6 +14,12 @@ class ThemeHelper {
 
     $result['frontpage']    =  __( 'Front Page (front-page)', 'zmplugin' );
     $result['page']         =  __( 'Pages', 'zmplugin' );
+
+    $page_ids = get_all_page_ids();
+    foreach($page_ids as $key => $page_id){
+      $result['page_id_'.$page_id] = '└ '.get_the_title($page_id).' (ID: '.$page_id.')';
+    }
+
     $result['blogpage']     =  __( 'Blog Page (home)', 'zmplugin' );
     $result['archive']      =  __( 'Default Archive', 'zmplugin' );
     $result['category']     =  __( '└ Category Archive', 'zmplugin' );

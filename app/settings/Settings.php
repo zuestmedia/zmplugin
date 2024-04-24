@@ -187,6 +187,24 @@ class Settings {
           $template->htmlSettingsFormAccordionBetween(__('Tracking & Analytics','zmplugin'))
         );
 
+          $this->form->addField('html','<h3>'.__('General Settings', 'zmplugin').'</h3>');
+
+          $this->form->addField(
+            'select',
+              array(
+                'label'=> __('Exclude logged-in users', 'zmplugin'),
+                'class'=>'uk-select uk-form-width-large',
+                'description_toggle'=> __('Exclude logged-in users with the role administrator from tracking', 'zmplugin'),
+                'options'=>$settings_obj->no_yes,
+                'name'=>$zmplugin['app']->excludeTrackingLoggedinUserTextFieldName(),
+                'default_value'=>$zmplugin['app']->excludeTrackingLoggedinUserDefaultValue()
+              ),
+              'option_mod',//type
+              '_bool',//optionsgroup + "_option_mod_name"
+              'boolarray'
+          );
+
+
           $this->form->addField('html','<h3>'.__('Matomo', 'zmplugin').'</h3>');
           $this->form->addField('html','<p>'.__('Only works with self-hosted Matomo version.', 'zmplugin').'</p>');
 
