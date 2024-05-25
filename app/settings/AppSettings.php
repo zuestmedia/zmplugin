@@ -910,7 +910,7 @@ class AppSettings extends \ZMP\Plugin\App {
     //mato noscript tag
     if( $this->getMatomoUrl() && $this->getMatomoSiteId() ){
       ?>
-        <noscript><img src="<?php echo esc_url( $this->getMatomoUrl() ); ?>matomo.php?idsite=<?php echo esc_attr( $this->getMatomoSiteId() ); ?>&amp;rec=1" style="border:0;" /></noscript>
+        <noscript><img src="<?php echo esc_url( $this->getMatomoUrl() ); ?>matomo.php?idsite=<?php echo esc_attr( $this->getMatomoSiteId() ); ?>&amp;rec=1" style="border:0;" alt=""/></noscript>
       <?php
     }
 
@@ -928,6 +928,17 @@ class AppSettings extends \ZMP\Plugin\App {
       * ga4 gtag function has no effect if script is not loaded, so add to head if g4a is activated even if no consent yet...
       */
     ?>    
+
+    <?php if( $this->getMatomoUrl() && $this->getMatomoSiteId() ){  //preload Matomoscript 
+            
+      $parsed_matomo_url_array = parse_url( $this->getMatomoUrl() );
+      
+      ?>
+
+      <link rel="dns-prefetch" href="//<?php echo esc_attr( $parsed_matomo_url_array['host'] ); ?>">
+      <link rel="preconnect" href="//<?php echo esc_attr( $parsed_matomo_url_array['host'] ); ?>">
+
+    <?php } ?>
 
     <?php if($this->getG4AId()){ ?>
 
