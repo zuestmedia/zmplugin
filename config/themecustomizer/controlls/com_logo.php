@@ -2,6 +2,8 @@
 
 namespace ZMP\Plugin\Config\ThemeCustomizer\Controlls;
 
+#[\AllowDynamicProperties]
+
 class com_logo {
 
   function __construct(){

@@ -5,6 +5,7 @@ namespace ZMP\Plugin\Settings;
 class SettingsInit {
 
     private $admin_menu;
+    private $admin_menu2;
 
     function __construct( ){
 

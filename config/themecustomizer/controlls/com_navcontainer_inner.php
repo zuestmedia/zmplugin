@@ -2,6 +2,8 @@
 
 namespace ZMP\Plugin\Config\ThemeCustomizer\Controlls;
 
+#[\AllowDynamicProperties]
+
 class com_navcontainer_inner {
 
   function __construct(){

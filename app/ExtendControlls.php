@@ -5,6 +5,8 @@ namespace ZMP\Plugin;
 use ZMT\Theme\Namespaces;
 use ZMT\Theme\Build;
 
+#[\AllowDynamicProperties]
+
 class ExtendControlls {
 
     function __construct(){

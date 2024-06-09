@@ -2,6 +2,8 @@
 
 namespace ZMP\Plugin\Config\ThemeCustomizer;
 
+#[\AllowDynamicProperties]
+
 class section_headers {
 
   function __construct(){

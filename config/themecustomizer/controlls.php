@@ -68,6 +68,7 @@ use ZMP\Plugin\Config\ThemeCustomizer\Controlls\_class_child_width;
 use ZMP\Plugin\Config\ThemeCustomizer\Controlls\_class_image_background_color;
 use ZMP\Plugin\Config\ThemeCustomizer\Controlls\_class_image_container_size;
 
+#[\AllowDynamicProperties]
 
 class controlls extends \ZMP\Plugin\ExtendControlls {
 

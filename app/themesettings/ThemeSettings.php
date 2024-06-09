@@ -123,10 +123,18 @@ class ThemeSettings {
             $zmtheme['default_admin_template']->htmlSettingsFormAccordionBetween( __('Template Editor','zmplugin') )
           );
 
-          $zmform = $this->getThemeSettingsFormThemeConfig( $zmform );
+          if( method_exists($this,'getThemeSettingsFormThemeConfig') ){
 
-          //htmlSettingsFormAccordionBetween placed inside foreach loop of components!
-          $zmform = $this->getThemeSettingsFormComponentsObjects( $zmform );
+            $zmform = $this->getThemeSettingsFormThemeConfig( $zmform );
+
+          }
+
+          if( method_exists($this,'getThemeSettingsFormComponentsObjects') ){
+
+            //htmlSettingsFormAccordionBetween placed inside foreach loop of components!
+            $zmform = $this->getThemeSettingsFormComponentsObjects( $zmform );
+
+          }
 
         }
 

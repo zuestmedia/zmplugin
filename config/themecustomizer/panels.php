@@ -2,6 +2,8 @@
 
 namespace ZMP\Plugin\Config\ThemeCustomizer;
 
+#[\AllowDynamicProperties]
+
 class panels {
 
   function __construct(){

@@ -2,6 +2,8 @@
 
 namespace ZMP\Plugin\Config\ThemeCustomizer\Controlls;
 
+#[\AllowDynamicProperties]
+
 class com_main_section_block_template extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls\com_section_block_template {
 
   function __construct(){
