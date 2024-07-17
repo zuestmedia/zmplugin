@@ -910,7 +910,7 @@ class AppSettings extends \ZMP\Plugin\App {
     //mato noscript tag
     if( $this->getMatomoUrl() && $this->getMatomoSiteId() ){
       ?>
-        <noscript><img src="<?php echo esc_url( $this->getMatomoUrl() ); ?>matomo.php?idsite=<?php echo esc_attr( $this->getMatomoSiteId() ); ?>&amp;rec=1" style="border:0;" alt=""/></noscript>
+        <noscript><img src="<?php echo esc_url( $this->getMatomoUrl() ); ?>matomo.php?idsite=<?php echo esc_attr( $this->getMatomoSiteId() ); ?>&amp;rec=1" style="border:0;" alt="matomopixel"/></noscript>
       <?php
     }
 
