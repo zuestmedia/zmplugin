@@ -5,7 +5,7 @@
   Description: ZMPlugin contains various essential tools for WordPress websites that every webmaster may need and is the companion plugin to our themes.
   Author: ZuestMedia
   Author URI: https://zuestmedia.com/
-  Version: 1.0.34
+  Version: 1.0.35
   Text Domain: zmplugin
   Domain Path: /languages
   ZMDLID: 2myl7t6emmbu4819uojautl0m0fo2fdktoaw

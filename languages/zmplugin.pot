@@ -1,50 +1,44 @@
+# Copyright (C) 2024 ZuestMedia
+# This file is distributed under the same license as the ZMPlugin plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: zmplugin-0.9.3\n"
+"Project-Id-Version: ZMPlugin 1.0.34\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/zmplugin\n"
-"POT-Creation-Date: 2024-07-23T16:41:48+00:00\n"
-"PO-Revision-Date: 2024-07-24 11:43+0200\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: de_CH\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.4.4\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-KeywordsList: __\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: .git\n"
+"POT-Creation-Date: 2024-07-23T16:41:48+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: zmplugin\n"
 
 #. Plugin Name of the plugin
-#: zmplugin.php config/config.php:12
+#: zmplugin.php
+#: config/config.php:12
 msgid "ZMPlugin"
-msgstr "ZMPlugin"
+msgstr ""
 
 #. Plugin URI of the plugin
 #: zmplugin.php
 msgid "https://zuestmedia.com/zmplugin/"
-msgstr "https://zuestmedia.ch/zmplugin/"
+msgstr ""
 
 #. Description of the plugin
 #: zmplugin.php
-msgid ""
-"ZMPlugin contains various essential tools for WordPress websites that every "
-"webmaster may need and is the companion plugin to our themes."
+msgid "ZMPlugin contains various essential tools for WordPress websites that every webmaster may need and is the companion plugin to our themes."
 msgstr ""
-"ZMPlugin enthält verschiedene essentielle Tools für WordPress-Websites, die "
-"jeder Webmaster benötigt und ist das Begleit-Plugin zu unseren Themes."
 
 #. Author of the plugin
 #: zmplugin.php
 msgid "ZuestMedia"
-msgstr "ZuestMedia"
+msgstr ""
 
 #. Author URI of the plugin
 #: zmplugin.php
 msgid "https://zuestmedia.com/"
-msgstr "https://zuestmedia.ch/"
+msgstr ""
 
 #: app/BlockPatterns.php:34
 msgid "My Patterns"
@@ -53,9 +47,9 @@ msgstr ""
 #: app/FormSettings.php:30
 msgid "There have been errors! Please check your input again."
 msgstr ""
-"Es sind Fehler aufgetreten! Bitte überprüfen Sie Ihre Eingaben noch einmal."
 
-#: app/PluginHelper.php:157 config/appsettings.php:15
+#: app/PluginHelper.php:157
+#: config/appsettings.php:15
 msgid "Inactive"
 msgstr ""
 
@@ -64,32 +58,30 @@ msgid "Plugin Website"
 msgstr ""
 
 #: app/settings/AppSettings.php:363
-msgid ""
-"This website uses cookies to provide you with a better and more enjoyable "
-"browsing experience on the website."
+msgid "This website uses cookies to provide you with a better and more enjoyable browsing experience on the website."
 msgstr ""
-"Diese Website verwendet Cookies, um Ihnen ein besseres und angenehmeres "
-"Surferlebnis auf der Website zu ermöglichen."
 
-#: app/settings/AppSettings.php:780 app/settings/AppSettings.php:1149
+#: app/settings/AppSettings.php:780
+#: app/settings/AppSettings.php:1149
 msgid "Skip to Cookie Consent"
-msgstr "Zur Cookie-Einverständniserklärung springen"
+msgstr ""
 
 #: app/settings/AppSettings.php:792
 msgid "Cookie consent"
-msgstr "Cookie-Einverständniserklärung"
+msgstr ""
 
-#: app/settings/AppSettings.php:804 app/settings/AppSettings.php:811
+#: app/settings/AppSettings.php:804
+#: app/settings/AppSettings.php:811
 msgid "Privacy policy"
-msgstr "Datenschutzerklärung"
+msgstr ""
 
 #: app/settings/AppSettings.php:819
 msgid "✓ Ok, I agree to cookies"
-msgstr "✓ Ok, einverstanden"
+msgstr ""
 
 #: app/settings/AppSettings.php:825
 msgid "Only necessary cookies"
-msgstr "Nur notwendige Cookies"
+msgstr ""
 
 #: app/settings/Dashboard.php:24
 msgid "Overview"
@@ -103,22 +95,22 @@ msgstr ""
 msgid "Manage"
 msgstr ""
 
-#: app/settings/Dashboard.php:33 app/themesettings/BlockTemplates.php:83
+#: app/settings/Dashboard.php:33
+#: app/themesettings/BlockTemplates.php:83
 msgid "Add new"
 msgstr ""
 
 #: app/settings/Dashboard.php:42
 msgid "You have used %1$s of %2$s available Slots for Add-ons."
-msgstr "Sie haben %1$s von %2$s verfügbaren Slots für Add-ons verwendet."
+msgstr ""
 
-#: app/settings/Dashboard.php:46 config/settings.php:17
+#: app/settings/Dashboard.php:46
+#: config/settings.php:17
 msgid "About ZMPlugin"
 msgstr ""
 
 #: app/settings/Dashboard.php:49
-msgid ""
-"ZMPlugin offers various website management and configuration settings and "
-"extends the customizer functionality for themes based on ZMTheme-Framework."
+msgid "ZMPlugin offers various website management and configuration settings and extends the customizer functionality for themes based on ZMTheme-Framework."
 msgstr ""
 
 #: app/settings/Settings.php:18
@@ -142,9 +134,7 @@ msgid "Cookie Consent Banner"
 msgstr ""
 
 #: app/settings/Settings.php:53
-msgid ""
-"Load \"Tracking & Analytics\" Scripts only after Cookie Consent Banner has "
-"been accepted."
+msgid "Load \"Tracking & Analytics\" Scripts only after Cookie Consent Banner has been accepted."
 msgstr ""
 
 #: app/settings/Settings.php:58
@@ -164,9 +154,7 @@ msgid "Cookie Domain (optional)"
 msgstr ""
 
 #: app/settings/Settings.php:117
-msgid ""
-"Set the cookie domain, eg. example.com, to use the cookie consent for "
-"example.com and all subdomains, eg. subdomain.example.com."
+msgid "Set the cookie domain, eg. example.com, to use the cookie consent for example.com and all subdomains, eg. subdomain.example.com."
 msgstr ""
 
 #: app/settings/Settings.php:129
@@ -178,46 +166,31 @@ msgid "Redirect Visitors"
 msgstr ""
 
 #: app/settings/Settings.php:137
-msgid ""
-"When you activate this option, all non-logged-in site visitors will be "
-"redirected to login-page or to a custom redirect url."
+msgid "When you activate this option, all non-logged-in site visitors will be redirected to login-page or to a custom redirect url."
 msgstr ""
-"Wenn Sie den privaten Modus aktivieren, werden alle nicht angemeldeten "
-"Besucher der Website zur Login-Seite oder zu einer benutzerdefinierten Url "
-"umgeleitet."
 
 #: app/settings/Settings.php:154
 msgid "Custom Redirect URL"
 msgstr ""
 
 #: app/settings/Settings.php:155
-msgid ""
-"By default visitors will be redirected to wp-login page. Place a custom URL "
-"where you want your visitors to land if not on login page. Don't forget to "
-"exclude this page."
+msgid "By default visitors will be redirected to wp-login page. Place a custom URL where you want your visitors to land if not on login page. Don't forget to exclude this page."
 msgstr ""
-"Standardmäßig werden die Besucher auf die wp-Login-Seite umgeleitet. "
-"Platzieren Sie eine benutzerdefinierte URL, wo Ihre Besucher landen sollen, "
-"wenn sie nicht auf der Login-Seite sind. Vergessen Sie nicht, diese Seite "
-"auszuschließen."
 
 #: app/settings/Settings.php:171
 msgid "Excluded Pages"
 msgstr ""
 
 #: app/settings/Settings.php:172
-msgid ""
-"Add a commaseparated list of pages, that will be excluded from private mode. "
-"Use page-id's or page-slug's."
+msgid "Add a commaseparated list of pages, that will be excluded from private mode. Use page-id's or page-slug's."
 msgstr ""
-"Fügen Sie eine kommagetrennte Liste von Seiten hinzu, die vom privaten Modus "
-"ausgeschlossen werden sollen. Verwenden Sie page-id's oder page-slug's."
 
 #: app/settings/Settings.php:187
 msgid "Tracking & Analytics"
 msgstr ""
 
-#: app/settings/Settings.php:190 app/themesettings/ThemeSettings.php:114
+#: app/settings/Settings.php:190
+#: app/themesettings/ThemeSettings.php:114
 msgid "General Settings"
 msgstr ""
 
@@ -270,12 +243,11 @@ msgid "No Cookie Tracking?"
 msgstr ""
 
 #: app/settings/Settings.php:324
-msgid ""
-"Disable cookies, to load Matomo Analytics GDPR compliant without cookie "
-"consent <br> _paq.push([\"disableCookies\"]);"
+msgid "Disable cookies, to load Matomo Analytics GDPR compliant without cookie consent <br> _paq.push([\"disableCookies\"]);"
 msgstr ""
 
-#: app/settings/Settings.php:337 app/settings/Settings.php:369
+#: app/settings/Settings.php:337
+#: app/settings/Settings.php:369
 #: app/settings/Settings.php:401
 msgid "Exclude from cookie consent"
 msgstr ""
@@ -329,9 +301,7 @@ msgid "WP Mail (SMTP)"
 msgstr ""
 
 #: app/settings/Settings.php:466
-msgid ""
-"Activate smtp, to send all Mails sent via wp_mail (function) through your "
-"custom smtp server. Works for all WP system mailings and with ContactForm7."
+msgid "Activate smtp, to send all Mails sent via wp_mail (function) through your custom smtp server. Works for all WP system mailings and with ContactForm7."
 msgstr ""
 
 #: app/settings/Settings.php:471
@@ -402,21 +372,26 @@ msgstr ""
 msgid "Redirect after Login to Home"
 msgstr ""
 
-#: app/settings/SettingsInit.php:19 app/settings/SettingsInit.php:28
+#: app/settings/SettingsInit.php:19
+#: app/settings/SettingsInit.php:28
 msgid "Dashboard"
 msgstr ""
 
-#: app/settings/SettingsInit.php:49 app/settings/SettingsInit.php:53
+#: app/settings/SettingsInit.php:49
+#: app/settings/SettingsInit.php:53
 #: config/themecustomizer/section_headers.php:15
 msgid "Settings"
 msgstr ""
 
-#: app/SettingsTemplate.php:105 app/themesettings/DesignExplorer.php:40
-#: config/settings.php:19 config/themesettings/defaults.php:30
+#: app/SettingsTemplate.php:105
+#: app/themesettings/DesignExplorer.php:40
+#: config/settings.php:19
+#: config/themesettings/defaults.php:30
 msgid "Pro"
 msgstr ""
 
-#: app/SettingsTemplate.php:259 config/themesettings/defaults.php:36
+#: app/SettingsTemplate.php:259
+#: config/themesettings/defaults.php:36
 msgid "Save Changes"
 msgstr ""
 
@@ -672,13 +647,8 @@ msgid "Note"
 msgstr ""
 
 #: app/themesettings/DesignExplorer.php:251
-msgid ""
-"A full install will overwrite and/or delete all existing widget blocks. If "
-"you don't want to lose your widget blocks, chose only settings install."
+msgid "A full install will overwrite and/or delete all existing widget blocks. If you don't want to lose your widget blocks, chose only settings install."
 msgstr ""
-"Bei einer vollständigen Installation werden alle vorhandenen Widgetblöcke "
-"überschrieben und/oder gelöscht. Wenn Sie Ihre Widget-Blöcke nicht verlieren "
-"möchten, wählen Sie nur die Installation der Einstellungen."
 
 #: app/themesettings/DesignExplorer.php:251
 msgid "Get help here"
@@ -702,9 +672,7 @@ msgid "Are you sure?"
 msgstr ""
 
 #: app/themesettings/ThemeSettings.php:57
-msgid ""
-"Discover all one-click installable designs for your ZMTheme here. The "
-"designs can be installed with or without blocks/widgets."
+msgid "Discover all one-click installable designs for your ZMTheme here. The designs can be installed with or without blocks/widgets."
 msgstr ""
 
 #: app/themesettings/ThemeSettings.php:78
@@ -730,10 +698,7 @@ msgid "Template Editor"
 msgstr ""
 
 #: app/themesettings/ThemeSettings.php:212
-msgid ""
-"Depending on the color palette in use, different CSS options can be used. If "
-"you use only light or dark background colors, the respective option may be "
-"chosen to reduce the CSS file size."
+msgid "Depending on the color palette in use, different CSS options can be used. If you use only light or dark background colors, the respective option may be chosen to reduce the CSS file size."
 msgstr ""
 
 #: app/themesettings/ThemeSettings.php:218
@@ -749,14 +714,7 @@ msgid "Light Colors"
 msgstr ""
 
 #: app/themesettings/ThemeSettingsInit.php:57
-msgid ""
-"You can run your ZM theme in default mode without custom settings options or "
-"choose between simple, professional or developer mode. Your theme can be "
-"completely customized to your needs. The higher the settings mode, the more "
-"style and settings options you have. For an easy start, we recommend using "
-"simple mode and a starter design from Design Explorer so you can begin with "
-"a stable and clean base. After that, all blocks as well as modules can be "
-"customized, extended or deleted. "
+msgid "You can run your ZM theme in default mode without custom settings options or choose between simple, professional or developer mode. Your theme can be completely customized to your needs. The higher the settings mode, the more style and settings options you have. For an easy start, we recommend using simple mode and a starter design from Design Explorer so you can begin with a stable and clean base. After that, all blocks as well as modules can be customized, extended or deleted. "
 msgstr ""
 
 #: config/appsettings.php:16
@@ -783,11 +741,13 @@ msgstr ""
 msgid "Need Help?"
 msgstr ""
 
-#: config/settings.php:18 config/themesettings/defaults.php:29
+#: config/settings.php:18
+#: config/themesettings/defaults.php:29
 msgid "Documentation"
 msgstr ""
 
-#: config/settings.php:22 config/themesettings/defaults.php:24
+#: config/settings.php:22
+#: config/themesettings/defaults.php:24
 msgid "<b>Version:</b> %s"
 msgstr ""
 
@@ -991,12 +951,8 @@ msgid "Edit Body Settings."
 msgstr ""
 
 #: config/themecustomizer/controlls/com_body.php:19
-msgid ""
-"The Default Body Font Size is the base-size of all other Fonts (1rem is "
-"equal to \"Global Body Font Size\")."
+msgid "The Default Body Font Size is the base-size of all other Fonts (1rem is equal to \"Global Body Font Size\")."
 msgstr ""
-"Die Standardgröße der Schriftart ist die Basisgröße aller anderen "
-"Schriftarten (1rem entspricht der \"Globalen Größe der Schriftart\")."
 
 #: config/themecustomizer/controlls/com_body.php:26
 msgid "Text Lead"
@@ -1177,9 +1133,7 @@ msgid "Comments"
 msgstr ""
 
 #: config/themecustomizer/controlls/com_comments.php:13
-msgid ""
-"Change Comment Settings in <a href=\"javascript:wp.customize."
-"section( 'comments__commentscontainer' ).focus();\">\"ZMTheme: Comments\"</a>"
+msgid "Change Comment Settings in <a href=\"javascript:wp.customize.section( 'comments__commentscontainer' ).focus();\">\"ZMTheme: Comments\"</a>"
 msgstr ""
 
 #: config/themecustomizer/controlls/com_commentscontainer.php:12
@@ -1447,9 +1401,7 @@ msgid "Date Format:"
 msgstr ""
 
 #: config/themecustomizer/controlls/date_format.php:12
-msgid ""
-"Use PHP date function to display date and/or time in custom format. Eg. \"F "
-"j, Y, g:i a\" to get \"March 10, 2001, 5:16 pm\"."
+msgid "Use PHP date function to display date and/or time in custom format. Eg. \"F j, Y, g:i a\" to get \"March 10, 2001, 5:16 pm\"."
 msgstr ""
 
 #: config/themecustomizer/controlls/excerpt.php:11
@@ -1998,11 +1950,7 @@ msgid "Template:"
 msgstr ""
 
 #: config/themecustomizer/controlls/template_part.php:12
-msgid ""
-"You can choose custom static templates here, if there are files in template-"
-"parts folder. Checkout the example! <b>Note:</b> Be aware that static "
-"templates do not support all settings in customizer as the sortable function "
-"eg."
+msgid "You can choose custom static templates here, if there are files in template-parts folder. Checkout the example! <b>Note:</b> Be aware that static templates do not support all settings in customizer as the sortable function eg."
 msgstr ""
 
 #: config/themecustomizer/controlls/template_part.php:14
@@ -2060,9 +2008,7 @@ msgid "Heading 6"
 msgstr ""
 
 #: config/themecustomizer/controlls/title_sprintf.php:12
-msgid ""
-"Use the sprintf() variable %s to get the archive name. Leave empty to get "
-"default preformated WordPress values."
+msgid "Use the sprintf() variable %s to get the archive name. Leave empty to get default preformated WordPress values."
 msgstr ""
 
 #: config/themecustomizer/controlls/view_status.php:11
@@ -2070,8 +2016,7 @@ msgid "Display Settings:"
 msgstr ""
 
 #: config/themecustomizer/controlls/view_status.php:12
-msgid ""
-"Globally show or hide sections or choose out of the custom selection fields."
+msgid "Globally show or hide sections or choose out of the custom selection fields."
 msgstr ""
 
 #: config/themecustomizer/controlls/view_status.php:16
@@ -4441,8 +4386,7 @@ msgid "Author box json:"
 msgstr ""
 
 #: config/themecustomizer/controlls/_json.php:42
-msgid ""
-"Available variables to get data: __image__, __title__, __link__, __text__."
+msgid "Available variables to get data: __image__, __title__, __link__, __text__."
 msgstr ""
 
 #: config/themecustomizer/controlls/_json.php:56
@@ -4450,9 +4394,7 @@ msgid "Query Args:"
 msgstr ""
 
 #: config/themecustomizer/controlls/_json.php:57
-msgid ""
-"Add here your custom WP_Query in JSON Format. The simplest way is to use an "
-"online WP_Query Generator."
+msgid "Add here your custom WP_Query in JSON Format. The simplest way is to use an online WP_Query Generator."
 msgstr ""
 
 #: config/themecustomizer/controlls/_json.php:65
@@ -4528,9 +4470,7 @@ msgid "Logo Wrapper:"
 msgstr ""
 
 #: config/themecustomizer/controlls/_json.php:174
-msgid ""
-"The variable %1$s gets the site-title, %2$s is used for subtitle. Eg. %1$s - "
-"%2$s displays YOUR-SITE-TITLE - YOUR-SUBTITLE."
+msgid "The variable %1$s gets the site-title, %2$s is used for subtitle. Eg. %1$s - %2$s displays YOUR-SITE-TITLE - YOUR-SUBTITLE."
 msgstr ""
 
 #: config/themecustomizer/controlls/_json.php:181
@@ -4554,9 +4494,7 @@ msgid "Meta Key:"
 msgstr ""
 
 #: config/themecustomizer/controlls/_text.php:11
-msgid ""
-"Change text. <b>Note:</b> Please use translation files if you wish to make "
-"your site multilingual."
+msgid "Change text. <b>Note:</b> Please use translation files if you wish to make your site multilingual."
 msgstr ""
 
 #: config/themecustomizer/controlls/_text.php:19
@@ -4568,9 +4506,7 @@ msgid "Use the sprintf() variables %1$s and %2$s to display date and/or time."
 msgstr ""
 
 #: config/themecustomizer/controlls/_text.php:25
-msgid ""
-"Use PHP date function to display date in custom format. Eg. \"F j, Y\" to "
-"get \"March 10, 2001\"."
+msgid "Use PHP date function to display date in custom format. Eg. \"F j, Y\" to get \"March 10, 2001\"."
 msgstr ""
 
 #: config/themecustomizer/controlls/_text.php:29
@@ -4578,9 +4514,7 @@ msgid "Time Format:"
 msgstr ""
 
 #: config/themecustomizer/controlls/_text.php:30
-msgid ""
-"Use PHP date function to display time in custom format. Eg. \"g:i a\" to get "
-"\"5:16 pm\"."
+msgid "Use PHP date function to display time in custom format. Eg. \"g:i a\" to get \"5:16 pm\"."
 msgstr ""
 
 #: config/themecustomizer/controlls/_textarea.php:11
@@ -4644,9 +4578,7 @@ msgid "Sections: "
 msgstr ""
 
 #: config/themecustomizer/panels.php:32
-msgid ""
-"Section templates: The header, center and footer of this themes consists of "
-"sections. Sort, edit and style sections here."
+msgid "Section templates: The header, center and footer of this themes consists of sections. Sort, edit and style sections here."
 msgstr ""
 
 #: config/themecustomizer/panels.php:38
@@ -4730,9 +4662,7 @@ msgid "General"
 msgstr ""
 
 #: config/themesettings/defaults.php:20
-msgid ""
-"If you need to, you can even edit all theme settings programmaticaly by "
-"creating and editing module or config files in your child theme :)"
+msgid "If you need to, you can even edit all theme settings programmaticaly by creating and editing module or config files in your child theme :)"
 msgstr ""
 
 #: config/themesettings/defaults.php:22
@@ -4756,16 +4686,8 @@ msgid "Operating Mode"
 msgstr ""
 
 #: config/themesettings/settings_status.php:18
-#, fuzzy
-#| msgid ""
-#| "In default configuration mode, all ZMTheme settings saved with the "
-#| "Customizer and the Template Editor are ignored (not deleted)."
-msgid ""
-"In default configuration mode, all ZuestMedia Theme settings saved with the "
-"Customizer and the Template Editor are ignored (not deleted)."
+msgid "In default configuration mode, all ZuestMedia Theme settings saved with the Customizer and the Template Editor are ignored (not deleted)."
 msgstr ""
-"Im Theme-Modus Standardkonfiguration werden alle mit dem Customizer "
-"gespeicherten ZMTheme-Einstellungen ignoriert (nicht gelöscht)."
 
 #: config/themesettings/settings_status.php:25
 msgid "Default configuration (No additional options)"
@@ -4774,49 +4696,3 @@ msgstr ""
 #: config/themesettings/settings_status.php:26
 msgid "Simple settings (No HTML or CSS knowledge necessary)"
 msgstr ""
-
-#~ msgid "Reject"
-#~ msgstr "Ablehnen"
-
-#~ msgid ""
-#~ "By clicking Accept, you accept the storing of cookies on your device to "
-#~ "enhance site navigation, analyze site usage, and assist in our marketing "
-#~ "efforts."
-#~ msgstr ""
-#~ "Wenn Sie auf Akzeptieren klicken, akzeptieren Sie Cookies auf Ihrem "
-#~ "Gerät, um die Nutzung zu analysieren und unsere Marketingaktivitäten zu "
-#~ "unterstützen."
-
-#~ msgid "✓ Accept"
-#~ msgstr "✓ Akzeptieren"
-
-#~ msgid "✗ Decline"
-#~ msgstr "✗ Ablehnen"
-
-#~ msgid ""
-#~ "ZMPlugin contains a set of helper functions and options to customize your "
-#~ "website and manage some WordPress core features. Furthermore it's the "
-#~ "base of all ZMPlugin-Addons and adds ZMTheme settings and customizer "
-#~ "controlls."
-#~ msgstr ""
-#~ "ZMPlugin enthält eine Reihe von Hilfsfunktionen und Optionen zur "
-#~ "Anpassung Ihrer Website und zur Verwaltung einiger WordPress-"
-#~ "Kernfunktionen. Außerdem ist es die Basis aller ZMPlugin-Addons und fügt "
-#~ "ZMTheme-Einstellungen und Customizer-Kontrollen hinzu."
-
-#~ msgid ""
-#~ "In short, every part of ZMT theme is editable! The longer Version: All "
-#~ "ZMT modules can be easily customized via the WP-Customizer. All ZMT "
-#~ "themes are completly modular and configurable through the ZMPlugin "
-#~ "template editor. The template editor lets you create templates for each "
-#~ "posttype, archive, taxonomy you are using. Also you can edit and create "
-#~ "custom templates for navigation, offcanvas-containers and more."
-#~ msgstr ""
-#~ "Kurz gesagt, jeder Teil des ZMT-Themas ist bearbeitbar! Die längere "
-#~ "Version: Alle ZMT-Module können einfach über den WP-Customizer angepasst "
-#~ "werden. Alle ZMT-Themes sind vollständig modular und über den ZMPlugin "
-#~ "Template-Editor konfigurierbar. Mit dem Template-Editor können Sie "
-#~ "Templates für jeden Posttyp, jedes Archiv und jede Taxonomie, die Sie "
-#~ "verwenden, erstellen. Außerdem können Sie benutzerdefinierte Vorlagen für "
-#~ "die Navigation, Off-Canvas-Container und vieles mehr erstellen und "
-#~ "bearbeiten."

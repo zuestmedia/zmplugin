@@ -134,7 +134,7 @@ class BlockTemplates {
     		"rewrite" => false,
     		"query_var" => true,
     		"menu_icon" => "dashicons-block-default",
-    		"supports" => [ "title", "editor" ],
+    		"supports" => [ "title", "editor", "revisions" ],
     		"show_in_graphql" => false,
     	];
 
