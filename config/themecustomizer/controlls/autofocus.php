@@ -10,7 +10,7 @@ class autofocus extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls\BuildSingle
     $this->type = 'text';
     $this->description = __( 'Autofocus', 'zmplugin' );
     //$this->input_attrs = array('disabled' => 'disabled');
-    $this->validation = 'bool';
+    $this->validation = 'onetwo';
 
   }
 
