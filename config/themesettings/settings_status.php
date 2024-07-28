@@ -14,17 +14,24 @@ class settings_status {
 
     //Theme Mode
     $this->type = 'select';
-    $this->label = __( 'Operating Mode', 'zmplugin' );
-    $this->description = __( 'In default configuration mode, all ZuestMedia Theme settings saved with the Customizer and the Template Editor are ignored (not deleted).', 'zmplugin' );
+    $this->label = __( 'Mode', 'zmplugin' );
+    $this->description = __( 'In default mode, all theme settings saved with the Customizer and the template editor are ignored (not deleted).', 'zmplugin' );
+    
+    /*
+    //to reactivate restricted settings mode; in ZMPro config/themesettings/Buildobject -> reactivate settings_status
     $this->validation = 'onetwo';
-    /*$this->choices = array(
-        array('option'=> __( 'Minimalist (Default configuration)', 'zmplugin' ),'value'=>'1'),
-        array('option'=> __( 'Advanced (Customizer settings)', 'zmplugin' ),'value'=>'2'),
-      );*/
     $this->choices = array(
         array('option'=> __( 'Default configuration (No additional options)', 'zmplugin' ),'value'=>'1'),
         array('option'=> __( 'Simple settings (No HTML or CSS knowledge necessary)', 'zmplugin' ),'value'=>'2'),
-      );
+      );*/
+
+    $this->validation = 'int';
+    $this->choices = array(
+      array('option'=> __( 'Default', 'zmplugin' ),'value'=>'1'),
+      array('option'=> __( 'Simple', 'zmplugin' ),'value'=>'2'),
+      array('option'=> __( 'Professional', 'zmplugin' ),'value'=>'3'),
+      array('option'=> __( 'Developer', 'zmplugin' ),'value'=>'4'),
+    );
 
   }
 

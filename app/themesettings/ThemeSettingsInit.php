@@ -54,7 +54,7 @@ class ThemeSettingsInit {
         $zmtheme['default_admin_template']->setDisplayName( $zmtheme['theme']->getDisplayName() );
         $zmtheme['default_admin_template']->setTitle( __('Theme Settings', 'zmplugin') );
         //$zmtheme['default_admin_template']->setDescr( __('In short, every part of ZMT theme is editable! The longer Version: All ZMT modules can be easily customized via the WP-Customizer. All ZMT themes are completly modular and configurable through the ZMPlugin template editor. The template editor lets you create templates for each posttype, archive, taxonomy you are using. Also you can edit and create custom templates for navigation, offcanvas-containers and more.', 'zmplugin') );
-        $zmtheme['default_admin_template']->setDescr( __('You can run your ZM theme in default mode without custom settings options or choose between simple, professional or developer mode. Your theme can be completely customized to your needs. The higher the settings mode, the more style and settings options you have. For an easy start, we recommend using simple mode and a starter design from Design Explorer so you can begin with a stable and clean base. After that, all blocks as well as modules can be customized, extended or deleted. ', 'zmplugin') );
+        //$zmtheme['default_admin_template']->setDescr( __('You can run your ZM theme in default mode without custom settings options or choose between simple, professional or developer mode. Your theme can be completely customized to your needs. The higher the settings mode, the more style and settings options you have. For an easy start, we recommend using simple mode and a starter design from Design Explorer so you can begin with a stable and clean base. After that, all blocks as well as modules can be customized, extended or deleted. ', 'zmplugin') );
         $zmtheme['default_admin_template']->setInfoBoxTitle( $theme_settings_obj->defaults->info_box_title );
         $zmtheme['default_admin_template']->setInfoBoxLinks( $theme_settings_obj->defaults->info_box_links );
         //$zmtheme['default_admin_template']->setInfoBoxHTML($infoboxhtml);//optional
@@ -63,7 +63,7 @@ class ThemeSettingsInit {
 
 
       //load premium css n scripts if zmpro is activated
-      if( $zmtheme['theme']->getSettingsStatus() >= 3 && \ZMP\Plugin\PluginHelper::isPremiumVersion() ){
+      if( $zmtheme['theme']->getSettingsStatus() >= 2 && \ZMP\Plugin\PluginHelper::isPremiumVersion() ){
 
         $zmthemeadminpremium = new \ZMP\Pro\ThemeSettings\ThemeSettingsInit();
 

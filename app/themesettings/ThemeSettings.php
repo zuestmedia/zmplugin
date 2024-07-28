@@ -54,7 +54,7 @@ class ThemeSettings {
         $impexpmenu->setSubMenuPage( $template->htmlAdminMenuStart() );
 
           //$impexpmenu->setSubMenuPage('<p>Happy Browsing</p>');
-          $impexpmenu->setSubMenuPage( __('Discover all one-click installable designs for your ZMTheme here. The designs can be installed with or without blocks/widgets.', 'zmplugin') );
+          $impexpmenu->setSubMenuPage( __('Discover all single-click installable designs here. Be aware that existing widgets are overwritten with a full install.', 'zmplugin') );
           $impexpmenu->setSubMenuPage('<div>'.$desing_explorer->getCachedHTML().'</div>');
 
         $impexpmenu->setSubMenuPage( $template->htmlAdminMenuEnd() );
@@ -106,6 +106,11 @@ class ThemeSettings {
         $zmform->setMethod('post');
         $zmform->setClass('uk-form-horizontal');
         $zmform->setSettingsFields(1); //necessary hidden security and settings fields for options.php handler
+
+        
+
+        $zmform->addField('html', '<p class="uk-width-2xlarge">'.__('This theme can be run in default mode without additional customizer settings or you can choose between simple, professional and developer mode. The higher the settings mode, the more style and configuration options are available to you. This theme can be fully customized to your needs. ','zmplugin').'</p>' );
+        $zmform->addField('html', '<p class="uk-margin-medium-bottom uk-width-2xlarge">'.__('For an easy start, we recommend using the simple mode and a starter design from the Design Explorer. This way you start with a stable and clean basis. You can then customize, extend or delete all blocks and modules as you wish.','zmplugin').'</p>' );
 
       /**
         * Get Settings-Forms Parts
@@ -171,6 +176,7 @@ class ThemeSettings {
       /**
         * General Settings
         */
+
 
         /**
           * Setting: Activate Settings

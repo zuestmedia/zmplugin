@@ -204,8 +204,8 @@ class controlls extends \ZMP\Plugin\ExtendControlls {
 
     $this->gridchild_class_visibility =              new _class_visibility(2,2,'settings','default');//in settings!
 
-    $this->gridchild_class_width =                   new _class_width(11,2,'module','default','gridchild_element');
-    $this->gridchild_class_flex_order =              new _class_flex_order(12,2,'module','default','gridchild_element');
+    $this->gridchild_class_width =                   new _class_width(11,3,'module','default','gridchild_element');
+    $this->gridchild_class_flex_order =              new _class_flex_order(12,3,'module','default','gridchild_element');
 
   /**
     * section: section       20-59
@@ -217,33 +217,33 @@ class controlls extends \ZMP\Plugin\ExtendControlls {
 
     $this->section_class_visibility =                new _class_visibility(2,2,'settings','default');//in settings!
 
-    $this->section_class_color_background =          new _class_color_background(20,2,'module','default','section_element');
-    $this->section_class_color_helpers =             new _class_color_helpers(21,2,'module','default','section_element');
+    $this->section_class_color_background =          new _class_color_background(20,3,'module','default','section_element');
+    $this->section_class_color_helpers =             new _class_color_helpers(21,3,'module','default','section_element');
 
-    $this->section_background_status =               new _background_status(23,2,'module','default','section_element');
+    $this->section_background_status =               new _background_status(23,3,'module','default','section_element');
 
-      $this->section_background_image =              new _background_image(23,2,'module','default','section_background_status'); //only showing if status = file
-      $this->section_background_url =                new _background_url(23,2,'module','default','section_background_status'); //only showing if status = url
+      $this->section_background_image =              new _background_image(23,3,'module','default','section_background_status'); //only showing if status = file
+      $this->section_background_url =                new _background_url(23,3,'module','default','section_background_status'); //only showing if status = url
 
       //showing if status not NULL
-      $this->section_background_featured =           new _background_featured(23,2,'module','default','section_background_status');
-      $this->section_class_background_img =          new _class_background_img(24,2,'module','default','section_background_status');
-      $this->section_background_image_size =         new _background_image_size(23,2,'module','default','section_background_status');
-      $this->section_class_background_pos =          new _class_background_pos(25,2,'module','default','section_background_status');
-      $this->section_class_background_mods =         new _class_background_mods(26,2,'module','default','section_background_status');
+      $this->section_background_featured =           new _background_featured(23,3,'module','default','section_background_status');
+      $this->section_class_background_img =          new _class_background_img(24,3,'module','default','section_background_status');
+      $this->section_background_image_size =         new _background_image_size(23,3,'module','default','section_background_status');
+      $this->section_class_background_pos =          new _class_background_pos(25,3,'module','default','section_background_status');
+      $this->section_class_background_mods =         new _class_background_mods(26,3,'module','default','section_background_status');
 
-    $this->section_attrs_sticky =                    new _attrs_sticky(27,2,'module','default','section_element');
+    $this->section_attrs_sticky =                    new _attrs_sticky(27,3,'module','default','section_element');
 
-    $this->section_attrs_height =                    new _attrs_height(28,2,'module','default','section_element');
-      $this->section_class_flex_vertical =           new _class_flex_vertical(29,2,'module','default','section_attrs_height');
+    $this->section_attrs_height =                    new _attrs_height(28,3,'module','default','section_element');
+      $this->section_class_flex_vertical =           new _class_flex_vertical(29,3,'module','default','section_attrs_height');
 
     $this->section_class_section =                   new _class_section(30,2,'module','default','section_element');
 
     //special cases: main- & inner-sections
-    $this->section_class_card_body =                 new _class_card_body(30,2,'module','default','section_element');
+    $this->section_class_card_body =                 new _class_card_body(30,3,'module','default','section_element');
     //module margin and text align helpers
-    $this->section_class_card_helpers =              new _class_card_helpers(30,2,'module','default','section_element');
-    $this->section_class_margin_vertical =           new _class_margin_vertical(30,2,'module','default','section_element');
+    $this->section_class_card_helpers =              new _class_card_helpers(30,3,'module','default','section_element');
+    $this->section_class_margin_vertical =           new _class_margin_vertical(30,3,'module','default','section_element');
 
   /**
     * section: container      60-69
@@ -264,9 +264,9 @@ class controlls extends \ZMP\Plugin\ExtendControlls {
     $this->grid_attrs =                              new _attrs(43,4,NULL,'grid','grid_element');
 
     $this->grid_attrs_grid =                         new _attrs_grid(42,4,NULL,'default','grid_element');
-      $this->grid_class_child_width =                new _class_child_width(43,2,'module','default','grid_attrs_grid');
-      $this->grid_class_grid_mods =                  new _class_grid_mods(44,2,'module','default','grid_attrs_grid');
-      $this->grid_attrs_scrollspy_animation =        new _attrs_scrollspy_animation(44,2,'module','default','grid_attrs_grid');
+      $this->grid_class_child_width =                new _class_child_width(43,3,'module','default','grid_attrs_grid');
+      $this->grid_class_grid_mods =                  new _class_grid_mods(44,3,'module','default','grid_attrs_grid');
+      $this->grid_attrs_scrollspy_animation =        new _attrs_scrollspy_animation(44,3,'module','default','grid_attrs_grid');
 
 
   /// 2. module controlls
@@ -282,27 +282,27 @@ class controlls extends \ZMP\Plugin\ExtendControlls {
     $this->moduleouter_class_visibility =            new _class_visibility(2,2,'settings','default');//in settings!
 
     //moduleouter gridchild
-    $this->moduleouter_class_width =                 new _class_width(11,2,'module','default','moduleouter_element');
-    $this->moduleouter_class_flex_order =            new _class_flex_order(12,2,'module','default','moduleouter_element');
+    $this->moduleouter_class_width =                 new _class_width(11,3,'module','default','moduleouter_element');
+    $this->moduleouter_class_flex_order =            new _class_flex_order(12,3,'module','default','moduleouter_element');
 
     //moduleouter margin and text align helpers
-    $this->moduleouter_class_margin_vertical =       new _class_margin_vertical(20,2,'module','default','moduleouter_element');
-    $this->moduleouter_class_text_align =            new _class_text_align(21,2,'module','default','moduleouter_element');
+    $this->moduleouter_class_margin_vertical =       new _class_margin_vertical(20,3,'module','default','moduleouter_element');
+    $this->moduleouter_class_text_align =            new _class_text_align(21,3,'module','default','moduleouter_element');
 
     //ContainerSortableMain & ContainerSortableErrorPage
-    $this->moduleouter_class_color_background =      new _class_color_background(20,2,'module','default','moduleouter_element');
-    $this->moduleouter_class_color_helpers =         new _class_color_helpers(21,2,'module','default','moduleouter_element');
+    $this->moduleouter_class_color_background =      new _class_color_background(20,3,'module','default','moduleouter_element');
+    $this->moduleouter_class_color_helpers =         new _class_color_helpers(21,3,'module','default','moduleouter_element');
 
-      $this->moduleouter_background_status =         new _background_status(22,2,'module','default','moduleouter_element');
+      $this->moduleouter_background_status =         new _background_status(22,3,'module','default','moduleouter_element');
 
-        $this->moduleouter_background_url =          new _background_url(22,2,'module','default','moduleouter_background_status');
-        $this->moduleouter_background_image =        new _background_image(22,2,'module','default','moduleouter_background_status');
+        $this->moduleouter_background_url =          new _background_url(22,3,'module','default','moduleouter_background_status');
+        $this->moduleouter_background_image =        new _background_image(22,3,'module','default','moduleouter_background_status');
 
-        $this->moduleouter_background_featured =     new _background_featured(22,2,'module','default','moduleouter_background_status');
-        $this->moduleouter_background_image_size =   new _background_image_size(23,2,'module','default','moduleouter_background_status');
-        $this->moduleouter_class_background_img =    new _class_background_img(24,2,'module','default','moduleouter_background_status');
-        $this->moduleouter_class_background_pos =    new _class_background_pos(25,2,'module','default','moduleouter_background_status');
-        $this->moduleouter_class_background_mods =   new _class_background_mods(26,2,'module','default','moduleouter_background_status');
+        $this->moduleouter_background_featured =     new _background_featured(22,3,'module','default','moduleouter_background_status');
+        $this->moduleouter_background_image_size =   new _background_image_size(23,3,'module','default','moduleouter_background_status');
+        $this->moduleouter_class_background_img =    new _class_background_img(24,3,'module','default','moduleouter_background_status');
+        $this->moduleouter_class_background_pos =    new _class_background_pos(25,3,'module','default','moduleouter_background_status');
+        $this->moduleouter_class_background_mods =   new _class_background_mods(26,3,'module','default','moduleouter_background_status');
 
     $this->moduleouter_class_section =               new _class_section(29,2,'module','default','moduleouter_element');
 
@@ -321,33 +321,33 @@ class controlls extends \ZMP\Plugin\ExtendControlls {
 
 
     //default container settings = color & card
-    $this->module_class_color_background =           new _class_color_background(70,2,'module','default','module_element');
-    $this->module_class_color_helpers =              new _class_color_helpers(71,2,'module','default','module_element');
+    $this->module_class_color_background =           new _class_color_background(70,3,'module','default','module_element');
+    $this->module_class_color_helpers =              new _class_color_helpers(71,3,'module','default','module_element');
 
-    $this->module_class_card_body =                  new _class_card_body(72,2,'module','default','module_element');
-    $this->module_class_card_helpers =               new _class_card_helpers(73,2,'module','default','module_element');
+    $this->module_class_card_body =                  new _class_card_body(72,3,'module','default','module_element');
+    $this->module_class_card_helpers =               new _class_card_helpers(73,3,'module','default','module_element');
 
     //NavabarItems
     $this->module_class_navbar_item_pos =            new _class_navbar_item_pos(36,2,'module','default','module_element');
-    $this->module_class_flex_horizontal =            new _class_flex_horizontal(37,2,'module','navbar','module_element');
-    $this->module_class_width =                      new _class_width(38,2,'module','default','module_element');
+    $this->module_class_flex_horizontal =            new _class_flex_horizontal(37,3,'module','navbar','module_element');
+    $this->module_class_width =                      new _class_width(38,3,'module','default','module_element');
 
     //ContainerSortableMain & ContainerSortableErrorPage
     $this->module_class_container =                  new _class_container(35,2,'module','default','module_element');
 
     //image background color for transparent images and blend modes
-    $this->module_class_image_background_color =     new _class_image_background_color(20,2,'module','default','module_element');
-    $this->module_class_image_container_size =       new _class_image_container_size(20,2,'module','default','module_element');
+    $this->module_class_image_background_color =     new _class_image_background_color(20,3,'module','default','module_element');
+    $this->module_class_image_container_size =       new _class_image_container_size(20,3,'module','default','module_element');
 
     //text helpers --> description / archivedescription
-    $this->module_class_text_helpers =               new _class_text_helpers(20,2,'module','default','module_element');//has text align!
+    $this->module_class_text_helpers =               new _class_text_helpers(20,3,'module','default','module_element');//has text align!
 
 
-    $this->module_class_text_helpers_string =        new _class_text_helpers_string(20,2,'module','default','module_element');
+    $this->module_class_text_helpers_string =        new _class_text_helpers_string(20,3,'module','default','module_element');
 
     //module margin and text align helpers
-    $this->module_class_margin_vertical =            new _class_margin_vertical(20,2,'module','default','module_element');
-    $this->module_class_text_align =                 new _class_text_align(21,2,'module','default','module_element');
+    $this->module_class_margin_vertical =            new _class_margin_vertical(20,3,'module','default','module_element');
+    $this->module_class_text_align =                 new _class_text_align(21,3,'module','default','module_element');
 
     //alignement (now only applied to featured image...)
     $this->module_class_align =                      new _class_align(21,2,'module','default','module_element');
@@ -369,9 +369,9 @@ class controlls extends \ZMP\Plugin\ExtendControlls {
 
     //articlelistcontainer
     $this->moduleinner_attrs_grid =                  new _attrs_grid(83,4,NULL,'default','moduleinner_element');//newwww
-      $this->moduleinner_class_child_width =         new _class_child_width(84,2,'module','default','moduleinner_attrs_grid');
-      $this->moduleinner_class_grid_mods =           new _class_grid_mods(85,2,'module','default','moduleinner_attrs_grid');
-      $this->moduleinner_attrs_scrollspy_animation = new _attrs_scrollspy_animation(86,2,'module','default','moduleinner_attrs_grid');//newwww
+      $this->moduleinner_class_child_width =         new _class_child_width(84,3,'module','default','moduleinner_attrs_grid');
+      $this->moduleinner_class_grid_mods =           new _class_grid_mods(85,3,'module','default','moduleinner_attrs_grid');
+      $this->moduleinner_attrs_scrollspy_animation = new _attrs_scrollspy_animation(86,3,'module','default','moduleinner_attrs_grid');//newwww
 
   /**
     * module: pra/suf = wrap
@@ -392,9 +392,9 @@ class controlls extends \ZMP\Plugin\ExtendControlls {
     */
     $this->widgetinner_element =                     new _element(92,4,NULL,'widgetinner');//no callback _defsidebar is not working, but not necessary!
     $this->widgetinner_class =                       new _class(93,3,NULL,'widgetinner');
-    $this->widgetinner_class_card_color_background = new _class_card_color_background(90,2,'content','widgetinner');
-    $this->widgetinner_class_card_body =             new _class_card_body( 92,2,'content','widgetinner');
-    $this->widgetinner_class_card_helpers =          new _class_card_helpers(93,2,'content','widgetinner');
+    $this->widgetinner_class_card_color_background = new _class_card_color_background(90,3,'content','widgetinner');
+    $this->widgetinner_class_card_body =             new _class_card_body( 92,3,'content','widgetinner');
+    $this->widgetinner_class_card_helpers =          new _class_card_helpers(93,3,'content','widgetinner');
 
   /**
     * widget: widgettitle_wrap
@@ -404,8 +404,8 @@ class controlls extends \ZMP\Plugin\ExtendControlls {
   /**
     * menu: menutitle
     */
-    $this->menutitle_element =                       new _element(94,2,'content','menutitle');
-    $this->menutitle_class =                         new _class_title(94,2,'content','menutitle','menutitle_element');
+    $this->menutitle_element =                       new _element(94,3,'content','menutitle');
+    $this->menutitle_class =                         new _class_title(94,3,'content','menutitle','menutitle_element');
 
 
   /**
@@ -462,8 +462,8 @@ class controlls extends \ZMP\Plugin\ExtendControlls {
     $this->caption =                   new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\caption(10,2,'content');//image
 
     //spezial nicht in content, in module!
-    $this->imageoverlay_wrap =         new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_json(100,2,NULL,'imageoverlay');//articlecontainer
-    $this->imageoverlay_size =         new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\image_size(100,2,'module','imageoverlay','imageoverlay_wrap');//articlecontainer
+    $this->imageoverlay_wrap =         new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\_json(100,3,NULL,'imageoverlay');//articlecontainer
+    $this->imageoverlay_size =         new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\image_size(100,3,'module','imageoverlay','imageoverlay_wrap');//articlecontainer
 
     $this->ajax_posts_loading =         new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\ajax_posts_loading(100,2,'module');//articlelist
 
@@ -544,7 +544,7 @@ class controlls extends \ZMP\Plugin\ExtendControlls {
 
     //xy extends _text
     $this->title = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\title(10,2,'content');//errorpage
-    $this->title_sprintf = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\title_sprintf(10,2,'content');//archivetitle
+    $this->title_sprintf = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\title_sprintf(10,3,'content');//archivetitle
     $this->no_comments = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\no_comments(10,3,'content');//commentscounter
     $this->one_comment = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\one_comment(10,3,'content');//commentscounter
     $this->more_than_one_comment = new \ZMP\Plugin\Config\ThemeCustomizer\Controlls\more_than_one_comment(10,3,'content');//commentscounter

@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the ZMPlugin plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: ZMPlugin 1.0.34\n"
+"Project-Id-Version: ZMPlugin 1.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/zmplugin\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-07-23T16:41:48+00:00\n"
+"POT-Creation-Date: 2024-07-28T15:03:15+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.10.0\n"
 "X-Domain: zmplugin\n"
@@ -190,7 +190,7 @@ msgid "Tracking & Analytics"
 msgstr ""
 
 #: app/settings/Settings.php:190
-#: app/themesettings/ThemeSettings.php:114
+#: app/themesettings/ThemeSettings.php:119
 msgid "General Settings"
 msgstr ""
 
@@ -635,23 +635,11 @@ msgid "Failed"
 msgstr ""
 
 #: app/themesettings/DesignExplorer.php:246
-msgid "Full (Settings & Widgets)"
+msgid "Full Install"
 msgstr ""
 
 #: app/themesettings/DesignExplorer.php:247
-msgid "Only settings"
-msgstr ""
-
-#: app/themesettings/DesignExplorer.php:251
-msgid "Note"
-msgstr ""
-
-#: app/themesettings/DesignExplorer.php:251
-msgid "A full install will overwrite and/or delete all existing widget blocks. If you don't want to lose your widget blocks, chose only settings install."
-msgstr ""
-
-#: app/themesettings/DesignExplorer.php:251
-msgid "Get help here"
+msgid "Only Settings"
 msgstr ""
 
 #: app/themesettings/ThemeSettings.php:35
@@ -672,7 +660,7 @@ msgid "Are you sure?"
 msgstr ""
 
 #: app/themesettings/ThemeSettings.php:57
-msgid "Discover all one-click installable designs for your ZMTheme here. The designs can be installed with or without blocks/widgets."
+msgid "Discover all single-click installable designs here. Be aware that existing widgets are overwritten with a full install."
 msgstr ""
 
 #: app/themesettings/ThemeSettings.php:78
@@ -692,29 +680,33 @@ msgstr ""
 msgid "Theme Settings"
 msgstr ""
 
-#: app/themesettings/ThemeSettings.php:123
+#: app/themesettings/ThemeSettings.php:112
+msgid "This theme can be run in default mode without additional customizer settings or you can choose between simple, professional and developer mode. The higher the settings mode, the more style and configuration options are available to you. This theme can be fully customized to your needs. "
+msgstr ""
+
+#: app/themesettings/ThemeSettings.php:113
+msgid "For an easy start, we recommend using the simple mode and a starter design from the Design Explorer. This way you start with a stable and clean basis. You can then customize, extend or delete all blocks and modules as you wish."
+msgstr ""
+
+#: app/themesettings/ThemeSettings.php:128
 #: config/themecustomizer/controlls/sortable.php:13
 msgid "Template Editor"
 msgstr ""
 
-#: app/themesettings/ThemeSettings.php:212
+#: app/themesettings/ThemeSettings.php:218
 msgid "Depending on the color palette in use, different CSS options can be used. If you use only light or dark background colors, the respective option may be chosen to reduce the CSS file size."
 msgstr ""
 
-#: app/themesettings/ThemeSettings.php:218
+#: app/themesettings/ThemeSettings.php:224
 msgid "Mixed Colors"
 msgstr ""
 
-#: app/themesettings/ThemeSettings.php:219
+#: app/themesettings/ThemeSettings.php:225
 msgid "Dark Colors"
 msgstr ""
 
-#: app/themesettings/ThemeSettings.php:220
+#: app/themesettings/ThemeSettings.php:226
 msgid "Light Colors"
-msgstr ""
-
-#: app/themesettings/ThemeSettingsInit.php:57
-msgid "You can run your ZM theme in default mode without custom settings options or choose between simple, professional or developer mode. Your theme can be completely customized to your needs. The higher the settings mode, the more style and settings options you have. For an easy start, we recommend using simple mode and a starter design from Design Explorer so you can begin with a stable and clean base. After that, all blocks as well as modules can be customized, extended or deleted. "
 msgstr ""
 
 #: config/appsettings.php:16
@@ -1050,6 +1042,7 @@ msgstr ""
 #: config/themecustomizer/controlls/_cssvar_fontstyle.php:16
 #: config/themecustomizer/controlls/_cssvar_font_family.php:16
 #: config/themecustomizer/controlls/_cssvar_text_transform.php:16
+#: config/themesettings/settings_status.php:30
 msgid "Default"
 msgstr ""
 
@@ -1501,7 +1494,7 @@ msgid "Choose one or several styling options for Images."
 msgstr ""
 
 #: config/themecustomizer/controlls/image_class.php:16
-#: config/themecustomizer/controlls/_class_card_helpers.php:47
+#: config/themecustomizer/controlls/_class_card_helpers.php:54
 #: config/themecustomizer/controlls/_class_text_helpers_string.php:30
 msgid "Display: Block"
 msgstr ""
@@ -1582,7 +1575,7 @@ msgid "Blend Mode: Luminosity"
 msgstr ""
 
 #: config/themecustomizer/controlls/image_class.php:38
-#: config/themecustomizer/controlls/_class_card_helpers.php:132
+#: config/themecustomizer/controlls/_class_card_helpers.php:139
 msgid "Animation: Kenburns"
 msgstr ""
 
@@ -2483,393 +2476,417 @@ msgid "Body Helpers"
 msgstr ""
 
 #: config/themecustomizer/controlls/_class_card_helpers.php:19
-msgid "Overflow: Hidden"
+msgid "Padding Remove: Vertical"
 msgstr ""
 
 #: config/themecustomizer/controlls/_class_card_helpers.php:20
-msgid "Overflow: Auto"
+msgid "Padding Remove: Horizontal"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:21
+msgid "Padding Remove: Top"
 msgstr ""
 
 #: config/themecustomizer/controlls/_class_card_helpers.php:22
+msgid "Padding Remove: Bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:23
+msgid "Padding Remove: Left"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:24
+msgid "Padding Remove: Right"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:26
+msgid "Overflow: Hidden"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:27
+msgid "Overflow: Auto"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_card_helpers.php:29
 #: config/themecustomizer/controlls/_class_text_helpers.php:54
 #: config/themecustomizer/controlls/_class_text_helpers_string.php:55
 #: config/themecustomizer/controlls/_class_title.php:53
 msgid "Text Align: Justify"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:23
+#: config/themecustomizer/controlls/_class_card_helpers.php:30
 #: config/themecustomizer/controlls/_class_text_helpers.php:55
 #: config/themecustomizer/controlls/_class_text_helpers_string.php:56
 #: config/themecustomizer/controlls/_class_title.php:54
 msgid "Text Align: Left"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:24
+#: config/themecustomizer/controlls/_class_card_helpers.php:31
 #: config/themecustomizer/controlls/_class_text_helpers.php:56
 #: config/themecustomizer/controlls/_class_text_helpers_string.php:57
 #: config/themecustomizer/controlls/_class_title.php:55
 msgid "Text Align: Center"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:25
+#: config/themecustomizer/controlls/_class_card_helpers.php:32
 #: config/themecustomizer/controlls/_class_text_helpers.php:57
 #: config/themecustomizer/controlls/_class_text_helpers_string.php:58
 #: config/themecustomizer/controlls/_class_title.php:56
 msgid "Text Align: Right"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:28
+#: config/themecustomizer/controlls/_class_card_helpers.php:35
 msgid "Box Shadow: Small"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:29
+#: config/themecustomizer/controlls/_class_card_helpers.php:36
 msgid "Box Shadow: Medium"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:30
+#: config/themecustomizer/controlls/_class_card_helpers.php:37
 msgid "Box Shadow: Large"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:31
+#: config/themecustomizer/controlls/_class_card_helpers.php:38
 msgid "Box Shadow: XLarge"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:32
+#: config/themecustomizer/controlls/_class_card_helpers.php:39
 msgid "Box Shadow: Bottom"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:34
+#: config/themecustomizer/controlls/_class_card_helpers.php:41
 msgid "Box Shadow Hover: Small"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:35
+#: config/themecustomizer/controlls/_class_card_helpers.php:42
 msgid "Box Shadow Hover: Medium"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:36
+#: config/themecustomizer/controlls/_class_card_helpers.php:43
 msgid "Box Shadow Hover: Large"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:37
+#: config/themecustomizer/controlls/_class_card_helpers.php:44
 msgid "Box Shadow Hover: XLarge"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:42
+#: config/themecustomizer/controlls/_class_card_helpers.php:49
 #: config/themecustomizer/controlls/_class_text_helpers.php:32
 #: config/themecustomizer/controlls/_class_text_helpers_string.php:34
 msgid "Float: Left"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:43
+#: config/themecustomizer/controlls/_class_card_helpers.php:50
 #: config/themecustomizer/controlls/_class_text_helpers.php:33
 #: config/themecustomizer/controlls/_class_text_helpers_string.php:35
 msgid "Float: Right"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:44
+#: config/themecustomizer/controlls/_class_card_helpers.php:51
 #: config/themecustomizer/controlls/_class_text_helpers.php:34
 msgid "Float: Clear Floats"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:48
+#: config/themecustomizer/controlls/_class_card_helpers.php:55
 #: config/themecustomizer/controlls/_class_text_helpers_string.php:31
 msgid "Display: Inline"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:49
+#: config/themecustomizer/controlls/_class_card_helpers.php:56
 #: config/themecustomizer/controlls/_class_text_helpers_string.php:32
 msgid "Display: Inline-Block"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:51
+#: config/themecustomizer/controlls/_class_card_helpers.php:58
 msgid "Positioning Parent: Inline-Block & Max-Width 100%"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:52
+#: config/themecustomizer/controlls/_class_card_helpers.php:59
 msgid "Positioning Parent: + Clips Overflow"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:54
+#: config/themecustomizer/controlls/_class_card_helpers.php:61
 msgid "Overlay"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:55
+#: config/themecustomizer/controlls/_class_card_helpers.php:62
 msgid "Overlay: Default"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:56
+#: config/themecustomizer/controlls/_class_card_helpers.php:63
 msgid "Overlay: Primary"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:58
+#: config/themecustomizer/controlls/_class_card_helpers.php:65
 msgid "Position: Top"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:59
+#: config/themecustomizer/controlls/_class_card_helpers.php:66
 msgid "Position: Left"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:60
+#: config/themecustomizer/controlls/_class_card_helpers.php:67
 msgid "Position: Right"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:61
+#: config/themecustomizer/controlls/_class_card_helpers.php:68
 msgid "Position: Bottom"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:63
+#: config/themecustomizer/controlls/_class_card_helpers.php:70
 msgid "Position: Cover"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:64
+#: config/themecustomizer/controlls/_class_card_helpers.php:71
 msgid "Position: Center-Left-Out"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:65
+#: config/themecustomizer/controlls/_class_card_helpers.php:72
 msgid "Position: Center-Right-Out"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:67
+#: config/themecustomizer/controlls/_class_card_helpers.php:74
 msgid "Position: Top-Left"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:68
+#: config/themecustomizer/controlls/_class_card_helpers.php:75
 msgid "Position: Top-Center"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:69
+#: config/themecustomizer/controlls/_class_card_helpers.php:76
 msgid "Position: Top-Right"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:70
+#: config/themecustomizer/controlls/_class_card_helpers.php:77
 msgid "Position: Center-Left"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:71
+#: config/themecustomizer/controlls/_class_card_helpers.php:78
 msgid "Position: Center"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:72
+#: config/themecustomizer/controlls/_class_card_helpers.php:79
 msgid "Position: Center-Right"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:73
+#: config/themecustomizer/controlls/_class_card_helpers.php:80
 msgid "Position: Bottom-Left"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:74
+#: config/themecustomizer/controlls/_class_card_helpers.php:81
 msgid "Position: Bottom-Center"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:75
+#: config/themecustomizer/controlls/_class_card_helpers.php:82
 msgid "Position: Bottom-Right"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:77
+#: config/themecustomizer/controlls/_class_card_helpers.php:84
 msgid "Position Mod: Small"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:78
+#: config/themecustomizer/controlls/_class_card_helpers.php:85
 msgid "Position Mod: Medium"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:79
+#: config/themecustomizer/controlls/_class_card_helpers.php:86
 msgid "Position Mod: Large"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:81
+#: config/themecustomizer/controlls/_class_card_helpers.php:88
 msgid "Position Utility: Relative"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:82
+#: config/themecustomizer/controlls/_class_card_helpers.php:89
 msgid "Position Utility: Absolute"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:83
+#: config/themecustomizer/controlls/_class_card_helpers.php:90
 msgid "Position Utility: Fixed"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:84
+#: config/themecustomizer/controlls/_class_card_helpers.php:91
 msgid "Position Utility: Z-Index"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:87
+#: config/themecustomizer/controlls/_class_card_helpers.php:94
 msgid "Transition Trigger: Apply to Parent"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:89
+#: config/themecustomizer/controlls/_class_card_helpers.php:96
 msgid "Transition: Fade"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:91
+#: config/themecustomizer/controlls/_class_card_helpers.php:98
 msgid "Transition: Scale Up"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:92
+#: config/themecustomizer/controlls/_class_card_helpers.php:99
 msgid "Transition: Scale Down"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:94
+#: config/themecustomizer/controlls/_class_card_helpers.php:101
 msgid "Transition: Slide Top"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:95
+#: config/themecustomizer/controlls/_class_card_helpers.php:102
 msgid "Transition: Slide Bottom"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:96
+#: config/themecustomizer/controlls/_class_card_helpers.php:103
 msgid "Transition: Slide Left"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:97
+#: config/themecustomizer/controlls/_class_card_helpers.php:104
 msgid "Transition: Slide Right"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:99
+#: config/themecustomizer/controlls/_class_card_helpers.php:106
 msgid "Transition: Slide Top Small"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:100
+#: config/themecustomizer/controlls/_class_card_helpers.php:107
 msgid "Transition: Slide Bottom Small"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:101
+#: config/themecustomizer/controlls/_class_card_helpers.php:108
 msgid "Transition: Slide Left Small"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:102
+#: config/themecustomizer/controlls/_class_card_helpers.php:109
 msgid "Transition: Slide Right Small"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:104
+#: config/themecustomizer/controlls/_class_card_helpers.php:111
 msgid "Transition: Slide Top Medium"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:105
+#: config/themecustomizer/controlls/_class_card_helpers.php:112
 msgid "Transition: Slide Bottom Medium"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:106
+#: config/themecustomizer/controlls/_class_card_helpers.php:113
 msgid "Transition: Slide Left Medium"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:107
+#: config/themecustomizer/controlls/_class_card_helpers.php:114
 msgid "Transition: Slide Right Medium"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:110
+#: config/themecustomizer/controlls/_class_card_helpers.php:117
 msgid "Animation Trigger: Apply to Parent"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:112
+#: config/themecustomizer/controlls/_class_card_helpers.php:119
 msgid "Animation: Fade"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:114
+#: config/themecustomizer/controlls/_class_card_helpers.php:121
 msgid "Animation: Scale Up"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:115
+#: config/themecustomizer/controlls/_class_card_helpers.php:122
 msgid "Animation: Scale Down"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:117
+#: config/themecustomizer/controlls/_class_card_helpers.php:124
 msgid "Animation: Slide Top"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:118
+#: config/themecustomizer/controlls/_class_card_helpers.php:125
 msgid "Animation: Slide Bottom"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:119
+#: config/themecustomizer/controlls/_class_card_helpers.php:126
 msgid "Animation: Slide Left"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:120
+#: config/themecustomizer/controlls/_class_card_helpers.php:127
 msgid "Animation: Slide Right"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:122
+#: config/themecustomizer/controlls/_class_card_helpers.php:129
 msgid "Animation: Slide Top Small"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:123
+#: config/themecustomizer/controlls/_class_card_helpers.php:130
 msgid "Animation: Slide Bottom Small"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:124
+#: config/themecustomizer/controlls/_class_card_helpers.php:131
 msgid "Animation: Slide Left Small"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:125
+#: config/themecustomizer/controlls/_class_card_helpers.php:132
 msgid "Animation: Slide Right Small"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:127
+#: config/themecustomizer/controlls/_class_card_helpers.php:134
 msgid "Animation: Slide Top Medium"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:128
+#: config/themecustomizer/controlls/_class_card_helpers.php:135
 msgid "Animation: Slide Bottom Medium"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:129
+#: config/themecustomizer/controlls/_class_card_helpers.php:136
 msgid "Animation: Slide Left Medium"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:130
+#: config/themecustomizer/controlls/_class_card_helpers.php:137
 msgid "Animation: Slide Right Medium"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:133
+#: config/themecustomizer/controlls/_class_card_helpers.php:140
 msgid "Animation: Shake"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:134
+#: config/themecustomizer/controlls/_class_card_helpers.php:141
 msgid "Animation: Stroke (only with SVG)"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:136
+#: config/themecustomizer/controlls/_class_card_helpers.php:143
 msgid "Animation Mod: Reverse"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:137
+#: config/themecustomizer/controlls/_class_card_helpers.php:144
 msgid "Animation Mod: Fast"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:140
+#: config/themecustomizer/controlls/_class_card_helpers.php:147
 msgid "Origin: Top-Left"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:141
+#: config/themecustomizer/controlls/_class_card_helpers.php:148
 msgid "Origin: Top-Center"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:142
+#: config/themecustomizer/controlls/_class_card_helpers.php:149
 msgid "Origin: Top-Right"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:143
+#: config/themecustomizer/controlls/_class_card_helpers.php:150
 msgid "Origin: Center-Left"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:144
+#: config/themecustomizer/controlls/_class_card_helpers.php:151
 msgid "Origin: Center-Right"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:145
+#: config/themecustomizer/controlls/_class_card_helpers.php:152
 msgid "Origin: Bottom-Left"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:146
+#: config/themecustomizer/controlls/_class_card_helpers.php:153
 msgid "Origin: Bottom-Center"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:147
+#: config/themecustomizer/controlls/_class_card_helpers.php:154
 msgid "Origin: Bottom-Right"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_card_helpers.php:158
+#: config/themecustomizer/controlls/_class_card_helpers.php:165
 msgid "Block Body Modifiers"
 msgstr ""
 
@@ -4654,6 +4671,7 @@ msgid "HTML"
 msgstr ""
 
 #: config/themecustomizer/section_headers.php:44
+#: config/themesettings/settings_status.php:33
 msgid "Developer"
 msgstr ""
 
@@ -4682,17 +4700,17 @@ msgid "Customize"
 msgstr ""
 
 #: config/themesettings/settings_status.php:17
-msgid "Operating Mode"
+msgid "Mode"
 msgstr ""
 
 #: config/themesettings/settings_status.php:18
-msgid "In default configuration mode, all ZuestMedia Theme settings saved with the Customizer and the Template Editor are ignored (not deleted)."
+msgid "In default mode, all theme settings saved with the Customizer and the template editor are ignored (not deleted)."
 msgstr ""
 
-#: config/themesettings/settings_status.php:25
-msgid "Default configuration (No additional options)"
+#: config/themesettings/settings_status.php:31
+msgid "Simple"
 msgstr ""
 
-#: config/themesettings/settings_status.php:26
-msgid "Simple settings (No HTML or CSS knowledge necessary)"
+#: config/themesettings/settings_status.php:32
+msgid "Professional"
 msgstr ""

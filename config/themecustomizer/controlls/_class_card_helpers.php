@@ -16,6 +16,13 @@ class _class_card_helpers extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls\B
       'uk-border-circle' => __('Border: Circle', 'zmplugin' ),
       'uk-border-pill' => __('Border: Pill', 'zmplugin' ),
 
+      'uk-padding-remove-vertical' => __('Padding Remove: Vertical', 'zmplugin' ),
+      'uk-padding-remove-horizontal' => __('Padding Remove: Horizontal', 'zmplugin' ),
+      'uk-padding-remove-top' => __('Padding Remove: Top', 'zmplugin' ),
+      'uk-padding-remove-bottom' => __('Padding Remove: Bottom', 'zmplugin' ),
+      'uk-padding-remove-left' => __('Padding Remove: Left', 'zmplugin' ),
+      'uk-padding-remove-right' => __('Padding Remove: Right', 'zmplugin' ),
+
       'uk-overflow-hidden' =>  __( 'Overflow: Hidden', 'zmplugin' ),
       'uk-overflow-auto' =>  __( 'Overflow: Auto', 'zmplugin' ),
 

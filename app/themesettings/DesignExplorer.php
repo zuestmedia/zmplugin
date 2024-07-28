@@ -35,9 +35,9 @@ class DesignExplorer {
     $html = NULL;
     foreach($object as $key => $val){
       if($val == $zmplugin['global_constants']->design_explorer_free_post_tag_id){
-        $html =  '<div><span class="uk-label uk-label-success">'.__('Free','zmplugin').'</span></div>';
+        $html =  '<div><span class="uk-label uk-label-success" style="padding: 0 4px;">'.__('Free','zmplugin').'</span></div>';
       } elseif($val == $zmplugin['global_constants']->design_explorer_pro_post_tag_id){
-        $html =  '<div><span class="uk-label uk-label-warning">'.__('Pro','zmplugin').'</span></div>';
+        $html =  '<div><span class="uk-label uk-label-warning" style="padding: 0 4px;">'.__('Pro','zmplugin').'</span></div>';
       }
     }
 
@@ -186,7 +186,7 @@ class DesignExplorer {
 
               //title in footer
               $html .= '<div class="uk-card uk-card-small uk-card-default uk-card-body uk-box-shadow-small">';
-                $html .= '<div uk-grid class="uk-flex uk-flex-between">';
+                $html .= '<div uk-grid class="uk-flex uk-flex-between uk-grid-small">';
                   $html .= '<h2 class="uk-margin-remove">'.esc_html( $post_data->title->rendered ).'</h2>';
                   $html .= $this->getLabelFreePro($post_data->tags);
                 $html .= '</div>';
@@ -199,18 +199,18 @@ class DesignExplorer {
                   $html .= '<button class="uk-modal-close-default" type="button" uk-close></button>';
                   //title
                   //$html .= '<h2 class="uk-modal-title">'.$post_data->title->rendered.'</h2>';
-                  $html .= '<div uk-grid class="uk-flex uk-flex-between uk-flex-middle uk-margin-small-bottom">';
+                  $html .= '<div uk-grid class="uk-child-width-auto uk-margin-small-bottom uk-grid-small">';
                     $html .= '<h2 class="uk-modal-title">'.esc_html( $post_data->title->rendered ).'</h2>';
                     $html .= $this->getLabelFreePro($post_data->tags);
                   $html .= '</div>';
                   //image
-                  $html .= '<div class="uk-overflow-hidden uk-inline uk-height-medium uk-box-shadow-small">';
+                  $html .= '<div class="uk-margin uk-box-shadow-medium">';
                     $html .= '<img src="'.esc_url( $img_large ).'" style="max-width:100%;height:auto;box-sizing:border-box;vertical-align: middle;" alt="'.__('No image', 'zmplugin').'">';
                   $html .= '</div>';
                   //text
                   $html .= $post_data->content->rendered;
                   //list
-                  $html .= '<hr class="uk-divider-small"><p>';
+                  $html .= '<p>';
                   $html .= '<b>'.__('Last update', 'zmplugin').':</b> '.esc_html( $post_data->modified );
                   if (isset( $post_data->acf->version )) {
                     $html .= '<br><b>'.__('Version', 'zmplugin').':</b> '.esc_html( $post_data->acf->version );
@@ -218,7 +218,7 @@ class DesignExplorer {
                   if (isset( $post_data->acf->author )) {
                     $html .= '<br><b>'.__('Author', 'zmplugin').':</b> '.esc_html( $post_data->acf->author );
                   }
-                  $html .= '</p><hr class="uk-divider-small">';
+                  $html .= '</p>';
 
                   if (isset( $post_data->acf->url )) {
                     //buttons
@@ -243,12 +243,12 @@ class DesignExplorer {
                         $html .= '</button>';
                         $html .= '<div uk-dropdown="mode: click" class="uk-padding-remove">';
                         //installbuttons
-                          $html .= '<button class="zminstallbutton full uk-button uk-button-default uk-button-small uk-text-left uk-width-1-1" data-url="'.rawurlencode( $post_data->acf->url ).'" data-pid="'.esc_attr( $post_data->id ).'" type="button">'.__('Full (Settings & Widgets)', 'zmplugin').'</button>';
-                          $html .= '<button class="zminstallbutton part uk-button uk-button-default uk-button-small uk-text-left uk-width-1-1" data-url="'.rawurlencode( $post_data->acf->url ).'" data-pid="'.esc_attr( $post_data->id ).'" type="button">'.__('Only settings', 'zmplugin').'</button>';
+                          $html .= '<button class="zminstallbutton full uk-button uk-button-default uk-button-small uk-text-left uk-width-1-1" data-url="'.rawurlencode( $post_data->acf->url ).'" data-pid="'.esc_attr( $post_data->id ).'" type="button">'.__('Full Install', 'zmplugin').'</button>';
+                          $html .= '<button class="zminstallbutton part uk-button uk-button-default uk-button-small uk-text-left uk-width-1-1" data-url="'.rawurlencode( $post_data->acf->url ).'" data-pid="'.esc_attr( $post_data->id ).'" type="button">'.__('Only Settings', 'zmplugin').'</button>';
                         //installbuttons
                         $html .= '</div>';
                       $html .= '</div>';
-                      $html .= '<p class="uk-text-meta"><i uk-icon="icon:warning;ratio:0.85"></i> <b>'.__('Note', 'zmplugin').':</b> '.__('A full install will overwrite and/or delete all existing widget blocks. If you don\'t want to lose your widget blocks, chose only settings install.', 'zmplugin').' <a href="#">'.__('Get help here', 'zmplugin').'</a></p>';
+                      //$html .= '<p class="uk-text-meta"><i uk-icon="icon:warning;ratio:0.85"></i> <b>'.__('Note', 'zmplugin').':</b> '.__('A full install will overwrite and/or delete all existing widget blocks. If you don\'t want to lose your widget blocks, chose only settings install.', 'zmplugin').' <a href="#">'.__('Get help here', 'zmplugin').'</a></p>';
                     $html .= '</div>';
                   }
 
