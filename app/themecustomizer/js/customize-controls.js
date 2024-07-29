@@ -78,6 +78,10 @@ jQuery( document ).ready( function() {
     //zmcustomsectioncontentshownhide(api);
     //zmcustomsectioncontentreload(api);
 
+    
+
+    zmDesignExplorerPanel();
+
 
   } )( wp.customize );
 

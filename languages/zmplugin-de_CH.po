@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: zmplugin-0.9.3\n"
+"Project-Id-Version: zmplugin-1.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/zmplugin\n"
-"POT-Creation-Date: 2024-07-28T15:03:15+00:00\n"
-"PO-Revision-Date: 2024-07-28 17:14+0200\n"
+"POT-Creation-Date: 2024-07-29T14:23:31+00:00\n"
+"PO-Revision-Date: 2024-07-29 17:10+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_CH\n"
@@ -219,7 +219,7 @@ msgstr ""
 
 #: app/settings/Settings.php:190 app/themesettings/ThemeSettings.php:119
 msgid "General Settings"
-msgstr ""
+msgstr "Allgemeine Einstellungen"
 
 #: app/settings/Settings.php:195
 msgid "Exclude logged-in users"
@@ -419,6 +419,14 @@ msgstr ""
 #: app/SettingsTemplate.php:259 config/themesettings/defaults.php:36
 msgid "Save Changes"
 msgstr ""
+
+#: app/themecustomizer/ThemeCustomizerInit.php:19
+msgid "1-Click Design Import"
+msgstr ""
+
+#: app/themecustomizer/ThemeCustomizerInit.php:20
+msgid "https://zuestmedia.com/pro/"
+msgstr "https://zuestmedia.ch/pro/"
 
 #: app/ThemeHelper.php:15
 msgid "Front Page (front-page)"
@@ -627,7 +635,7 @@ msgstr ""
 
 #: app/themesettings/DesignExplorer.php:214
 msgid "Last update"
-msgstr ""
+msgstr "Letzte Aktualisierung"
 
 #: app/themesettings/DesignExplorer.php:216
 #: config/themesettings/defaults.php:37
@@ -637,15 +645,15 @@ msgstr ""
 #: app/themesettings/DesignExplorer.php:219
 #: config/themecustomizer/controlls/com_authorlink.php:12
 msgid "Author"
-msgstr ""
+msgstr "Autor"
 
 #: app/themesettings/DesignExplorer.php:227
 msgid "Preview"
-msgstr ""
+msgstr "Vorschau"
 
 #: app/themesettings/DesignExplorer.php:232
 msgid "Install"
-msgstr ""
+msgstr "Installieren"
 
 #: app/themesettings/DesignExplorer.php:235
 msgid "Installing"
@@ -661,15 +669,15 @@ msgstr ""
 
 #: app/themesettings/DesignExplorer.php:246
 msgid "Full Install"
-msgstr ""
+msgstr "Vollständig"
 
 #: app/themesettings/DesignExplorer.php:247
 msgid "Only Settings"
-msgstr ""
+msgstr "Nur Einstellungen"
 
 #: app/themesettings/ThemeSettings.php:35
 msgid "Cache cleaned."
-msgstr ""
+msgstr "Cache geleert."
 
 #: app/themesettings/ThemeSettings.php:52
 msgid "Design Explorer Cache"
@@ -677,7 +685,7 @@ msgstr ""
 
 #: app/themesettings/ThemeSettings.php:52
 msgid "Clean"
-msgstr ""
+msgstr "Leeren"
 
 #: app/themesettings/ThemeSettings.php:52
 #: app/themesettings/ThemeSettings.php:87
@@ -689,23 +697,26 @@ msgid ""
 "Discover all single-click installable designs here. Be aware that existing "
 "widgets are overwritten with a full install."
 msgstr ""
+"Alle Designs, die mit einem Klick installiert werden können, sind hier "
+"aufgeführt. Beachten Sie, dass bestehende Widgets bei einer vollständigen "
+"Installation überschrieben werden."
 
 #: app/themesettings/ThemeSettings.php:78
 msgid "ZMTheme was reset to defaults."
-msgstr ""
+msgstr "ZMTheme wurde auf die Standardeinstellungen zurückgesetzt."
 
 #: app/themesettings/ThemeSettings.php:87
 msgid "Theme Config"
-msgstr ""
+msgstr "Theme-Konfiguration"
 
 #: app/themesettings/ThemeSettings.php:87
 msgid "Reset to default"
-msgstr ""
+msgstr "Zurücksetzen"
 
 #: app/themesettings/ThemeSettings.php:97
 #: app/themesettings/ThemeSettingsInit.php:55
 msgid "Theme Settings"
-msgstr ""
+msgstr "Theme Einstellungen"
 
 #: app/themesettings/ThemeSettings.php:112
 msgid ""
@@ -714,6 +725,11 @@ msgid ""
 "higher the settings mode, the more style and configuration options are "
 "available to you. This theme can be fully customized to your needs. "
 msgstr ""
+"Dieses Theme kann im Standardmodus ohne zusätzliche Customizer-Einstellungen "
+"betrieben werden oder es kann zwischen Einfach, Experten- und Entwickler-"
+"Modus gewählt werden. Je höher der Konfigurationsmodus, desto mehr Stil- und "
+"Einstellungsmöglichkeiten sind verfügbar. Dieses Theme kann umfassend "
+"angepasst werden. "
 
 #: app/themesettings/ThemeSettings.php:113
 msgid ""
@@ -721,6 +737,10 @@ msgid ""
 "from the Design Explorer. This way you start with a stable and clean basis. "
 "You can then customize, extend or delete all blocks and modules as you wish."
 msgstr ""
+"Für einen einfachen Start empfehlen wir den einfachen Modus und ein "
+"Starterdesign aus dem Design Explorer zu verwenden. Auf diese Weise kann man "
+"mit einer stabilen und sauberen Basis beginnen. Alle Blöcke und Module "
+"können dann nach Belieben angepasst, erweitert oder gelöscht werden."
 
 #: app/themesettings/ThemeSettings.php:128
 #: config/themecustomizer/controlls/sortable.php:13
@@ -733,18 +753,22 @@ msgid ""
 "you use only light or dark background colors, the respective option may be "
 "chosen to reduce the CSS file size."
 msgstr ""
+"Je nach der verwendeten Farbpalette können verschiedene CSS-Optionen "
+"verwendet werden. Wenn nur helle oder dunkle Hintergrundfarben verwendet "
+"werden, kann die entsprechende Option gewählt werden, um die Grösse der CSS-"
+"Datei zu verringern."
 
 #: app/themesettings/ThemeSettings.php:224
 msgid "Mixed Colors"
-msgstr ""
+msgstr "Gemischte Farben"
 
 #: app/themesettings/ThemeSettings.php:225
 msgid "Dark Colors"
-msgstr ""
+msgstr "Dunkle Farben"
 
 #: app/themesettings/ThemeSettings.php:226
 msgid "Light Colors"
-msgstr ""
+msgstr "Helle Farben"
 
 #: config/appsettings.php:16
 msgid "Active"
@@ -772,7 +796,7 @@ msgstr ""
 
 #: config/settings.php:18 config/themesettings/defaults.php:29
 msgid "Documentation"
-msgstr ""
+msgstr "Dokumentation"
 
 #: config/settings.php:22 config/themesettings/defaults.php:24
 msgid "<b>Version:</b> %s"
@@ -1083,7 +1107,7 @@ msgstr ""
 #: config/themecustomizer/controlls/_cssvar_text_transform.php:16
 #: config/themesettings/settings_status.php:30
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: config/themecustomizer/controlls/com_colors.php:77
 #: config/themecustomizer/controlls/_class_color_background.php:16
@@ -4736,7 +4760,7 @@ msgstr ""
 #: config/themecustomizer/section_headers.php:44
 #: config/themesettings/settings_status.php:33
 msgid "Developer"
-msgstr ""
+msgstr "Entwickler"
 
 #: config/themesettings/defaults.php:19
 msgid "General"
@@ -4750,43 +4774,39 @@ msgstr ""
 
 #: config/themesettings/defaults.php:22
 msgid "Need help?"
-msgstr ""
+msgstr "Brauchen Sie Hilfe?"
 
 #: config/themesettings/defaults.php:28
 msgid "About ZuestMedia WordPress Themes"
-msgstr ""
+msgstr "Über ZuestMedia WordPress-Themes"
 
 #: config/themesettings/defaults.php:33
 msgid "Edit theme in customizer:"
-msgstr ""
+msgstr "Theme im Customizer bearbeiten:"
 
 #: config/themesettings/defaults.php:34
 msgid "Customize"
-msgstr ""
+msgstr "Anpassen"
 
 #: config/themesettings/settings_status.php:17
 msgid "Mode"
-msgstr ""
+msgstr "Modus"
 
 #: config/themesettings/settings_status.php:18
-#, fuzzy
-#| msgid ""
-#| "In default configuration mode, all ZMTheme settings saved with the "
-#| "Customizer and the Template Editor are ignored (not deleted)."
 msgid ""
 "In default mode, all theme settings saved with the Customizer and the "
 "template editor are ignored (not deleted)."
 msgstr ""
-"Im Theme-Modus Standardkonfiguration werden alle mit dem Customizer "
-"gespeicherten ZMTheme-Einstellungen ignoriert (nicht gelöscht)."
+"Im Standard-Modus werden alle mit dem Customizer und dem Template Editor "
+"gespeicherten Themeneinstellungen ignoriert (nicht gelöscht)."
 
 #: config/themesettings/settings_status.php:31
 msgid "Simple"
-msgstr ""
+msgstr "Einfach"
 
 #: config/themesettings/settings_status.php:32
 msgid "Professional"
-msgstr ""
+msgstr "Experte"
 
 #~ msgid ""
 #~ "A full install will overwrite and/or delete all existing widget blocks. "

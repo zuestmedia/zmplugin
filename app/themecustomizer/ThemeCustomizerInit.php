@@ -9,6 +9,18 @@ class ThemeCustomizerInit {
       global $zmtheme;
       global $zmplugin;
 
+      $visibility = '';
+      if( \ZMP\Plugin\PluginHelper::isPremiumVersion() ){
+        $visibility = 'uk-hidden';
+      }
+
+      $zmtheme['theme']->setHeadScript( '<script>
+        var zmdesignexplorerwpadminurl = "'.esc_url( get_admin_url() ).'themes.php?page='.esc_attr( \ZMT\Theme\Helpers::getSlug() ).'_designs";
+        var zmdesignexplorerbtlabel = "'.esc_html( __('1-Click Design Import', 'zmplugin') ).'";
+        var zmdesignexplorerbtprolink = "'.esc_url( __('https://zuestmedia.com/pro/', 'zmplugin') ).'";
+        var zmdesignexplorerbtprolinkv = "'.esc_attr( $visibility ).'";
+      </script>' );
+
       add_action( 'wp_enqueue_scripts', function () {
           $js = 'wp.customize.selectiveRefresh.Partial.prototype.createEditShortcutForPlacement = function() {};';
           wp_add_inline_script( 'customize-selective-refresh', $js );

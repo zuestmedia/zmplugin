@@ -1,3 +1,17 @@
+/* Designexplorer Panel & Link */
+#customize-theme-controls .control-panel-themes>.accordion-section-title, #customize-theme-controls .control-panel-themes>.accordion-section-title:hover {
+  margin-bottom: 0px;
+  border-bottom: 0px;
+}
+.zmpcdesexplink {
+  padding: 10px 10px 11px 14px;
+  background-color: white;
+  margin-top: -10px;
+}
+.zmpcdesexplink > a:focus{
+  color: #ffffff;
+}
+
 /*	1. Customizer Controls CSS
 /* -------------------------------------------------------------------------- */
 #accordion-panel-globals{

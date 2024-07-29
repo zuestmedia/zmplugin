@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-07-28T15:03:15+00:00\n"
+"POT-Creation-Date: 2024-07-29T14:23:31+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.10.0\n"
 "X-Domain: zmplugin\n"
@@ -393,6 +393,14 @@ msgstr ""
 #: app/SettingsTemplate.php:259
 #: config/themesettings/defaults.php:36
 msgid "Save Changes"
+msgstr ""
+
+#: app/themecustomizer/ThemeCustomizerInit.php:19
+msgid "1-Click Design Import"
+msgstr ""
+
+#: app/themecustomizer/ThemeCustomizerInit.php:20
+msgid "https://zuestmedia.com/pro/"
 msgstr ""
 
 #: app/ThemeHelper.php:15

@@ -997,5 +997,11 @@
 
   }
 
+  function zmDesignExplorerPanel(){
+
+    jQuery( "#accordion-section-themes" ).append( "<div class=\"zmpcdesexplink\"><a class=\"uk-button uk-button-primary uk-button-small uk-margin-right\" href=\"" + zmdesignexplorerwpadminurl + "\"><i class=\"uk-margin-small-right\" uk-icon=\"icon:cloud-download;ratio:1;\"></i>" + zmdesignexplorerbtlabel + "</a><a class=\"uk-button uk-button-danger uk-button-small uk-float-right "+zmdesignexplorerbtprolinkv+"\" href=\"" + zmdesignexplorerbtprolink + "\" target=\"_blank\">Pro</a></div>" );
+
+  }
+
 
   console.log('ZMTHEME ===== customizer.js initialised');
