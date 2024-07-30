@@ -87,12 +87,38 @@ class ThemeImport {
 
       return $count_imports;
 
+    }    
+
+    static function getZMBlocksArray(){
+
+      $args = array(
+        'post_type'   => 'zm_blocks',
+        'posts_per_page'   => -1,
+      );
+
+      $posts_array = get_posts($args);
+
+      $new_array = array();
+
+      if ( $posts_array ) {
+
+          foreach ( $posts_array  as $post ) {
+              $new_array[ $post->post_name ] = array(
+                'post_content' => $post->post_content,
+                'post_title' => $post->post_title,
+              );
+          }
+
+      }
+
+      return $new_array;
+
     }
 
     static function importZMBlocks($new_zm_blocks_array){
 
       //existing blocks (use same functions as for export to get array)
-      $existing_zm_blocks_array = \ZMP\Pro\ThemeSettings\ThemeExport::getZMBlocksArray();
+      $existing_zm_blocks_array = ThemeImport::getZMBlocksArray();
 
       foreach($new_zm_blocks_array as $new_zm_block_key => $new_zm_block_array){
 
