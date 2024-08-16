@@ -50,7 +50,8 @@ class ThemeHelper {
     }
 
 
-    $result['single']       =  __( 'Single Post', 'zmplugin' );
+    $result['single_all'] =  __( 'Single', 'zmplugin' );
+    $result['single']         =  __( '└ Single Post', 'zmplugin' );
 
 
     //get post_types
@@ -61,7 +62,7 @@ class ThemeHelper {
     );
     $posttypesarr = get_post_types($args);
     foreach($posttypesarr as $key_3 => $value_3){
-      $result[ 'single_'.$key_3 ] =  __( 'Single Post Type', 'zmplugin' ).': '.$value_3;
+      $result[ 'single_'.$key_3 ] =  __( '└ Single Post Type', 'zmplugin' ).': '.$value_3;
     }
 
 

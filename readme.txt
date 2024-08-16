@@ -1,6 +1,6 @@
 === ZMPlugin ===
 Contributors: zuestmedia
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 Tags: cookie notice, gdpr, analytics, matomo, smtp
 Requires at least: 4.7
 Tested up to: 6.6
@@ -75,6 +75,10 @@ To install ZMPlugin, navigate to WordPress Dashboard >> Plugins >> Add New. Then
 The [AI Assistant](https://wordpress.org/plugins/zmp-ai-assistant/) is an extension based on ZMPlugin that allows you to interact with Open AI’s artificial intelligence directly in the WordPress dashboard. 
 
 == Changelog === 
+
+= 1.1.3 =
+* Update: UIKIT to 3.21.9
+* Fix: view condition option "all single posttypes" added
 
 = 1.1.2 =
 * Fix: moved getZMBlocksArray from zmpro/ThemeExport to zmplugin/ThemeImport, gave an error without zmpro installed when importing data in design explorer!!!
