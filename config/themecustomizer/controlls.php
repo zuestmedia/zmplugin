@@ -62,6 +62,7 @@ use ZMP\Plugin\Config\ThemeCustomizer\Controlls\_class_text_align;
 
 use ZMP\Plugin\Config\ThemeCustomizer\Controlls\_class_align;
 use ZMP\Plugin\Config\ThemeCustomizer\Controlls\_class_margin_vertical;
+use ZMP\Plugin\Config\ThemeCustomizer\Controlls\_class_margin_horizontal;
 
 use ZMP\Plugin\Config\ThemeCustomizer\Controlls\_class_child_width;
 
@@ -329,8 +330,9 @@ class controlls extends \ZMP\Plugin\ExtendControlls {
 
     //NavabarItems
     $this->module_class_navbar_item_pos =            new _class_navbar_item_pos(36,2,'module','default','module_element');
-    $this->module_class_flex_horizontal =            new _class_flex_horizontal(37,3,'module','navbar','module_element');
+    $this->module_class_margin_horizontal =          new _class_margin_horizontal(37,3,'module','default','module_element');
     $this->module_class_width =                      new _class_width(38,3,'module','default','module_element');
+    $this->module_class_flex_horizontal =            new _class_flex_horizontal(39,3,'module','navbar','module_element');
 
     //ContainerSortableMain & ContainerSortableErrorPage
     $this->module_class_container =                  new _class_container(35,2,'module','default','module_element');
@@ -347,7 +349,7 @@ class controlls extends \ZMP\Plugin\ExtendControlls {
 
     //module margin and text align helpers
     $this->module_class_margin_vertical =            new _class_margin_vertical(20,3,'module','default','module_element');
-    $this->module_class_text_align =                 new _class_text_align(21,3,'module','default','module_element');
+    $this->module_class_text_align =                 new _class_text_align(22,3,'module','default','module_element');
 
     //alignement (now only applied to featured image...)
     $this->module_class_align =                      new _class_align(21,2,'module','default','module_element');

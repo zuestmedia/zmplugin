@@ -8,7 +8,7 @@ class _cssvar_padding extends \ZMP\Plugin\Config\ThemeCustomizer\Controlls\Build
 
     //Values
     $this->type = 'zm-range-marginremove';
-    $this->label = __( 'Padding', 'zmplugin' );
+    $this->label = __( 'Gap', 'zmplugin' );
     $this->description = 'hide';
     $this->section_group = 'settings';//should be here, not defined in controlls
     $this->validation = 'text';
