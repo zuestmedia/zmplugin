@@ -1,6 +1,6 @@
 === ZMPlugin ===
 Contributors: zuestmedia
-Stable tag: 1.1.4
+Stable tag: 1.1.5
 Tags: cookie notice, gdpr, analytics, matomo, smtp
 Requires at least: 4.7
 Tested up to: 6.6
@@ -75,6 +75,9 @@ To install ZMPlugin, navigate to WordPress Dashboard >> Plugins >> Add New. Then
 The [AI Assistant](https://wordpress.org/plugins/zmp-ai-assistant/) is an extension based on ZMPlugin that allows you to interact with Open AI’s artificial intelligence directly in the WordPress dashboard. 
 
 == Changelog === 
+
+= 1.1.5 = 
+* Update: navmenu preset rename to dropdown_navbar_nav, dropdowns always start with dropdown
 
 = 1.1.4 =
 * New: controll horizontal margin
