@@ -490,7 +490,17 @@ class ThemeCustomizer extends Customizer {
             $result['controlls'][ $settingNcontroll_key ]['input_attrs'] = $controll_obj->input_attrs;
           }
           if( property_exists($controll_obj, 'choices') ){
-            $result['controlls'][ $settingNcontroll_key ]['choices'] = $controll_obj->choices;
+
+            $result['controlls'][ $settingNcontroll_key ]['choices'] = $controll_obj->choices;            
+
+            //checks if section-com-id starts with center__  and if controll_key ends with _viewconditions
+            //needs unset from actual controll inkl zugeordnetem key, because otherwise it removes key/val pair error page for all controlls
+            //if eg. removed before from "$controll_obj-choices" it is removed from all controlls after first! (removes from global controll var??!!)
+            //removes 'errorpage' also in zmpro/app/themesettings
+            if(substr($section_id, 0, strlen('center__')) === 'center__' && substr($settingNcontroll_key, -strlen('_viewconditions')) === '_viewconditions'){
+              unset($result['controlls'][ $settingNcontroll_key ]['choices']['errorpage']);
+            }
+
           }
           if( property_exists($controll_obj, 'priority') ){
             $result['controlls'][ $settingNcontroll_key ]['priority'] = $controll_obj->priority;
@@ -791,9 +801,10 @@ class ThemeCustomizer extends Customizer {
                         $view_conditions_controlls_obj = NULL;
                         if( property_exists($controlls, 'view_conditions') && is_object($controlls->view_conditions) ){
                           $view_conditions_controlls_obj = $controlls->view_conditions;
-                        }
 
-                        $view_conditions_controlls_obj->active_callback = array( $activecallback, 'ViewStatusCallback' );
+                          $view_conditions_controlls_obj->active_callback = array( $activecallback, 'ViewStatusCallback' );
+
+                        }
 
                         $result = $this->SettingNControll(
                           $result,

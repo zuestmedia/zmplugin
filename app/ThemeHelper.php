@@ -75,7 +75,7 @@ class ThemeHelper {
 
 
     $result['searchpage']   =  __( 'SearchPage', 'zmplugin' );
-//      $result['errorpage']    =  __( 'ErrorPage', 'zmplugin' );//NOT IN USE
+    $result['errorpage']    =  __( 'ErrorPage', 'zmplugin' );
 
 
     if ( class_exists( 'woocommerce' ) ) {
