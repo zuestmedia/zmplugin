@@ -2,6 +2,8 @@
 
 namespace ZMP\Plugin\Config\ThemeSettings;
 
+#[\AllowDynamicProperties]
+
 class services {
 
   public $design_explorer_api;
