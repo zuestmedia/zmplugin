@@ -552,7 +552,7 @@ class Form {
                 //add value back to array!
                 $attributes_array_or_name['value'] = $value;
 
-                $html .= '<textarea'.$allatts.'>'.esc_textarea( $value ).'</textarea>';
+                $html .= '<textarea'.$allatts.'>'.esc_textarea( $value ).'</textarea>'; //use '' instead of NULL as default value when creating settings
 
               } else {
 
