@@ -54,6 +54,14 @@ class ThemeCustomizerInit {
       $zmthemecustomizerassets->addPropCustomizerControls();
       $zmthemecustomizerassets->addPropCustomizerPreview();*/
 
+      /**
+       * Update 2.0.0 
+       * Fix if only ZMPlugin is updated to >= 2.0.0 and theme < 2.0.0, it returns error on loading settingspage, so we stop here.
+       */
+      if(array_key_exists('zmplugin',$zmplugin) === false){
+        return;
+      }
+
       //controls js & css
       $zmthemecustomizecontrols = new \ZMP\Plugin\ScriptsProp( $zmplugin['zmplugin']->getPluginUrl(), $zmplugin['zmplugin']->getConfigVersion() );
       $zmthemecustomizecontrols->setCssPropArray(

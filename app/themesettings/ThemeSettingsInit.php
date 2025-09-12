@@ -18,6 +18,15 @@ class ThemeSettingsInit {
 
       $zmtheme['default_settings'] = new $full_classname_set();
 
+      /**
+       * Update Notice 2.0.0 (Polyfill?!)
+       * Fix if only ZMPlugin is updated to >= 2.0.0 and theme < 2.0.0, it returns error on loading settingspage, so we stop here.
+       */
+      if(array_key_exists('zmplugin',$zmplugin) === false){
+        add_action( 'admin_notices', array($this,'errornoticeupdate') );
+        return;
+      }
+
       //theme-editor
       //add css n js for ajax and creating virtual sections / components
       $zmthemeadminsettingspage = new \ZMP\Plugin\ScriptsAdmin( $zmplugin['zmplugin']->getPluginUrl(), $zmplugin['zmplugin']->getConfigVersion() );
@@ -79,6 +88,16 @@ class ThemeSettingsInit {
         $zmthemesettings->addThemeSettingsPage();//mit verzögerung filter init damit zb. get_post_types nicht vor plugin init abgefragt wird
 
       }
+
+    }
+
+    public function errornoticeupdate(){
+
+      ?>
+        <div class="notice notice-error is-dismissible">
+        <p><?php _e( 'Please update your ZuestMedia WordPress Theme to >= 2.0.0!', 'sample-text-domain' ); ?></p>
+        </div>
+      <?php
 
     }
 

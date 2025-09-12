@@ -19,7 +19,8 @@ class BlockTemplates {
       global $zmtheme;
       if( $zmtheme['theme']->getSettingsStatus() >= 2 ) {
 
-        add_action('init', array( $this, 'TemplateBlocks' ));
+        //add_action('init', array( $this, 'TemplateBlocks' ));
+		$this->TemplateBlocks();//is at/after action init
 
         //add column with asignment status of each block template
         add_filter('manage_zm_blocks_posts_columns', function($columns) {

@@ -1,9 +1,9 @@
 === ZMPlugin ===
 Contributors: zuestmedia
-Stable tag: 1.1.8
+Stable tag: 2.0.2
 Tags: cookie notice, gdpr, analytics, matomo, smtp
 Requires at least: 4.7
-Tested up to: 6.7
+Tested up to: 6.8
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -75,6 +75,18 @@ To install ZMPlugin, navigate to WordPress Dashboard >> Plugins >> Add New. Then
 The [AI Assistant](https://wordpress.org/plugins/zmp-ai-assistant/) is an extension based on ZMPlugin that allows you to interact with Open AI’s artificial intelligence directly in the WordPress dashboard. 
 
 == Changelog === 
+
+= 2.0.2 =
+* Fix: Action loading order
+
+= 2.0.1 =
+* Fix: Load Namespaces zmp-admin early before themes are starting
+
+= 2.0.0 =
+* Update: tested up to 6.8
+* Update: CSS & JS Framework UIKIT 3.23.12 
+* Fix: Dashboard Text validation (type: text) updated to accept all utf-8 characters incl. "Umlaute" (issue: The Plugin offers to change the wordpress message at the bottom of the dashboard. But it does not accept Umlauts... Is it UTF-8 ready? ) - Thanks to Cornelie
+* Fix: action loading order: _load_textdomain_just_in_time; initialising later!
 
 = 1.1.8 =
 * Update: tested up to 6.7

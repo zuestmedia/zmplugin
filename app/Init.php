@@ -13,7 +13,11 @@ class Init {
 
       do_action( 'zmplugin_load_zmpro' );
 
-      do_action( 'zmplugin_loaded' );
+      do_action( 'zmplugin_loaded' );//used for zmplugin start
+
+      do_action( 'zmplugin_loaded2' );//used for zmplugin dependent plugin-extensions
+
+      do_action( 'zmplugin_last_action' );//used for themes, so everything is preloaded to start
 
     }
 

@@ -10,14 +10,16 @@ class ThemeSettings {
       global $zmplugin;
       //check advanced setting status
       if( isset( $zmplugin['global_constants']->template_editor_status ) !== true ){
-        add_action( 'init', array( $this, 'getThemeSettingsPage' ) );
+        //add_action( 'zmplugin_last_action', array( $this, 'getThemeSettingsPage' ) );
+        $this->getThemeSettingsPage();//is started from theme
       }
 
       global $zmtheme;
       if( $zmtheme['theme']->getSettingsStatus() >= 2 ) {
         //check advanced setting status
         if( isset( $zmplugin['global_constants']->design_explorer_status ) !== true ){
-          add_action( 'init', array( $this, 'getThemeSettingsPageTemplateBrowser' ) );
+          //add_action( 'zmplugin_last_action', array( $this, 'getThemeSettingsPageTemplateBrowser' ) );
+          $this->getThemeSettingsPageTemplateBrowser();//is started from theme
         }
       }
 

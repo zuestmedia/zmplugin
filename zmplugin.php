@@ -5,7 +5,7 @@
   Description: ZMPlugin contains various essential tools for WordPress websites that every webmaster may need and is the companion plugin to our themes.
   Author: ZuestMedia
   Author URI: https://zuestmedia.com/
-  Version: 1.1.8
+  Version: 2.0.2
   Text Domain: zmplugin
   Domain Path: /languages
   ZMDLID: 2myl7t6emmbu4819uojautl0m0fo2fdktoaw
@@ -15,7 +15,8 @@
   defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
 /**
-  * use first action after plugins have loaded to init zmplugin!
+  * use first action after plugins have loaded to init zmplugin classes only! 
+  * then starting with init (zmpadmin/zmpro) / then zmplugin_loaded (start zmplugin)
   */
   add_action('plugins_loaded', 'zmplugin_init');
   function zmplugin_init() {
@@ -59,9 +60,16 @@
 
     $zmpluginpsr4autoloader->addNamespace('ZMP\Plugin\Config\ZMTheme\Presets', __DIR__ . '/config/zmtheme/presets/');
 
-    new \ZMP\Plugin\Init();
+    do_action( 'zmplugin_namespaces_preloaded' );
+
+    //new \ZMP\Plugin\Init();
+    add_action('init', 'zmpluginstartinitafteraction');
 
   }
+
+function zmpluginstartinitafteraction(){
+  new \ZMP\Plugin\Init();
+}
 
 class ZMPluginPsr4AutoloaderClass {
 

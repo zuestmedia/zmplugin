@@ -23,7 +23,8 @@ class BlockPatterns {
 
     public function addBlockPatterns() {
 
-      add_action('init', array( $this, 'BlockPatterns' ));
+    //add_action('init', array( $this, 'BlockPatterns' ));
+		$this->BlockPatterns();//is at/after action init
 
     }
 

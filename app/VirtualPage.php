@@ -158,7 +158,8 @@ class VirtualPage {
 
       if( $this->getRewriteRule() ){
 
-        add_action( 'init', array( $this, 'addRewriteRule' ), 99 );
+        //add_action( 'init', array( $this, 'addRewriteRule' ), 99 );
+		    $this->addRewriteRule();//is at/after action init
 
       }
 
