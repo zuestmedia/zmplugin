@@ -1217,6 +1217,8 @@ class AppSettings extends \ZMP\Plugin\App {
   public function addSMTP(){
 
     add_action( 'phpmailer_init', array( $this, 'SMTPtoWPMail' ) );
+    add_filter( 'wp_mail_from', [ $this, 'filterMailFrom' ] );
+    add_filter( 'wp_mail_from_name', [ $this, 'filterMailFromName' ] );
 
   }
   public function SMTPtoWPMail( $phpmailer ) {
@@ -1229,12 +1231,6 @@ class AppSettings extends \ZMP\Plugin\App {
 
         $phpmailer->isSMTP();  
         
-        if(!empty($settings['smtp_from'])){
-          $phpmailer->From = $settings['smtp_from'];
-        }
-        if(!empty($settings['smtp_fromname'])){
-          $phpmailer->FromName = $settings['smtp_fromname'];
-        }
         if(!empty($settings['smtp_username'])){
           $phpmailer->Username = $settings['smtp_username'];
         }
@@ -1254,6 +1250,45 @@ class AppSettings extends \ZMP\Plugin\App {
       }   
       
     }
+
+  }
+
+  public function filterMailFrom( $from_email ) {
+
+    $settings = $this->getSMTPSettings();
+
+    if( is_array($settings) ){
+
+      if( array_key_exists('is_smtp', $settings) && $settings['is_smtp'] == 1 ){
+
+        if ( ! empty( $settings['smtp_from'] ) ) {
+            return $settings['smtp_from'];
+        }
+      }
+
+    }
+
+    return $from_email;
+
+  }
+
+  public function filterMailFromName( $from_name ) {
+
+    $settings = $this->getSMTPSettings();
+
+    if( is_array($settings) ){
+
+      if( array_key_exists('is_smtp', $settings) && $settings['is_smtp'] == 1 ){
+
+        if ( ! empty( $settings['smtp_fromname'] ) ) {
+            return $settings['smtp_fromname'];
+        }
+
+      }
+
+    }
+
+    return $from_name;
 
   }
 

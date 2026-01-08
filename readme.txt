@@ -1,9 +1,9 @@
 === ZMPlugin ===
 Contributors: zuestmedia
-Stable tag: 2.0.3
+Stable tag: 2.1.1
 Tags: cookie notice, gdpr, analytics, matomo, smtp
 Requires at least: 4.7
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -75,6 +75,13 @@ To install ZMPlugin, navigate to WordPress Dashboard >> Plugins >> Add New. Then
 The [AI Assistant](https://wordpress.org/plugins/zmp-ai-assistant/) is an extension based on ZMPlugin that allows you to interact with Open AI’s artificial intelligence directly in the WordPress dashboard. 
 
 == Changelog === 
+
+= 2.1.1 =
+* Update: tested up to WP 6.9
+* Fix: PHP Mailer from and fromname now with 2 separate filters, not anymore at phpmailer_init
+
+= 2.1.0 =
+* Update: Move ThemeImport to ZMTheme
 
 = 2.0.3 =
 * Fix: Add widgets_init im zmthemes modSidebar again and use action 'init' with prio 0 in zmplugin to start earlier

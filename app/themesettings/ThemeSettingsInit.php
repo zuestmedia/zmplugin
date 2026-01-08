@@ -19,11 +19,20 @@ class ThemeSettingsInit {
       $zmtheme['default_settings'] = new $full_classname_set();
 
       /**
-       * Update Notice 2.0.0 (Polyfill?!)
+       * Update Notice ZMTheme < 2.0.0
        * Fix if only ZMPlugin is updated to >= 2.0.0 and theme < 2.0.0, it returns error on loading settingspage, so we stop here.
        */
       if(array_key_exists('zmplugin',$zmplugin) === false){
         add_action( 'admin_notices', array($this,'errornoticeupdate') );
+        return;
+      }
+
+      /**
+       * Update Notice ZMTheme < 2.1.0
+       * ThemeImport moved to zmtheme
+       */
+      if(!class_exists('\ZMT\Theme\ThemeImport')){
+        add_action( 'admin_notices', array($this,'errornoticeupdate2') );
         return;
       }
 
@@ -95,7 +104,17 @@ class ThemeSettingsInit {
 
       ?>
         <div class="notice notice-error is-dismissible">
-        <p><?php _e( 'Please update your ZuestMedia WordPress Theme to >= 2.0.0!', 'sample-text-domain' ); ?></p>
+        <p><?php _e( 'Please update your ZuestMedia WordPress Theme to >= 2.0.0!', 'zmplugin' ); ?></p>
+        </div>
+      <?php
+
+    }
+
+    public function errornoticeupdate2(){
+
+      ?>
+        <div class="notice notice-error is-dismissible">
+        <p><?php _e( 'Please update your ZuestMedia WordPress Theme to >= 2.1.0!', 'zmplugin' ); ?></p>
         </div>
       <?php
 

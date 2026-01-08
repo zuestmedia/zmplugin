@@ -55,7 +55,7 @@ class RestRouteDesignData extends \ZMP\Plugin\RestRoute {
         $partial = true;
       }
 
-      $json_import = new \ZMP\Plugin\ThemeSettings\ThemeImport();
+      $json_import = new \ZMT\Theme\ThemeImport();
       $result = $json_import->importJsonData($rest_object,$partial);
 
       return 'success ('.$result.')';//deactivate return of success to get object in js responce...
