@@ -69,7 +69,7 @@ class Settings {
           /* old with text not working with umlaute äüö $this->form->addField(
             'textarea',
               array(
-                'label'=> __('Text', 'zmp-breadcrumbs'),
+                'label'=> __('Text', 'zmplugin'),
                 'class'=>'uk-textarea uk-form-width-large',
                 'name'=>$zmplugin['app']->getCookieConsentTextTextFieldName(),
                 'default_value'=>$zmplugin['app']->getCookieConsentTextDefaultValue()
@@ -82,7 +82,7 @@ class Settings {
           $this->form->addField(
             'textarea',
               array(
-                'label'=> __('Text', 'zmp-breadcrumbs'),
+                'label'=> __('Text', 'zmplugin'),
                 'class'=>'uk-textarea uk-form-width-large',
                 'name'=>$zmplugin['app']->getCookieConsentTextTextFieldName(),
                 'default_value'=>$zmplugin['app']->getCookieConsentTextDefaultValue()

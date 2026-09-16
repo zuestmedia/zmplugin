@@ -1,80 +1,169 @@
 === ZMPlugin ===
 Contributors: zuestmedia
-Stable tag: 2.1.1
-Tags: cookie notice, gdpr, analytics, matomo, smtp
+Stable tag: 2.1.2
+Tags: theme companion, cookie consent, analytics, matomo, smtp
 Requires at least: 4.7
-Tested up to: 6.9
+Tested up to: 7.1
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-ZMPlugin contains various essential tools for WordPress websites that every webmaster may need and is the companion plugin to our themes.
+The official companion plugin for ZuestMedia WordPress themes, with additional tools for privacy, analytics, SMTP, content and site administration.
 
 == Description ==
 
-[ZMPlugin](https://zuestmedia.com/zmplugin/) offers a whole range of features that every WordPress website administrator will benefit from:
+[ZMPlugin](https://zuestmedia.com/zmplugin/) is the official companion plugin for ZuestMedia WordPress themes such as [Corporate](https://wordpress.org/themes/zmt-corporate/) and [Modular](https://wordpress.org/themes/zmt-modular/).
 
-1. Cookie consent banner (GDPR compliant)
-2. Tracking script integration (GA4, Tagmanager, Matomo)
+When used together with a ZuestMedia theme, ZMPlugin adds theme-specific features including additional theme settings, Customizer options, editable block templates and the Design Explorer for importing starter designs.
+
+In addition to its theme companion features, ZMPlugin includes a collection of useful tools for everyday WordPress administration. These features can be used independently of a ZuestMedia theme, making ZMPlugin useful for any WordPress website.
+
+= Theme Companion for ZuestMedia Themes =
+
+ZMPlugin extends supported ZuestMedia themes with additional functionality and configuration options directly inside WordPress.
+
+Theme companion features include:
+
+1. Theme-specific settings and options
+2. Additional Customizer settings
+3. Editable block templates
+4. Design Explorer with importable starter designs
+5. Additional theme-related functionality and integrations
+
+These features are available when using a supported ZuestMedia theme such as [Corporate](https://wordpress.org/themes/zmt-corporate/) or [Modular](https://wordpress.org/themes/zmt-modular/).
+
+= Additional WordPress Tools =
+
+ZMPlugin also provides several useful features that work independently of ZuestMedia themes:
+
+1. Cookie consent banner
+2. Tracking script integration for GA4, Google Tag Manager and Matomo
 3. Private mode with redirection
-4. SMTP for WordPress transactional mails 
-5. Block Patterns 
+4. SMTP mail delivery
+5. Gutenberg block patterns
+6. WordPress dashboard customization
+7. WordPress login customization
 
-== Plugin Features ==
-
-= Cookie consent banner =
-Cookie Consent Banner for GDPR compliant use of tracking solutions. Tracking scripts will only be loaded after consent has been given.
-
-= Tracking script integration =
-Google Analytics 4, Google Tag Manager or Matomo (self-hosted) can be integrated. GDPR compliant if configured with cookie consent banner.
-
-= Private Mode =
-Private mode to redirect visitors to the login form or to a page of their choice. Useful for maintenance work or not yet finished websites.
-
-= SMTP Mail =
-Send all mails sent via wp_mail() from your own SMTP server. Works for all system mailings and also with contact form 7.
-
-= Block Patterns =
-Access to a selection of pre-built block patterns that can be easily inserted in the WordPress Gutenberg editor.
-
-= WP Dashboard Options =
-Personalization options for the WordPress dashboard. WordPress logo, help tabs as well as footer text can be customized.
-
-= WP Login Options =
-Personalization options for the WordPress login form (wp-login.php). The login logo as well as the redirect destination can be customized.
+This means you can also use ZMPlugin as a standalone plugin on other WordPress websites.
 
 == Theme Companion Features ==
 
-As a companion plugin for our [WordPress Themes](https://zuestmedia.com/themes/), ZMPlugin extends your WordPress dashboard with theme settings, customizer settings and the design explorer for importing starter designs.
+= Theme & Customizer Settings =
+
+When using a supported ZuestMedia WordPress theme, ZMPlugin adds additional settings and configuration options to the WordPress Dashboard and Customizer.
+
+These settings extend the theme and provide additional possibilities for customizing the appearance and behavior of your website.
 
 = Block Templates =
-Our Themes use block templates to display static or dynamic content. All block templates can be edited using the WordPress Gutenberg editor.
 
-= Theme & Customizer settings =
-When using a ZuestMedia WordPress Theme, various new menus and settings are added to the Dashboard and Customizer for customizing the theme.
+ZuestMedia themes can use block templates to display static and dynamic content.
+
+ZMPlugin provides the functionality required to manage and edit these templates using the native WordPress block editor.
 
 = Design Explorer =
-The design explorer offers the possibility to import directly premade starter designs.
 
-Only available in combination with ZuestMedia Themes, e.g. Corporate or [Modular](https://wordpress.org/themes/zmt-modular/).
+The Design Explorer allows you to browse and import premade starter designs directly into WordPress.
+
+Starter designs provide a convenient starting point for building a website with supported ZuestMedia themes.
+
+Theme companion features are only available in combination with supported ZuestMedia themes such as [Corporate](https://wordpress.org/themes/zmt-corporate/) or [Modular](https://wordpress.org/themes/zmt-modular/).
+
+== Additional Plugin Features ==
+
+The following features can be used independently of a ZuestMedia theme.
+
+= Cookie Consent Banner =
+
+Display a cookie consent banner and control when tracking scripts are loaded.
+
+Tracking scripts configured through ZMPlugin can be prevented from loading until the visitor has given consent.
+
+= Tracking Script Integration =
+
+Integrate common analytics and tracking solutions without manually editing your theme files.
+
+Supported integrations include:
+
+* Google Analytics 4
+* Google Tag Manager
+* Matomo (self-hosted)
+
+Tracking integrations can be combined with the ZMPlugin cookie consent banner.
+
+= Private Mode =
+
+Restrict public access to your WordPress website and redirect visitors to the WordPress login form or to a page of your choice.
+
+Private Mode is useful for websites that are still under development, internal websites or temporary maintenance situations.
+
+= SMTP Mail =
+
+Configure WordPress to send emails through your own SMTP server.
+
+SMTP settings apply to emails sent through `wp_mail()`, including WordPress system emails and compatible plugins such as Contact Form 7.
+
+= Block Patterns =
+
+Access a selection of pre-built block patterns that can be inserted directly into the WordPress block editor.
+
+Block patterns provide reusable layouts and content structures that can be adapted to your website.
+
+= WordPress Dashboard Options =
+
+Customize selected elements of the WordPress administration area.
+
+Available options include customization of the WordPress logo, help tabs and dashboard footer text.
+
+= WordPress Login Options =
+
+Customize selected elements of the WordPress login screen (`wp-login.php`).
+
+Options include a custom login logo and configurable redirect behavior after login.
+
+== Who is ZMPlugin for? ==
+
+ZMPlugin is primarily designed for websites using ZuestMedia WordPress themes.
+
+It provides the companion functionality required to unlock additional theme settings, templates, starter designs and other theme-specific features.
+
+However, you do not need to use a ZuestMedia theme to benefit from ZMPlugin. Features such as the cookie consent banner, analytics integrations, SMTP configuration, Private Mode, block patterns and WordPress administration options can also be used on other WordPress websites.
 
 == Resources ==
 
 Learn more about ZuestMedia WordPress [themes](https://zuestmedia.com/themes/) and [plugins](https://zuestmedia.com/plugins/).
 
-If you have any questions or need help, visit the [ZMPlugin documentation](https://zuestmedia.com/doc/zmplugin-documentation/).
+Additional premium functionality is available through [ZMPro](https://zuestmedia.com/pricing/), a separately distributed premium extension for ZuestMedia themes and plugins.
 
-You can also find us on [Github](https://github.com/zuestmedia/)!
+For documentation and help, visit the [ZMPlugin documentation](https://zuestmedia.com/doc/zmplugin-documentation/).
+
+You can also find ZuestMedia on [GitHub](https://github.com/zuestmedia/).
 
 == Frequently Asked Questions ==
 
-= How to install ZMPlugin? =
-To install ZMPlugin, navigate to WordPress Dashboard >> Plugins >> Add New. Then type "ZMPlugin" in the search box, click install and activate.
+= Do I need a ZuestMedia theme to use ZMPlugin? =
 
-= What extensions are available? =
-The [AI Assistant](https://wordpress.org/plugins/zmp-ai-assistant/) is an extension based on ZMPlugin that allows you to interact with Open AI’s artificial intelligence directly in the WordPress dashboard. 
+No.
+
+ZMPlugin is the official companion plugin for supported ZuestMedia themes and provides additional theme-specific functionality when one of these themes is active.
+
+However, many ZMPlugin features — including the cookie consent banner, analytics integrations, SMTP mail, Private Mode, block patterns and WordPress administration options — can also be used independently with other WordPress themes.
+
+= Which ZuestMedia themes work with ZMPlugin? =
+
+ZMPlugin provides companion functionality for the ZuestMedia [Corporate](https://wordpress.org/themes/zmt-corporate/) and [Modular](https://wordpress.org/themes/zmt-modular/) WordPress themes.
+
+= How do I install ZMPlugin? =
+
+In your WordPress Dashboard, navigate to Plugins > Add New and search for "ZMPlugin".
+
+Click "Install Now" and then activate the plugin.
 
 == Changelog === 
+
+= 2.1.2 =
+* Update: tested up to WP 7.1
+* Update: readme.txt description
+* Fix: Translations textdomain
 
 = 2.1.1 =
 * Update: tested up to WP 6.9

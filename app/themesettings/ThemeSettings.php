@@ -42,14 +42,14 @@ class ThemeSettings {
         */
         $impexpmenu = new \ZMP\Plugin\AdminMenu( \ZMT\Theme\Helpers::getSlug().'_designs' );
         $impexpmenu->setSubMenuPageParent( 'themes.php' );
-        $impexpmenu->setSubMenuPageName( '└ '.__( 'Design Explorer', 'zmpro' ) );
+        $impexpmenu->setSubMenuPageName( '└ '.__( 'Design Explorer', 'zmplugin' ) );
         $impexpmenu->setPosition( 6 );
 
         global $zmtheme;
 
         $template = clone $zmtheme['default_admin_template'];
         $template->setOptPra( \ZMT\Theme\Helpers::getSlug().'_designs' );
-        $template->setTitle( __( 'Design Explorer', 'zmpro' ) );
+        $template->setTitle( __( 'Design Explorer', 'zmplugin' ) );
         $template->setDescr('');
         $template->setInfoBoxHTML( '<hr class="uk-margin"><b>'.__('Design Explorer Cache', 'zmplugin').': </b>'.$cleancache->getActionButtonWConfirm( __('Clean', 'zmplugin'), __('Are you sure?', 'zmplugin') ) );
 
