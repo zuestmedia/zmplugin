@@ -257,20 +257,8 @@ class PluginHelper {
 
   }
 
-  static function getNrAllowedOfExt(){
-
-    $result = 3;
-    if( PluginHelper::isPremiumVersion() == true ){
-
-      $result = '∞';
-
-    } elseif ( PluginHelper::installedPremiumAddon() == true ){
-
-      $result = 4;
-
-    }
-    return $result;
-
+  static function getNrAllowedOfExt() {
+    return '∞';
   }
 
   static function getPluginSlug($plugin_basename) {
@@ -364,22 +352,8 @@ class PluginHelper {
 
   }
 
-  static function doExtensionsCheck(){
-
-    $installable = true;
-
-    //activate if license check is defined in optionstable
-    if(PluginHelper::isPremiumVersion()){
-      return $installable;
-    }
-
-    if( PluginHelper::getNrOfExt() > PluginHelper::getNrAllowedOfExt() ){
-      $installable = false;
-    }
-
-    //returns true if ext can be loaded, false if not
-    return $installable;
-
+  static function doExtensionsCheck() {
+    return true;
   }
 
 

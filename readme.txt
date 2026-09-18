@@ -1,6 +1,6 @@
 === ZMPlugin ===
 Contributors: zuestmedia
-Stable tag: 2.1.2
+Stable tag: 3.0.0
 Tags: theme companion, cookie consent, analytics, matomo, smtp
 Requires at least: 4.7
 Tested up to: 7.1
@@ -159,6 +159,10 @@ In your WordPress Dashboard, navigate to Plugins > Add New and search for "ZMPlu
 Click "Install Now" and then activate the plugin.
 
 == Changelog === 
+
+= 3.0.0 =
+* Update: unlimited zmplugin extensions / zm plugins, no register check anymore. 
+* Update: translation files
 
 = 2.1.2 =
 * Update: tested up to WP 7.1

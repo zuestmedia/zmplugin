@@ -1,17 +1,17 @@
-# Copyright (C) 2024 ZuestMedia
+# Copyright (C) 2026 ZuestMedia
 # This file is distributed under the same license as the ZMPlugin plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: ZMPlugin 1.1.0\n"
+"Project-Id-Version: ZMPlugin 3.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/zmplugin\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-07-29T14:23:31+00:00\n"
+"POT-Creation-Date: 2026-09-18T10:21:15+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.10.0\n"
+"X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: zmplugin\n"
 
 #. Plugin Name of the plugin
@@ -40,7 +40,7 @@ msgstr ""
 msgid "https://zuestmedia.com/"
 msgstr ""
 
-#: app/BlockPatterns.php:34
+#: app/BlockPatterns.php:35
 msgid "My Patterns"
 msgstr ""
 
@@ -96,12 +96,13 @@ msgid "Manage"
 msgstr ""
 
 #: app/settings/Dashboard.php:33
-#: app/themesettings/BlockTemplates.php:83
+#: app/themesettings/BlockTemplates.php:84
 msgid "Add new"
 msgstr ""
 
 #: app/settings/Dashboard.php:42
-msgid "You have used %1$s of %2$s available Slots for Add-ons."
+#, php-format
+msgid "You are using %1$s ZM Plugin(s)."
 msgstr ""
 
 #: app/settings/Dashboard.php:46
@@ -139,6 +140,10 @@ msgstr ""
 
 #: app/settings/Settings.php:58
 msgid "Status"
+msgstr ""
+
+#: app/settings/Settings.php:85
+msgid "Text"
 msgstr ""
 
 #: app/settings/Settings.php:99
@@ -190,7 +195,7 @@ msgid "Tracking & Analytics"
 msgstr ""
 
 #: app/settings/Settings.php:190
-#: app/themesettings/ThemeSettings.php:119
+#: app/themesettings/ThemeSettings.php:121
 msgid "General Settings"
 msgstr ""
 
@@ -444,150 +449,158 @@ msgid "Post Type Archive"
 msgstr ""
 
 #: app/ThemeHelper.php:53
-msgid "Single Post"
+msgid "Single"
 msgstr ""
 
-#: app/ThemeHelper.php:64
-msgid "Single Post Type"
+#: app/ThemeHelper.php:54
+msgid "└ Single Post"
 msgstr ""
 
-#: app/ThemeHelper.php:72
+#: app/ThemeHelper.php:65
+msgid "└ Single Post Type"
+msgstr ""
+
+#: app/ThemeHelper.php:73
 msgid "Singular Template"
 msgstr ""
 
-#: app/ThemeHelper.php:76
+#: app/ThemeHelper.php:77
 msgid "SearchPage"
 msgstr ""
 
-#: app/ThemeHelper.php:81
+#: app/ThemeHelper.php:78
+msgid "ErrorPage"
+msgstr ""
+
+#: app/ThemeHelper.php:82
 msgid "Woocommerce"
 msgstr ""
 
-#: app/ThemeHelper.php:85
+#: app/ThemeHelper.php:86
 msgid "bbPress"
 msgstr ""
 
-#: app/ThemeHelper.php:88
+#: app/ThemeHelper.php:89
 msgid "Logged in Users"
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:26
+#: app/themesettings/BlockTemplates.php:27
 msgid "Assigned to"
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:79
-#: app/themesettings/BlockTemplates.php:82
-#: app/themesettings/BlockTemplates.php:114
+#: app/themesettings/BlockTemplates.php:80
+#: app/themesettings/BlockTemplates.php:83
+#: app/themesettings/BlockTemplates.php:115
 msgid "Block Templates"
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:80
-#: app/themesettings/BlockTemplates.php:104
+#: app/themesettings/BlockTemplates.php:81
+#: app/themesettings/BlockTemplates.php:105
 msgid "Block Template"
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:81
+#: app/themesettings/BlockTemplates.php:82
 msgid "My Block Templates"
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:84
+#: app/themesettings/BlockTemplates.php:85
 msgid "Add new Block Template"
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:85
+#: app/themesettings/BlockTemplates.php:86
 msgid "Edit Block Template"
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:86
+#: app/themesettings/BlockTemplates.php:87
 msgid "New Block Template"
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:87
+#: app/themesettings/BlockTemplates.php:88
 msgid "View Block Template"
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:88
+#: app/themesettings/BlockTemplates.php:89
 msgid "View Block Templates"
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:89
+#: app/themesettings/BlockTemplates.php:90
 msgid "Search Block Templates"
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:90
+#: app/themesettings/BlockTemplates.php:91
 msgid "No Block Templates found"
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:91
+#: app/themesettings/BlockTemplates.php:92
 msgid "No Block Templates found in trash"
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:92
-#: app/themesettings/BlockTemplates.php:110
+#: app/themesettings/BlockTemplates.php:93
+#: app/themesettings/BlockTemplates.php:111
 msgid "Parent Block Template:"
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:93
+#: app/themesettings/BlockTemplates.php:94
 msgid "Featured image for this Block Template"
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:94
+#: app/themesettings/BlockTemplates.php:95
 msgid "Set featured image for this Block Template"
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:95
+#: app/themesettings/BlockTemplates.php:96
 msgid "Remove featured image for this Block Template"
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:96
+#: app/themesettings/BlockTemplates.php:97
 msgid "Use as featured image for this Block Template"
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:97
+#: app/themesettings/BlockTemplates.php:98
 msgid "Block Template archives"
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:98
+#: app/themesettings/BlockTemplates.php:99
 msgid "Insert into Block Template"
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:99
+#: app/themesettings/BlockTemplates.php:100
 msgid "Upload to this Block Template"
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:100
+#: app/themesettings/BlockTemplates.php:101
 msgid "Filter Block Templates list"
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:101
+#: app/themesettings/BlockTemplates.php:102
 msgid "Block Templates list navigation"
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:102
+#: app/themesettings/BlockTemplates.php:103
 msgid "Block Templates list"
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:103
+#: app/themesettings/BlockTemplates.php:104
 msgid "Block Templates attributes"
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:105
+#: app/themesettings/BlockTemplates.php:106
 msgid "Block Template published"
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:106
+#: app/themesettings/BlockTemplates.php:107
 msgid "Block Template published privately."
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:107
+#: app/themesettings/BlockTemplates.php:108
 msgid "Block Template reverted to draft."
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:108
+#: app/themesettings/BlockTemplates.php:109
 msgid "Block Template scheduled"
 msgstr ""
 
-#: app/themesettings/BlockTemplates.php:109
+#: app/themesettings/BlockTemplates.php:110
 msgid "Block Template updated."
 msgstr ""
 
@@ -650,71 +663,84 @@ msgstr ""
 msgid "Only Settings"
 msgstr ""
 
-#: app/themesettings/ThemeSettings.php:35
+#: app/themesettings/ThemeSettings.php:37
 msgid "Cache cleaned."
 msgstr ""
 
+#: app/themesettings/ThemeSettings.php:45
 #: app/themesettings/ThemeSettings.php:52
+msgid "Design Explorer"
+msgstr ""
+
+#: app/themesettings/ThemeSettings.php:54
 msgid "Design Explorer Cache"
 msgstr ""
 
-#: app/themesettings/ThemeSettings.php:52
+#: app/themesettings/ThemeSettings.php:54
 msgid "Clean"
 msgstr ""
 
-#: app/themesettings/ThemeSettings.php:52
-#: app/themesettings/ThemeSettings.php:87
+#: app/themesettings/ThemeSettings.php:54
+#: app/themesettings/ThemeSettings.php:89
 msgid "Are you sure?"
 msgstr ""
 
-#: app/themesettings/ThemeSettings.php:57
+#: app/themesettings/ThemeSettings.php:59
 msgid "Discover all single-click installable designs here. Be aware that existing widgets are overwritten with a full install."
 msgstr ""
 
-#: app/themesettings/ThemeSettings.php:78
+#: app/themesettings/ThemeSettings.php:80
 msgid "ZMTheme was reset to defaults."
 msgstr ""
 
-#: app/themesettings/ThemeSettings.php:87
+#: app/themesettings/ThemeSettings.php:89
 msgid "Theme Config"
 msgstr ""
 
-#: app/themesettings/ThemeSettings.php:87
+#: app/themesettings/ThemeSettings.php:89
 msgid "Reset to default"
 msgstr ""
 
-#: app/themesettings/ThemeSettings.php:97
-#: app/themesettings/ThemeSettingsInit.php:55
+#: app/themesettings/ThemeSettings.php:99
+#: app/themesettings/ThemeSettingsInit.php:73
 msgid "Theme Settings"
 msgstr ""
 
-#: app/themesettings/ThemeSettings.php:112
+#: app/themesettings/ThemeSettings.php:114
 msgid "This theme can be run in default mode without additional customizer settings or you can choose between simple, professional and developer mode. The higher the settings mode, the more style and configuration options are available to you. This theme can be fully customized to your needs. "
 msgstr ""
 
-#: app/themesettings/ThemeSettings.php:113
+#: app/themesettings/ThemeSettings.php:115
 msgid "For an easy start, we recommend using the simple mode and a starter design from the Design Explorer. This way you start with a stable and clean basis. You can then customize, extend or delete all blocks and modules as you wish."
 msgstr ""
 
-#: app/themesettings/ThemeSettings.php:128
+#: app/themesettings/ThemeSettings.php:130
 #: config/themecustomizer/controlls/sortable.php:13
 msgid "Template Editor"
 msgstr ""
 
-#: app/themesettings/ThemeSettings.php:218
+#: app/themesettings/ThemeSettings.php:220
 msgid "Depending on the color palette in use, different CSS options can be used. If you use only light or dark background colors, the respective option may be chosen to reduce the CSS file size."
 msgstr ""
 
-#: app/themesettings/ThemeSettings.php:224
+#: app/themesettings/ThemeSettings.php:226
 msgid "Mixed Colors"
 msgstr ""
 
-#: app/themesettings/ThemeSettings.php:225
+#: app/themesettings/ThemeSettings.php:227
 msgid "Dark Colors"
 msgstr ""
 
-#: app/themesettings/ThemeSettings.php:226
+#: app/themesettings/ThemeSettings.php:228
 msgid "Light Colors"
+msgstr ""
+
+#: app/themesettings/ThemeSettingsInit.php:107
+msgid "Please update your ZuestMedia WordPress Theme to >= 2.0.0!"
+msgstr ""
+
+#: app/themesettings/ThemeSettingsInit.php:117
+msgid "Please update your ZuestMedia WordPress Theme to >= 2.1.0!"
 msgstr ""
 
 #: config/appsettings.php:16
@@ -748,6 +774,7 @@ msgstr ""
 
 #: config/settings.php:22
 #: config/themesettings/defaults.php:24
+#, php-format
 msgid "<b>Version:</b> %s"
 msgstr ""
 
@@ -2009,6 +2036,7 @@ msgid "Heading 6"
 msgstr ""
 
 #: config/themecustomizer/controlls/title_sprintf.php:12
+#, php-format
 msgid "Use the sprintf() variable %s to get the archive name. Leave empty to get default preformated WordPress values."
 msgstr ""
 
@@ -3259,6 +3287,82 @@ msgstr ""
 msgid "Max. Height: Small (450px)"
 msgstr ""
 
+#: config/themecustomizer/controlls/_class_margin_horizontal.php:11
+msgid "Horizontal Margin"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_horizontal.php:14
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:76
+msgid "Margin Left"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_horizontal.php:15
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:77
+msgid "Margin Right"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_horizontal.php:16
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:78
+msgid "Small Margin Left"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_horizontal.php:17
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:79
+msgid "Small Margin Right"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_horizontal.php:18
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:80
+msgid "Medium Margin Left"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_horizontal.php:19
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:81
+msgid "Medium Margin Right"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_horizontal.php:20
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:82
+msgid "Large Margin Left"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_horizontal.php:21
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:83
+msgid "Large Margin Right"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_horizontal.php:22
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:84
+msgid "X-Large Margin Left"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_horizontal.php:23
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:85
+msgid "X-Large Margin Right"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_horizontal.php:24
+msgid "Margin Remove Left"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_horizontal.php:25
+msgid "Margin Remove Right"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_horizontal.php:26
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:89
+msgid "Auto Margin Right"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_horizontal.php:27
+#: config/themecustomizer/controlls/_class_text_helpers_string.php:88
+msgid "Auto Margin Left"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_horizontal.php:28
+msgid "Auto Margin Horizontal"
+msgstr ""
+
 #: config/themecustomizer/controlls/_class_margin_vertical.php:11
 msgid "Vertical Margin"
 msgstr ""
@@ -3324,15 +3428,15 @@ msgid "X-Large Margin Bottom"
 msgstr ""
 
 #: config/themecustomizer/controlls/_class_margin_vertical.php:29
-msgid "Margin Remove"
+msgid "Margin Remove Vertical"
 msgstr ""
 
 #: config/themecustomizer/controlls/_class_margin_vertical.php:30
-msgid "Margin Remove Bottom"
+msgid "Margin Remove Top"
 msgstr ""
 
 #: config/themecustomizer/controlls/_class_margin_vertical.php:31
-msgid "Margin Remove Top"
+msgid "Margin Remove Bottom"
 msgstr ""
 
 #: config/themecustomizer/controlls/_class_margin_vertical.php:32
@@ -3344,7 +3448,19 @@ msgid "Margin Remove First Child Top"
 msgstr ""
 
 #: config/themecustomizer/controlls/_class_margin_vertical.php:34
-msgid "Margin Remove First Child bottom"
+msgid "Margin Remove First Child Bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_vertical.php:35
+msgid "Auto Margin Top"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_vertical.php:36
+msgid "Auto Margin Bottom"
+msgstr ""
+
+#: config/themecustomizer/controlls/_class_margin_vertical.php:37
+msgid "Auto Margin Vertical"
 msgstr ""
 
 #: config/themecustomizer/controlls/_class_navbar_item_pos.php:13
@@ -3658,56 +3774,8 @@ msgstr ""
 msgid "Helper Classes"
 msgstr ""
 
-#: config/themecustomizer/controlls/_class_text_helpers_string.php:76
-msgid "Margin Left"
-msgstr ""
-
-#: config/themecustomizer/controlls/_class_text_helpers_string.php:77
-msgid "Margin Right"
-msgstr ""
-
-#: config/themecustomizer/controlls/_class_text_helpers_string.php:78
-msgid "Small Margin Left"
-msgstr ""
-
-#: config/themecustomizer/controlls/_class_text_helpers_string.php:79
-msgid "Small Margin Right"
-msgstr ""
-
-#: config/themecustomizer/controlls/_class_text_helpers_string.php:80
-msgid "Medium Margin Left"
-msgstr ""
-
-#: config/themecustomizer/controlls/_class_text_helpers_string.php:81
-msgid "Medium Margin Right"
-msgstr ""
-
-#: config/themecustomizer/controlls/_class_text_helpers_string.php:82
-msgid "Large Margin Left"
-msgstr ""
-
-#: config/themecustomizer/controlls/_class_text_helpers_string.php:83
-msgid "Large Margin Right"
-msgstr ""
-
-#: config/themecustomizer/controlls/_class_text_helpers_string.php:84
-msgid "X-Large Margin Left"
-msgstr ""
-
-#: config/themecustomizer/controlls/_class_text_helpers_string.php:85
-msgid "X-Large Margin Right"
-msgstr ""
-
 #: config/themecustomizer/controlls/_class_text_helpers_string.php:87
 msgid "Auto Margin"
-msgstr ""
-
-#: config/themecustomizer/controlls/_class_text_helpers_string.php:88
-msgid "Auto Margin Left"
-msgstr ""
-
-#: config/themecustomizer/controlls/_class_text_helpers_string.php:89
-msgid "Auto Margin Right"
 msgstr ""
 
 #: config/themecustomizer/controlls/_class_text_helpers_string.php:91
@@ -4261,7 +4329,7 @@ msgid "Line height"
 msgstr ""
 
 #: config/themecustomizer/controlls/_cssvar_padding.php:11
-msgid "Padding"
+msgid "Gap"
 msgstr ""
 
 #: config/themecustomizer/controlls/_cssvar_text_transform.php:11
@@ -4495,6 +4563,7 @@ msgid "Logo Wrapper:"
 msgstr ""
 
 #: config/themecustomizer/controlls/_json.php:174
+#, php-format
 msgid "The variable %1$s gets the site-title, %2$s is used for subtitle. Eg. %1$s - %2$s displays YOUR-SITE-TITLE - YOUR-SUBTITLE."
 msgstr ""
 
@@ -4527,6 +4596,7 @@ msgid "Date:"
 msgstr ""
 
 #: config/themecustomizer/controlls/_text.php:20
+#, php-format
 msgid "Use the sprintf() variables %1$s and %2$s to display date and/or time."
 msgstr ""
 
